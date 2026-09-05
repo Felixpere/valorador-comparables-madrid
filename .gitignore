@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+data/interim/
+data/processed/
+outputs/
+
+# Datos reales: los descarga `python src/r00_cargar_idealista18.py` desde el
+# repositorio de los autores, asi que versionarlos no aporta y pesan 28 MB.
+data/real/rda/
+data/real/madrid_2018.csv
+data/real/valoraciones_2018.csv
+
+# Los ficheros pequenos de data/real/ SI se versionan a proposito: son las
+# cifras que citan docs/ y los tests, y ocupan unos pocos KB.

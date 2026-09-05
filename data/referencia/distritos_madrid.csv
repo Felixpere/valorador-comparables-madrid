@@ -1,0 +1,32 @@
+# FUENTE: Ayuntamiento de Madrid, Anuario Estadistico 2023, Capitulo 8 "Planeamiento urbano y Vivienda".
+#         Tablas 2.1 y 2.2 — Estadistica Registral Inmobiliaria, elaborada por el Colegio de Registradores
+#         de la Propiedad, Bienes Muebles y Mercantiles de Espana a solicitud del Ayuntamiento de Madrid.
+# URL:    https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Publicaciones/anuesta/
+#         nuevos/Anuario%20Estadistico%20Municipal/Anuario%20estadistico%202023/Capitulos/CAPITULO%208.pdf
+# EJERCICIO DE LOS DATOS: 2022 (ultimo con desglose por distrito en el Anuario consultado).
+# CONSULTADO: 04/09/2026.
+# NOTA DE LA FUENTE: recoge el 95,6% de las transmisiones (compraventas con transmision del 100% del dominio).
+# UNIDADES: precio_m2_2022 en euros/m2 construido, precio medio DECLARADO en escritura (no precio de oferta).
+# Las columnas sup_* son el numero de transacciones de 2022 en cada tramo de superficie construida (m2).
+distrito_id,distrito,precio_m2_2022,transacciones_2022,sup_menos40,sup_40_60,sup_60_80,sup_80_100,sup_mas100
+1,Centro,5466.32,2593,703,597,419,329,545
+2,Arganzuela,4489.71,1811,177,346,527,396,365
+3,Retiro,5284.27,1539,125,271,322,271,550
+4,Salamanca,6496.29,2297,257,415,436,292,897
+5,Chamartin,5616.88,2024,112,304,442,316,850
+6,Tetuan,3955.42,2351,399,659,566,355,372
+7,Chamberi,6188.49,2068,298,368,318,287,797
+8,Fuencarral-El Pardo,4054.52,2537,56,577,501,430,973
+9,Moncloa-Aravaca,4512.62,1186,69,186,304,158,469
+10,Latina,2507.78,2649,122,781,1165,373,208
+11,Carabanchel,2454.64,2866,163,1093,923,447,240
+12,Usera,2183.17,737,17,223,232,159,106
+13,Puente de Vallecas,2110.69,3336,459,1221,843,504,309
+14,Moratalaz,2767.30,954,0,300,262,280,112
+15,Ciudad Lineal,3511.66,2981,165,1059,973,398,386
+16,Hortaleza,3920.20,2580,41,319,564,345,1311
+17,Villaverde,1830.26,550,22,249,150,65,64
+18,Villa de Vallecas,2628.55,1331,57,368,357,348,201
+19,Vicalvaro,2604.57,1766,26,251,310,440,739
+20,San Blas-Canillejas,2739.57,1861,119,577,357,345,463
+21,Barajas,3445.86,672,48,142,171,125,186

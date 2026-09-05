@@ -1,0 +1,77 @@
+{
+  "fuente": "idealista18 (Rey-Blanco, Arbues, Lopez y Paez, 2024), doi:10.1177/23998083241242844, licencia ODbL-1.0. Anuncios de venta en Madrid, cuatro trimestres de 2018.",
+  "n_anuncios_origen": 94815,
+  "n_identificadores_unicos": 75804,
+  "n_anuncios_utilizables": 75476,
+  "n_pool": 52833,
+  "n_evaluacion": 22643,
+  "n_barrios": 135,
+  "cobertura": 0.9614,
+  "motor_comparables": {
+    "error_absoluto_mediano": 0.12,
+    "dentro_de_10pct": 0.4299,
+    "dentro_de_20pct": 0.7166,
+    "sesgo_mediano": -0.0007
+  },
+  "base_mediana_barrio": {
+    "error_absoluto_mediano": 0.1518,
+    "dentro_de_10pct": 0.3468,
+    "dentro_de_20pct": 0.6215,
+    "sesgo_mediano": -0.0002
+  },
+  "base_mediana_ciudad": {
+    "error_absoluto_mediano": 0.3431,
+    "dentro_de_10pct": 0.1329,
+    "dentro_de_20pct": 0.2797,
+    "sesgo_mediano": -0.0152
+  },
+  "error_por_fiabilidad": {
+    "alta": 0.1037,
+    "baja": 0.1593,
+    "media": 0.1273
+  },
+  "error_por_n_comparables": {
+    "5-9": {
+      "error_absoluto_mediano": 0.1265,
+      "anuncios": 1247
+    },
+    "10-19": {
+      "error_absoluto_mediano": 0.1222,
+      "anuncios": 3206
+    },
+    "20-49": {
+      "error_absoluto_mediano": 0.1195,
+      "anuncios": 8730
+    },
+    "50 o mas": {
+      "error_absoluto_mediano": 0.1187,
+      "anuncios": 8585
+    }
+  },
+  "coeficientes": {
+    "obra_nueva": 0.1256,
+    "a_reformar": -0.0997,
+    "ascensor": 0.1131,
+    "terraza": 0.0051,
+    "aire_acondicionado": 0.0645,
+    "interior": -0.0438,
+    "planta": 0.0137,
+    "ultima_planta": 0.0142,
+    "garaje": 0.0585,
+    "trastero": 0.0259,
+    "piscina": 0.0557,
+    "portero": 0.0205,
+    "jardin": -0.014,
+    "duplex": -0.0085,
+    "estudio": -0.0311,
+    "calidad_catastral": 0.0137,
+    "log_superficie": -0.1746,
+    "antiguedad": 0.0004
+  },
+  "limitaciones": [
+    "El objetivo es el precio PEDIDO, no el de cierre.",
+    "Datos de 2018. No representan el nivel de precios actual.",
+    "Coordenadas y precios llevan ruido aleatorio añadido por los autores del conjunto de datos por protección de datos.",
+    "El identificador de anuncio no enlaza entre trimestres en la versión publicada, así que no se puede seguir un mismo inmueble en el tiempo."
+  ]
+}

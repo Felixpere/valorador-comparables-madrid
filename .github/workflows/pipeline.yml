@@ -1,0 +1,42 @@
+# Automatizacion: el proceso se ejecuta solo, no hace falta que nadie lo lance.
+#
+#   - cada lunes a las 06:00 UTC
+#   - en cada push a main
+#   - a mano desde la pestana Actions
+#
+# Si algun test falla o el control de fugas de informacion salta, la ejecucion
+# se marca en rojo y el Excel no se publica. Prefiere no entregar nada antes que
+# entregar un numero que no se sostiene.
+name: pipeline
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  ejecutar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Tests
+        run: python -m pytest tests -q
+      - name: Proceso completo
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python run_pipeline.py
+      - name: Publicar entregables
+        uses: actions/upload-artifact@v4
+        with:
+          name: valoraciones-${{ github.run_number }}
+          path: |
+            outputs/valoraciones_madrid.xlsx
+            outputs/dashboard.html
+            data/processed/metricas.json

@@ -1,0 +1,924 @@
+{
+  "semilla": 20260904,
+  "n_pool": 52833,
+  "coeficientes_con_incertidumbre": {
+    "obra_nueva": {
+      "beta": 0.1256,
+      "error_estandar": 0.0062,
+      "t": 20.4,
+      "ic95": [
+        0.1135,
+        0.1376
+      ]
+    },
+    "a_reformar": {
+      "beta": -0.0997,
+      "error_estandar": 0.0027,
+      "t": -37.1,
+      "ic95": [
+        -0.105,
+        -0.0945
+      ]
+    },
+    "ascensor": {
+      "beta": 0.1131,
+      "error_estandar": 0.0025,
+      "t": 44.5,
+      "ic95": [
+        0.1081,
+        0.1181
+      ]
+    },
+    "terraza": {
+      "beta": 0.0051,
+      "error_estandar": 0.0022,
+      "t": 2.3,
+      "ic95": [
+        0.0007,
+        0.0094
+      ]
+    },
+    "aire_acondicionado": {
+      "beta": 0.0645,
+      "error_estandar": 0.0022,
+      "t": 29.9,
+      "ic95": [
+        0.0603,
+        0.0688
+      ]
+    },
+    "interior": {
+      "beta": -0.0438,
+      "error_estandar": 0.0033,
+      "t": -13.4,
+      "ic95": [
+        -0.0502,
+        -0.0373
+      ]
+    },
+    "planta": {
+      "beta": 0.0137,
+      "error_estandar": 0.0005,
+      "t": 28.4,
+      "ic95": [
+        0.0128,
+        0.0147
+      ]
+    },
+    "ultima_planta": {
+      "beta": 0.0142,
+      "error_estandar": 0.007,
+      "t": 2.0,
+      "ic95": [
+        0.0006,
+        0.0279
+      ]
+    },
+    "garaje": {
+      "beta": 0.0585,
+      "error_estandar": 0.0032,
+      "t": 18.5,
+      "ic95": [
+        0.0523,
+        0.0647
+      ]
+    },
+    "trastero": {
+      "beta": 0.0259,
+      "error_estandar": 0.0027,
+      "t": 9.5,
+      "ic95": [
+        0.0205,
+        0.0312
+      ]
+    },
+    "piscina": {
+      "beta": 0.0557,
+      "error_estandar": 0.0043,
+      "t": 13.0,
+      "ic95": [
+        0.0473,
+        0.0641
+      ]
+    },
+    "portero": {
+      "beta": 0.0205,
+      "error_estandar": 0.0027,
+      "t": 7.7,
+      "ic95": [
+        0.0152,
+        0.0257
+      ]
+    },
+    "jardin": {
+      "beta": -0.014,
+      "error_estandar": 0.0036,
+      "t": -3.9,
+      "ic95": [
+        -0.021,
+        -0.007
+      ]
+    },
+    "duplex": {
+      "beta": -0.0085,
+      "error_estandar": 0.0064,
+      "t": -1.3,
+      "ic95": [
+        -0.0211,
+        0.004
+      ]
+    },
+    "estudio": {
+      "beta": -0.0311,
+      "error_estandar": 0.0063,
+      "t": -5.0,
+      "ic95": [
+        -0.0434,
+        -0.0188
+      ]
+    },
+    "calidad_catastral": {
+      "beta": 0.0137,
+      "error_estandar": 0.0008,
+      "t": 17.2,
+      "ic95": [
+        0.0121,
+        0.0153
+      ]
+    },
+    "log_superficie": {
+      "beta": -0.1746,
+      "error_estandar": 0.0025,
+      "t": -68.7,
+      "ic95": [
+        -0.1796,
+        -0.1696
+      ]
+    },
+    "antiguedad": {
+      "beta": 0.0004,
+      "error_estandar": 0.0,
+      "t": 10.7,
+      "ic95": [
+        0.0004,
+        0.0005
+      ]
+    }
+  },
+  "vif": {
+    "obra_nueva": 1.22,
+    "a_reformar": 1.12,
+    "ascensor": 1.42,
+    "terraza": 1.14,
+    "aire_acondicionado": 1.18,
+    "interior": 1.23,
+    "planta": 1.15,
+    "ultima_planta": 1.03,
+    "garaje": 1.73,
+    "trastero": 1.41,
+    "piscina": 2.3,
+    "portero": 1.35,
+    "jardin": 1.92,
+    "duplex": 1.03,
+    "estudio": 1.07,
+    "calidad_catastral": 1.38,
+    "log_superficie": 1.69,
+    "antiguedad": 1.4
+  },
+  "vif_maximo": 2.3,
+  "correlaciones": {
+    "matriz": {
+      "obra_nueva": {
+        "obra_nueva": 1.0,
+        "a_reformar": -0.088,
+        "ascensor": 0.122,
+        "terraza": 0.055,
+        "aire_acondicionado": -0.14,
+        "interior": -0.065,
+        "planta": -0.015,
+        "ultima_planta": -0.027,
+        "garaje": 0.199,
+        "trastero": 0.2,
+        "piscina": 0.304,
+        "portero": -0.105,
+        "jardin": 0.176,
+        "duplex": 0.016,
+        "estudio": -0.015,
+        "calidad_catastral": 0.048,
+        "log_superficie": 0.064,
+        "antiguedad": -0.146
+      },
+      "a_reformar": {
+        "obra_nueva": -0.088,
+        "a_reformar": 1.0,
+        "ascensor": -0.021,
+        "terraza": 0.04,
+        "aire_acondicionado": -0.225,
+        "interior": 0.036,
+        "planta": 0.026,
+        "ultima_planta": 0.004,
+        "garaje": -0.115,
+        "trastero": -0.079,
+        "piscina": -0.142,
+        "portero": 0.047,
+        "jardin": -0.106,
+        "duplex": -0.051,
+        "estudio": -0.041,
+        "calidad_catastral": 0.003,
+        "log_superficie": 0.078,
+        "antiguedad": 0.141
+      },
+      "ascensor": {
+        "obra_nueva": 0.122,
+        "a_reformar": -0.021,
+        "ascensor": 1.0,
+        "terraza": 0.075,
+        "aire_acondicionado": 0.154,
+        "interior": -0.03,
+        "planta": 0.247,
+        "ultima_planta": -0.006,
+        "garaje": 0.291,
+        "trastero": 0.236,
+        "piscina": 0.255,
+        "portero": 0.35,
+        "jardin": 0.24,
+        "duplex": 0.018,
+        "estudio": -0.021,
+        "calidad_catastral": 0.368,
+        "log_superficie": 0.359,
+        "antiguedad": -0.205
+      },
+      "terraza": {
+        "obra_nueva": 0.055,
+        "a_reformar": 0.04,
+        "ascensor": 0.075,
+        "terraza": 1.0,
+        "aire_acondicionado": 0.064,
+        "interior": -0.168,
+        "planta": 0.178,
+        "ultima_planta": 0.086,
+        "garaje": 0.129,
+        "trastero": 0.121,
+        "piscina": 0.088,
+        "portero": 0.076,
+        "jardin": 0.137,
+        "duplex": 0.055,
+        "estudio": -0.071,
+        "calidad_catastral": -0.034,
+        "log_superficie": 0.225,
+        "antiguedad": -0.194
+      },
+      "aire_acondicionado": {
+        "obra_nueva": -0.14,
+        "a_reformar": -0.225,
+        "ascensor": 0.154,
+        "terraza": 0.064,
+        "aire_acondicionado": 1.0,
+        "interior": -0.038,
+        "planta": 0.117,
+        "ultima_planta": 0.057,
+        "garaje": 0.17,
+        "trastero": 0.14,
+        "piscina": 0.136,
+        "portero": 0.178,
+        "jardin": 0.144,
+        "duplex": 0.072,
+        "estudio": 0.025,
+        "calidad_catastral": 0.139,
+        "log_superficie": 0.125,
+        "antiguedad": -0.099
+      },
+      "interior": {
+        "obra_nueva": -0.065,
+        "a_reformar": 0.036,
+        "ascensor": -0.03,
+        "terraza": -0.168,
+        "aire_acondicionado": -0.038,
+        "interior": 1.0,
+        "planta": -0.112,
+        "ultima_planta": -0.019,
+        "garaje": -0.154,
+        "trastero": -0.143,
+        "piscina": -0.128,
+        "portero": -0.021,
+        "jardin": -0.14,
+        "duplex": -0.015,
+        "estudio": 0.087,
+        "calidad_catastral": 0.071,
+        "log_superficie": -0.304,
+        "antiguedad": 0.243
+      },
+      "planta": {
+        "obra_nueva": -0.015,
+        "a_reformar": 0.026,
+        "ascensor": 0.247,
+        "terraza": 0.178,
+        "aire_acondicionado": 0.117,
+        "interior": -0.112,
+        "planta": 1.0,
+        "ultima_planta": 0.132,
+        "garaje": 0.122,
+        "trastero": 0.084,
+        "piscina": 0.099,
+        "portero": 0.19,
+        "jardin": 0.099,
+        "duplex": -0.007,
+        "estudio": -0.07,
+        "calidad_catastral": 0.147,
+        "log_superficie": 0.216,
+        "antiguedad": -0.085
+      },
+      "ultima_planta": {
+        "obra_nueva": -0.027,
+        "a_reformar": 0.004,
+        "ascensor": -0.006,
+        "terraza": 0.086,
+        "aire_acondicionado": 0.057,
+        "interior": -0.019,
+        "planta": 0.132,
+        "ultima_planta": 1.0,
+        "garaje": 0.016,
+        "trastero": 0.025,
+        "piscina": 0.005,
+        "portero": 0.022,
+        "jardin": 0.009,
+        "duplex": 0.076,
+        "estudio": -0.0,
+        "calidad_catastral": 0.003,
+        "log_superficie": 0.022,
+        "antiguedad": -0.009
+      },
+      "garaje": {
+        "obra_nueva": 0.199,
+        "a_reformar": -0.115,
+        "ascensor": 0.291,
+        "terraza": 0.129,
+        "aire_acondicionado": 0.17,
+        "interior": -0.154,
+        "planta": 0.122,
+        "ultima_planta": 0.016,
+        "garaje": 1.0,
+        "trastero": 0.447,
+        "piscina": 0.546,
+        "portero": 0.235,
+        "jardin": 0.478,
+        "duplex": 0.059,
+        "estudio": -0.036,
+        "calidad_catastral": 0.243,
+        "log_superficie": 0.318,
+        "antiguedad": -0.399
+      },
+      "trastero": {
+        "obra_nueva": 0.2,
+        "a_reformar": -0.079,
+        "ascensor": 0.236,
+        "terraza": 0.121,
+        "aire_acondicionado": 0.14,
+        "interior": -0.143,
+        "planta": 0.084,
+        "ultima_planta": 0.025,
+        "garaje": 0.447,
+        "trastero": 1.0,
+        "piscina": 0.419,
+        "portero": 0.176,
+        "jardin": 0.362,
+        "duplex": 0.046,
+        "estudio": -0.047,
+        "calidad_catastral": 0.2,
+        "log_superficie": 0.316,
+        "antiguedad": -0.287
+      },
+      "piscina": {
+        "obra_nueva": 0.304,
+        "a_reformar": -0.142,
+        "ascensor": 0.255,
+        "terraza": 0.088,
+        "aire_acondicionado": 0.136,
+        "interior": -0.128,
+        "planta": 0.099,
+        "ultima_planta": 0.005,
+        "garaje": 0.546,
+        "trastero": 0.419,
+        "piscina": 1.0,
+        "portero": 0.231,
+        "jardin": 0.665,
+        "duplex": 0.046,
+        "estudio": -0.023,
+        "calidad_catastral": 0.247,
+        "log_superficie": 0.208,
+        "antiguedad": -0.406
+      },
+      "portero": {
+        "obra_nueva": -0.105,
+        "a_reformar": 0.047,
+        "ascensor": 0.35,
+        "terraza": 0.076,
+        "aire_acondicionado": 0.178,
+        "interior": -0.021,
+        "planta": 0.19,
+        "ultima_planta": 0.022,
+        "garaje": 0.235,
+        "trastero": 0.176,
+        "piscina": 0.231,
+        "portero": 1.0,
+        "jardin": 0.242,
+        "duplex": 0.007,
+        "estudio": -0.011,
+        "calidad_catastral": 0.308,
+        "log_superficie": 0.34,
+        "antiguedad": -0.112
+      },
+      "jardin": {
+        "obra_nueva": 0.176,
+        "a_reformar": -0.106,
+        "ascensor": 0.24,
+        "terraza": 0.137,
+        "aire_acondicionado": 0.144,
+        "interior": -0.14,
+        "planta": 0.099,
+        "ultima_planta": 0.009,
+        "garaje": 0.478,
+        "trastero": 0.362,
+        "piscina": 0.665,
+        "portero": 0.242,
+        "jardin": 1.0,
+        "duplex": 0.038,
+        "estudio": -0.023,
+        "calidad_catastral": 0.18,
+        "log_superficie": 0.21,
+        "antiguedad": -0.363
+      },
+      "duplex": {
+        "obra_nueva": 0.016,
+        "a_reformar": -0.051,
+        "ascensor": 0.018,
+        "terraza": 0.055,
+        "aire_acondicionado": 0.072,
+        "interior": -0.015,
+        "planta": -0.007,
+        "ultima_planta": 0.076,
+        "garaje": 0.059,
+        "trastero": 0.046,
+        "piscina": 0.046,
+        "portero": 0.007,
+        "jardin": 0.038,
+        "duplex": 1.0,
+        "estudio": 0.026,
+        "calidad_catastral": 0.021,
+        "log_superficie": 0.084,
+        "antiguedad": -0.06
+      },
+      "estudio": {
+        "obra_nueva": -0.015,
+        "a_reformar": -0.041,
+        "ascensor": -0.021,
+        "terraza": -0.071,
+        "aire_acondicionado": 0.025,
+        "interior": 0.087,
+        "planta": -0.07,
+        "ultima_planta": -0.0,
+        "garaje": -0.036,
+        "trastero": -0.047,
+        "piscina": -0.023,
+        "portero": -0.011,
+        "jardin": -0.023,
+        "duplex": 0.026,
+        "estudio": 1.0,
+        "calidad_catastral": 0.028,
+        "log_superficie": -0.207,
+        "antiguedad": 0.016
+      },
+      "calidad_catastral": {
+        "obra_nueva": 0.048,
+        "a_reformar": 0.003,
+        "ascensor": 0.368,
+        "terraza": -0.034,
+        "aire_acondicionado": 0.139,
+        "interior": 0.071,
+        "planta": 0.147,
+        "ultima_planta": 0.003,
+        "garaje": 0.243,
+        "trastero": 0.2,
+        "piscina": 0.247,
+        "portero": 0.308,
+        "jardin": 0.18,
+        "duplex": 0.021,
+        "estudio": 0.028,
+        "calidad_catastral": 1.0,
+        "log_superficie": 0.346,
+        "antiguedad": -0.028
+      },
+      "log_superficie": {
+        "obra_nueva": 0.064,
+        "a_reformar": 0.078,
+        "ascensor": 0.359,
+        "terraza": 0.225,
+        "aire_acondicionado": 0.125,
+        "interior": -0.304,
+        "planta": 0.216,
+        "ultima_planta": 0.022,
+        "garaje": 0.318,
+        "trastero": 0.316,
+        "piscina": 0.208,
+        "portero": 0.34,
+        "jardin": 0.21,
+        "duplex": 0.084,
+        "estudio": -0.207,
+        "calidad_catastral": 0.346,
+        "log_superficie": 1.0,
+        "antiguedad": -0.143
+      },
+      "antiguedad": {
+        "obra_nueva": -0.146,
+        "a_reformar": 0.141,
+        "ascensor": -0.205,
+        "terraza": -0.194,
+        "aire_acondicionado": -0.099,
+        "interior": 0.243,
+        "planta": -0.085,
+        "ultima_planta": -0.009,
+        "garaje": -0.399,
+        "trastero": -0.287,
+        "piscina": -0.406,
+        "portero": -0.112,
+        "jardin": -0.363,
+        "duplex": -0.06,
+        "estudio": 0.016,
+        "calidad_catastral": -0.028,
+        "log_superficie": -0.143,
+        "antiguedad": 1.0
+      }
+    },
+    "parejas_mas_fuertes": [
+      {
+        "a": "piscina",
+        "b": "jardin",
+        "r": 0.665
+      },
+      {
+        "a": "garaje",
+        "b": "piscina",
+        "r": 0.546
+      },
+      {
+        "a": "garaje",
+        "b": "jardin",
+        "r": 0.478
+      },
+      {
+        "a": "garaje",
+        "b": "trastero",
+        "r": 0.447
+      },
+      {
+        "a": "trastero",
+        "b": "piscina",
+        "r": 0.419
+      },
+      {
+        "a": "piscina",
+        "b": "antiguedad",
+        "r": -0.406
+      },
+      {
+        "a": "garaje",
+        "b": "antiguedad",
+        "r": -0.399
+      },
+      {
+        "a": "ascensor",
+        "b": "calidad_catastral",
+        "r": 0.368
+      },
+      {
+        "a": "jardin",
+        "b": "antiguedad",
+        "r": -0.363
+      },
+      {
+        "a": "trastero",
+        "b": "jardin",
+        "r": 0.362
+      }
+    ],
+    "correlacion_maxima": 0.665,
+    "vecinas": {
+      "jardin": [
+        {
+          "variable": "piscina",
+          "r": 0.665
+        },
+        {
+          "variable": "garaje",
+          "r": 0.478
+        },
+        {
+          "variable": "antiguedad",
+          "r": -0.363
+        },
+        {
+          "variable": "trastero",
+          "r": 0.362
+        },
+        {
+          "variable": "portero",
+          "r": 0.242
+        }
+      ],
+      "calidad_catastral": [
+        {
+          "variable": "ascensor",
+          "r": 0.368
+        },
+        {
+          "variable": "log_superficie",
+          "r": 0.346
+        },
+        {
+          "variable": "portero",
+          "r": 0.308
+        },
+        {
+          "variable": "piscina",
+          "r": 0.247
+        },
+        {
+          "variable": "garaje",
+          "r": 0.243
+        }
+      ]
+    }
+  },
+  "efecto_del_centrado": {
+    "obra_nueva": {
+      "centrado": 0.1256,
+      "sin_centrar": 0.1086,
+      "diferencia": -0.017
+    },
+    "a_reformar": {
+      "centrado": -0.0997,
+      "sin_centrar": -0.0539,
+      "diferencia": 0.0459
+    },
+    "ascensor": {
+      "centrado": 0.1131,
+      "sin_centrar": 0.2745,
+      "diferencia": 0.1614
+    },
+    "terraza": {
+      "centrado": 0.0051,
+      "sin_centrar": -0.0772,
+      "diferencia": -0.0823
+    },
+    "aire_acondicionado": {
+      "centrado": 0.0645,
+      "sin_centrar": 0.1069,
+      "diferencia": 0.0424
+    },
+    "interior": {
+      "centrado": -0.0438,
+      "sin_centrar": 0.1572,
+      "diferencia": 0.201
+    },
+    "planta": {
+      "centrado": 0.0137,
+      "sin_centrar": 0.009,
+      "diferencia": -0.0048
+    },
+    "ultima_planta": {
+      "centrado": 0.0142,
+      "sin_centrar": 0.052,
+      "diferencia": 0.0378
+    },
+    "garaje": {
+      "centrado": 0.0585,
+      "sin_centrar": 0.0465,
+      "diferencia": -0.012
+    },
+    "trastero": {
+      "centrado": 0.0259,
+      "sin_centrar": 0.0059,
+      "diferencia": -0.0199
+    },
+    "piscina": {
+      "centrado": 0.0557,
+      "sin_centrar": 0.0642,
+      "diferencia": 0.0085
+    },
+    "portero": {
+      "centrado": 0.0205,
+      "sin_centrar": 0.1513,
+      "diferencia": 0.1308
+    },
+    "jardin": {
+      "centrado": -0.014,
+      "sin_centrar": -0.0884,
+      "diferencia": -0.0744
+    },
+    "duplex": {
+      "centrado": -0.0085,
+      "sin_centrar": 0.0367,
+      "diferencia": 0.0452
+    },
+    "estudio": {
+      "centrado": -0.0311,
+      "sin_centrar": 0.1204,
+      "diferencia": 0.1515
+    },
+    "calidad_catastral": {
+      "centrado": 0.0137,
+      "sin_centrar": 0.122,
+      "diferencia": 0.1083
+    },
+    "log_superficie": {
+      "centrado": -0.1746,
+      "sin_centrar": -0.0629,
+      "diferencia": 0.1117
+    },
+    "antiguedad": {
+      "centrado": 0.0004,
+      "sin_centrar": 0.0051,
+      "diferencia": 0.0047
+    }
+  },
+  "gradiente_calidad_catastral": [
+    {
+      "codigo_origen": 0.0,
+      "calidad_recodificada": 9.0,
+      "eur_m2_mediano": 5995.0,
+      "anuncios": 200
+    },
+    {
+      "codigo_origen": 1.0,
+      "calidad_recodificada": 8.0,
+      "eur_m2_mediano": 5839.0,
+      "anuncios": 351
+    },
+    {
+      "codigo_origen": 2.0,
+      "calidad_recodificada": 7.0,
+      "eur_m2_mediano": 5076.0,
+      "anuncios": 1429
+    },
+    {
+      "codigo_origen": 3.0,
+      "calidad_recodificada": 6.0,
+      "eur_m2_mediano": 4622.0,
+      "anuncios": 6766
+    },
+    {
+      "codigo_origen": 4.0,
+      "calidad_recodificada": 5.0,
+      "eur_m2_mediano": 4088.0,
+      "anuncios": 13595
+    },
+    {
+      "codigo_origen": 5.0,
+      "calidad_recodificada": 4.0,
+      "eur_m2_mediano": 3568.0,
+      "anuncios": 11692
+    },
+    {
+      "codigo_origen": 6.0,
+      "calidad_recodificada": 3.0,
+      "eur_m2_mediano": 2247.0,
+      "anuncios": 11624
+    },
+    {
+      "codigo_origen": 7.0,
+      "calidad_recodificada": 2.0,
+      "eur_m2_mediano": 2114.0,
+      "anuncios": 5975
+    },
+    {
+      "codigo_origen": 8.0,
+      "calidad_recodificada": 1.0,
+      "eur_m2_mediano": 2464.0,
+      "anuncios": 860
+    },
+    {
+      "codigo_origen": 9.0,
+      "calidad_recodificada": 0.0,
+      "eur_m2_mediano": 2883.0,
+      "anuncios": 341
+    }
+  ],
+  "tramo_monotono_calidad": {
+    "codigo_desde": 0.0,
+    "codigo_hasta": 7.0,
+    "anuncios_en_el_tramo": 51632,
+    "pct_del_pool": 0.9773,
+    "anuncios_fuera": 1201,
+    "caida_total_sin_descontar_barrio": -0.6474,
+    "caida_por_grado_sin_descontar_barrio": -0.1384
+  },
+  "secuencial": {
+    "jardin": [
+      {
+        "modelo": "sin controles",
+        "n_variables": 1,
+        "beta": 0.0958,
+        "efecto": 0.1005
+      },
+      {
+        "modelo": "+ superficie",
+        "n_variables": 2,
+        "beta": 0.1187,
+        "efecto": 0.1261
+      },
+      {
+        "modelo": "+ piscina",
+        "n_variables": 3,
+        "beta": 0.0232,
+        "efecto": 0.0235
+      },
+      {
+        "modelo": "+ resto del paquete de urbanizacion",
+        "n_variables": 6,
+        "beta": -0.0069,
+        "efecto": -0.0069
+      },
+      {
+        "modelo": "+ ascensor",
+        "n_variables": 7,
+        "beta": -0.0129,
+        "efecto": -0.0128
+      },
+      {
+        "modelo": "modelo completo",
+        "n_variables": 18,
+        "beta": -0.014,
+        "efecto": -0.0139
+      }
+    ],
+    "calidad_catastral": [
+      {
+        "modelo": "sin controles",
+        "n_variables": 1,
+        "beta": 0.0217,
+        "efecto": 0.022
+      },
+      {
+        "modelo": "+ superficie",
+        "n_variables": 2,
+        "beta": 0.0333,
+        "efecto": 0.0339
+      },
+      {
+        "modelo": "+ antiguedad",
+        "n_variables": 3,
+        "beta": 0.0338,
+        "efecto": 0.0344
+      },
+      {
+        "modelo": "+ ascensor",
+        "n_variables": 4,
+        "beta": 0.0206,
+        "efecto": 0.0209
+      },
+      {
+        "modelo": "+ estado de la finca",
+        "n_variables": 6,
+        "beta": 0.0197,
+        "efecto": 0.0199
+      },
+      {
+        "modelo": "modelo completo",
+        "n_variables": 18,
+        "beta": 0.0137,
+        "efecto": 0.0138
+      }
+    ]
+  },
+  "cruce_jardin_piscina": [
+    {
+      "jardin": false,
+      "piscina": false,
+      "eur_m2_mediano": 3407.0,
+      "anuncios": 42015
+    },
+    {
+      "jardin": false,
+      "piscina": true,
+      "eur_m2_mediano": 3673.0,
+      "anuncios": 1492
+    },
+    {
+      "jardin": true,
+      "piscina": false,
+      "eur_m2_mediano": 2794.0,
+      "anuncios": 3339
+    },
+    {
+      "jardin": true,
+      "piscina": true,
+      "eur_m2_mediano": 3721.0,
+      "anuncios": 5987
+    }
+  ],
+  "pct_jardin_con_piscina": 0.642,
+  "veredicto": {
+    "calidad_catastral": "No era una anomalía: la variable estaba leída al revés. CADASTRALQUALITYID no es una nota, es la categoría catastral, y empeora según crece: el €/m² cae sin excepciones del código 0 al 7, que son el 97,7 % del pool. Sobre el código original, el signo negativo era el correcto. r01 ya invierte la variable para que crezca con la calidad; las valoraciones no se mueven.",
+    "jardin": "No era colinealidad con el barrio: el modelo ya centra por barrio y trimestre, y quitar ese centrado deja el jardín en -8,5 % en vez de -1,4 %. O sea que el efecto de la zona empujaba hacia abajo y el centrado ya lo quita; la sospecha iba en la dirección contraria a lo que pasa. Tampoco con la superficie: controlar por ella lo hace aún más positivo, y el VIF es 1,92, muy por debajo de 5. Es un efecto parcial real. Aislado vale +10,1 %; el signo cambia al controlar por piscina, que es la variable con la que más va de la mano de todo el modelo (r = 0,67): el 64,2 % de los anuncios con jardín tienen además piscina. Lo que queda en -1,4 % es el jardín SIN el resto del paquete, que señala promoción periférica, no una casa con jardín en el centro."
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "sujeto": {
+    "id": "A7455690789996765481",
+    "barrio": "Arapiles",
+    "trimestre": "2018T1",
+    "superficie_m2": 73,
+    "habitaciones": 2,
+    "banos": 1,
+    "planta": 1,
+    "anio": 1940,
+    "rasgos": [
+      "segunda mano en buen estado",
+      "ascensor",
+      "exterior"
+    ],
+    "precio_pedido": 313000.0,
+    "eur_m2_pedido": 4288.0
+  },
+  "embudo": [
+    {
+      "paso": "Anuncios en el conjunto de comparables",
+      "quedan": 52833
+    },
+    {
+      "paso": "Mismo barrio (Arapiles)",
+      "quedan": 640
+    },
+    {
+      "paso": "Mismo trimestre (2018T1)",
+      "quedan": 115
+    },
+    {
+      "paso": "Superficie entre 58 y 88 m²",
+      "quedan": 24
+    }
+  ],
+  "comparables": [
+    {
+      "superficie_m2": 67,
+      "precio": 231000.0,
+      "eur_m2": 3448.0,
+      "eur_m2_ajustado": 3335.0,
+      "rasgos": "segunda mano en buen estado, ascensor, aire acondicionado, interior, portero"
+    },
+    {
+      "superficie_m2": 67,
+      "precio": 230000.0,
+      "eur_m2": 3433.0,
+      "eur_m2_ajustado": 3687.0,
+      "rasgos": "segunda mano en buen estado, exterior"
+    },
+    {
+      "superficie_m2": 85,
+      "precio": 328000.0,
+      "eur_m2": 3859.0,
+      "eur_m2_ajustado": 4384.0,
+      "rasgos": "segunda mano en buen estado, ascensor, interior"
+    },
+    {
+      "superficie_m2": 60,
+      "precio": 280000.0,
+      "eur_m2": 4667.0,
+      "eur_m2_ajustado": 4490.0,
+      "rasgos": "segunda mano en buen estado, ascensor, exterior"
+    },
+    {
+      "superficie_m2": 73,
+      "precio": 376000.0,
+      "eur_m2": 5151.0,
+      "eur_m2_ajustado": 4738.0,
+      "rasgos": "segunda mano en buen estado, ascensor, aire acondicionado, dúplex, exterior"
+    },
+    {
+      "superficie_m2": 87,
+      "precio": 455000.0,
+      "eur_m2": 5230.0,
+      "eur_m2_ajustado": 4783.0,
+      "rasgos": "segunda mano en buen estado, ascensor, aire acondicionado, trastero, exterior"
+    },
+    {
+      "superficie_m2": 87,
+      "precio": 453000.0,
+      "eur_m2": 5207.0,
+      "eur_m2_ajustado": 4886.0,
+      "rasgos": "segunda mano en buen estado, ascensor, aire acondicionado, exterior"
+    },
+    {
+      "superficie_m2": 72,
+      "precio": 271000.0,
+      "eur_m2": 3764.0,
+      "eur_m2_ajustado": 4920.0,
+      "rasgos": "a reformar, interior"
+    },
+    {
+      "superficie_m2": 73,
+      "precio": 361000.0,
+      "eur_m2": 4945.0,
+      "eur_m2_ajustado": 4961.0,
+      "rasgos": "a reformar, ascensor, aire acondicionado, interior, garaje, portero"
+    },
+    {
+      "superficie_m2": 68,
+      "precio": 310000.0,
+      "eur_m2": 4559.0,
+      "eur_m2_ajustado": 5003.0,
+      "rasgos": "a reformar, ascensor, exterior"
+    },
+    {
+      "superficie_m2": 77,
+      "precio": 346000.0,
+      "eur_m2": 4494.0,
+      "eur_m2_ajustado": 5009.0,
+      "rasgos": "segunda mano en buen estado, exterior"
+    },
+    {
+      "superficie_m2": 84,
+      "precio": 452000.0,
+      "eur_m2": 5381.0,
+      "eur_m2_ajustado": 5147.0,
+      "rasgos": "segunda mano en buen estado, ascensor, aire acondicionado, exterior"
+    },
+    {
+      "superficie_m2": 82,
+      "precio": 401000.0,
+      "eur_m2": 4890.0,
+      "eur_m2_ajustado": 5176.0,
+      "rasgos": "segunda mano en buen estado, aire acondicionado, exterior"
+    },
+    {
+      "superficie_m2": 60,
+      "precio": 370000.0,
+      "eur_m2": 6167.0,
+      "eur_m2_ajustado": 5265.0,
+      "rasgos": "segunda mano en buen estado, ascensor, aire acondicionado, exterior"
+    },
+    {
+      "superficie_m2": 59,
+      "precio": 372000.0,
+      "eur_m2": 6305.0,
+      "eur_m2_ajustado": 5292.0,
+      "rasgos": "segunda mano en buen estado, ascensor, aire acondicionado, última planta, exterior"
+    },
+    {
+      "superficie_m2": 70,
+      "precio": 430000.0,
+      "eur_m2": 6143.0,
+      "eur_m2_ajustado": 5368.0,
+      "rasgos": "segunda mano en buen estado, ascensor, terraza, aire acondicionado, exterior"
+    },
+    {
+      "superficie_m2": 75,
+      "precio": 463000.0,
+      "eur_m2": 6173.0,
+      "eur_m2_ajustado": 5416.0,
+      "rasgos": "segunda mano en buen estado, ascensor, aire acondicionado, portero, exterior"
+    },
+    {
+      "superficie_m2": 80,
+      "precio": 456000.0,
+      "eur_m2": 5700.0,
+      "eur_m2_ajustado": 5476.0,
+      "rasgos": "segunda mano en buen estado, ascensor, portero, exterior"
+    },
+    {
+      "superficie_m2": 82,
+      "precio": 462000.0,
+      "eur_m2": 5634.0,
+      "eur_m2_ajustado": 5503.0,
+      "rasgos": "segunda mano en buen estado, ascensor, aire acondicionado, exterior"
+    },
+    {
+      "superficie_m2": 70,
+      "precio": 311000.0,
+      "eur_m2": 4443.0,
+      "eur_m2_ajustado": 5688.0,
+      "rasgos": "a reformar, interior"
+    },
+    {
+      "superficie_m2": 74,
+      "precio": 418000.0,
+      "eur_m2": 5649.0,
+      "eur_m2_ajustado": 6037.0,
+      "rasgos": "a reformar, ascensor, exterior"
+    },
+    {
+      "superficie_m2": 75,
+      "precio": 450000.0,
+      "eur_m2": 6000.0,
+      "eur_m2_ajustado": 6295.0,
+      "rasgos": "segunda mano en buen estado, ascensor, exterior"
+    },
+    {
+      "superficie_m2": 80,
+      "precio": 617000.0,
+      "eur_m2": 7712.0,
+      "eur_m2_ajustado": 7128.0,
+      "rasgos": "segunda mano en buen estado, ascensor, aire acondicionado, portero, exterior"
+    },
+    {
+      "superficie_m2": 80,
+      "precio": 646000.0,
+      "eur_m2": 8075.0,
+      "eur_m2_ajustado": 7748.0,
+      "rasgos": "segunda mano en buen estado, ascensor, portero, exterior"
+    }
+  ],
+  "resultado": {
+    "eur_m2_mediano_ajustado": 5161.88,
+    "rango_intercuartilico": [
+      4860.0,
+      5483.0
+    ],
+    "dispersion": 0.121,
+    "valor_estimado": 376817.0,
+    "precio_pedido": 313000.0,
+    "desviacion": -0.1694,
+    "n_comparables": 24
+  }
+}

@@ -1,0 +1,2001 @@
+ref,fecha,distrito,superficie_m2,habitaciones,banos,planta,ascensor,estado,anio_construccion,exterior,precio_eur,desviacion_inyectada,etiqueta_verdad
+MD-0001,2025-11-17,Villaverde,96,3,2,1,True,reformado,1972,True,227000,0.0,mercado
+MD-0002,2026-08-14,Villa de Vallecas,187,6,3,2,True,buen estado,1966,True,667000,0.0,mercado
+MD-0003,2025-11-22,Carabanchel,51,1,1,1,False,buen estado,1952,True,168000,0.0,mercado
+MD-0004,2026-03-14,Villa de Vallecas,74,2,1,4,True,reformado,2014,False,379000,0.2543,sobreprecio_inyectado
+MD-0005,2026-05-31,Moratalaz,43,1,1,7,True,a reformar,1973,True,87000,-0.2704,infraprecio_inyectado
+MD-0006,2026-03-11,Centro,40,1,1,1,False,a reformar,1969,True,236000,0.0,mercado
+MD-0007,2025-10-26,Puente de Vallecas,53,2,1,8,True,a reformar,1970,True,157000,0.0,mercado
+MD-0008,2026-07-25,Centro,113,4,2,1,True,reformado,1970,True,814000,0.0,mercado
+MD-0009,2025-10-14,San Blas-Canillejas,40,1,1,0,True,buen estado,1950,False,185000,0.2698,sobreprecio_inyectado
+MD-0010,2025-12-25,Centro,59,2,1,7,False,a reformar,1977,True,360000,0.2713,sobreprecio_inyectado
+MD-0011,2026-01-13,Puente de Vallecas,55,2,1,6,True,buen estado,1943,True,201000,0.2629,sobreprecio_inyectado
+MD-0012,2026-04-24,Puente de Vallecas,41,1,1,3,True,obra nueva,2025,True,152000,0.0,mercado
+MD-0013,2026-08-08,Latina,65,3,1,1,True,buen estado,1972,True,199000,0.0,mercado
+MD-0014,2025-09-27,Tetuan,74,3,1,5,True,a reformar,1950,False,274000,0.0,mercado
+MD-0015,2026-05-24,Carabanchel,99,3,2,3,True,buen estado,1983,True,334000,0.0,mercado
+MD-0016,2025-11-18,Chamartin,34,2,1,5,True,buen estado,1989,False,168000,-0.2226,infraprecio_inyectado
+MD-0017,2025-12-05,Latina,48,1,1,3,True,obra nueva,2024,False,227000,0.0,mercado
+MD-0018,2026-01-16,Centro,46,2,1,4,False,a reformar,1946,True,258000,0.0,mercado
+MD-0019,2026-08-14,Latina,65,2,1,7,True,buen estado,1991,False,217000,0.0,mercado
+MD-0020,2025-12-23,Hortaleza,46,2,1,4,False,reformado,1957,True,268000,0.0,mercado
+MD-0021,2025-09-27,Usera,89,3,2,0,True,a reformar,1992,True,217000,-0.1341,infraprecio_inyectado
+MD-0022,2026-03-27,San Blas-Canillejas,100,3,2,1,False,buen estado,2009,True,414000,0.0,mercado
+MD-0023,2025-09-09,Barajas,67,3,1,5,True,buen estado,1982,False,274000,0.0,mercado
+MD-0024,2025-12-28,Hortaleza,108,4,2,4,False,buen estado,1937,True,406000,0.0,mercado
+MD-0025,2026-04-07,Carabanchel,73,2,1,4,True,reformado,1979,False,205000,0.0,mercado
+MD-0026,2025-10-24,Villa de Vallecas,69,3,1,4,True,buen estado,1927,True,267000,0.1261,sobreprecio_inyectado
+MD-0027,2026-04-22,Puente de Vallecas,40,2,1,3,True,buen estado,1997,True,150000,0.1479,sobreprecio_inyectado
+MD-0028,2026-06-22,Villa de Vallecas,89,3,2,8,True,reformado,1967,True,370000,0.0,mercado
+MD-0029,2025-09-02,Vicalvaro,66,2,1,3,True,buen estado,2005,False,248000,0.0,mercado
+MD-0030,2025-10-23,Retiro,64,3,1,6,True,buen estado,1983,False,386000,0.0,mercado
+MD-0031,2026-02-14,Villaverde,63,2,1,8,True,a reformar,1974,True,122000,0.0,mercado
+MD-0032,2025-10-02,Villaverde,123,5,2,7,True,buen estado,1981,True,353000,0.0,mercado
+MD-0033,2026-02-08,Villa de Vallecas,173,5,3,2,True,buen estado,1993,False,618000,0.0,mercado
+MD-0034,2026-03-17,Ciudad Lineal,76,3,2,5,True,buen estado,1951,False,274000,0.0,mercado
+MD-0035,2025-10-10,Chamberi,94,4,2,5,True,buen estado,1961,False,740000,0.0,mercado
+MD-0036,2025-11-19,Arganzuela,71,2,1,2,True,buen estado,1982,True,469000,0.0,mercado
+MD-0037,2025-10-26,Salamanca,54,2,1,6,False,buen estado,1951,False,372000,0.0,mercado
+MD-0038,2026-02-10,Chamartin,40,1,1,2,True,buen estado,1995,True,266000,0.0,mercado
+MD-0039,2026-05-09,Fuencarral-El Pardo,49,1,1,6,True,a reformar,1992,False,181000,0.0,mercado
+MD-0040,2026-05-28,Ciudad Lineal,37,2,1,2,True,buen estado,1962,False,149000,0.0,mercado
+MD-0041,2025-09-21,Chamartin,64,2,1,5,True,buen estado,1945,True,603000,0.0,mercado
+MD-0042,2025-09-04,Usera,63,2,1,0,True,buen estado,1990,True,260000,0.0,mercado
+MD-0043,2025-12-07,Usera,84,3,2,3,True,buen estado,1937,True,364000,0.2616,sobreprecio_inyectado
+MD-0044,2026-05-06,Puente de Vallecas,76,3,1,0,True,a reformar,1981,True,209000,0.0,mercado
+MD-0045,2026-03-03,Retiro,176,6,2,1,False,buen estado,1928,True,863000,-0.2249,infraprecio_inyectado
+MD-0046,2026-03-08,Chamberi,167,6,3,6,True,buen estado,1974,True,1723000,0.1464,sobreprecio_inyectado
+MD-0047,2025-11-04,Tetuan,100,3,2,5,True,reformado,1951,True,517000,0.0,mercado
+MD-0048,2026-01-11,Retiro,130,5,3,2,True,obra nueva,2023,False,665000,-0.2324,infraprecio_inyectado
+MD-0049,2026-06-13,Vicalvaro,162,6,3,1,True,buen estado,1953,True,592000,0.0,mercado
+MD-0050,2025-11-25,Arganzuela,190,6,3,5,False,a reformar,1961,True,909000,0.0,mercado
+MD-0051,2026-02-23,Hortaleza,76,3,2,6,True,reformado,1984,True,517000,0.0,mercado
+MD-0052,2025-10-30,San Blas-Canillejas,120,4,2,6,True,reformado,1987,False,576000,0.1962,sobreprecio_inyectado
+MD-0053,2026-05-28,Tetuan,55,1,1,2,True,buen estado,1984,False,306000,0.0,mercado
+MD-0054,2026-05-02,Puente de Vallecas,88,3,2,3,True,a reformar,1953,True,233000,0.0,mercado
+MD-0055,2026-02-04,Latina,48,3,1,7,False,buen estado,1958,False,141000,0.0,mercado
+MD-0056,2025-12-08,Carabanchel,60,2,1,5,False,buen estado,1947,True,173000,0.0,mercado
+MD-0057,2026-02-10,Salamanca,72,2,1,4,True,a reformar,2000,True,677000,0.0,mercado
+MD-0058,2026-04-13,Tetuan,63,3,1,7,True,reformado,2014,True,358000,0.0,mercado
+MD-0059,2026-08-26,Puente de Vallecas,40,1,1,0,True,buen estado,2000,False,89000,0.0,mercado
+MD-0060,2026-05-31,Puente de Vallecas,71,2,1,7,True,buen estado,1984,True,234000,0.1929,sobreprecio_inyectado
+MD-0061,2025-11-28,Ciudad Lineal,46,1,1,2,True,buen estado,1986,True,202000,0.0,mercado
+MD-0062,2025-09-11,Chamartin,105,4,2,8,True,buen estado,2004,True,786000,0.0,mercado
+MD-0063,2026-07-10,Usera,53,2,1,7,True,reformado,1990,False,178000,0.2525,sobreprecio_inyectado
+MD-0064,2025-10-19,Salamanca,180,6,3,0,False,reformado,1948,True,1879000,0.0,mercado
+MD-0065,2026-03-04,Moratalaz,77,3,2,3,False,a reformar,1925,True,198000,0.0,mercado
+MD-0066,2025-10-24,Centro,60,2,1,1,True,buen estado,1963,True,518000,0.0,mercado
+MD-0067,2026-01-13,Fuencarral-El Pardo,64,2,1,1,True,reformado,1980,False,391000,0.2311,sobreprecio_inyectado
+MD-0068,2026-05-03,Latina,59,3,1,8,False,reformado,1967,True,169000,0.0,mercado
+MD-0069,2026-02-17,Vicalvaro,89,3,2,2,True,reformado,1973,True,296000,0.0,mercado
+MD-0070,2026-08-05,Fuencarral-El Pardo,99,4,2,8,True,reformado,1956,True,752000,0.0,mercado
+MD-0071,2026-05-28,Centro,88,3,2,1,True,buen estado,1943,True,782000,0.0,mercado
+MD-0072,2026-07-02,Moratalaz,99,3,2,3,False,buen estado,1966,True,293000,0.0,mercado
+MD-0073,2026-04-24,Usera,85,3,2,5,True,reformado,2006,True,248000,0.0,mercado
+MD-0074,2026-04-23,Hortaleza,156,6,3,2,True,obra nueva,2025,True,950000,0.0,mercado
+MD-0075,2026-07-21,Latina,64,2,1,3,True,a reformar,2013,False,153000,-0.1354,infraprecio_inyectado
+MD-0076,2026-07-27,Chamberi,29,1,1,3,True,buen estado,1943,False,257000,0.0,mercado
+MD-0077,2025-12-12,Retiro,87,3,2,6,True,reformado,2013,True,576000,0.0,mercado
+MD-0078,2026-07-25,Centro,75,3,2,2,True,a reformar,1995,False,369000,0.0,mercado
+MD-0079,2026-06-15,San Blas-Canillejas,96,4,2,3,True,buen estado,1999,True,322000,0.0,mercado
+MD-0080,2026-06-17,Villa de Vallecas,52,1,1,2,True,buen estado,1987,True,143000,0.0,mercado
+MD-0081,2026-01-19,Fuencarral-El Pardo,81,3,2,0,False,buen estado,1964,True,462000,0.0,mercado
+MD-0082,2025-11-11,Chamartin,151,5,3,3,True,buen estado,1959,False,1162000,-0.1505,infraprecio_inyectado
+MD-0083,2026-08-19,Chamartin,129,5,2,8,True,a reformar,1990,True,797000,0.0,mercado
+MD-0084,2026-07-16,Villa de Vallecas,93,3,2,1,True,obra nueva,2023,True,435000,0.0,mercado
+MD-0085,2026-05-14,Arganzuela,54,2,1,4,False,reformado,1949,True,303000,0.1299,sobreprecio_inyectado
+MD-0086,2026-02-08,Villaverde,65,3,1,5,False,buen estado,1955,True,118000,-0.1892,infraprecio_inyectado
+MD-0087,2026-04-14,Puente de Vallecas,127,5,2,7,True,a reformar,1996,True,314000,0.0,mercado
+MD-0088,2025-12-24,Salamanca,178,6,3,3,True,reformado,1931,True,1817000,0.0,mercado
+MD-0089,2026-01-14,Latina,64,3,1,7,True,buen estado,1954,False,213000,0.0,mercado
+MD-0090,2026-07-17,Arganzuela,59,3,1,6,False,reformado,1939,True,355000,0.0,mercado
+MD-0091,2026-04-10,Ciudad Lineal,127,5,2,5,True,reformado,2001,True,649000,0.0,mercado
+MD-0092,2025-09-28,Hortaleza,150,6,3,8,True,a reformar,1961,True,586000,0.0,mercado
+MD-0093,2026-03-26,Carabanchel,79,3,2,7,True,a reformar,1994,True,251000,0.0,mercado
+MD-0094,2025-12-01,Moratalaz,90,4,2,6,True,reformado,1968,True,362000,-0.2377,infraprecio_inyectado
+MD-0095,2026-03-10,Puente de Vallecas,38,2,1,5,True,buen estado,1976,True,89000,0.0,mercado
+MD-0096,2026-08-28,San Blas-Canillejas,187,6,3,3,False,a reformar,1958,False,629000,0.2104,sobreprecio_inyectado
+MD-0097,2025-10-04,Tetuan,80,3,2,1,True,reformado,1935,False,490000,0.0,mercado
+MD-0098,2026-01-05,Fuencarral-El Pardo,184,6,3,8,True,buen estado,1915,True,951000,0.0,mercado
+MD-0099,2026-06-15,Centro,97,3,2,7,False,buen estado,1954,True,716000,0.0,mercado
+MD-0100,2026-03-14,Ciudad Lineal,55,2,1,4,True,a reformar,1982,True,214000,0.0,mercado
+MD-0101,2026-02-08,Centro,97,4,2,5,True,buen estado,2000,False,557000,0.0,mercado
+MD-0102,2026-07-18,Chamartin,78,3,2,1,False,buen estado,1977,True,575000,0.0,mercado
+MD-0103,2026-08-19,Chamberi,70,3,1,6,True,buen estado,1973,False,601000,0.0,mercado
+MD-0104,2026-04-18,Tetuan,86,3,2,6,True,reformado,1940,True,668000,0.0,mercado
+MD-0105,2026-07-12,Salamanca,75,2,2,7,True,buen estado,2000,True,574000,0.0,mercado
+MD-0106,2025-10-12,Vicalvaro,171,6,3,1,True,buen estado,1971,True,541000,0.0,mercado
+MD-0107,2026-03-17,Latina,74,3,1,3,True,obra nueva,2024,True,350000,0.0,mercado
+MD-0108,2026-07-25,Arganzuela,60,3,1,2,True,buen estado,1948,True,391000,0.0,mercado
+MD-0109,2026-01-14,Vicalvaro,161,6,3,3,True,obra nueva,2025,False,563000,0.0,mercado
+MD-0110,2026-05-08,Hortaleza,139,5,3,0,True,reformado,1972,True,664000,0.0,mercado
+MD-0111,2026-02-05,Hortaleza,128,5,2,1,True,reformado,1979,True,980000,0.0,mercado
+MD-0112,2026-04-23,Puente de Vallecas,58,1,1,3,True,buen estado,2012,True,191000,0.2133,sobreprecio_inyectado
+MD-0113,2026-01-09,Hortaleza,79,3,2,6,True,reformado,1973,True,549000,0.0,mercado
+MD-0114,2026-01-02,Salamanca,94,4,2,0,True,reformado,1974,False,1103000,0.0,mercado
+MD-0115,2025-09-29,Ciudad Lineal,50,2,1,6,True,a reformar,1973,True,181000,0.0,mercado
+MD-0116,2025-09-18,San Blas-Canillejas,61,2,1,5,True,a reformar,1984,False,233000,0.1384,sobreprecio_inyectado
+MD-0117,2025-10-26,Latina,97,3,2,8,False,buen estado,1967,True,351000,0.0,mercado
+MD-0118,2026-05-22,Retiro,46,2,1,1,True,buen estado,1999,True,377000,0.0,mercado
+MD-0119,2025-09-09,Arganzuela,79,4,2,2,True,obra nueva,2026,True,649000,0.0,mercado
+MD-0120,2025-10-14,San Blas-Canillejas,80,4,2,6,True,buen estado,1963,True,272000,0.0,mercado
+MD-0121,2025-12-23,Centro,58,2,1,5,True,reformado,1968,True,408000,0.0,mercado
+MD-0122,2026-02-12,Puente de Vallecas,80,2,1,7,True,buen estado,1967,True,172000,0.0,mercado
+MD-0123,2025-09-25,Puente de Vallecas,59,3,1,8,False,a reformar,1953,False,110000,0.0,mercado
+MD-0124,2026-01-14,Salamanca,74,3,1,5,True,a reformar,1964,True,646000,0.1906,sobreprecio_inyectado
+MD-0125,2026-03-02,Chamberi,141,5,3,0,False,reformado,1961,True,1168000,0.0,mercado
+MD-0126,2026-04-07,Chamartin,112,5,2,1,True,reformado,1978,True,1126000,0.0,mercado
+MD-0127,2025-12-16,Moratalaz,71,4,1,6,True,reformado,1980,True,366000,0.0,mercado
+MD-0128,2026-03-05,Hortaleza,55,2,1,2,True,reformado,1952,True,366000,0.0,mercado
+MD-0129,2026-02-24,Fuencarral-El Pardo,47,2,1,4,True,buen estado,1985,False,209000,0.0,mercado
+MD-0130,2026-06-17,Vicalvaro,129,4,2,7,True,buen estado,1978,True,510000,0.0,mercado
+MD-0131,2026-07-11,Arganzuela,119,4,2,0,False,buen estado,1953,True,798000,0.0,mercado
+MD-0132,2025-12-11,Salamanca,70,2,1,0,True,a reformar,1963,True,482000,0.0,mercado
+MD-0133,2025-12-04,Fuencarral-El Pardo,57,2,1,0,True,buen estado,1986,True,434000,0.0,mercado
+MD-0134,2025-12-05,Villa de Vallecas,142,5,3,1,True,reformado,1949,True,527000,0.0,mercado
+MD-0135,2026-05-15,Chamberi,183,6,3,3,True,obra nueva,2023,True,2148000,0.0,mercado
+MD-0136,2026-05-05,Puente de Vallecas,39,1,1,0,False,buen estado,1963,True,145000,0.0,mercado
+MD-0137,2025-10-07,Centro,146,5,3,2,True,buen estado,1973,True,1085000,0.0,mercado
+MD-0138,2026-01-21,Puente de Vallecas,42,1,1,5,True,a reformar,2013,True,99000,0.0,mercado
+MD-0139,2025-09-10,Fuencarral-El Pardo,84,3,1,5,True,a reformar,1965,True,451000,0.0,mercado
+MD-0140,2025-10-15,Ciudad Lineal,64,2,1,6,True,a reformar,1944,True,211000,0.0,mercado
+MD-0141,2026-04-10,Salamanca,105,3,2,4,True,obra nueva,2023,False,1096000,0.0,mercado
+MD-0142,2025-12-08,Moratalaz,67,2,1,4,True,obra nueva,2024,True,255000,0.0,mercado
+MD-0143,2026-05-22,Moratalaz,90,3,2,2,True,buen estado,2008,True,333000,0.0,mercado
+MD-0144,2025-09-18,Retiro,43,3,1,3,True,buen estado,1985,True,299000,-0.1924,infraprecio_inyectado
+MD-0145,2026-02-06,Fuencarral-El Pardo,101,4,2,3,False,a reformar,1959,True,416000,0.0,mercado
+MD-0146,2025-11-20,Hortaleza,175,6,3,3,False,buen estado,1965,True,721000,-0.1564,infraprecio_inyectado
+MD-0147,2026-01-05,Carabanchel,31,1,1,4,False,buen estado,1968,True,88000,-0.1408,infraprecio_inyectado
+MD-0148,2025-10-13,Puente de Vallecas,85,3,2,6,True,buen estado,1960,True,274000,0.0,mercado
+MD-0149,2025-09-26,Vicalvaro,79,2,2,1,False,reformado,1944,True,248000,0.0,mercado
+MD-0150,2025-12-03,Ciudad Lineal,60,2,1,4,True,a reformar,2014,False,239000,0.0,mercado
+MD-0151,2025-10-12,Moratalaz,69,3,1,0,True,reformado,2001,True,269000,0.0,mercado
+MD-0152,2025-10-07,Latina,72,2,1,2,True,buen estado,1979,False,265000,0.0,mercado
+MD-0153,2025-09-19,Vicalvaro,171,6,2,3,True,a reformar,2003,True,541000,0.0,mercado
+MD-0154,2026-02-12,Vicalvaro,47,1,1,1,True,buen estado,1978,True,152000,0.0,mercado
+MD-0155,2026-07-18,Puente de Vallecas,29,1,1,8,False,buen estado,1950,False,64000,0.0,mercado
+MD-0156,2026-01-17,Villa de Vallecas,57,2,1,4,True,buen estado,1958,True,252000,0.0,mercado
+MD-0157,2025-10-09,Vicalvaro,89,3,2,2,False,buen estado,1956,True,350000,0.0,mercado
+MD-0158,2025-09-21,Ciudad Lineal,104,4,2,4,True,buen estado,1984,False,368000,0.0,mercado
+MD-0159,2025-10-15,Centro,169,6,3,2,True,a reformar,1979,False,693000,0.0,mercado
+MD-0160,2025-10-07,Retiro,138,6,3,1,False,a reformar,1948,True,935000,0.0,mercado
+MD-0161,2026-01-18,Centro,67,3,1,2,False,buen estado,1933,True,617000,0.0,mercado
+MD-0162,2026-04-07,Puente de Vallecas,28,1,1,6,True,buen estado,2006,False,84000,0.0,mercado
+MD-0163,2026-04-24,Chamberi,50,1,1,2,True,buen estado,1992,True,409000,0.0,mercado
+MD-0164,2026-01-05,Latina,66,3,1,1,False,a reformar,1955,True,215000,0.0,mercado
+MD-0165,2026-05-30,Latina,75,3,2,4,True,buen estado,1970,True,222000,0.0,mercado
+MD-0166,2026-04-28,Hortaleza,60,2,1,6,True,reformado,1948,True,423000,0.0,mercado
+MD-0167,2026-05-21,Puente de Vallecas,56,2,1,4,True,a reformar,2004,False,125000,0.0,mercado
+MD-0168,2026-08-24,Hortaleza,105,4,2,0,False,reformado,1983,False,823000,0.2232,sobreprecio_inyectado
+MD-0169,2026-08-14,Latina,179,6,3,4,False,reformado,1949,True,501000,-0.2613,infraprecio_inyectado
+MD-0170,2025-12-14,Moncloa-Aravaca,66,3,1,3,True,reformado,2000,True,412000,-0.1407,infraprecio_inyectado
+MD-0171,2026-07-27,Latina,94,4,1,2,False,reformado,1944,True,372000,0.0,mercado
+MD-0172,2026-03-15,Usera,126,5,2,5,False,buen estado,1965,True,341000,0.0,mercado
+MD-0173,2026-02-14,Carabanchel,64,3,1,1,True,buen estado,1985,True,207000,0.0,mercado
+MD-0174,2026-07-24,Tetuan,52,2,1,2,True,buen estado,1985,False,256000,-0.1382,infraprecio_inyectado
+MD-0175,2026-03-09,Villaverde,65,3,1,8,True,buen estado,1986,True,143000,0.0,mercado
+MD-0176,2026-02-19,Puente de Vallecas,44,2,1,3,True,buen estado,1971,True,110000,0.0,mercado
+MD-0177,2026-06-19,Latina,63,2,1,1,True,buen estado,1970,True,228000,0.0,mercado
+MD-0178,2026-01-23,Arganzuela,75,2,2,0,True,reformado,2007,False,534000,0.0,mercado
+MD-0179,2025-10-10,Vicalvaro,89,3,2,2,False,reformado,1937,True,410000,0.0,mercado
+MD-0180,2026-05-31,Fuencarral-El Pardo,57,2,1,8,True,buen estado,1992,False,324000,0.0,mercado
+MD-0181,2026-04-01,Carabanchel,56,2,1,3,True,buen estado,1985,True,200000,0.0,mercado
+MD-0182,2026-04-30,Arganzuela,108,4,2,3,False,reformado,1967,True,642000,0.1883,sobreprecio_inyectado
+MD-0183,2026-06-10,Carabanchel,60,2,1,8,True,buen estado,1943,True,201000,0.0,mercado
+MD-0184,2025-11-17,Chamartin,176,6,2,6,True,buen estado,1983,True,1727000,0.0,mercado
+MD-0185,2026-01-19,Tetuan,33,1,1,1,False,buen estado,1957,True,211000,0.0,mercado
+MD-0186,2026-01-20,Tetuan,38,1,1,0,True,obra nueva,2023,True,247000,0.0,mercado
+MD-0187,2025-10-18,Tetuan,60,1,1,7,True,obra nueva,2023,True,462000,0.0,mercado
+MD-0188,2025-12-07,Fuencarral-El Pardo,165,6,3,6,True,reformado,1954,False,1011000,0.0,mercado
+MD-0189,2025-10-12,Arganzuela,100,4,2,4,False,buen estado,1961,True,505000,0.0,mercado
+MD-0190,2026-01-01,Hortaleza,90,3,2,2,True,a reformar,1929,True,295000,-0.147,infraprecio_inyectado
+MD-0191,2025-09-19,Puente de Vallecas,58,2,1,7,True,a reformar,1972,True,151000,0.0,mercado
+MD-0192,2026-02-26,Salamanca,30,2,1,7,False,buen estado,1933,True,251000,0.0,mercado
+MD-0193,2025-11-12,Salamanca,43,2,1,5,False,reformado,1947,True,354000,0.0,mercado
+MD-0194,2026-06-04,Puente de Vallecas,41,1,1,2,False,buen estado,1956,True,108000,0.0,mercado
+MD-0195,2026-03-14,Salamanca,32,1,1,3,True,buen estado,1982,True,249000,0.0,mercado
+MD-0196,2026-05-11,Latina,165,6,3,0,True,a reformar,1945,True,392000,0.0,mercado
+MD-0197,2026-04-20,Tetuan,63,3,1,3,True,reformado,1977,True,395000,0.0,mercado
+MD-0198,2026-03-30,Fuencarral-El Pardo,101,4,2,0,False,buen estado,1954,True,515000,0.0,mercado
+MD-0199,2026-04-28,Retiro,99,2,2,5,True,reformado,1983,True,854000,0.0,mercado
+MD-0200,2026-04-04,Tetuan,88,5,2,8,True,a reformar,1953,False,331000,0.0,mercado
+MD-0201,2025-12-12,Arganzuela,52,2,1,0,True,a reformar,2015,False,279000,0.0,mercado
+MD-0202,2025-09-20,Latina,67,3,1,6,True,a reformar,1972,False,155000,0.0,mercado
+MD-0203,2025-10-31,Tetuan,104,3,1,3,True,reformado,1981,True,723000,0.0,mercado
+MD-0204,2025-09-01,Moncloa-Aravaca,39,1,1,8,True,buen estado,1962,True,193000,0.0,mercado
+MD-0205,2026-08-15,Latina,68,2,1,6,True,reformado,1952,False,259000,0.0,mercado
+MD-0206,2026-06-20,Ciudad Lineal,46,2,1,6,False,buen estado,1966,True,198000,0.0,mercado
+MD-0207,2025-11-05,Chamartin,77,3,2,1,False,a reformar,1960,True,620000,0.0,mercado
+MD-0208,2026-05-02,Salamanca,61,2,1,1,True,a reformar,1983,True,555000,0.0,mercado
+MD-0209,2025-10-23,Fuencarral-El Pardo,50,2,1,4,True,buen estado,1980,True,264000,0.0,mercado
+MD-0210,2025-09-09,Centro,74,3,1,1,True,a reformar,1965,False,384000,0.0,mercado
+MD-0211,2026-01-09,Ciudad Lineal,28,1,1,7,True,reformado,1991,True,151000,0.0,mercado
+MD-0212,2026-07-30,Ciudad Lineal,84,4,2,2,True,buen estado,1987,True,395000,0.0,mercado
+MD-0213,2025-10-04,Fuencarral-El Pardo,89,3,2,2,True,reformado,1980,False,512000,0.0,mercado
+MD-0214,2026-06-15,Ciudad Lineal,58,2,1,4,True,buen estado,1962,True,247000,0.0,mercado
+MD-0215,2026-08-04,Fuencarral-El Pardo,117,4,2,8,True,buen estado,1980,True,618000,0.0,mercado
+MD-0216,2026-06-09,Villa de Vallecas,59,2,1,6,False,buen estado,1944,True,223000,0.0,mercado
+MD-0217,2025-12-01,Ciudad Lineal,47,2,1,5,True,buen estado,1998,False,192000,0.0,mercado
+MD-0218,2026-05-08,Barajas,68,3,1,3,True,buen estado,1996,True,335000,0.0,mercado
+MD-0219,2025-11-19,Chamberi,54,2,1,8,True,reformado,1998,True,465000,0.0,mercado
+MD-0220,2025-10-19,Retiro,106,3,1,8,False,a reformar,1966,True,698000,0.0,mercado
+MD-0221,2026-02-16,Retiro,40,1,1,2,True,buen estado,2016,False,255000,0.0,mercado
+MD-0222,2026-01-30,Moncloa-Aravaca,78,3,2,4,True,a reformar,1999,True,426000,0.0,mercado
+MD-0223,2026-08-13,Chamartin,188,6,3,8,True,reformado,1984,True,1746000,0.0,mercado
+MD-0224,2026-01-20,Hortaleza,151,6,3,2,True,reformado,1977,False,797000,0.0,mercado
+MD-0225,2025-12-10,Chamartin,80,3,2,6,False,buen estado,1993,True,559000,0.0,mercado
+MD-0226,2026-03-17,Chamartin,169,6,2,2,True,reformado,1988,True,1818000,0.0,mercado
+MD-0227,2026-07-23,Salamanca,30,2,1,1,True,buen estado,1989,True,240000,0.0,mercado
+MD-0228,2026-05-21,Carabanchel,62,2,1,8,True,reformado,1988,True,238000,0.0,mercado
+MD-0229,2025-11-22,Villa de Vallecas,171,6,2,0,True,reformado,1918,True,620000,0.0,mercado
+MD-0230,2026-01-17,Arganzuela,86,4,1,4,True,a reformar,1967,True,504000,0.0,mercado
+MD-0231,2026-01-02,Carabanchel,43,2,1,6,True,obra nueva,2023,False,137000,0.0,mercado
+MD-0232,2026-05-07,Usera,56,3,1,6,False,reformado,1953,True,159000,0.0,mercado
+MD-0233,2026-08-13,Tetuan,30,1,1,0,True,buen estado,2000,True,150000,0.0,mercado
+MD-0234,2026-07-03,Arganzuela,60,1,1,2,True,a reformar,1947,True,264000,0.0,mercado
+MD-0235,2026-01-12,Hortaleza,62,2,1,8,False,reformado,1982,True,340000,0.0,mercado
+MD-0236,2025-10-18,Villa de Vallecas,57,2,1,1,False,reformado,1976,True,237000,0.1521,sobreprecio_inyectado
+MD-0237,2026-08-17,San Blas-Canillejas,54,2,1,2,False,a reformar,1934,False,155000,0.0,mercado
+MD-0238,2026-06-30,Chamberi,131,5,3,6,True,a reformar,1953,True,625000,-0.2728,infraprecio_inyectado
+MD-0239,2025-12-14,Latina,73,2,1,3,True,a reformar,1987,False,160000,0.0,mercado
+MD-0240,2025-10-20,Salamanca,108,4,2,4,False,buen estado,1949,True,876000,0.0,mercado
+MD-0241,2025-10-16,Fuencarral-El Pardo,80,2,2,4,True,buen estado,1979,False,377000,0.0,mercado
+MD-0242,2026-08-13,Fuencarral-El Pardo,174,5,3,6,True,a reformar,2016,False,543000,0.0,mercado
+MD-0243,2026-06-16,Fuencarral-El Pardo,119,3,2,2,True,a reformar,1930,True,576000,0.0,mercado
+MD-0244,2026-04-06,Tetuan,78,3,2,2,True,buen estado,1941,True,477000,0.0,mercado
+MD-0245,2026-08-20,Usera,59,2,1,1,True,a reformar,1943,True,116000,-0.216,infraprecio_inyectado
+MD-0246,2025-10-24,San Blas-Canillejas,43,1,1,3,True,reformado,2005,True,163000,0.0,mercado
+MD-0247,2026-04-23,Puente de Vallecas,43,1,1,8,True,buen estado,1976,True,146000,0.0,mercado
+MD-0248,2026-07-22,Puente de Vallecas,39,2,1,2,True,buen estado,1976,True,105000,0.0,mercado
+MD-0249,2026-08-30,Moratalaz,108,4,2,4,True,obra nueva,2025,True,502000,0.0,mercado
+MD-0250,2026-08-26,Puente de Vallecas,40,1,1,5,True,a reformar,1969,True,90000,0.0,mercado
+MD-0251,2025-09-13,Centro,62,2,1,2,False,buen estado,1944,True,513000,0.0,mercado
+MD-0252,2026-05-04,Moncloa-Aravaca,54,2,1,5,True,reformado,1940,True,373000,0.0,mercado
+MD-0253,2026-08-12,Villaverde,60,2,1,0,True,buen estado,1970,True,194000,0.0,mercado
+MD-0254,2026-01-24,Hortaleza,64,2,1,4,True,buen estado,1938,False,440000,0.2753,sobreprecio_inyectado
+MD-0255,2025-10-13,San Blas-Canillejas,85,3,2,8,True,obra nueva,2026,True,256000,-0.2721,infraprecio_inyectado
+MD-0256,2026-05-29,Tetuan,90,4,1,5,True,a reformar,1974,True,364000,0.0,mercado
+MD-0257,2025-11-10,San Blas-Canillejas,80,3,2,2,True,buen estado,1998,True,350000,0.0,mercado
+MD-0258,2026-06-08,Latina,45,2,1,1,True,reformado,1998,True,192000,0.0,mercado
+MD-0259,2026-07-09,Centro,119,4,2,8,True,buen estado,1951,True,980000,0.0,mercado
+MD-0260,2025-10-11,Tetuan,48,2,1,8,False,buen estado,1955,True,200000,0.0,mercado
+MD-0261,2026-05-13,Latina,66,3,1,2,True,buen estado,1954,True,226000,0.0,mercado
+MD-0262,2026-04-18,Salamanca,160,5,3,5,True,buen estado,1964,True,1291000,0.0,mercado
+MD-0263,2025-10-31,Tetuan,62,2,1,4,True,buen estado,1981,True,309000,0.0,mercado
+MD-0264,2025-12-28,Hortaleza,116,5,2,0,True,a reformar,1995,True,585000,0.0,mercado
+MD-0265,2026-04-25,Carabanchel,76,2,2,6,True,buen estado,1986,True,255000,0.0,mercado
+MD-0266,2026-07-01,Moratalaz,57,2,1,1,False,buen estado,1935,True,196000,0.0,mercado
+MD-0267,2026-07-14,Retiro,57,2,1,3,True,buen estado,1988,True,304000,0.0,mercado
+MD-0268,2026-08-26,Tetuan,89,4,2,7,False,buen estado,1967,True,405000,0.0,mercado
+MD-0269,2026-06-07,Tetuan,40,1,1,7,True,a reformar,1964,True,134000,-0.1568,infraprecio_inyectado
+MD-0270,2025-12-07,Chamartin,47,2,1,4,False,buen estado,1943,True,345000,0.1456,sobreprecio_inyectado
+MD-0271,2026-07-20,Moratalaz,77,3,1,3,True,reformado,1954,True,281000,-0.193,infraprecio_inyectado
+MD-0272,2026-05-14,Ciudad Lineal,64,3,1,2,True,a reformar,1971,True,244000,0.0,mercado
+MD-0273,2025-10-23,Fuencarral-El Pardo,161,6,3,4,True,buen estado,1951,False,737000,0.0,mercado
+MD-0274,2026-04-27,Vicalvaro,84,3,2,4,False,reformado,1926,False,318000,0.16,sobreprecio_inyectado
+MD-0275,2026-05-04,Carabanchel,65,2,1,0,False,buen estado,1951,True,211000,0.0,mercado
+MD-0276,2025-11-12,Hortaleza,64,1,1,6,True,buen estado,1963,False,354000,0.0,mercado
+MD-0277,2026-03-05,Hortaleza,146,5,3,3,True,buen estado,1986,True,859000,0.1214,sobreprecio_inyectado
+MD-0278,2026-02-08,Ciudad Lineal,42,3,1,7,True,buen estado,1963,True,269000,0.0,mercado
+MD-0279,2026-08-09,Carabanchel,86,3,2,8,True,reformado,1959,False,266000,0.0,mercado
+MD-0280,2025-10-13,Salamanca,57,1,1,1,True,a reformar,2014,False,318000,0.0,mercado
+MD-0281,2026-03-04,Chamartin,176,6,3,4,True,a reformar,1998,False,880000,0.0,mercado
+MD-0282,2026-02-22,Carabanchel,96,4,2,5,True,buen estado,1956,True,325000,0.0,mercado
+MD-0283,2026-04-26,Retiro,116,3,2,5,False,buen estado,1965,True,682000,0.0,mercado
+MD-0284,2025-09-29,Latina,70,3,1,3,False,a reformar,1966,True,132000,-0.265,infraprecio_inyectado
+MD-0285,2026-04-16,Latina,60,2,1,2,True,buen estado,1954,True,205000,0.0,mercado
+MD-0286,2026-08-22,Chamartin,138,5,2,8,False,buen estado,1968,True,996000,0.0,mercado
+MD-0287,2025-10-26,Arganzuela,150,6,3,3,False,a reformar,1957,True,719000,0.0,mercado
+MD-0288,2026-04-23,Villa de Vallecas,52,2,1,7,False,reformado,1955,True,314000,0.2772,sobreprecio_inyectado
+MD-0289,2025-11-27,Fuencarral-El Pardo,89,2,2,2,True,reformado,1972,False,378000,0.0,mercado
+MD-0290,2026-03-01,Chamartin,122,4,2,2,False,buen estado,1937,False,889000,0.0,mercado
+MD-0291,2026-05-07,Latina,41,2,1,1,True,buen estado,1993,False,128000,0.0,mercado
+MD-0292,2026-07-14,Carabanchel,54,1,1,2,False,buen estado,1946,True,216000,0.0,mercado
+MD-0293,2026-02-05,Centro,30,1,1,7,True,buen estado,1979,False,126000,-0.271,infraprecio_inyectado
+MD-0294,2026-01-16,Salamanca,37,1,1,1,True,reformado,2005,True,414000,0.0,mercado
+MD-0295,2026-05-20,Fuencarral-El Pardo,103,4,2,4,False,reformado,2008,False,531000,0.0,mercado
+MD-0296,2026-03-22,Tetuan,96,4,2,1,True,a reformar,1987,True,409000,0.0,mercado
+MD-0297,2026-07-12,Puente de Vallecas,59,2,1,6,True,obra nueva,2024,True,213000,0.0,mercado
+MD-0298,2025-11-21,Carabanchel,31,1,1,1,True,reformado,1981,True,111000,0.0,mercado
+MD-0299,2026-01-19,Usera,133,4,3,5,False,a reformar,1964,True,296000,0.0,mercado
+MD-0300,2026-01-10,Centro,91,3,1,6,True,buen estado,2007,False,808000,0.0,mercado
+MD-0301,2026-07-15,Chamberi,46,1,1,4,True,buen estado,1981,True,416000,0.0,mercado
+MD-0302,2026-07-20,Moncloa-Aravaca,49,2,1,3,True,a reformar,1939,True,294000,0.0,mercado
+MD-0303,2026-06-25,Salamanca,59,2,1,1,True,buen estado,1992,True,518000,0.0,mercado
+MD-0304,2026-03-07,Centro,185,6,3,1,True,buen estado,1971,False,1223000,0.0,mercado
+MD-0305,2026-02-01,Vicalvaro,184,6,2,2,False,reformado,1968,True,842000,0.0,mercado
+MD-0306,2026-06-27,Barajas,40,1,1,8,True,reformado,2003,False,189000,0.0,mercado
+MD-0307,2026-03-04,Hortaleza,128,5,2,5,True,buen estado,1972,True,698000,0.0,mercado
+MD-0308,2026-03-13,Chamberi,39,1,1,0,True,a reformar,1976,True,262000,0.0,mercado
+MD-0309,2026-03-24,Puente de Vallecas,58,2,1,6,False,buen estado,1966,False,190000,0.1717,sobreprecio_inyectado
+MD-0310,2026-06-29,Hortaleza,69,2,1,5,True,buen estado,1996,False,314000,0.0,mercado
+MD-0311,2026-03-14,Hortaleza,76,2,2,0,False,buen estado,1936,True,290000,0.0,mercado
+MD-0312,2026-02-09,Chamartin,66,2,1,6,True,buen estado,1992,True,472000,0.0,mercado
+MD-0313,2026-07-30,Retiro,88,3,2,7,True,reformado,1952,True,635000,0.0,mercado
+MD-0314,2026-05-18,Fuencarral-El Pardo,99,3,2,5,True,buen estado,1970,True,524000,0.0,mercado
+MD-0315,2026-08-08,Villaverde,142,5,3,2,False,reformado,1954,True,349000,0.0,mercado
+MD-0316,2026-05-22,Hortaleza,181,6,3,8,False,a reformar,1943,True,939000,0.0,mercado
+MD-0317,2026-01-05,Fuencarral-El Pardo,144,6,3,1,True,a reformar,1906,True,707000,0.0,mercado
+MD-0318,2026-05-04,Chamartin,69,3,1,3,True,reformado,1977,True,581000,0.0,mercado
+MD-0319,2025-11-02,Ciudad Lineal,51,2,1,8,True,reformado,1976,True,239000,0.0,mercado
+MD-0320,2026-06-11,Chamartin,41,2,1,1,True,a reformar,1988,False,236000,0.0,mercado
+MD-0321,2026-03-26,Chamartin,90,3,2,1,False,buen estado,1945,False,620000,0.0,mercado
+MD-0322,2025-12-18,Hortaleza,103,3,2,2,True,a reformar,1982,True,463000,0.0,mercado
+MD-0323,2025-11-12,Salamanca,90,3,2,5,True,a reformar,1981,True,701000,0.0,mercado
+MD-0324,2026-03-23,Centro,61,2,1,0,False,a reformar,1946,False,455000,0.2308,sobreprecio_inyectado
+MD-0325,2026-07-08,Carabanchel,63,3,1,2,True,a reformar,1941,True,130000,0.0,mercado
+MD-0326,2025-10-27,Latina,73,3,1,8,True,a reformar,1950,True,203000,0.0,mercado
+MD-0327,2026-05-24,Chamartin,159,5,2,4,False,buen estado,2000,True,1256000,0.0,mercado
+MD-0328,2025-12-16,Usera,74,2,1,1,False,buen estado,1963,True,201000,0.0,mercado
+MD-0329,2025-09-08,Chamartin,90,3,2,3,True,reformado,1981,True,681000,0.0,mercado
+MD-0330,2026-07-05,Ciudad Lineal,61,3,1,0,True,a reformar,1965,True,203000,0.0,mercado
+MD-0331,2026-06-04,Ciudad Lineal,107,4,1,2,True,a reformar,2013,True,368000,-0.1524,infraprecio_inyectado
+MD-0332,2026-02-24,Puente de Vallecas,37,1,1,3,True,a reformar,1946,True,91000,0.1592,sobreprecio_inyectado
+MD-0333,2025-12-26,Puente de Vallecas,124,5,2,1,True,reformado,1991,True,393000,0.0,mercado
+MD-0334,2026-05-24,Hortaleza,58,4,1,5,False,buen estado,1966,True,179000,-0.1837,infraprecio_inyectado
+MD-0335,2026-03-01,Chamartin,146,5,3,2,False,buen estado,1965,False,1073000,0.0,mercado
+MD-0336,2026-05-05,San Blas-Canillejas,40,2,1,7,True,reformado,1972,True,183000,0.0,mercado
+MD-0337,2026-03-22,Carabanchel,41,2,1,1,True,buen estado,1988,True,157000,0.1574,sobreprecio_inyectado
+MD-0338,2025-09-26,Puente de Vallecas,72,2,1,8,True,buen estado,1996,True,201000,0.0,mercado
+MD-0339,2026-06-01,Puente de Vallecas,72,3,1,5,True,obra nueva,2023,True,234000,0.0,mercado
+MD-0340,2026-08-24,Carabanchel,55,2,1,4,False,buen estado,1933,False,138000,0.0,mercado
+MD-0341,2026-03-08,Carabanchel,76,2,2,3,True,a reformar,1980,True,221000,0.0,mercado
+MD-0342,2026-04-13,Arganzuela,66,3,1,1,False,buen estado,1949,True,364000,-0.2258,infraprecio_inyectado
+MD-0343,2026-06-18,Fuencarral-El Pardo,93,3,2,7,True,buen estado,1955,True,601000,0.0,mercado
+MD-0344,2026-07-02,Moncloa-Aravaca,71,3,1,3,True,buen estado,1980,True,555000,0.0,mercado
+MD-0345,2026-06-05,Vicalvaro,85,3,2,1,True,buen estado,1977,True,329000,0.0,mercado
+MD-0346,2025-10-21,Centro,61,3,1,2,True,buen estado,1987,True,541000,0.0,mercado
+MD-0347,2026-08-28,Hortaleza,127,6,1,3,True,reformado,2017,True,733000,0.0,mercado
+MD-0348,2026-06-28,Tetuan,116,4,2,4,True,reformado,1956,False,561000,0.0,mercado
+MD-0349,2025-12-11,Salamanca,154,5,3,2,True,a reformar,1979,True,1030000,0.0,mercado
+MD-0350,2025-11-07,Hortaleza,152,4,3,5,False,reformado,1995,True,927000,0.0,mercado
+MD-0351,2025-12-26,Puente de Vallecas,50,2,1,7,True,reformado,1975,False,131000,0.0,mercado
+MD-0352,2025-11-10,Centro,69,3,1,1,True,buen estado,1988,False,421000,-0.1271,infraprecio_inyectado
+MD-0353,2025-11-12,Puente de Vallecas,78,3,2,3,True,buen estado,1981,False,144000,0.0,mercado
+MD-0354,2025-09-24,Retiro,72,3,1,3,False,buen estado,1967,True,490000,0.0,mercado
+MD-0355,2025-12-21,Ciudad Lineal,43,1,1,7,False,buen estado,1934,True,203000,0.0,mercado
+MD-0356,2026-07-14,Ciudad Lineal,99,3,2,6,True,reformado,1951,False,377000,0.0,mercado
+MD-0357,2026-02-19,Puente de Vallecas,61,1,1,0,True,reformado,1972,False,154000,0.0,mercado
+MD-0358,2026-05-30,Puente de Vallecas,75,2,2,0,True,buen estado,1994,True,255000,0.0,mercado
+MD-0359,2025-11-01,Chamberi,102,4,2,5,True,buen estado,1967,False,826000,0.0,mercado
+MD-0360,2026-08-20,Fuencarral-El Pardo,102,4,2,4,True,reformado,1970,True,694000,0.0,mercado
+MD-0361,2026-05-22,Tetuan,80,3,1,1,True,buen estado,1972,False,395000,-0.1428,infraprecio_inyectado
+MD-0362,2025-11-14,Vicalvaro,60,3,1,8,True,buen estado,1976,True,198000,0.0,mercado
+MD-0363,2026-02-24,Chamberi,54,1,1,7,True,buen estado,1972,True,464000,0.0,mercado
+MD-0364,2026-06-11,Villa de Vallecas,52,2,1,1,False,reformado,1973,False,172000,0.0,mercado
+MD-0365,2026-05-13,San Blas-Canillejas,177,5,3,1,True,a reformar,1962,False,687000,0.0,mercado
+MD-0366,2026-08-28,Ciudad Lineal,51,2,1,0,True,obra nueva,2023,False,275000,0.0,mercado
+MD-0367,2026-02-18,Chamartin,126,4,2,3,True,buen estado,1995,True,986000,0.0,mercado
+MD-0368,2026-01-13,Vicalvaro,100,3,2,1,False,a reformar,1957,False,213000,-0.1244,infraprecio_inyectado
+MD-0369,2025-10-21,Fuencarral-El Pardo,172,6,3,1,True,obra nueva,2023,True,1149000,0.0,mercado
+MD-0370,2025-09-21,Hortaleza,75,3,2,2,False,buen estado,1951,True,425000,0.0,mercado
+MD-0371,2026-06-14,Hortaleza,92,4,2,1,True,obra nueva,2026,True,641000,0.0,mercado
+MD-0372,2025-12-10,Hortaleza,120,4,2,7,True,buen estado,1957,True,539000,0.0,mercado
+MD-0373,2026-08-10,Centro,110,5,2,6,True,obra nueva,2025,True,836000,-0.2095,infraprecio_inyectado
+MD-0374,2025-12-09,Chamberi,161,6,3,6,True,buen estado,1965,True,1211000,0.0,mercado
+MD-0375,2026-07-13,Villaverde,180,6,3,0,True,obra nueva,2025,True,480000,0.0,mercado
+MD-0376,2025-09-15,Retiro,45,2,1,4,True,reformado,1976,False,313000,0.0,mercado
+MD-0377,2026-04-28,Puente de Vallecas,60,3,1,2,True,buen estado,1973,True,163000,0.0,mercado
+MD-0378,2026-03-24,Chamartin,130,4,3,1,True,buen estado,1966,True,1076000,0.0,mercado
+MD-0379,2026-06-13,Moncloa-Aravaca,76,4,2,6,True,reformado,1970,True,579000,0.0,mercado
+MD-0380,2025-12-15,San Blas-Canillejas,55,3,1,3,False,buen estado,1956,True,156000,-0.2238,infraprecio_inyectado
+MD-0381,2026-02-27,Fuencarral-El Pardo,89,2,2,8,False,a reformar,1946,False,294000,0.0,mercado
+MD-0382,2025-09-03,Latina,46,1,1,7,True,a reformar,1993,True,128000,0.0,mercado
+MD-0383,2025-09-27,Latina,42,2,1,5,True,a reformar,1983,True,116000,0.2103,sobreprecio_inyectado
+MD-0384,2026-06-20,Tetuan,171,6,3,7,True,buen estado,1944,False,794000,0.0,mercado
+MD-0385,2026-07-19,Retiro,173,6,3,7,True,a reformar,2003,True,1045000,0.0,mercado
+MD-0386,2026-07-15,San Blas-Canillejas,84,4,1,4,False,a reformar,1941,True,185000,0.0,mercado
+MD-0387,2026-04-17,Ciudad Lineal,50,2,1,8,True,a reformar,1993,True,166000,0.0,mercado
+MD-0388,2026-04-11,Ciudad Lineal,56,2,1,7,True,buen estado,1995,True,274000,0.0,mercado
+MD-0389,2026-07-25,Chamartin,119,4,2,0,True,reformado,1969,True,1389000,0.0,mercado
+MD-0390,2025-12-23,Centro,76,3,2,2,True,buen estado,1954,True,554000,0.0,mercado
+MD-0391,2026-04-10,Ciudad Lineal,54,1,1,1,True,a reformar,1974,False,171000,-0.1441,infraprecio_inyectado
+MD-0392,2026-05-14,Villaverde,56,3,1,3,False,buen estado,1954,False,112000,0.0,mercado
+MD-0393,2026-05-14,Vicalvaro,100,3,2,5,True,a reformar,1983,True,342000,0.0,mercado
+MD-0394,2026-01-27,Centro,59,3,1,0,True,buen estado,1967,True,467000,0.0,mercado
+MD-0395,2025-09-03,Hortaleza,42,2,1,6,True,buen estado,1977,False,209000,0.0,mercado
+MD-0396,2026-01-26,Arganzuela,65,2,1,1,True,a reformar,1966,False,313000,0.0,mercado
+MD-0397,2025-12-01,Carabanchel,38,2,1,8,True,buen estado,1974,True,134000,0.0,mercado
+MD-0398,2025-11-23,Carabanchel,91,3,2,8,True,reformado,1976,True,385000,0.2168,sobreprecio_inyectado
+MD-0399,2025-12-15,Tetuan,168,6,3,7,True,a reformar,1945,True,743000,0.0,mercado
+MD-0400,2025-11-06,Ciudad Lineal,129,5,1,5,True,buen estado,1985,True,630000,0.0,mercado
+MD-0401,2026-05-28,Arganzuela,57,2,1,8,True,reformado,1958,False,329000,0.0,mercado
+MD-0402,2026-04-09,Puente de Vallecas,46,3,1,6,True,reformado,1964,True,118000,-0.2461,infraprecio_inyectado
+MD-0403,2025-12-25,Salamanca,70,3,1,3,True,obra nueva,2025,False,546000,0.0,mercado
+MD-0404,2026-01-01,Vicalvaro,63,2,1,0,True,buen estado,1956,True,217000,0.0,mercado
+MD-0405,2025-11-22,Chamartin,81,3,1,1,True,a reformar,2006,True,726000,0.1838,sobreprecio_inyectado
+MD-0406,2026-01-01,Centro,28,1,1,1,False,buen estado,1954,True,223000,0.0,mercado
+MD-0407,2026-06-23,Latina,57,3,1,8,True,obra nueva,2024,True,200000,-0.217,infraprecio_inyectado
+MD-0408,2025-11-10,Carabanchel,66,2,1,6,True,buen estado,1974,False,195000,0.0,mercado
+MD-0409,2025-09-12,San Blas-Canillejas,52,2,1,7,True,reformado,1959,True,235000,0.0,mercado
+MD-0410,2026-06-16,Ciudad Lineal,78,2,1,1,True,buen estado,1971,True,378000,0.0,mercado
+MD-0411,2026-01-24,Carabanchel,176,6,3,8,True,obra nueva,2023,True,697000,0.0,mercado
+MD-0412,2026-07-05,San Blas-Canillejas,55,2,1,3,True,a reformar,1980,True,167000,0.0,mercado
+MD-0413,2026-03-31,San Blas-Canillejas,146,5,3,0,False,a reformar,1953,False,475000,0.0,mercado
+MD-0414,2026-01-10,Puente de Vallecas,72,2,1,3,True,reformado,1951,True,196000,0.0,mercado
+MD-0415,2026-07-18,Arganzuela,96,3,2,8,True,buen estado,1989,False,527000,-0.2174,infraprecio_inyectado
+MD-0416,2026-01-31,Salamanca,44,2,1,4,True,buen estado,1959,False,318000,0.0,mercado
+MD-0417,2025-10-15,Centro,83,3,2,3,True,a reformar,1993,True,536000,0.0,mercado
+MD-0418,2026-05-19,Latina,107,4,2,0,True,a reformar,1975,True,369000,0.0,mercado
+MD-0419,2025-09-13,Fuencarral-El Pardo,94,3,2,0,True,reformado,1981,True,646000,0.0,mercado
+MD-0420,2025-09-17,Puente de Vallecas,78,4,2,8,True,buen estado,1982,True,264000,0.0,mercado
+MD-0421,2026-01-27,Hortaleza,107,4,2,1,False,a reformar,1931,True,345000,-0.2662,infraprecio_inyectado
+MD-0422,2026-03-29,Ciudad Lineal,51,2,1,5,True,obra nueva,2026,False,268000,0.0,mercado
+MD-0423,2026-05-24,Arganzuela,62,2,1,1,True,buen estado,2002,False,373000,0.0,mercado
+MD-0424,2025-12-21,Centro,66,3,1,6,True,buen estado,1911,False,387000,0.0,mercado
+MD-0425,2026-08-11,Moratalaz,86,4,2,0,True,reformado,1964,False,402000,0.1271,sobreprecio_inyectado
+MD-0426,2026-06-13,Ciudad Lineal,73,2,1,0,True,buen estado,1978,True,357000,0.0,mercado
+MD-0427,2025-12-24,Retiro,47,1,1,4,True,reformado,2017,True,272000,0.0,mercado
+MD-0428,2026-08-23,Centro,79,3,2,5,True,reformado,2023,False,556000,0.0,mercado
+MD-0429,2025-12-04,Vicalvaro,65,2,1,6,True,buen estado,1957,True,164000,-0.1944,infraprecio_inyectado
+MD-0430,2026-08-23,Latina,53,2,1,8,False,buen estado,1958,True,186000,0.0,mercado
+MD-0431,2025-12-26,Puente de Vallecas,32,1,1,7,False,buen estado,1978,True,71000,0.0,mercado
+MD-0432,2026-05-31,Fuencarral-El Pardo,65,3,1,3,True,reformado,1957,True,450000,0.0,mercado
+MD-0433,2026-02-21,Chamartin,99,3,1,5,True,buen estado,1978,True,903000,0.0,mercado
+MD-0434,2026-01-14,Hortaleza,115,5,2,5,True,reformado,1973,False,687000,0.0,mercado
+MD-0435,2026-02-26,Carabanchel,70,3,1,1,True,reformado,1990,True,219000,-0.2542,infraprecio_inyectado
+MD-0436,2026-08-15,Hortaleza,159,5,3,2,False,buen estado,1937,True,783000,0.0,mercado
+MD-0437,2026-01-08,Usera,152,5,3,8,True,buen estado,1972,False,392000,0.0,mercado
+MD-0438,2026-08-20,Puente de Vallecas,57,1,1,1,True,a reformar,1975,True,136000,0.0,mercado
+MD-0439,2026-05-20,Carabanchel,43,2,1,4,True,reformado,1998,True,160000,0.0,mercado
+MD-0440,2026-03-13,San Blas-Canillejas,55,3,1,5,True,buen estado,1975,True,198000,0.0,mercado
+MD-0441,2025-12-17,Hortaleza,60,2,1,8,True,reformado,1963,True,405000,0.0,mercado
+MD-0442,2025-12-19,Latina,29,1,1,7,True,a reformar,1967,True,74000,0.0,mercado
+MD-0443,2026-04-24,Carabanchel,54,2,1,6,True,buen estado,2007,True,247000,0.0,mercado
+MD-0444,2026-07-22,Hortaleza,112,5,2,1,True,buen estado,2010,False,509000,0.1722,sobreprecio_inyectado
+MD-0445,2026-01-13,Villa de Vallecas,47,1,1,6,True,a reformar,1982,True,177000,0.2398,sobreprecio_inyectado
+MD-0446,2025-09-07,Centro,36,2,1,0,True,buen estado,1950,True,239000,0.0,mercado
+MD-0447,2025-11-20,Salamanca,115,5,2,0,False,a reformar,1950,True,900000,0.0,mercado
+MD-0448,2025-11-08,Carabanchel,76,3,2,0,False,reformado,1968,True,338000,0.0,mercado
+MD-0449,2026-08-09,Tetuan,80,3,2,5,True,buen estado,2012,True,446000,0.0,mercado
+MD-0450,2026-07-21,Centro,78,3,2,5,False,reformado,1948,False,587000,0.0,mercado
+MD-0451,2025-09-22,Puente de Vallecas,77,2,2,5,False,buen estado,1960,True,206000,0.0,mercado
+MD-0452,2026-08-06,Ciudad Lineal,75,2,2,5,True,buen estado,1972,True,302000,0.0,mercado
+MD-0453,2026-03-25,Villaverde,58,2,1,5,False,buen estado,1954,False,142000,0.1986,sobreprecio_inyectado
+MD-0454,2026-03-20,Latina,54,2,1,0,True,buen estado,1980,True,176000,0.0,mercado
+MD-0455,2026-04-08,Hortaleza,162,6,3,1,False,buen estado,1934,True,714000,0.0,mercado
+MD-0456,2025-10-19,Centro,66,2,1,5,False,buen estado,1942,True,464000,0.0,mercado
+MD-0457,2026-03-05,Hortaleza,155,5,3,1,True,buen estado,2007,True,772000,0.0,mercado
+MD-0458,2025-11-07,Fuencarral-El Pardo,151,5,2,0,True,a reformar,2004,True,689000,0.0,mercado
+MD-0459,2025-12-18,Tetuan,137,5,3,1,True,reformado,1992,True,1027000,0.1605,sobreprecio_inyectado
+MD-0460,2025-10-01,Carabanchel,80,3,2,0,True,obra nueva,2024,True,331000,0.0,mercado
+MD-0461,2026-07-31,Villaverde,84,2,2,1,True,buen estado,1974,True,193000,0.0,mercado
+MD-0462,2026-08-18,Puente de Vallecas,40,1,1,1,True,obra nueva,2026,True,115000,0.0,mercado
+MD-0463,2026-07-10,Centro,83,3,2,6,False,a reformar,1969,True,376000,0.0,mercado
+MD-0464,2026-08-06,Arganzuela,122,5,2,0,True,reformado,2006,True,798000,0.0,mercado
+MD-0465,2026-01-01,Moncloa-Aravaca,179,6,2,2,False,a reformar,1958,True,724000,0.0,mercado
+MD-0466,2026-07-25,Villaverde,46,1,1,5,True,reformado,1976,True,97000,-0.2152,infraprecio_inyectado
+MD-0467,2026-03-18,Retiro,134,5,3,5,True,a reformar,1978,True,758000,0.0,mercado
+MD-0468,2026-08-28,Ciudad Lineal,139,4,3,6,True,obra nueva,2025,False,685000,0.0,mercado
+MD-0469,2025-09-30,Fuencarral-El Pardo,110,5,2,0,True,buen estado,1986,True,703000,0.0,mercado
+MD-0470,2026-06-10,Puente de Vallecas,73,3,1,7,True,a reformar,1931,True,147000,0.0,mercado
+MD-0471,2026-07-06,Tetuan,138,5,3,2,True,obra nueva,2026,True,944000,0.0,mercado
+MD-0472,2026-06-23,Latina,44,1,1,2,True,reformado,1977,False,169000,0.2024,sobreprecio_inyectado
+MD-0473,2026-05-25,San Blas-Canillejas,187,6,3,4,True,reformado,2010,True,947000,0.0,mercado
+MD-0474,2025-10-23,Tetuan,75,2,2,5,False,a reformar,1965,True,247000,0.1981,sobreprecio_inyectado
+MD-0475,2025-09-06,Chamartin,58,2,1,2,True,buen estado,1980,False,424000,-0.1267,infraprecio_inyectado
+MD-0476,2026-03-07,Hortaleza,130,4,3,5,False,buen estado,1956,True,662000,0.0,mercado
+MD-0477,2025-09-26,Arganzuela,55,1,1,3,False,buen estado,1962,True,358000,0.0,mercado
+MD-0478,2025-10-30,Villa de Vallecas,59,2,1,2,True,buen estado,1955,True,205000,0.0,mercado
+MD-0479,2026-03-06,Centro,43,1,1,4,True,reformado,1949,False,363000,0.0,mercado
+MD-0480,2025-09-07,Puente de Vallecas,71,3,1,5,True,a reformar,2000,True,199000,0.0,mercado
+MD-0481,2026-08-05,Fuencarral-El Pardo,121,3,2,1,True,reformado,1956,False,771000,0.0,mercado
+MD-0482,2025-12-06,Villaverde,64,2,1,4,True,buen estado,1989,False,140000,0.1313,sobreprecio_inyectado
+MD-0483,2025-10-15,Retiro,117,5,1,8,True,obra nueva,2024,True,801000,0.0,mercado
+MD-0484,2025-11-30,Salamanca,35,1,1,5,True,a reformar,1980,True,242000,0.0,mercado
+MD-0485,2026-03-25,Hortaleza,71,2,1,7,True,buen estado,1954,False,350000,0.0,mercado
+MD-0486,2026-03-30,Vicalvaro,116,4,2,7,False,obra nueva,2026,False,359000,0.0,mercado
+MD-0487,2026-07-02,Centro,64,3,1,8,True,reformado,2022,False,551000,0.0,mercado
+MD-0488,2026-06-30,Ciudad Lineal,75,2,2,0,True,buen estado,1982,True,352000,0.0,mercado
+MD-0489,2026-01-19,Carabanchel,60,2,1,3,True,buen estado,1994,True,196000,0.0,mercado
+MD-0490,2026-03-13,Latina,50,2,1,1,True,reformado,1944,False,235000,0.0,mercado
+MD-0491,2026-05-18,Hortaleza,110,3,2,8,True,a reformar,1945,True,477000,0.0,mercado
+MD-0492,2026-07-13,Centro,46,2,1,0,False,buen estado,1971,True,381000,0.0,mercado
+MD-0493,2026-03-16,Carabanchel,71,3,1,0,False,buen estado,1946,True,142000,-0.1918,infraprecio_inyectado
+MD-0494,2026-04-05,Villa de Vallecas,93,3,2,1,True,obra nueva,2023,True,431000,0.0,mercado
+MD-0495,2026-08-26,Villaverde,56,2,1,7,True,buen estado,2009,True,147000,0.0,mercado
+MD-0496,2025-10-29,Villa de Vallecas,90,2,1,6,True,a reformar,2002,True,280000,0.0,mercado
+MD-0497,2025-09-09,Ciudad Lineal,81,3,2,1,False,a reformar,1952,True,264000,0.0,mercado
+MD-0498,2026-01-24,Centro,41,2,1,1,True,buen estado,1975,True,230000,-0.2286,infraprecio_inyectado
+MD-0499,2026-02-25,Hortaleza,189,6,3,5,True,reformado,1981,True,1231000,0.0,mercado
+MD-0500,2025-10-05,Carabanchel,93,2,2,7,True,buen estado,1975,True,317000,0.0,mercado
+MD-0501,2025-10-04,Latina,65,2,1,8,True,buen estado,1962,True,154000,-0.2133,infraprecio_inyectado
+MD-0502,2026-05-20,Tetuan,92,4,2,2,False,reformado,1952,True,423000,0.0,mercado
+MD-0503,2026-05-24,Usera,58,2,1,6,True,a reformar,2001,True,175000,0.0,mercado
+MD-0504,2025-09-16,Chamartin,57,2,1,8,True,buen estado,1978,True,464000,0.0,mercado
+MD-0505,2026-02-12,Fuencarral-El Pardo,106,4,2,4,True,buen estado,1979,False,526000,0.0,mercado
+MD-0506,2025-10-30,Centro,130,5,3,8,False,reformado,1961,True,1025000,0.0,mercado
+MD-0507,2026-05-12,Chamartin,115,4,2,3,False,reformado,1969,False,841000,0.0,mercado
+MD-0508,2025-12-15,Villaverde,77,3,2,8,True,buen estado,1994,True,177000,0.0,mercado
+MD-0509,2026-04-14,Centro,56,2,1,5,True,reformado,1996,False,475000,0.0,mercado
+MD-0510,2025-10-08,Ciudad Lineal,75,3,2,3,True,obra nueva,2025,True,545000,0.2452,sobreprecio_inyectado
+MD-0511,2026-07-07,Carabanchel,58,2,1,4,True,obra nueva,2026,True,182000,0.0,mercado
+MD-0512,2025-11-12,San Blas-Canillejas,177,6,3,2,True,buen estado,2004,True,623000,0.0,mercado
+MD-0513,2025-11-12,Fuencarral-El Pardo,121,4,2,1,True,reformado,1970,True,892000,0.0,mercado
+MD-0514,2026-01-26,Villa de Vallecas,99,3,2,6,True,a reformar,2004,True,347000,0.0,mercado
+MD-0515,2026-01-12,Tetuan,37,1,1,5,True,buen estado,1973,True,217000,0.0,mercado
+MD-0516,2026-04-05,Hortaleza,149,4,2,1,True,buen estado,1968,True,711000,0.0,mercado
+MD-0517,2025-12-27,Puente de Vallecas,51,2,1,2,True,a reformar,1972,True,136000,0.0,mercado
+MD-0518,2025-12-05,Barajas,84,3,2,8,False,reformado,1943,False,374000,0.144,sobreprecio_inyectado
+MD-0519,2025-12-14,Puente de Vallecas,62,2,1,0,True,a reformar,1955,True,132000,0.0,mercado
+MD-0520,2025-11-15,Tetuan,189,6,3,2,True,reformado,2000,True,820000,-0.2305,infraprecio_inyectado
+MD-0521,2026-05-20,Hortaleza,119,4,2,6,True,a reformar,1990,True,587000,0.0,mercado
+MD-0522,2025-11-10,Arganzuela,146,6,3,1,True,reformado,1962,False,763000,0.0,mercado
+MD-0523,2026-04-30,Salamanca,144,5,3,4,True,reformado,1972,True,1636000,0.2035,sobreprecio_inyectado
+MD-0524,2026-04-18,Carabanchel,81,3,1,0,True,buen estado,1979,False,216000,0.0,mercado
+MD-0525,2026-08-08,Puente de Vallecas,61,3,1,8,True,buen estado,1964,True,250000,0.0,mercado
+MD-0526,2025-09-05,Usera,65,3,1,2,True,a reformar,1969,True,171000,0.0,mercado
+MD-0527,2026-07-22,Carabanchel,70,2,1,5,False,a reformar,1945,False,167000,0.0,mercado
+MD-0528,2026-02-04,Tetuan,29,1,1,1,True,reformado,1970,False,145000,0.0,mercado
+MD-0529,2026-06-11,Ciudad Lineal,71,2,1,6,False,buen estado,1942,True,295000,0.0,mercado
+MD-0530,2025-12-10,Retiro,156,6,3,7,True,buen estado,1997,True,1138000,0.0,mercado
+MD-0531,2026-04-12,Latina,62,2,1,1,True,obra nueva,2024,True,211000,0.0,mercado
+MD-0532,2025-11-29,Centro,56,2,1,4,False,buen estado,1991,True,319000,0.0,mercado
+MD-0533,2026-06-29,Carabanchel,41,1,1,6,True,buen estado,1970,False,143000,0.2361,sobreprecio_inyectado
+MD-0534,2025-09-02,Retiro,79,3,2,1,True,buen estado,1984,False,556000,0.165,sobreprecio_inyectado
+MD-0535,2026-01-12,Ciudad Lineal,140,5,3,4,True,a reformar,1974,False,463000,0.0,mercado
+MD-0536,2026-01-10,Centro,178,6,3,6,True,reformado,1970,True,1157000,0.0,mercado
+MD-0537,2026-05-17,Tetuan,78,2,2,2,True,buen estado,1994,True,477000,0.0,mercado
+MD-0538,2026-03-31,Tetuan,82,3,2,1,True,buen estado,1978,True,357000,0.0,mercado
+MD-0539,2025-12-03,Ciudad Lineal,66,3,1,6,True,buen estado,2009,False,347000,0.1856,sobreprecio_inyectado
+MD-0540,2026-07-17,Carabanchel,41,2,1,6,True,a reformar,1991,True,119000,0.0,mercado
+MD-0541,2025-12-19,Fuencarral-El Pardo,57,2,1,1,True,buen estado,1976,False,194000,-0.1962,infraprecio_inyectado
+MD-0542,2026-05-16,Fuencarral-El Pardo,133,5,3,0,False,a reformar,1941,False,546000,0.0,mercado
+MD-0543,2025-09-13,Tetuan,76,3,2,7,True,buen estado,1968,False,348000,0.0,mercado
+MD-0544,2026-01-12,Puente de Vallecas,152,6,3,8,True,buen estado,1964,False,440000,0.0,mercado
+MD-0545,2026-08-28,Retiro,188,6,3,8,True,reformado,1971,True,1378000,0.0,mercado
+MD-0546,2026-03-23,Latina,71,3,1,8,False,buen estado,1948,True,282000,0.0,mercado
+MD-0547,2026-06-28,San Blas-Canillejas,29,1,1,6,True,buen estado,1937,True,120000,0.0,mercado
+MD-0548,2025-11-07,Vicalvaro,86,2,2,6,False,a reformar,1953,False,181000,-0.1821,infraprecio_inyectado
+MD-0549,2026-04-03,Carabanchel,47,1,1,2,True,buen estado,2021,True,167000,0.0,mercado
+MD-0550,2025-10-16,Chamartin,110,4,2,7,False,buen estado,1965,True,892000,0.0,mercado
+MD-0551,2026-01-30,Arganzuela,52,2,1,8,True,a reformar,2008,False,271000,0.0,mercado
+MD-0552,2026-02-22,San Blas-Canillejas,63,2,1,6,True,buen estado,1950,True,252000,0.0,mercado
+MD-0553,2026-03-05,Fuencarral-El Pardo,143,6,3,4,True,buen estado,1985,False,563000,-0.1209,infraprecio_inyectado
+MD-0554,2026-05-04,Villa de Vallecas,65,3,1,7,True,a reformar,1915,True,219000,0.0,mercado
+MD-0555,2026-04-05,Ciudad Lineal,54,2,1,6,True,a reformar,1956,True,205000,0.0,mercado
+MD-0556,2026-05-03,Ciudad Lineal,54,2,1,5,True,reformado,1998,False,302000,0.2295,sobreprecio_inyectado
+MD-0557,2026-07-16,Tetuan,75,3,2,4,True,buen estado,1948,False,664000,0.207,sobreprecio_inyectado
+MD-0558,2026-05-13,Latina,72,2,1,7,True,reformado,1951,True,338000,0.0,mercado
+MD-0559,2026-05-10,Hortaleza,111,5,2,6,False,reformado,1931,False,543000,0.0,mercado
+MD-0560,2025-10-14,Retiro,81,3,2,1,True,buen estado,1963,True,586000,0.0,mercado
+MD-0561,2026-05-17,Fuencarral-El Pardo,100,3,2,4,True,a reformar,2002,True,612000,0.1721,sobreprecio_inyectado
+MD-0562,2026-08-05,Retiro,172,6,3,6,True,reformado,1973,True,1033000,0.0,mercado
+MD-0563,2026-04-14,Barajas,74,3,1,0,True,a reformar,1997,False,243000,0.0,mercado
+MD-0564,2026-06-25,Fuencarral-El Pardo,47,1,1,4,True,reformado,1920,True,332000,0.0,mercado
+MD-0565,2026-03-26,Moratalaz,85,3,2,8,True,reformado,1974,False,375000,0.0,mercado
+MD-0566,2025-11-24,Puente de Vallecas,33,1,1,0,True,buen estado,1965,True,102000,0.0,mercado
+MD-0567,2026-02-28,Puente de Vallecas,38,1,1,6,True,buen estado,2002,True,117000,0.0,mercado
+MD-0568,2026-08-19,Carabanchel,60,2,1,8,True,reformado,1972,True,196000,0.0,mercado
+MD-0569,2026-02-23,Hortaleza,80,3,2,4,True,a reformar,1974,True,275000,0.0,mercado
+MD-0570,2025-10-09,Puente de Vallecas,75,2,2,5,True,reformado,1958,False,229000,0.0,mercado
+MD-0571,2025-10-09,Moratalaz,83,3,2,3,False,reformado,1965,True,378000,0.0,mercado
+MD-0572,2026-08-23,Carabanchel,93,4,2,5,True,reformado,1990,True,383000,0.0,mercado
+MD-0573,2026-05-10,Chamartin,78,2,2,1,True,reformado,1996,True,666000,0.0,mercado
+MD-0574,2026-07-16,Moratalaz,92,4,2,7,True,buen estado,1976,False,373000,0.0,mercado
+MD-0575,2026-08-29,Hortaleza,93,4,2,2,True,reformado,1961,False,566000,0.0,mercado
+MD-0576,2026-04-25,Ciudad Lineal,71,3,1,8,True,a reformar,1982,False,246000,0.0,mercado
+MD-0577,2026-07-15,Centro,106,3,2,2,True,reformado,1963,True,675000,0.0,mercado
+MD-0578,2026-08-17,Ciudad Lineal,79,2,2,1,True,reformado,2005,False,342000,0.0,mercado
+MD-0579,2025-12-18,Hortaleza,169,6,3,2,True,buen estado,1970,True,936000,0.0,mercado
+MD-0580,2026-07-09,San Blas-Canillejas,45,1,1,8,True,a reformar,1971,True,126000,0.0,mercado
+MD-0581,2026-05-02,Barajas,75,2,2,2,True,buen estado,1964,True,375000,0.0,mercado
+MD-0582,2025-11-14,Salamanca,36,1,1,0,True,obra nueva,2022,False,283000,-0.121,infraprecio_inyectado
+MD-0583,2026-02-12,Puente de Vallecas,90,3,2,6,True,buen estado,2003,False,222000,0.0,mercado
+MD-0584,2026-04-02,Moratalaz,94,2,2,4,True,buen estado,1927,True,381000,0.0,mercado
+MD-0585,2025-12-12,Ciudad Lineal,41,2,1,6,False,buen estado,1955,False,129000,0.0,mercado
+MD-0586,2026-08-17,San Blas-Canillejas,42,1,1,8,True,a reformar,1936,False,132000,0.0,mercado
+MD-0587,2025-12-29,Salamanca,40,1,1,7,True,buen estado,1972,True,297000,0.0,mercado
+MD-0588,2026-07-14,Hortaleza,118,4,2,0,True,reformado,1941,False,907000,0.2022,sobreprecio_inyectado
+MD-0589,2025-12-08,Retiro,183,6,3,4,True,buen estado,1980,True,1381000,0.0,mercado
+MD-0590,2025-12-18,Ciudad Lineal,80,3,2,7,True,a reformar,1976,True,382000,0.2714,sobreprecio_inyectado
+MD-0591,2026-07-05,Fuencarral-El Pardo,182,6,3,7,True,buen estado,1976,True,1177000,0.0,mercado
+MD-0592,2026-04-30,Salamanca,54,1,1,0,True,buen estado,1976,False,471000,0.0,mercado
+MD-0593,2025-09-26,Tetuan,58,3,1,6,True,buen estado,1975,True,282000,0.0,mercado
+MD-0594,2026-04-17,Vicalvaro,40,1,1,8,True,obra nueva,2026,True,147000,0.0,mercado
+MD-0595,2026-04-01,San Blas-Canillejas,130,6,3,6,True,buen estado,1965,True,622000,0.0,mercado
+MD-0596,2026-05-01,Barajas,75,3,2,7,False,buen estado,1959,True,365000,0.0,mercado
+MD-0597,2025-09-05,Latina,41,1,1,0,True,reformado,1970,True,140000,0.0,mercado
+MD-0598,2025-11-09,Centro,47,2,1,3,True,buen estado,1973,False,284000,0.0,mercado
+MD-0599,2025-10-05,Moncloa-Aravaca,80,3,2,6,True,buen estado,1944,True,529000,0.0,mercado
+MD-0600,2025-09-17,Carabanchel,69,1,1,0,False,a reformar,1936,True,214000,0.0,mercado
+MD-0601,2026-08-07,Carabanchel,52,3,1,0,True,a reformar,1974,True,120000,0.0,mercado
+MD-0602,2026-02-03,Vicalvaro,80,4,2,2,True,reformado,2005,True,297000,0.0,mercado
+MD-0603,2025-09-01,Retiro,141,5,3,0,True,buen estado,1991,True,1448000,0.0,mercado
+MD-0604,2026-02-23,Chamartin,69,3,1,1,True,buen estado,1978,True,663000,0.0,mercado
+MD-0605,2026-08-06,Salamanca,62,3,1,4,True,buen estado,1959,True,611000,0.0,mercado
+MD-0606,2026-01-07,Usera,76,3,2,7,True,reformado,1979,False,270000,0.0,mercado
+MD-0607,2025-11-30,Ciudad Lineal,180,6,3,7,False,buen estado,1957,True,830000,0.0,mercado
+MD-0608,2026-02-10,Carabanchel,64,3,1,1,True,obra nueva,2022,True,266000,0.0,mercado
+MD-0609,2025-12-16,Puente de Vallecas,33,1,1,8,True,a reformar,1957,True,89000,0.0,mercado
+MD-0610,2025-10-27,Villa de Vallecas,44,1,1,6,True,buen estado,1964,True,165000,0.0,mercado
+MD-0611,2025-11-05,Chamartin,34,1,1,8,False,buen estado,1960,True,253000,0.0,mercado
+MD-0612,2025-12-04,Centro,59,2,1,6,True,reformado,1967,True,740000,0.2003,sobreprecio_inyectado
+MD-0613,2026-05-12,Moncloa-Aravaca,149,6,2,2,False,reformado,1941,True,1047000,0.0,mercado
+MD-0614,2025-09-20,Hortaleza,87,3,1,2,True,buen estado,1962,True,457000,0.0,mercado
+MD-0615,2026-07-30,Centro,177,6,3,7,False,reformado,1946,True,1154000,0.0,mercado
+MD-0616,2026-01-11,Barajas,155,6,3,5,True,obra nueva,2024,True,1470000,0.2094,sobreprecio_inyectado
+MD-0617,2026-07-06,Latina,56,2,1,7,True,buen estado,1948,True,162000,0.0,mercado
+MD-0618,2026-03-18,Ciudad Lineal,40,2,1,6,False,a reformar,1944,False,83000,-0.2301,infraprecio_inyectado
+MD-0619,2026-01-20,Latina,59,2,1,5,True,a reformar,2003,True,200000,0.0,mercado
+MD-0620,2026-06-01,Puente de Vallecas,41,1,1,2,True,reformado,1961,True,155000,0.0,mercado
+MD-0621,2025-09-13,Carabanchel,94,3,2,8,False,buen estado,1961,True,242000,0.0,mercado
+MD-0622,2026-07-01,Moncloa-Aravaca,128,5,2,0,False,a reformar,1952,False,575000,0.0,mercado
+MD-0623,2026-08-07,Puente de Vallecas,80,2,2,4,True,buen estado,1977,True,174000,0.0,mercado
+MD-0624,2026-05-23,Salamanca,112,3,2,2,False,reformado,1956,True,1479000,0.2236,sobreprecio_inyectado
+MD-0625,2026-02-12,Ciudad Lineal,60,3,1,0,True,buen estado,1982,True,268000,0.0,mercado
+MD-0626,2026-03-12,Moncloa-Aravaca,50,2,1,8,True,reformado,1953,True,330000,0.0,mercado
+MD-0627,2026-04-27,Hortaleza,42,1,1,7,True,buen estado,1977,False,278000,0.2029,sobreprecio_inyectado
+MD-0628,2025-10-10,Fuencarral-El Pardo,168,6,3,4,True,a reformar,1971,True,720000,0.0,mercado
+MD-0629,2026-04-01,Barajas,88,2,2,3,True,buen estado,1957,True,461000,0.0,mercado
+MD-0630,2026-07-03,Chamberi,48,2,1,6,False,buen estado,1938,False,439000,0.2122,sobreprecio_inyectado
+MD-0631,2025-12-24,Hortaleza,178,6,3,6,True,a reformar,1989,True,949000,0.0,mercado
+MD-0632,2026-03-29,Retiro,36,1,1,5,False,buen estado,1966,True,264000,0.0,mercado
+MD-0633,2025-09-05,Salamanca,63,2,1,5,False,buen estado,1967,False,385000,-0.183,infraprecio_inyectado
+MD-0634,2025-09-08,Chamartin,182,6,3,3,True,a reformar,1981,True,1415000,0.2342,sobreprecio_inyectado
+MD-0635,2026-05-12,San Blas-Canillejas,64,3,1,7,True,a reformar,1918,True,181000,0.0,mercado
+MD-0636,2025-10-21,Centro,36,2,1,2,True,a reformar,1985,False,194000,0.0,mercado
+MD-0637,2026-07-03,Hortaleza,148,5,3,6,True,obra nueva,2022,True,1476000,0.2738,sobreprecio_inyectado
+MD-0638,2025-12-07,Carabanchel,52,2,1,0,True,reformado,1986,True,198000,0.0,mercado
+MD-0639,2026-08-07,Moncloa-Aravaca,80,3,2,1,False,reformado,1924,True,570000,0.0,mercado
+MD-0640,2026-07-22,Ciudad Lineal,91,4,2,6,True,obra nueva,2023,True,454000,0.0,mercado
+MD-0641,2025-10-22,Latina,49,2,1,2,True,buen estado,1997,True,136000,-0.1719,infraprecio_inyectado
+MD-0642,2025-10-28,Carabanchel,63,2,1,2,True,buen estado,1980,True,322000,0.2496,sobreprecio_inyectado
+MD-0643,2026-06-11,Centro,77,4,2,2,True,buen estado,1999,True,560000,0.0,mercado
+MD-0644,2025-09-14,Ciudad Lineal,65,3,1,6,False,buen estado,1955,False,289000,0.2184,sobreprecio_inyectado
+MD-0645,2026-06-10,Puente de Vallecas,80,3,2,1,True,buen estado,1989,True,270000,0.0,mercado
+MD-0646,2025-12-18,Centro,103,3,2,3,True,reformado,1983,True,815000,0.0,mercado
+MD-0647,2026-08-01,San Blas-Canillejas,122,4,1,7,True,reformado,1987,True,575000,0.279,sobreprecio_inyectado
+MD-0648,2026-01-21,Vicalvaro,172,6,3,4,True,reformado,1988,False,817000,0.1889,sobreprecio_inyectado
+MD-0649,2026-02-11,Retiro,77,3,2,2,True,reformado,1963,False,551000,0.0,mercado
+MD-0650,2025-09-30,Arganzuela,42,1,1,7,True,a reformar,1985,True,220000,0.2472,sobreprecio_inyectado
+MD-0651,2026-02-24,Carabanchel,55,2,1,5,True,a reformar,1971,True,160000,0.0,mercado
+MD-0652,2025-11-03,Fuencarral-El Pardo,48,3,1,0,True,a reformar,1976,False,206000,0.0,mercado
+MD-0653,2025-11-27,Centro,39,1,1,1,True,buen estado,1979,True,288000,0.0,mercado
+MD-0654,2026-06-03,Vicalvaro,58,2,1,0,True,reformado,1985,True,234000,0.0,mercado
+MD-0655,2026-03-02,Hortaleza,98,3,2,5,True,a reformar,2011,True,459000,0.0,mercado
+MD-0656,2025-11-26,Centro,139,4,3,2,True,reformado,1991,False,696000,-0.2183,infraprecio_inyectado
+MD-0657,2026-05-27,Fuencarral-El Pardo,60,3,1,2,True,a reformar,1955,False,232000,0.0,mercado
+MD-0658,2025-09-21,Chamberi,58,2,1,8,False,buen estado,1960,True,439000,0.0,mercado
+MD-0659,2025-09-16,Tetuan,130,5,2,8,True,a reformar,1954,True,512000,0.0,mercado
+MD-0660,2026-02-03,Ciudad Lineal,40,2,1,8,True,reformado,1957,False,178000,0.0,mercado
+MD-0661,2025-11-15,Salamanca,45,2,1,1,True,buen estado,1972,True,452000,0.0,mercado
+MD-0662,2025-12-30,Hortaleza,81,3,2,6,False,reformado,2005,True,388000,0.0,mercado
+MD-0663,2025-10-02,Latina,64,1,1,2,False,buen estado,1969,True,178000,-0.1821,infraprecio_inyectado
+MD-0664,2026-07-10,Latina,52,2,1,5,False,buen estado,1953,False,99000,-0.2172,infraprecio_inyectado
+MD-0665,2026-01-16,Barajas,71,3,1,6,False,reformado,1962,False,247000,0.0,mercado
+MD-0666,2025-10-18,Vicalvaro,165,6,3,7,True,reformado,1984,False,602000,0.0,mercado
+MD-0667,2025-10-19,Moratalaz,88,4,2,1,True,buen estado,1984,True,370000,0.0,mercado
+MD-0668,2026-08-11,Carabanchel,66,2,1,1,True,reformado,1973,False,250000,0.0,mercado
+MD-0669,2026-07-31,Puente de Vallecas,40,2,1,7,True,buen estado,1978,True,142000,0.0,mercado
+MD-0670,2026-03-23,Puente de Vallecas,43,1,1,1,True,buen estado,1990,True,123000,0.0,mercado
+MD-0671,2026-06-27,Centro,120,5,2,2,False,a reformar,1955,True,689000,0.0,mercado
+MD-0672,2025-10-21,Puente de Vallecas,165,6,3,5,False,buen estado,1958,False,354000,0.0,mercado
+MD-0673,2026-07-08,Fuencarral-El Pardo,164,6,3,5,True,obra nueva,2026,True,1168000,0.0,mercado
+MD-0674,2025-10-09,Usera,86,4,2,0,True,obra nueva,2025,True,339000,0.0,mercado
+MD-0675,2026-03-20,San Blas-Canillejas,58,2,1,0,True,a reformar,1983,True,261000,0.1712,sobreprecio_inyectado
+MD-0676,2025-10-31,Hortaleza,60,2,1,8,True,buen estado,1939,True,336000,0.0,mercado
+MD-0677,2025-09-02,Tetuan,95,3,2,8,False,a reformar,1931,True,325000,0.0,mercado
+MD-0678,2026-04-19,Centro,35,1,1,4,False,obra nueva,2024,True,216000,0.0,mercado
+MD-0679,2025-11-08,San Blas-Canillejas,80,2,2,6,True,buen estado,1949,True,347000,0.0,mercado
+MD-0680,2026-02-01,Centro,111,4,2,6,False,a reformar,1962,True,578000,0.0,mercado
+MD-0681,2025-09-23,Salamanca,31,1,1,7,True,buen estado,1971,True,303000,0.0,mercado
+MD-0682,2026-08-27,Ciudad Lineal,165,6,3,2,True,a reformar,1989,True,804000,0.0,mercado
+MD-0683,2025-09-09,Retiro,119,5,2,8,True,buen estado,1993,True,961000,0.0,mercado
+MD-0684,2026-07-19,Latina,85,4,2,0,True,a reformar,1989,True,287000,0.0,mercado
+MD-0685,2025-11-24,Tetuan,68,3,1,4,False,buen estado,1968,True,359000,0.0,mercado
+MD-0686,2025-09-07,Chamartin,68,3,1,2,True,buen estado,1913,True,516000,0.0,mercado
+MD-0687,2026-03-02,Vicalvaro,61,3,1,5,True,buen estado,1978,True,227000,0.0,mercado
+MD-0688,2026-03-18,Hortaleza,180,6,3,3,True,reformado,1916,False,834000,0.0,mercado
+MD-0689,2025-09-26,Puente de Vallecas,43,2,1,3,False,buen estado,1952,True,119000,0.0,mercado
+MD-0690,2026-01-14,Puente de Vallecas,51,3,1,5,False,reformado,1961,True,122000,0.0,mercado
+MD-0691,2026-02-20,Salamanca,104,4,1,7,False,buen estado,1956,True,763000,0.0,mercado
+MD-0692,2025-09-13,Carabanchel,158,6,3,8,True,a reformar,1977,False,455000,0.0,mercado
+MD-0693,2026-07-27,San Blas-Canillejas,126,4,1,8,False,reformado,1943,True,535000,0.0,mercado
+MD-0694,2026-01-04,Ciudad Lineal,84,2,2,8,True,buen estado,1960,True,501000,0.1509,sobreprecio_inyectado
+MD-0695,2026-07-05,Centro,33,1,1,5,True,reformado,2000,True,252000,0.0,mercado
+MD-0696,2026-02-22,Puente de Vallecas,36,2,1,3,True,a reformar,1973,True,76000,0.0,mercado
+MD-0697,2025-11-24,Chamberi,72,3,1,5,True,buen estado,1964,True,596000,0.0,mercado
+MD-0698,2026-06-06,Centro,95,4,2,7,True,reformado,1958,True,738000,0.0,mercado
+MD-0699,2026-08-21,Chamberi,56,1,1,4,False,buen estado,1965,True,406000,0.0,mercado
+MD-0700,2025-10-05,Chamartin,51,2,1,0,True,a reformar,1948,True,376000,0.0,mercado
+MD-0701,2026-07-06,San Blas-Canillejas,60,2,1,5,True,buen estado,1972,True,280000,0.0,mercado
+MD-0702,2026-07-19,Carabanchel,93,4,2,0,True,reformado,1977,True,418000,0.2326,sobreprecio_inyectado
+MD-0703,2026-06-07,San Blas-Canillejas,85,2,2,1,True,buen estado,1974,True,360000,0.0,mercado
+MD-0704,2026-05-23,Carabanchel,54,1,1,7,False,buen estado,1937,True,195000,0.0,mercado
+MD-0705,2026-06-25,Latina,31,1,1,6,True,reformado,1974,True,145000,0.0,mercado
+MD-0706,2025-09-16,Latina,188,6,3,8,True,reformado,1970,True,608000,0.0,mercado
+MD-0707,2026-04-28,Ciudad Lineal,86,3,2,7,True,buen estado,1972,True,428000,0.0,mercado
+MD-0708,2025-09-30,Chamartin,186,6,3,0,True,a reformar,1960,True,1373000,0.0,mercado
+MD-0709,2025-11-05,Chamartin,61,2,1,2,True,buen estado,1998,True,429000,0.0,mercado
+MD-0710,2026-04-23,Fuencarral-El Pardo,60,2,1,0,True,buen estado,1975,False,373000,0.0,mercado
+MD-0711,2026-08-26,Fuencarral-El Pardo,89,2,2,0,True,buen estado,1971,True,467000,0.0,mercado
+MD-0712,2025-09-29,Ciudad Lineal,177,6,2,7,True,buen estado,2004,True,830000,0.0,mercado
+MD-0713,2026-01-14,Puente de Vallecas,69,2,1,0,True,buen estado,1965,True,234000,0.0,mercado
+MD-0714,2026-01-04,Carabanchel,59,2,1,1,True,buen estado,1989,True,225000,0.0,mercado
+MD-0715,2025-09-11,Puente de Vallecas,51,2,1,3,True,buen estado,1978,False,154000,0.0,mercado
+MD-0716,2026-06-22,Carabanchel,64,2,1,5,True,a reformar,2025,True,172000,0.0,mercado
+MD-0717,2026-07-20,Vicalvaro,80,3,2,1,True,reformado,1982,True,303000,0.0,mercado
+MD-0718,2025-10-04,Vicalvaro,41,2,1,7,True,reformado,1956,True,174000,0.0,mercado
+MD-0719,2026-04-12,Fuencarral-El Pardo,85,4,2,1,True,buen estado,1975,True,550000,0.1385,sobreprecio_inyectado
+MD-0720,2026-05-17,Chamartin,169,6,3,7,False,buen estado,1985,True,1114000,0.0,mercado
+MD-0721,2026-03-28,Arganzuela,73,2,1,2,True,buen estado,1992,False,364000,0.0,mercado
+MD-0722,2026-03-08,Carabanchel,48,1,1,6,True,a reformar,1998,True,137000,0.0,mercado
+MD-0723,2026-02-26,San Blas-Canillejas,121,4,2,5,True,buen estado,2001,False,441000,0.0,mercado
+MD-0724,2026-04-03,Latina,55,2,1,1,True,a reformar,1970,True,203000,0.0,mercado
+MD-0725,2026-08-13,Tetuan,36,2,1,5,False,buen estado,1939,True,266000,0.1431,sobreprecio_inyectado
+MD-0726,2026-08-17,Chamartin,50,1,1,0,True,reformado,1968,True,437000,0.0,mercado
+MD-0727,2025-09-04,Fuencarral-El Pardo,72,3,1,7,True,reformado,2025,False,360000,0.0,mercado
+MD-0728,2026-03-06,Vicalvaro,178,6,3,0,True,buen estado,1970,False,710000,0.0,mercado
+MD-0729,2025-09-24,Carabanchel,67,3,1,5,True,buen estado,1943,True,190000,0.0,mercado
+MD-0730,2026-07-21,Chamberi,153,5,3,4,True,buen estado,1968,True,1717000,0.0,mercado
+MD-0731,2026-02-28,Vicalvaro,187,6,3,3,True,buen estado,1988,True,737000,0.0,mercado
+MD-0732,2026-01-15,Puente de Vallecas,80,3,2,3,True,reformado,1976,True,265000,0.0,mercado
+MD-0733,2026-05-14,Moncloa-Aravaca,146,4,3,3,True,reformado,1970,True,975000,0.0,mercado
+MD-0734,2026-07-24,Salamanca,78,2,2,3,True,a reformar,1975,True,575000,0.0,mercado
+MD-0735,2026-08-11,Ciudad Lineal,69,3,1,6,False,reformado,1954,True,372000,0.0,mercado
+MD-0736,2026-06-27,Arganzuela,59,2,1,7,True,buen estado,1954,True,428000,0.0,mercado
+MD-0737,2026-04-21,Puente de Vallecas,82,3,2,0,False,buen estado,1989,True,285000,0.0,mercado
+MD-0738,2026-08-12,Usera,93,3,1,6,True,reformado,1977,True,405000,0.1823,sobreprecio_inyectado
+MD-0739,2025-10-14,Retiro,68,2,1,7,False,a reformar,1960,True,311000,-0.215,infraprecio_inyectado
+MD-0740,2025-12-15,Latina,84,3,2,4,True,obra nueva,2022,True,309000,0.0,mercado
+MD-0741,2025-09-19,Carabanchel,59,2,1,5,False,buen estado,1967,True,183000,0.0,mercado
+MD-0742,2026-04-03,Salamanca,105,5,1,1,True,reformado,1965,True,1533000,0.261,sobreprecio_inyectado
+MD-0743,2025-09-27,Fuencarral-El Pardo,55,2,1,5,True,buen estado,1993,True,251000,0.0,mercado
+MD-0744,2025-12-25,San Blas-Canillejas,82,4,2,3,False,a reformar,1957,False,200000,0.0,mercado
+MD-0745,2025-10-13,Puente de Vallecas,62,2,1,2,True,buen estado,1996,True,166000,-0.175,infraprecio_inyectado
+MD-0746,2026-03-09,Chamberi,32,1,1,7,False,buen estado,1947,False,189000,0.0,mercado
+MD-0747,2026-01-19,Moratalaz,187,6,3,7,True,a reformar,1959,True,517000,0.0,mercado
+MD-0748,2025-11-13,Villa de Vallecas,55,2,1,7,True,buen estado,1929,True,151000,0.0,mercado
+MD-0749,2026-03-27,Barajas,95,4,2,3,True,obra nueva,2024,True,465000,0.0,mercado
+MD-0750,2025-10-17,Villa de Vallecas,70,3,1,5,True,buen estado,1977,True,302000,0.0,mercado
+MD-0751,2026-06-06,Fuencarral-El Pardo,29,1,1,4,True,buen estado,1984,True,221000,0.1312,sobreprecio_inyectado
+MD-0752,2026-06-29,Centro,79,2,2,2,True,obra nueva,2024,True,551000,0.0,mercado
+MD-0753,2026-05-24,Villa de Vallecas,94,3,2,8,False,buen estado,1956,True,327000,0.1271,sobreprecio_inyectado
+MD-0754,2026-02-13,Tetuan,46,2,1,6,True,a reformar,1971,True,255000,0.0,mercado
+MD-0755,2025-12-09,Hortaleza,95,3,2,5,True,a reformar,1970,True,430000,0.0,mercado
+MD-0756,2025-11-09,San Blas-Canillejas,53,2,1,2,False,a reformar,1963,True,164000,0.0,mercado
+MD-0757,2026-05-20,Ciudad Lineal,44,2,1,4,True,reformado,2010,True,203000,0.0,mercado
+MD-0758,2026-04-24,Moncloa-Aravaca,145,5,2,8,True,obra nueva,2026,True,1359000,0.0,mercado
+MD-0759,2025-12-02,Barajas,95,4,2,8,False,a reformar,1967,True,276000,-0.139,infraprecio_inyectado
+MD-0760,2026-03-30,Carabanchel,74,3,1,5,True,obra nueva,2023,True,270000,0.0,mercado
+MD-0761,2026-07-24,Ciudad Lineal,72,2,1,0,True,buen estado,1950,True,397000,0.0,mercado
+MD-0762,2026-07-13,Ciudad Lineal,61,3,1,0,True,a reformar,1943,True,196000,0.0,mercado
+MD-0763,2026-05-10,Hortaleza,82,4,2,4,True,buen estado,1981,True,552000,0.0,mercado
+MD-0764,2026-02-06,Fuencarral-El Pardo,112,4,2,1,False,a reformar,1994,True,525000,0.0,mercado
+MD-0765,2026-06-16,Centro,29,1,1,8,False,buen estado,1963,True,180000,0.0,mercado
+MD-0766,2026-08-13,Centro,37,1,1,2,True,reformado,1989,True,314000,0.0,mercado
+MD-0767,2025-09-19,Puente de Vallecas,53,2,1,8,True,buen estado,1978,True,102000,-0.2326,infraprecio_inyectado
+MD-0768,2026-01-06,San Blas-Canillejas,134,4,3,6,True,buen estado,1975,True,515000,0.0,mercado
+MD-0769,2026-07-02,Tetuan,41,2,1,0,True,reformado,2017,True,187000,0.0,mercado
+MD-0770,2026-07-28,Retiro,97,3,2,4,True,buen estado,1978,True,641000,0.0,mercado
+MD-0771,2026-07-29,Centro,190,6,3,7,True,reformado,1964,False,1583000,0.0,mercado
+MD-0772,2026-06-23,Barajas,83,2,2,0,False,reformado,1960,False,471000,0.0,mercado
+MD-0773,2026-06-27,Centro,29,1,1,1,True,obra nueva,2022,False,242000,0.0,mercado
+MD-0774,2026-05-19,San Blas-Canillejas,72,4,1,4,True,buen estado,1936,True,278000,0.0,mercado
+MD-0775,2026-02-20,Centro,110,3,2,8,True,buen estado,1999,True,877000,0.0,mercado
+MD-0776,2025-12-04,San Blas-Canillejas,44,2,1,7,True,buen estado,1980,True,134000,0.0,mercado
+MD-0777,2026-03-03,Carabanchel,52,2,1,7,False,a reformar,1961,False,136000,0.0,mercado
+MD-0778,2026-06-04,Vicalvaro,100,3,2,1,True,a reformar,1973,True,338000,0.0,mercado
+MD-0779,2026-07-22,Moncloa-Aravaca,59,2,1,1,True,buen estado,1943,False,282000,0.0,mercado
+MD-0780,2025-11-29,Retiro,79,3,2,8,True,buen estado,1976,False,610000,0.0,mercado
+MD-0781,2026-03-13,Ciudad Lineal,80,2,2,0,True,buen estado,1995,True,510000,0.0,mercado
+MD-0782,2026-01-24,Latina,65,2,1,8,False,buen estado,1972,True,148000,-0.2039,infraprecio_inyectado
+MD-0783,2025-10-08,Puente de Vallecas,72,3,1,3,False,buen estado,1997,True,251000,0.0,mercado
+MD-0784,2025-11-11,Retiro,168,6,3,0,True,buen estado,2003,True,896000,-0.2328,infraprecio_inyectado
+MD-0785,2025-09-15,Latina,80,3,2,8,False,reformado,1965,False,239000,0.0,mercado
+MD-0786,2026-05-06,Fuencarral-El Pardo,68,3,1,0,True,reformado,1985,True,545000,0.0,mercado
+MD-0787,2026-05-23,Barajas,31,1,1,3,True,reformado,1978,False,182000,0.0,mercado
+MD-0788,2026-06-17,Tetuan,65,2,1,5,True,buen estado,1969,False,291000,0.0,mercado
+MD-0789,2026-03-02,Tetuan,60,3,1,4,False,a reformar,1951,True,245000,-0.2289,infraprecio_inyectado
+MD-0790,2025-10-27,Carabanchel,67,3,1,8,True,a reformar,1935,False,204000,0.0,mercado
+MD-0791,2026-08-27,Retiro,50,2,1,8,False,reformado,1959,False,267000,-0.1604,infraprecio_inyectado
+MD-0792,2026-03-27,Latina,80,3,2,1,True,reformado,1994,True,282000,0.0,mercado
+MD-0793,2026-06-25,San Blas-Canillejas,80,2,2,0,False,buen estado,1980,True,250000,0.0,mercado
+MD-0794,2026-07-16,Tetuan,129,4,2,0,True,reformado,1988,True,751000,0.0,mercado
+MD-0795,2026-04-14,Puente de Vallecas,40,2,1,8,True,a reformar,2018,True,121000,0.0,mercado
+MD-0796,2026-06-07,San Blas-Canillejas,92,3,2,8,False,buen estado,1962,False,267000,0.0,mercado
+MD-0797,2026-01-04,Arganzuela,57,1,1,2,True,obra nueva,2023,True,484000,0.0,mercado
+MD-0798,2026-03-18,Tetuan,39,2,1,7,False,buen estado,1966,True,148000,0.0,mercado
+MD-0799,2026-05-27,Arganzuela,88,3,2,0,True,buen estado,2006,True,536000,0.0,mercado
+MD-0800,2026-05-02,Vicalvaro,84,3,2,4,True,reformado,1967,True,340000,0.0,mercado
+MD-0801,2026-01-27,Centro,41,1,1,7,True,buen estado,1988,False,313000,0.0,mercado
+MD-0802,2026-08-20,Fuencarral-El Pardo,55,2,1,1,True,buen estado,2013,True,337000,0.0,mercado
+MD-0803,2026-01-26,Puente de Vallecas,87,3,1,5,True,reformado,1986,False,310000,0.0,mercado
+MD-0804,2025-12-17,Chamartin,94,3,1,3,False,reformado,1957,True,740000,0.1656,sobreprecio_inyectado
+MD-0805,2026-01-11,Fuencarral-El Pardo,61,2,1,8,True,buen estado,2009,True,294000,0.0,mercado
+MD-0806,2026-04-04,Hortaleza,77,4,1,5,True,obra nueva,2022,True,444000,0.0,mercado
+MD-0807,2026-03-30,Chamberi,177,6,3,3,False,a reformar,1966,True,1157000,0.0,mercado
+MD-0808,2026-03-08,Moratalaz,64,2,1,6,False,buen estado,1966,True,196000,0.0,mercado
+MD-0809,2026-06-29,Arganzuela,89,3,2,0,True,buen estado,1943,True,633000,0.0,mercado
+MD-0810,2026-05-01,Moratalaz,88,4,2,4,True,buen estado,1946,False,471000,0.2582,sobreprecio_inyectado
+MD-0811,2026-03-28,Latina,40,2,1,2,True,a reformar,2005,True,104000,0.0,mercado
+MD-0812,2026-06-17,Villa de Vallecas,89,4,2,8,True,reformado,1955,False,283000,0.0,mercado
+MD-0813,2026-01-30,Villaverde,46,2,1,3,True,buen estado,1961,False,121000,0.0,mercado
+MD-0814,2025-12-03,Arganzuela,63,2,1,8,True,reformado,1995,True,342000,-0.2243,infraprecio_inyectado
+MD-0815,2026-06-12,Hortaleza,133,5,3,0,True,a reformar,1967,True,581000,0.0,mercado
+MD-0816,2026-01-31,San Blas-Canillejas,91,3,2,6,True,reformado,1990,False,301000,0.0,mercado
+MD-0817,2026-08-07,Vicalvaro,113,3,1,0,False,buen estado,1944,True,314000,0.0,mercado
+MD-0818,2025-11-16,Fuencarral-El Pardo,138,4,2,3,True,a reformar,1965,True,548000,-0.1485,infraprecio_inyectado
+MD-0819,2026-08-29,Salamanca,133,4,3,3,True,buen estado,2011,False,870000,0.0,mercado
+MD-0820,2026-03-19,Moratalaz,63,2,1,3,True,reformado,1959,True,234000,0.0,mercado
+MD-0821,2025-11-25,Ciudad Lineal,39,1,1,4,False,reformado,1947,True,171000,0.0,mercado
+MD-0822,2026-04-21,Vicalvaro,131,5,3,0,False,buen estado,1928,False,443000,0.0,mercado
+MD-0823,2026-04-04,Tetuan,38,2,1,0,True,a reformar,1973,True,149000,0.0,mercado
+MD-0824,2025-11-02,Vicalvaro,183,6,3,7,True,a reformar,1977,True,577000,0.0,mercado
+MD-0825,2026-06-07,Arganzuela,43,1,1,2,True,a reformar,1989,True,230000,0.0,mercado
+MD-0826,2025-09-11,Vicalvaro,68,2,1,1,True,reformado,1984,True,301000,0.0,mercado
+MD-0827,2025-09-26,Chamartin,42,1,1,2,True,buen estado,1984,False,338000,0.0,mercado
+MD-0828,2026-06-19,Fuencarral-El Pardo,160,5,3,2,True,obra nueva,2026,False,983000,-0.1274,infraprecio_inyectado
+MD-0829,2026-08-26,Puente de Vallecas,28,1,1,8,True,buen estado,1943,False,62000,0.0,mercado
+MD-0830,2026-08-07,San Blas-Canillejas,65,2,1,2,False,a reformar,1938,True,172000,0.0,mercado
+MD-0831,2026-06-30,Ciudad Lineal,43,1,1,3,True,reformado,1995,True,218000,0.0,mercado
+MD-0832,2026-05-08,Hortaleza,167,6,3,1,True,obra nueva,2023,True,1134000,0.0,mercado
+MD-0833,2025-10-06,Retiro,82,3,2,1,True,obra nueva,2025,True,713000,0.0,mercado
+MD-0834,2026-06-16,Ciudad Lineal,96,3,2,0,True,reformado,1989,False,404000,-0.2575,infraprecio_inyectado
+MD-0835,2025-11-03,Puente de Vallecas,60,2,1,3,True,buen estado,1971,True,170000,0.0,mercado
+MD-0836,2026-01-01,Centro,40,2,1,7,True,obra nueva,2022,True,369000,-0.2055,infraprecio_inyectado
+MD-0837,2025-10-11,Salamanca,177,6,3,3,False,buen estado,1966,False,1090000,0.0,mercado
+MD-0838,2025-11-11,Usera,96,3,2,7,True,a reformar,1960,True,255000,0.0,mercado
+MD-0839,2025-12-01,Salamanca,186,6,3,2,True,buen estado,2003,True,1753000,0.0,mercado
+MD-0840,2025-10-26,Carabanchel,64,2,1,6,True,a reformar,1947,True,204000,0.1605,sobreprecio_inyectado
+MD-0841,2026-05-22,Fuencarral-El Pardo,45,2,1,7,False,buen estado,1976,True,225000,0.0,mercado
+MD-0842,2026-03-28,Salamanca,63,2,1,4,True,obra nueva,2024,True,736000,0.0,mercado
+MD-0843,2025-12-13,Salamanca,94,4,2,6,True,reformado,1936,False,877000,0.1604,sobreprecio_inyectado
+MD-0844,2025-11-24,Vicalvaro,60,2,1,1,True,buen estado,1945,False,235000,0.0,mercado
+MD-0845,2026-01-21,Vicalvaro,171,6,3,1,True,buen estado,1945,True,536000,0.0,mercado
+MD-0846,2026-06-28,Puente de Vallecas,44,2,1,5,True,reformado,1972,True,148000,0.0,mercado
+MD-0847,2026-02-22,Latina,53,2,1,7,True,a reformar,2009,False,120000,0.0,mercado
+MD-0848,2026-01-27,Latina,74,2,1,4,False,a reformar,1944,True,155000,0.0,mercado
+MD-0849,2026-07-25,Tetuan,78,2,2,3,True,reformado,1971,False,467000,0.0,mercado
+MD-0850,2025-10-14,Usera,80,3,2,6,True,a reformar,2025,True,164000,0.0,mercado
+MD-0851,2026-03-23,Centro,99,4,2,4,True,reformado,1990,True,793000,0.0,mercado
+MD-0852,2025-12-03,Moncloa-Aravaca,158,5,3,3,False,a reformar,2007,True,690000,0.0,mercado
+MD-0853,2026-01-01,Hortaleza,135,4,2,6,True,reformado,1974,True,702000,0.0,mercado
+MD-0854,2026-03-12,Fuencarral-El Pardo,115,4,2,5,True,a reformar,1958,True,385000,-0.2797,infraprecio_inyectado
+MD-0855,2026-04-19,Carabanchel,66,2,1,6,True,reformado,1992,True,193000,0.0,mercado
+MD-0856,2026-08-14,Villa de Vallecas,100,3,2,8,True,buen estado,1967,False,396000,0.0,mercado
+MD-0857,2026-05-31,Latina,71,1,1,3,True,buen estado,2002,True,170000,0.0,mercado
+MD-0858,2026-05-04,Centro,119,4,2,8,True,obra nueva,2025,False,978000,0.0,mercado
+MD-0859,2026-08-27,Retiro,83,3,2,5,True,buen estado,1951,True,589000,0.0,mercado
+MD-0860,2026-01-12,Hortaleza,74,2,1,3,True,buen estado,1971,True,462000,0.0,mercado
+MD-0861,2026-04-15,Latina,51,1,1,8,False,reformado,1915,True,160000,0.0,mercado
+MD-0862,2026-08-21,Fuencarral-El Pardo,139,6,3,8,True,buen estado,2003,False,843000,0.0,mercado
+MD-0863,2025-12-05,Carabanchel,122,4,1,4,True,obra nueva,2022,True,567000,0.0,mercado
+MD-0864,2026-08-11,Ciudad Lineal,66,2,1,5,False,buen estado,1968,False,278000,0.0,mercado
+MD-0865,2025-12-11,Ciudad Lineal,46,2,1,2,True,reformado,1995,True,208000,0.0,mercado
+MD-0866,2026-06-11,Salamanca,127,4,2,7,True,reformado,2002,True,842000,-0.2311,infraprecio_inyectado
+MD-0867,2026-01-15,Moratalaz,82,3,2,3,True,reformado,1978,True,323000,0.0,mercado
+MD-0868,2026-05-30,Centro,118,4,1,4,True,buen estado,1984,False,711000,0.0,mercado
+MD-0869,2026-03-03,Vicalvaro,114,3,2,7,False,buen estado,1940,False,370000,0.1648,sobreprecio_inyectado
+MD-0870,2026-04-29,Vicalvaro,98,3,2,3,True,obra nueva,2022,True,358000,0.0,mercado
+MD-0871,2026-05-21,Latina,48,2,1,5,True,buen estado,1950,True,194000,0.2728,sobreprecio_inyectado
+MD-0872,2026-06-09,San Blas-Canillejas,129,5,2,8,True,a reformar,1980,True,401000,0.0,mercado
+MD-0873,2026-07-05,Chamartin,87,3,2,3,False,reformado,1942,False,644000,0.0,mercado
+MD-0874,2026-05-28,Retiro,114,4,2,1,False,a reformar,1933,True,800000,0.0,mercado
+MD-0875,2026-05-28,Moncloa-Aravaca,68,2,1,4,True,a reformar,1971,True,344000,0.0,mercado
+MD-0876,2025-10-27,Moratalaz,91,3,2,3,True,reformado,1969,False,326000,0.0,mercado
+MD-0877,2026-02-05,Chamartin,105,3,2,6,True,buen estado,1972,True,902000,0.0,mercado
+MD-0878,2026-04-30,San Blas-Canillejas,68,2,1,5,True,reformado,1978,True,275000,0.0,mercado
+MD-0879,2026-02-25,Tetuan,65,2,1,3,True,buen estado,1956,True,365000,0.0,mercado
+MD-0880,2026-07-10,Puente de Vallecas,69,3,1,7,True,a reformar,1971,False,203000,0.1725,sobreprecio_inyectado
+MD-0881,2026-05-17,Latina,47,2,1,8,True,buen estado,1966,False,148000,0.0,mercado
+MD-0882,2025-10-31,Chamberi,80,3,2,2,True,reformado,1969,True,751000,0.0,mercado
+MD-0883,2026-04-30,San Blas-Canillejas,100,4,2,4,True,buen estado,1952,True,322000,0.0,mercado
+MD-0884,2025-12-30,Moratalaz,53,2,1,2,True,buen estado,1950,False,202000,0.0,mercado
+MD-0885,2025-10-08,Hortaleza,111,4,2,6,True,buen estado,1973,False,430000,0.0,mercado
+MD-0886,2025-12-26,Salamanca,72,2,1,6,True,a reformar,1990,True,647000,0.0,mercado
+MD-0887,2025-12-22,Retiro,47,2,1,7,True,obra nueva,2026,False,329000,0.0,mercado
+MD-0888,2025-12-03,San Blas-Canillejas,96,3,2,7,True,reformado,1937,True,366000,0.0,mercado
+MD-0889,2026-02-23,Chamartin,80,3,2,0,True,buen estado,1979,False,615000,0.0,mercado
+MD-0890,2026-06-21,Retiro,84,3,1,3,True,reformado,1953,True,665000,0.0,mercado
+MD-0891,2026-05-07,Hortaleza,77,3,2,1,True,a reformar,1968,True,330000,0.0,mercado
+MD-0892,2026-01-15,Fuencarral-El Pardo,188,6,3,1,True,buen estado,1925,True,1079000,0.0,mercado
+MD-0893,2025-09-10,San Blas-Canillejas,48,2,1,2,False,buen estado,1948,True,150000,-0.2006,infraprecio_inyectado
+MD-0894,2026-07-14,Puente de Vallecas,80,4,1,7,True,buen estado,1939,True,270000,0.0,mercado
+MD-0895,2026-04-02,Tetuan,72,3,1,2,True,buen estado,1957,True,349000,0.0,mercado
+MD-0896,2026-08-14,Centro,69,3,1,6,True,buen estado,1980,False,347000,0.0,mercado
+MD-0897,2026-01-11,Villa de Vallecas,83,4,2,2,True,buen estado,2009,False,236000,0.0,mercado
+MD-0898,2026-02-10,Latina,75,2,1,5,True,a reformar,1946,False,172000,0.0,mercado
+MD-0899,2026-02-05,Puente de Vallecas,78,2,2,4,False,a reformar,1946,True,195000,0.0,mercado
+MD-0900,2025-12-04,Carabanchel,71,4,1,8,True,buen estado,1932,True,279000,0.0,mercado
+MD-0901,2025-10-23,Arganzuela,159,5,3,1,True,reformado,1970,True,1288000,0.0,mercado
+MD-0902,2025-12-17,San Blas-Canillejas,59,1,1,4,True,reformado,1974,True,276000,0.0,mercado
+MD-0903,2025-09-12,Puente de Vallecas,81,3,2,3,False,buen estado,1968,True,171000,0.0,mercado
+MD-0904,2026-07-09,Ciudad Lineal,60,1,1,5,True,reformado,1989,True,321000,0.0,mercado
+MD-0905,2026-05-08,Centro,63,3,1,3,True,buen estado,1992,False,460000,0.0,mercado
+MD-0906,2025-12-12,Salamanca,55,2,1,4,True,buen estado,1989,True,495000,-0.2321,infraprecio_inyectado
+MD-0907,2025-10-22,Chamberi,91,3,2,1,True,buen estado,1997,False,678000,0.0,mercado
+MD-0908,2026-04-20,Tetuan,67,2,1,1,True,reformado,2025,True,459000,0.0,mercado
+MD-0909,2025-11-20,Latina,56,1,1,0,True,obra nueva,2023,True,268000,0.19,sobreprecio_inyectado
+MD-0910,2026-01-24,Latina,45,1,1,7,True,buen estado,1990,True,141000,0.0,mercado
+MD-0911,2026-04-19,Vicalvaro,174,5,3,1,False,buen estado,1957,True,702000,0.0,mercado
+MD-0912,2026-01-22,Hortaleza,96,3,2,2,True,a reformar,1952,True,423000,0.0,mercado
+MD-0913,2026-03-25,Chamberi,164,6,3,5,True,reformado,1963,False,1421000,0.0,mercado
+MD-0914,2026-05-25,Arganzuela,80,3,2,5,True,reformado,1962,True,414000,0.0,mercado
+MD-0915,2026-08-26,Retiro,71,2,1,7,True,reformado,2011,False,663000,0.269,sobreprecio_inyectado
+MD-0916,2026-07-13,Fuencarral-El Pardo,58,2,1,7,True,a reformar,1989,True,296000,0.0,mercado
+MD-0917,2026-03-25,Hortaleza,84,2,1,5,True,buen estado,2014,True,548000,0.0,mercado
+MD-0918,2026-08-02,Tetuan,98,4,2,5,True,buen estado,2004,True,479000,0.0,mercado
+MD-0919,2026-05-25,Moncloa-Aravaca,115,4,2,2,True,obra nueva,2022,True,796000,0.0,mercado
+MD-0920,2025-09-03,Hortaleza,167,5,3,4,True,buen estado,1984,True,975000,0.0,mercado
+MD-0921,2026-04-27,Chamberi,48,1,1,5,True,buen estado,1986,False,296000,0.0,mercado
+MD-0922,2026-07-23,Hortaleza,145,5,3,7,True,buen estado,2009,True,822000,0.0,mercado
+MD-0923,2025-09-19,Puente de Vallecas,116,4,2,6,True,reformado,1960,True,442000,0.0,mercado
+MD-0924,2026-04-16,Barajas,64,2,1,0,True,buen estado,1997,True,299000,0.0,mercado
+MD-0925,2025-12-18,Centro,97,4,2,4,True,buen estado,1963,True,655000,0.0,mercado
+MD-0926,2025-12-04,Puente de Vallecas,32,1,1,0,False,buen estado,1966,False,88000,0.1769,sobreprecio_inyectado
+MD-0927,2026-01-01,Moncloa-Aravaca,99,3,1,5,False,buen estado,1969,True,580000,0.0,mercado
+MD-0928,2025-12-11,Fuencarral-El Pardo,35,2,1,4,True,reformado,1965,True,227000,0.0,mercado
+MD-0929,2026-08-06,Tetuan,78,2,2,1,True,a reformar,1956,True,289000,0.0,mercado
+MD-0930,2026-01-16,Latina,97,4,2,7,False,buen estado,1946,True,284000,0.0,mercado
+MD-0931,2026-06-25,Tetuan,94,4,2,3,False,buen estado,1932,True,439000,0.0,mercado
+MD-0932,2025-10-23,Fuencarral-El Pardo,144,5,3,2,True,buen estado,1958,True,959000,0.0,mercado
+MD-0933,2025-12-24,Carabanchel,74,3,1,6,True,obra nueva,2022,True,315000,0.0,mercado
+MD-0934,2026-07-26,Puente de Vallecas,123,4,1,5,True,buen estado,1989,True,292000,0.0,mercado
+MD-0935,2025-12-23,Carabanchel,78,2,2,8,True,a reformar,1982,True,239000,0.0,mercado
+MD-0936,2026-08-28,Chamberi,186,6,3,2,True,buen estado,1957,True,1515000,0.0,mercado
+MD-0937,2026-01-06,Chamartin,63,2,1,7,True,reformado,1994,True,609000,0.0,mercado
+MD-0938,2026-03-23,Salamanca,101,4,2,2,False,buen estado,1938,True,1165000,0.0,mercado
+MD-0939,2026-08-17,Carabanchel,47,2,1,1,False,a reformar,1963,True,154000,0.0,mercado
+MD-0940,2025-11-04,Retiro,58,2,1,2,False,buen estado,1973,False,347000,0.0,mercado
+MD-0941,2026-03-04,Carabanchel,46,2,1,0,True,a reformar,1976,True,124000,0.0,mercado
+MD-0942,2026-08-11,Tetuan,72,2,1,2,True,reformado,1945,True,561000,0.2487,sobreprecio_inyectado
+MD-0943,2026-05-05,Puente de Vallecas,93,3,2,5,False,buen estado,1969,True,209000,0.0,mercado
+MD-0944,2026-01-26,Villa de Vallecas,61,1,1,7,True,obra nueva,2024,True,310000,0.0,mercado
+MD-0945,2026-05-12,Ciudad Lineal,94,3,2,3,False,buen estado,1950,True,454000,0.0,mercado
+MD-0946,2026-08-04,Ciudad Lineal,51,1,1,8,True,a reformar,2007,False,189000,0.0,mercado
+MD-0947,2026-02-01,Moratalaz,47,2,1,8,True,a reformar,1919,True,135000,0.0,mercado
+MD-0948,2026-04-19,Ciudad Lineal,94,3,2,8,True,buen estado,1922,False,418000,0.0,mercado
+MD-0949,2026-05-20,Centro,140,5,3,4,False,reformado,1949,True,1054000,0.0,mercado
+MD-0950,2025-10-21,Arganzuela,49,1,1,4,False,a reformar,1938,False,197000,0.0,mercado
+MD-0951,2026-01-10,Arganzuela,46,2,1,3,False,buen estado,1984,False,240000,0.0,mercado
+MD-0952,2025-10-13,Moncloa-Aravaca,130,5,3,3,False,buen estado,1993,False,616000,0.0,mercado
+MD-0953,2026-06-15,Villa de Vallecas,64,2,1,0,True,buen estado,1982,True,209000,0.0,mercado
+MD-0954,2025-12-17,Arganzuela,173,6,3,8,False,buen estado,1953,True,948000,0.0,mercado
+MD-0955,2026-08-02,Vicalvaro,188,6,3,8,True,obra nueva,2023,False,667000,0.0,mercado
+MD-0956,2026-05-18,Puente de Vallecas,76,2,2,0,True,a reformar,1988,False,156000,0.0,mercado
+MD-0957,2026-08-15,Latina,46,2,1,1,True,buen estado,1956,True,169000,0.0,mercado
+MD-0958,2026-02-13,Villa de Vallecas,95,4,1,3,False,reformado,1929,False,332000,0.0,mercado
+MD-0959,2026-07-30,Chamartin,146,5,3,5,False,buen estado,1951,True,1022000,-0.2058,infraprecio_inyectado
+MD-0960,2026-05-31,Puente de Vallecas,33,1,1,0,True,reformado,1992,True,107000,0.0,mercado
+MD-0961,2025-12-07,Fuencarral-El Pardo,48,3,1,2,True,reformado,2002,False,291000,0.0,mercado
+MD-0962,2026-05-14,Chamberi,56,1,1,7,True,buen estado,1952,False,451000,0.0,mercado
+MD-0963,2026-08-13,Fuencarral-El Pardo,80,2,2,8,True,a reformar,1963,True,428000,0.0,mercado
+MD-0964,2026-03-27,Retiro,103,4,2,2,True,reformado,2024,True,802000,0.0,mercado
+MD-0965,2026-03-12,Fuencarral-El Pardo,125,5,2,4,True,a reformar,1990,False,595000,0.0,mercado
+MD-0966,2026-05-14,Moratalaz,96,3,2,3,True,reformado,1956,True,432000,0.0,mercado
+MD-0967,2025-10-30,Tetuan,39,1,1,1,True,buen estado,1973,True,181000,0.2119,sobreprecio_inyectado
+MD-0968,2025-10-04,Chamartin,174,6,3,0,True,a reformar,1979,False,1137000,0.2025,sobreprecio_inyectado
+MD-0969,2026-03-01,Chamartin,73,3,1,1,True,buen estado,1971,True,531000,0.0,mercado
+MD-0970,2026-06-22,Carabanchel,77,2,2,2,True,a reformar,1985,True,216000,0.0,mercado
+MD-0971,2025-11-26,San Blas-Canillejas,60,2,1,8,True,a reformar,1998,True,167000,0.0,mercado
+MD-0972,2025-11-04,San Blas-Canillejas,139,6,3,6,True,a reformar,1957,True,390000,0.0,mercado
+MD-0973,2026-02-12,Vicalvaro,87,3,2,2,True,buen estado,1972,False,271000,0.2509,sobreprecio_inyectado
+MD-0974,2025-10-18,Carabanchel,57,1,1,8,False,buen estado,1943,True,175000,0.0,mercado
+MD-0975,2026-02-14,Carabanchel,46,2,1,3,True,a reformar,2002,True,145000,0.0,mercado
+MD-0976,2025-10-14,Chamberi,39,2,1,7,True,buen estado,1963,True,259000,-0.2299,infraprecio_inyectado
+MD-0977,2026-05-06,Tetuan,156,4,3,1,True,buen estado,1973,True,992000,0.2692,sobreprecio_inyectado
+MD-0978,2026-08-30,Centro,79,3,2,5,False,buen estado,1990,True,785000,0.1894,sobreprecio_inyectado
+MD-0979,2026-05-05,Carabanchel,77,2,2,2,True,reformado,1984,False,245000,0.0,mercado
+MD-0980,2025-11-26,Fuencarral-El Pardo,56,2,1,6,True,reformado,1964,False,295000,0.0,mercado
+MD-0981,2026-03-18,Tetuan,41,1,1,4,True,buen estado,1981,True,189000,0.0,mercado
+MD-0982,2026-05-26,Ciudad Lineal,126,4,2,3,True,a reformar,2004,True,623000,0.0,mercado
+MD-0983,2025-10-26,Latina,79,2,2,4,True,reformado,1942,True,355000,0.1688,sobreprecio_inyectado
+MD-0984,2026-05-21,Fuencarral-El Pardo,66,2,1,6,True,obra nueva,2025,True,364000,0.0,mercado
+MD-0985,2026-08-12,Moratalaz,167,6,2,1,True,buen estado,1992,True,615000,0.0,mercado
+MD-0986,2026-04-03,Centro,40,1,1,1,True,buen estado,1979,False,274000,0.0,mercado
+MD-0987,2026-03-26,Barajas,60,2,1,1,True,buen estado,1999,True,225000,-0.2489,infraprecio_inyectado
+MD-0988,2025-09-28,Chamberi,55,2,1,0,True,a reformar,1948,True,419000,0.0,mercado
+MD-0989,2025-11-11,Tetuan,92,3,2,2,True,obra nueva,2023,False,573000,0.0,mercado
+MD-0990,2026-05-20,Carabanchel,54,3,1,4,True,buen estado,2003,True,159000,0.0,mercado
+MD-0991,2026-07-18,Salamanca,74,2,1,7,True,a reformar,1970,False,449000,-0.196,infraprecio_inyectado
+MD-0992,2026-06-08,Latina,60,3,1,6,True,buen estado,1977,True,238000,0.0,mercado
+MD-0993,2026-03-28,Moratalaz,93,4,2,6,False,reformado,1962,False,343000,0.0,mercado
+MD-0994,2026-08-09,Retiro,93,3,2,5,True,obra nueva,2022,True,976000,0.1756,sobreprecio_inyectado
+MD-0995,2026-05-11,Latina,73,2,1,3,True,buen estado,1994,False,230000,0.0,mercado
+MD-0996,2026-04-09,San Blas-Canillejas,150,6,2,5,True,a reformar,1996,True,409000,0.0,mercado
+MD-0997,2026-08-26,Arganzuela,77,3,1,3,True,buen estado,2025,True,381000,0.0,mercado
+MD-0998,2026-02-26,Ciudad Lineal,37,1,1,3,True,buen estado,2024,True,209000,0.0,mercado
+MD-0999,2025-12-09,Retiro,145,6,3,2,True,reformado,1982,True,946000,-0.1362,infraprecio_inyectado
+MD-1000,2025-11-28,Latina,74,3,1,2,True,reformado,1963,True,213000,0.0,mercado
+MD-1001,2026-05-02,Villa de Vallecas,171,6,2,1,True,buen estado,1961,True,676000,0.0,mercado
+MD-1002,2025-10-03,Retiro,54,1,1,7,True,reformado,1946,False,416000,0.0,mercado
+MD-1003,2026-03-01,Centro,69,2,1,1,True,a reformar,1986,True,531000,0.0,mercado
+MD-1004,2025-11-18,San Blas-Canillejas,76,4,1,7,True,reformado,2011,False,283000,0.0,mercado
+MD-1005,2026-05-18,Fuencarral-El Pardo,98,3,2,0,True,buen estado,1978,True,503000,0.0,mercado
+MD-1006,2026-06-12,Tetuan,69,3,1,8,True,buen estado,1971,True,434000,0.0,mercado
+MD-1007,2026-04-10,Centro,32,1,1,5,True,reformado,1974,True,245000,0.0,mercado
+MD-1008,2025-12-26,Hortaleza,154,6,3,1,False,reformado,1932,True,1038000,0.0,mercado
+MD-1009,2026-06-05,Chamberi,101,3,2,2,True,buen estado,1984,True,761000,0.0,mercado
+MD-1010,2025-11-04,Arganzuela,129,5,2,3,True,buen estado,1978,True,668000,0.0,mercado
+MD-1011,2026-07-02,Hortaleza,95,3,2,2,True,reformado,1973,False,407000,0.0,mercado
+MD-1012,2026-03-11,Carabanchel,68,3,1,8,True,buen estado,1962,True,189000,0.0,mercado
+MD-1013,2026-07-06,Vicalvaro,177,6,2,5,True,buen estado,1974,True,633000,0.0,mercado
+MD-1014,2025-09-15,Chamberi,63,2,1,4,True,buen estado,1977,True,530000,0.0,mercado
+MD-1015,2025-09-21,Salamanca,63,2,1,0,False,reformado,1961,True,541000,0.0,mercado
+MD-1016,2026-08-16,Tetuan,138,5,3,1,False,buen estado,1951,False,622000,0.0,mercado
+MD-1017,2025-11-01,Puente de Vallecas,44,1,1,2,True,buen estado,1963,True,123000,0.0,mercado
+MD-1018,2026-03-25,Arganzuela,74,2,1,0,True,buen estado,1980,False,489000,0.0,mercado
+MD-1019,2025-12-11,Centro,33,1,1,1,True,reformado,1944,True,306000,0.0,mercado
+MD-1020,2026-06-18,Arganzuela,111,4,1,2,True,buen estado,1971,True,746000,0.0,mercado
+MD-1021,2025-12-12,Tetuan,58,2,1,7,True,obra nueva,2025,True,311000,0.0,mercado
+MD-1022,2025-10-05,Chamberi,180,6,3,4,True,a reformar,1982,True,1494000,0.2208,sobreprecio_inyectado
+MD-1023,2026-07-28,Usera,65,2,1,6,True,buen estado,1990,False,188000,0.0,mercado
+MD-1024,2026-07-20,Chamartin,53,1,1,1,True,buen estado,1955,True,341000,-0.2507,infraprecio_inyectado
+MD-1025,2026-07-03,Hortaleza,122,3,2,2,True,buen estado,1943,True,763000,0.0,mercado
+MD-1026,2026-03-29,Chamartin,37,2,1,2,True,buen estado,2008,True,314000,0.0,mercado
+MD-1027,2026-06-08,Centro,32,2,1,5,True,buen estado,1958,True,228000,0.0,mercado
+MD-1028,2026-03-08,Fuencarral-El Pardo,169,6,3,5,True,reformado,1990,False,1079000,0.0,mercado
+MD-1029,2026-08-09,Puente de Vallecas,43,2,1,3,False,reformado,1947,True,115000,0.0,mercado
+MD-1030,2025-09-01,Puente de Vallecas,62,1,1,7,True,reformado,1956,True,208000,0.0,mercado
+MD-1031,2025-12-23,Hortaleza,118,4,2,7,False,a reformar,1967,True,450000,0.0,mercado
+MD-1032,2026-04-25,Villa de Vallecas,59,3,1,6,True,buen estado,2010,True,153000,-0.2628,infraprecio_inyectado
+MD-1033,2026-03-12,Villa de Vallecas,93,2,1,0,True,buen estado,1979,True,310000,0.0,mercado
+MD-1034,2026-06-24,Chamberi,36,2,1,5,True,reformado,1989,False,247000,-0.1688,infraprecio_inyectado
+MD-1035,2026-03-21,Tetuan,34,1,1,5,False,buen estado,1948,True,170000,0.0,mercado
+MD-1036,2026-08-29,Carabanchel,39,1,1,2,True,obra nueva,2023,True,157000,0.0,mercado
+MD-1037,2026-07-17,Centro,36,1,1,3,True,buen estado,1975,True,248000,0.0,mercado
+MD-1038,2025-11-30,Tetuan,84,3,2,6,True,obra nueva,2025,False,503000,0.0,mercado
+MD-1039,2026-03-26,Vicalvaro,136,5,3,3,True,buen estado,1991,True,462000,0.0,mercado
+MD-1040,2026-01-18,Villa de Vallecas,76,3,2,0,True,a reformar,2003,True,192000,0.0,mercado
+MD-1041,2026-03-15,Fuencarral-El Pardo,190,6,3,6,True,buen estado,1976,True,725000,-0.2038,infraprecio_inyectado
+MD-1042,2026-01-22,Ciudad Lineal,89,3,2,6,True,a reformar,1972,True,372000,0.2334,sobreprecio_inyectado
+MD-1043,2025-09-21,Chamberi,171,6,3,0,True,reformado,1957,True,1189000,-0.2547,infraprecio_inyectado
+MD-1044,2025-11-23,Chamartin,72,3,1,4,True,a reformar,1988,True,631000,0.2079,sobreprecio_inyectado
+MD-1045,2025-11-04,Puente de Vallecas,106,3,2,7,True,buen estado,1971,False,247000,0.0,mercado
+MD-1046,2026-02-27,Arganzuela,69,2,1,2,True,buen estado,1976,True,379000,-0.1433,infraprecio_inyectado
+MD-1047,2026-03-27,Puente de Vallecas,81,3,1,4,True,buen estado,1996,True,255000,0.0,mercado
+MD-1048,2025-12-14,Arganzuela,77,2,2,2,True,a reformar,1971,True,295000,-0.1858,infraprecio_inyectado
+MD-1049,2025-09-25,Salamanca,49,2,1,5,True,reformado,1972,True,435000,0.0,mercado
+MD-1050,2026-05-13,Latina,35,2,1,3,True,buen estado,2003,True,137000,0.0,mercado
+MD-1051,2025-10-15,Latina,72,3,1,4,True,buen estado,1925,True,227000,0.0,mercado
+MD-1052,2025-10-11,Centro,46,1,1,6,False,a reformar,1944,False,262000,0.0,mercado
+MD-1053,2026-04-22,Usera,84,3,2,6,True,a reformar,1991,False,192000,0.0,mercado
+MD-1054,2025-09-29,Latina,28,1,1,4,True,reformado,1975,True,90000,0.0,mercado
+MD-1055,2025-11-08,Latina,60,3,1,1,False,buen estado,2025,False,153000,0.0,mercado
+MD-1056,2025-10-09,Chamartin,177,6,3,3,True,buen estado,1982,True,1269000,0.0,mercado
+MD-1057,2026-03-26,Salamanca,175,6,3,1,True,buen estado,1975,False,1295000,0.0,mercado
+MD-1058,2026-03-05,Villa de Vallecas,30,2,1,0,True,buen estado,1969,False,81000,0.0,mercado
+MD-1059,2025-12-19,San Blas-Canillejas,111,3,2,2,True,buen estado,1991,True,324000,-0.1914,infraprecio_inyectado
+MD-1060,2025-09-26,Latina,63,2,1,4,True,a reformar,1987,True,166000,0.0,mercado
+MD-1061,2026-06-28,Centro,50,2,1,5,True,a reformar,1972,True,295000,0.0,mercado
+MD-1062,2025-11-25,Salamanca,81,2,2,1,True,reformado,1999,True,675000,0.0,mercado
+MD-1063,2026-02-13,Carabanchel,125,5,2,0,True,a reformar,2004,True,373000,0.0,mercado
+MD-1064,2026-08-08,Usera,60,2,1,0,True,buen estado,1951,True,142000,0.0,mercado
+MD-1065,2025-12-20,Vicalvaro,121,4,1,3,True,buen estado,1977,False,462000,0.0,mercado
+MD-1066,2025-12-27,San Blas-Canillejas,116,5,1,1,True,buen estado,2000,True,454000,0.1815,sobreprecio_inyectado
+MD-1067,2026-05-26,Retiro,44,2,1,7,True,reformado,1918,True,482000,0.1803,sobreprecio_inyectado
+MD-1068,2026-03-29,Centro,41,2,1,6,True,obra nueva,2023,True,357000,0.0,mercado
+MD-1069,2026-07-02,Puente de Vallecas,81,2,2,3,True,buen estado,1969,True,300000,0.0,mercado
+MD-1070,2026-08-04,Salamanca,57,2,1,7,True,buen estado,1986,False,442000,0.0,mercado
+MD-1071,2025-09-04,Vicalvaro,95,3,2,7,True,buen estado,1977,True,323000,0.0,mercado
+MD-1072,2025-12-26,Latina,62,2,1,0,True,a reformar,1975,True,204000,0.0,mercado
+MD-1073,2025-11-10,Fuencarral-El Pardo,85,4,2,2,True,reformado,1978,True,645000,0.0,mercado
+MD-1074,2026-03-06,Retiro,58,1,1,0,False,a reformar,1967,True,411000,0.0,mercado
+MD-1075,2026-01-13,Puente de Vallecas,102,3,2,7,True,reformado,1947,False,281000,0.1966,sobreprecio_inyectado
+MD-1076,2026-05-08,Hortaleza,65,2,1,4,True,buen estado,1999,True,345000,0.0,mercado
+MD-1077,2026-01-04,Ciudad Lineal,75,3,2,1,True,buen estado,1993,True,497000,0.0,mercado
+MD-1078,2026-01-22,Carabanchel,51,2,1,4,True,reformado,1967,True,185000,0.0,mercado
+MD-1079,2026-03-02,Arganzuela,184,6,3,3,True,reformado,1991,True,1237000,0.0,mercado
+MD-1080,2025-10-26,Chamartin,60,2,1,8,True,buen estado,1953,True,452000,0.0,mercado
+MD-1081,2025-10-22,Tetuan,71,3,1,8,True,reformado,2006,True,361000,0.0,mercado
+MD-1082,2026-08-12,Tetuan,63,2,1,8,False,reformado,1907,True,298000,-0.247,infraprecio_inyectado
+MD-1083,2025-12-27,Vicalvaro,187,6,3,2,True,buen estado,1986,True,704000,0.0,mercado
+MD-1084,2025-10-18,Salamanca,175,6,3,8,True,buen estado,1998,True,1608000,0.0,mercado
+MD-1085,2026-06-02,Moncloa-Aravaca,128,5,2,5,True,reformado,1964,True,866000,0.0,mercado
+MD-1086,2026-08-06,Salamanca,31,1,1,8,True,a reformar,1979,True,227000,0.0,mercado
+MD-1087,2026-04-18,Salamanca,164,6,3,5,True,a reformar,1961,False,854000,0.0,mercado
+MD-1088,2026-07-11,Hortaleza,104,3,2,2,True,a reformar,1978,True,469000,0.0,mercado
+MD-1089,2025-10-01,Puente de Vallecas,77,2,1,7,False,a reformar,1951,True,189000,0.0,mercado
+MD-1090,2025-09-17,Hortaleza,171,6,3,7,False,buen estado,1966,True,725000,0.0,mercado
+MD-1091,2025-10-05,Tetuan,69,3,1,0,True,a reformar,2019,True,323000,0.0,mercado
+MD-1092,2026-04-16,Puente de Vallecas,31,1,1,1,False,buen estado,1965,True,87000,0.0,mercado
+MD-1093,2026-04-20,Tetuan,28,2,1,8,False,reformado,1961,True,149000,0.0,mercado
+MD-1094,2025-10-17,Retiro,63,3,1,3,False,reformado,1953,False,376000,0.0,mercado
+MD-1095,2026-08-12,San Blas-Canillejas,99,4,2,3,True,a reformar,1978,True,255000,0.0,mercado
+MD-1096,2026-04-13,Ciudad Lineal,66,3,1,5,True,obra nueva,2022,True,357000,0.0,mercado
+MD-1097,2026-07-14,Salamanca,43,1,1,8,True,buen estado,1987,True,354000,0.0,mercado
+MD-1098,2026-07-13,Chamberi,68,4,1,3,True,a reformar,1983,True,390000,0.0,mercado
+MD-1099,2026-01-26,Ciudad Lineal,96,4,2,6,False,buen estado,1945,True,491000,0.0,mercado
+MD-1100,2025-12-27,Retiro,141,5,3,1,False,a reformar,1939,True,1052000,0.2057,sobreprecio_inyectado
+MD-1101,2025-10-25,Latina,84,4,2,5,False,buen estado,1950,True,284000,0.0,mercado
+MD-1102,2026-06-24,Salamanca,83,3,2,2,True,buen estado,1957,True,663000,0.0,mercado
+MD-1103,2026-01-18,Latina,73,3,1,0,True,buen estado,1957,True,233000,0.0,mercado
+MD-1104,2026-06-21,Carabanchel,143,4,3,1,True,reformado,1984,True,546000,0.0,mercado
+MD-1105,2025-12-21,Latina,48,2,1,3,True,buen estado,1971,False,152000,0.0,mercado
+MD-1106,2026-03-27,Puente de Vallecas,46,2,1,3,True,obra nueva,2023,False,130000,0.0,mercado
+MD-1107,2025-12-04,Centro,49,2,1,0,True,a reformar,1980,True,293000,0.0,mercado
+MD-1108,2026-06-22,Puente de Vallecas,105,4,1,8,True,buen estado,2006,False,252000,0.0,mercado
+MD-1109,2026-04-10,Puente de Vallecas,54,2,1,2,True,buen estado,1991,False,140000,0.0,mercado
+MD-1110,2026-07-29,Chamartin,160,6,3,0,True,a reformar,1971,False,940000,0.0,mercado
+MD-1111,2025-12-04,Tetuan,138,6,3,0,True,reformado,2021,True,786000,0.0,mercado
+MD-1112,2026-07-06,Carabanchel,158,5,3,5,False,reformado,1950,True,400000,0.0,mercado
+MD-1113,2026-07-27,Tetuan,78,3,2,2,True,reformado,2002,True,466000,0.0,mercado
+MD-1114,2026-06-30,Carabanchel,57,3,1,4,True,reformado,1964,True,223000,0.0,mercado
+MD-1115,2025-12-23,Villaverde,45,2,1,1,True,a reformar,1970,False,66000,0.0,mercado
+MD-1116,2026-04-10,Salamanca,30,1,1,7,False,a reformar,1932,False,156000,-0.1304,infraprecio_inyectado
+MD-1117,2025-10-29,Villaverde,51,3,1,7,True,reformado,1975,True,162000,0.0,mercado
+MD-1118,2026-05-09,Villa de Vallecas,58,2,1,4,True,buen estado,1969,True,243000,0.0,mercado
+MD-1119,2025-09-10,Carabanchel,100,4,2,8,True,obra nueva,2022,False,384000,0.0,mercado
+MD-1120,2025-11-30,Vicalvaro,121,4,2,0,True,buen estado,2000,True,471000,0.0,mercado
+MD-1121,2026-06-22,Vicalvaro,70,4,1,2,True,a reformar,1980,True,240000,0.0,mercado
+MD-1122,2026-04-13,San Blas-Canillejas,69,3,1,5,True,buen estado,1947,True,236000,0.0,mercado
+MD-1123,2026-07-15,Hortaleza,78,3,2,5,True,buen estado,1994,True,421000,0.0,mercado
+MD-1124,2025-10-11,Vicalvaro,170,5,3,3,True,reformado,1977,True,509000,-0.1785,infraprecio_inyectado
+MD-1125,2025-09-11,Puente de Vallecas,40,1,1,2,False,reformado,1958,True,121000,0.0,mercado
+MD-1126,2026-03-13,Carabanchel,89,4,2,1,True,buen estado,1951,False,209000,-0.1993,infraprecio_inyectado
+MD-1127,2026-04-04,Hortaleza,138,5,2,7,True,buen estado,1999,True,697000,0.0,mercado
+MD-1128,2025-09-27,Latina,82,3,2,8,True,reformado,1987,True,291000,0.0,mercado
+MD-1129,2025-09-20,Chamartin,35,1,1,5,True,buen estado,1953,True,230000,0.0,mercado
+MD-1130,2026-06-08,Ciudad Lineal,51,1,1,7,True,buen estado,1983,True,240000,0.0,mercado
+MD-1131,2025-10-02,Carabanchel,51,2,1,5,True,buen estado,1975,True,169000,0.0,mercado
+MD-1132,2026-04-25,San Blas-Canillejas,43,1,1,7,True,a reformar,1985,False,139000,0.2452,sobreprecio_inyectado
+MD-1133,2026-07-31,Retiro,35,2,1,8,False,buen estado,1957,False,257000,0.0,mercado
+MD-1134,2026-03-09,Carabanchel,49,2,1,2,True,buen estado,1984,True,146000,0.0,mercado
+MD-1135,2026-06-23,Ciudad Lineal,64,2,1,8,False,buen estado,1952,True,274000,0.0,mercado
+MD-1136,2026-01-02,Retiro,135,5,3,8,True,buen estado,1943,True,1167000,0.1463,sobreprecio_inyectado
+MD-1137,2025-10-22,Puente de Vallecas,77,3,2,8,True,a reformar,1972,False,163000,0.0,mercado
+MD-1138,2026-01-15,Centro,33,1,1,4,True,buen estado,1978,True,308000,0.1818,sobreprecio_inyectado
+MD-1139,2026-01-05,Retiro,161,5,3,8,False,reformado,1963,True,939000,0.0,mercado
+MD-1140,2026-06-18,Usera,95,3,2,4,True,a reformar,1974,True,202000,0.0,mercado
+MD-1141,2025-12-10,Centro,48,1,1,0,True,obra nueva,2023,True,275000,-0.2159,infraprecio_inyectado
+MD-1142,2025-09-08,Tetuan,38,2,1,0,True,buen estado,1965,True,224000,0.0,mercado
+MD-1143,2025-12-24,Retiro,49,2,1,4,True,a reformar,1965,True,319000,0.0,mercado
+MD-1144,2025-10-11,Vicalvaro,91,3,2,7,True,buen estado,1952,True,330000,0.0,mercado
+MD-1145,2026-03-24,Chamberi,70,2,1,2,True,buen estado,1982,False,405000,0.0,mercado
+MD-1146,2026-05-29,Villaverde,48,2,1,8,True,reformado,1970,False,114000,0.0,mercado
+MD-1147,2025-10-18,Puente de Vallecas,35,1,1,1,True,buen estado,1978,True,96000,0.0,mercado
+MD-1148,2026-06-25,Puente de Vallecas,61,2,1,5,True,buen estado,1952,True,200000,0.0,mercado
+MD-1149,2026-03-21,Moratalaz,52,2,1,3,True,buen estado,2009,True,246000,0.0,mercado
+MD-1150,2026-01-21,Moncloa-Aravaca,74,2,1,5,True,buen estado,1973,False,323000,-0.1975,infraprecio_inyectado
+MD-1151,2025-10-14,Vicalvaro,90,4,1,8,True,reformado,1960,True,344000,0.0,mercado
+MD-1152,2025-09-20,Usera,61,2,1,1,True,obra nueva,2025,True,231000,0.0,mercado
+MD-1153,2026-05-20,Puente de Vallecas,179,6,3,4,True,reformado,1978,True,664000,0.0,mercado
+MD-1154,2025-10-23,Vicalvaro,78,3,1,8,True,buen estado,1967,True,229000,0.0,mercado
+MD-1155,2026-05-11,Chamartin,29,1,1,2,True,a reformar,1974,True,166000,0.0,mercado
+MD-1156,2026-01-02,Hortaleza,182,6,3,4,True,a reformar,1975,True,631000,0.0,mercado
+MD-1157,2026-07-18,Tetuan,41,1,1,6,True,buen estado,1991,True,187000,0.0,mercado
+MD-1158,2026-03-08,Villaverde,31,1,1,7,False,a reformar,1957,True,62000,0.0,mercado
+MD-1159,2026-06-26,Centro,121,5,2,7,True,reformado,1959,True,847000,0.0,mercado
+MD-1160,2025-09-09,Arganzuela,140,5,3,6,True,buen estado,1932,True,854000,0.0,mercado
+MD-1161,2025-12-04,Moratalaz,62,3,1,7,True,a reformar,2007,True,247000,0.0,mercado
+MD-1162,2025-10-23,Carabanchel,81,3,2,1,True,buen estado,1989,True,257000,0.0,mercado
+MD-1163,2026-04-10,Usera,82,3,2,1,True,reformado,1989,True,268000,0.0,mercado
+MD-1164,2025-12-04,Salamanca,51,2,1,0,False,buen estado,1926,True,565000,0.0,mercado
+MD-1165,2026-01-22,San Blas-Canillejas,112,4,2,4,True,buen estado,2009,False,332000,0.0,mercado
+MD-1166,2026-07-02,Chamberi,189,6,3,0,False,buen estado,1963,False,1328000,0.0,mercado
+MD-1167,2026-08-29,Villa de Vallecas,50,2,1,1,True,reformado,1955,True,174000,0.0,mercado
+MD-1168,2026-03-03,Fuencarral-El Pardo,123,4,2,2,True,reformado,1943,True,887000,0.0,mercado
+MD-1169,2026-05-27,Salamanca,56,2,1,4,True,buen estado,1924,False,514000,0.0,mercado
+MD-1170,2025-09-02,Moncloa-Aravaca,31,1,1,1,True,buen estado,1991,True,148000,0.0,mercado
+MD-1171,2026-01-24,Usera,68,2,1,3,True,buen estado,1952,True,187000,0.0,mercado
+MD-1172,2026-04-14,Tetuan,177,6,3,4,True,reformado,1966,False,937000,0.0,mercado
+MD-1173,2026-06-17,Hortaleza,59,2,1,1,True,buen estado,1985,True,316000,0.0,mercado
+MD-1174,2025-09-08,Hortaleza,86,3,2,2,True,buen estado,1951,True,330000,-0.1664,infraprecio_inyectado
+MD-1175,2025-09-05,Hortaleza,93,3,2,6,True,a reformar,1983,False,425000,0.0,mercado
+MD-1176,2026-05-13,Vicalvaro,88,3,2,3,False,obra nueva,2026,True,295000,0.1284,sobreprecio_inyectado
+MD-1177,2025-11-24,Puente de Vallecas,40,2,1,4,True,buen estado,1982,True,112000,0.0,mercado
+MD-1178,2026-05-17,Ciudad Lineal,78,3,2,7,True,buen estado,1973,False,348000,0.0,mercado
+MD-1179,2025-09-09,Chamberi,115,4,2,6,True,a reformar,2004,False,551000,0.0,mercado
+MD-1180,2026-08-12,Chamartin,61,2,1,6,True,buen estado,1940,True,488000,0.0,mercado
+MD-1181,2025-09-20,Retiro,90,3,2,1,True,a reformar,1978,False,322000,0.0,mercado
+MD-1182,2026-02-18,Vicalvaro,83,3,2,3,True,a reformar,1978,True,330000,0.0,mercado
+MD-1183,2026-02-22,Ciudad Lineal,56,2,1,8,True,buen estado,1945,False,211000,0.0,mercado
+MD-1184,2026-01-01,San Blas-Canillejas,110,4,2,2,True,buen estado,2016,True,454000,0.0,mercado
+MD-1185,2025-09-18,Latina,52,1,1,8,False,buen estado,1969,True,188000,0.0,mercado
+MD-1186,2026-08-19,Chamberi,36,2,1,5,False,a reformar,1942,True,211000,0.0,mercado
+MD-1187,2025-09-27,Moncloa-Aravaca,176,6,3,7,True,buen estado,1957,True,1004000,0.0,mercado
+MD-1188,2026-06-28,Hortaleza,127,4,2,2,True,buen estado,1998,True,740000,0.0,mercado
+MD-1189,2025-10-21,Carabanchel,43,2,1,0,True,a reformar,1991,True,112000,-0.2102,infraprecio_inyectado
+MD-1190,2026-04-18,Centro,83,3,2,3,True,buen estado,1983,True,663000,0.0,mercado
+MD-1191,2025-10-08,Tetuan,45,2,1,2,True,buen estado,1984,True,218000,0.0,mercado
+MD-1192,2026-08-13,Hortaleza,63,2,1,6,False,reformado,1953,True,334000,0.0,mercado
+MD-1193,2026-06-11,Latina,78,2,2,4,True,a reformar,1979,True,263000,0.0,mercado
+MD-1194,2026-04-12,San Blas-Canillejas,93,3,2,4,True,buen estado,1947,True,405000,0.0,mercado
+MD-1195,2026-07-26,Ciudad Lineal,80,3,1,8,True,a reformar,1946,True,372000,0.0,mercado
+MD-1196,2026-04-16,San Blas-Canillejas,51,1,1,8,True,buen estado,2025,True,174000,0.0,mercado
+MD-1197,2025-10-04,Puente de Vallecas,161,6,3,7,True,obra nueva,2025,True,474000,0.0,mercado
+MD-1198,2026-02-03,Arganzuela,166,6,3,5,False,reformado,1957,False,931000,0.0,mercado
+MD-1199,2026-01-12,Villaverde,77,2,2,8,True,reformado,1996,True,186000,0.0,mercado
+MD-1200,2025-10-23,Usera,117,4,2,6,True,buen estado,1967,True,408000,0.0,mercado
+MD-1201,2025-10-05,Arganzuela,104,3,2,1,True,reformado,1975,False,602000,0.0,mercado
+MD-1202,2026-06-27,Salamanca,55,2,1,5,True,reformado,1988,True,636000,0.0,mercado
+MD-1203,2026-01-04,Hortaleza,89,3,1,7,True,buen estado,1996,True,603000,0.1533,sobreprecio_inyectado
+MD-1204,2025-11-01,Hortaleza,147,6,3,1,True,buen estado,1974,True,833000,0.0,mercado
+MD-1205,2026-06-09,Fuencarral-El Pardo,183,6,3,6,True,a reformar,1971,True,838000,0.0,mercado
+MD-1206,2026-01-23,Chamberi,40,2,1,3,False,buen estado,1960,True,301000,-0.1761,infraprecio_inyectado
+MD-1207,2025-12-29,Vicalvaro,65,2,1,3,True,reformado,1942,False,311000,0.0,mercado
+MD-1208,2026-07-14,Retiro,120,4,2,1,True,reformado,2013,True,1056000,0.0,mercado
+MD-1209,2026-08-02,Ciudad Lineal,70,2,1,2,True,a reformar,2025,True,295000,0.0,mercado
+MD-1210,2026-02-02,Fuencarral-El Pardo,70,3,1,6,True,buen estado,1977,True,388000,0.0,mercado
+MD-1211,2026-06-24,Arganzuela,46,1,1,2,False,buen estado,1957,False,342000,0.0,mercado
+MD-1212,2026-08-17,Barajas,190,6,2,8,True,a reformar,1931,True,723000,0.0,mercado
+MD-1213,2025-12-06,Moratalaz,86,4,2,8,True,reformado,1965,True,302000,0.0,mercado
+MD-1214,2025-11-28,Centro,83,4,2,2,False,buen estado,1967,True,799000,0.0,mercado
+MD-1215,2025-12-19,Chamartin,71,2,1,2,True,buen estado,1978,False,480000,0.0,mercado
+MD-1216,2026-04-07,Hortaleza,179,6,3,7,False,buen estado,1949,False,793000,0.0,mercado
+MD-1217,2026-04-14,Carabanchel,29,1,1,4,False,a reformar,1940,False,82000,0.0,mercado
+MD-1218,2025-09-29,Latina,46,2,1,8,True,reformado,1988,True,162000,0.0,mercado
+MD-1219,2026-04-14,Fuencarral-El Pardo,60,2,1,3,True,obra nueva,2023,False,426000,0.1461,sobreprecio_inyectado
+MD-1220,2026-08-24,Moncloa-Aravaca,47,2,1,0,True,a reformar,1985,True,210000,0.0,mercado
+MD-1221,2025-11-30,Puente de Vallecas,104,4,2,8,False,buen estado,2003,False,255000,0.0,mercado
+MD-1222,2025-09-11,Hortaleza,105,3,2,0,True,a reformar,1955,True,535000,0.0,mercado
+MD-1223,2026-03-30,Latina,53,2,1,4,False,buen estado,1960,True,196000,0.0,mercado
+MD-1224,2026-02-22,Tetuan,40,1,1,2,True,a reformar,2010,False,192000,0.2413,sobreprecio_inyectado
+MD-1225,2026-03-23,Tetuan,136,5,3,4,True,buen estado,2024,False,586000,0.0,mercado
+MD-1226,2025-09-22,San Blas-Canillejas,49,2,1,1,True,a reformar,1971,True,156000,0.0,mercado
+MD-1227,2026-06-23,Hortaleza,157,5,3,4,True,buen estado,1919,True,752000,0.0,mercado
+MD-1228,2025-10-06,Puente de Vallecas,72,3,1,2,True,buen estado,1962,True,175000,0.0,mercado
+MD-1229,2025-10-01,Retiro,87,3,2,7,True,buen estado,1972,True,582000,0.0,mercado
+MD-1230,2026-05-15,Fuencarral-El Pardo,139,5,3,2,True,a reformar,1991,True,626000,-0.1705,infraprecio_inyectado
+MD-1231,2026-03-29,Usera,54,1,1,3,True,buen estado,2002,True,119000,-0.2719,infraprecio_inyectado
+MD-1232,2025-12-15,Ciudad Lineal,51,2,1,8,True,a reformar,1968,False,193000,0.0,mercado
+MD-1233,2026-01-02,Hortaleza,91,2,2,7,True,reformado,1972,True,551000,0.0,mercado
+MD-1234,2025-11-02,Hortaleza,73,2,1,6,False,buen estado,1969,False,239000,-0.224,infraprecio_inyectado
+MD-1235,2026-01-19,Retiro,171,6,3,0,True,a reformar,2019,True,734000,-0.2569,infraprecio_inyectado
+MD-1236,2026-03-21,Chamartin,142,4,3,2,False,buen estado,1947,True,875000,0.0,mercado
+MD-1237,2026-04-28,Tetuan,33,1,1,4,True,a reformar,2006,True,214000,0.2369,sobreprecio_inyectado
+MD-1238,2026-03-02,San Blas-Canillejas,86,3,2,3,True,reformado,1985,True,345000,0.0,mercado
+MD-1239,2026-03-09,Chamberi,33,1,1,8,True,reformado,1995,True,293000,0.0,mercado
+MD-1240,2025-09-03,San Blas-Canillejas,60,2,1,7,False,buen estado,1993,True,196000,0.0,mercado
+MD-1241,2026-07-08,Puente de Vallecas,145,5,3,4,True,a reformar,1959,True,351000,0.0,mercado
+MD-1242,2026-07-12,Latina,58,2,1,3,False,reformado,1900,True,176000,-0.2233,infraprecio_inyectado
+MD-1243,2026-03-03,Centro,51,2,1,6,True,buen estado,2003,False,378000,0.0,mercado
+MD-1244,2026-01-17,Salamanca,151,5,3,3,True,buen estado,2015,True,1777000,0.0,mercado
+MD-1245,2026-02-16,Puente de Vallecas,33,1,1,8,True,buen estado,2015,True,104000,0.0,mercado
+MD-1246,2026-02-19,Fuencarral-El Pardo,139,6,3,8,True,reformado,1970,True,909000,0.0,mercado
+MD-1247,2025-09-01,Chamartin,186,6,3,8,False,buen estado,1931,False,1315000,0.0,mercado
+MD-1248,2025-11-09,Carabanchel,49,2,1,7,True,buen estado,1974,True,193000,0.2705,sobreprecio_inyectado
+MD-1249,2026-02-20,Carabanchel,177,6,3,2,True,buen estado,1935,True,833000,0.0,mercado
+MD-1250,2026-01-20,Puente de Vallecas,47,2,1,1,True,reformado,1975,False,110000,0.0,mercado
+MD-1251,2026-01-09,Puente de Vallecas,89,3,2,3,True,reformado,1976,True,315000,0.0,mercado
+MD-1252,2025-11-14,Vicalvaro,44,1,1,6,True,buen estado,1963,False,123000,0.0,mercado
+MD-1253,2026-06-06,Salamanca,80,2,2,4,True,a reformar,1973,True,584000,0.0,mercado
+MD-1254,2026-04-20,Puente de Vallecas,39,1,1,2,True,a reformar,1964,True,97000,0.0,mercado
+MD-1255,2026-01-13,Puente de Vallecas,52,2,1,4,True,buen estado,2022,False,119000,0.0,mercado
+MD-1256,2026-07-24,Hortaleza,112,3,2,2,True,a reformar,1972,True,513000,0.0,mercado
+MD-1257,2026-08-28,Villa de Vallecas,80,3,2,6,False,a reformar,1962,False,211000,0.0,mercado
+MD-1258,2025-10-25,Chamartin,71,4,1,5,True,a reformar,1972,True,392000,0.0,mercado
+MD-1259,2026-08-18,Salamanca,34,1,1,7,True,reformado,2004,True,396000,0.1352,sobreprecio_inyectado
+MD-1260,2026-04-20,Fuencarral-El Pardo,121,5,2,6,False,reformado,1941,True,611000,0.0,mercado
+MD-1261,2025-11-02,Chamberi,92,3,2,8,False,buen estado,1934,True,706000,0.0,mercado
+MD-1262,2026-06-20,Chamberi,161,5,3,2,True,a reformar,1967,False,850000,0.0,mercado
+MD-1263,2026-08-04,Salamanca,38,2,1,5,True,reformado,1991,True,385000,0.0,mercado
+MD-1264,2026-01-22,Vicalvaro,145,6,3,0,True,buen estado,1977,True,558000,0.2629,sobreprecio_inyectado
+MD-1265,2026-02-16,San Blas-Canillejas,148,5,3,1,True,buen estado,1997,True,343000,0.0,mercado
+MD-1266,2026-05-12,Tetuan,59,2,1,1,False,buen estado,1984,True,407000,0.1732,sobreprecio_inyectado
+MD-1267,2026-01-11,Salamanca,50,1,1,0,True,a reformar,1995,False,211000,-0.2648,infraprecio_inyectado
+MD-1268,2026-05-23,Latina,147,5,3,6,False,reformado,1964,False,424000,0.0,mercado
+MD-1269,2026-05-01,Vicalvaro,105,3,2,3,True,buen estado,1989,True,396000,0.0,mercado
+MD-1270,2025-12-07,Arganzuela,68,2,1,6,True,reformado,2006,True,408000,0.0,mercado
+MD-1271,2026-03-02,Fuencarral-El Pardo,87,4,1,6,True,buen estado,1971,True,467000,0.0,mercado
+MD-1272,2026-07-17,Arganzuela,39,2,1,6,True,buen estado,1992,False,241000,0.0,mercado
+MD-1273,2026-08-19,Moratalaz,93,4,2,5,True,buen estado,1983,False,332000,0.0,mercado
+MD-1274,2026-04-18,Hortaleza,100,4,2,6,True,buen estado,1939,True,537000,0.0,mercado
+MD-1275,2026-02-28,Ciudad Lineal,45,2,1,2,True,reformado,2012,True,313000,0.0,mercado
+MD-1276,2025-11-27,Puente de Vallecas,53,3,1,8,True,obra nueva,2025,False,133000,-0.1747,infraprecio_inyectado
+MD-1277,2026-04-19,San Blas-Canillejas,46,1,1,2,True,buen estado,1981,True,146000,0.0,mercado
+MD-1278,2025-10-18,Moratalaz,53,2,1,4,True,buen estado,2025,True,225000,0.0,mercado
+MD-1279,2026-07-06,Salamanca,97,3,2,8,True,a reformar,1941,True,651000,0.0,mercado
+MD-1280,2026-07-05,Salamanca,172,6,3,8,False,buen estado,1944,False,1569000,0.2394,sobreprecio_inyectado
+MD-1281,2026-04-20,Ciudad Lineal,92,3,2,2,True,buen estado,1940,True,406000,0.0,mercado
+MD-1282,2026-05-24,Usera,73,4,1,1,True,a reformar,2000,True,130000,-0.274,infraprecio_inyectado
+MD-1283,2026-05-08,Vicalvaro,187,6,2,3,False,a reformar,1966,True,505000,0.0,mercado
+MD-1284,2025-11-03,Villa de Vallecas,53,2,1,2,True,buen estado,1995,True,180000,0.0,mercado
+MD-1285,2025-10-30,Tetuan,47,2,1,8,True,buen estado,1944,True,198000,0.0,mercado
+MD-1286,2026-05-05,Barajas,125,4,2,2,True,buen estado,1967,True,544000,0.0,mercado
+MD-1287,2025-11-23,Puente de Vallecas,58,2,1,7,True,obra nueva,2025,False,184000,0.0,mercado
+MD-1288,2026-02-16,Puente de Vallecas,75,3,2,0,True,a reformar,1971,True,187000,0.0,mercado
+MD-1289,2026-04-26,Latina,99,4,1,3,True,reformado,1997,True,308000,0.0,mercado
+MD-1290,2026-08-18,Puente de Vallecas,65,2,1,0,True,reformado,1991,False,229000,0.0,mercado
+MD-1291,2026-04-30,Chamartin,118,4,2,8,True,buen estado,1976,False,798000,0.0,mercado
+MD-1292,2026-02-02,Moratalaz,86,3,1,0,True,buen estado,1993,True,335000,0.0,mercado
+MD-1293,2026-08-09,Usera,98,3,2,5,True,obra nueva,2024,True,254000,-0.212,infraprecio_inyectado
+MD-1294,2026-03-10,San Blas-Canillejas,131,5,3,2,True,reformado,1969,True,790000,0.0,mercado
+MD-1295,2026-03-26,Fuencarral-El Pardo,150,5,3,1,True,reformado,1950,True,1251000,0.1597,sobreprecio_inyectado
+MD-1296,2026-01-18,Chamartin,102,4,2,3,False,a reformar,1952,True,626000,0.0,mercado
+MD-1297,2026-05-09,Fuencarral-El Pardo,181,6,2,2,True,buen estado,1995,True,971000,0.0,mercado
+MD-1298,2025-10-23,Moratalaz,92,4,2,3,True,buen estado,2008,False,251000,-0.1445,infraprecio_inyectado
+MD-1299,2025-10-28,Chamartin,29,1,1,0,True,a reformar,1986,False,152000,0.0,mercado
+MD-1300,2026-02-15,San Blas-Canillejas,101,3,2,7,False,a reformar,1945,True,356000,0.0,mercado
+MD-1301,2026-07-18,Vicalvaro,103,4,2,8,True,buen estado,1975,True,380000,0.195,sobreprecio_inyectado
+MD-1302,2025-11-18,Centro,137,4,3,6,True,a reformar,1977,True,913000,0.0,mercado
+MD-1303,2026-02-21,Latina,70,2,1,3,True,buen estado,1984,False,174000,0.0,mercado
+MD-1304,2026-03-07,Fuencarral-El Pardo,136,5,3,5,False,buen estado,1929,True,891000,0.0,mercado
+MD-1305,2026-02-26,Salamanca,139,5,3,6,True,buen estado,1944,True,1583000,0.0,mercado
+MD-1306,2026-03-26,Chamartin,99,3,2,3,True,buen estado,2012,True,700000,0.0,mercado
+MD-1307,2025-12-19,Carabanchel,179,6,3,5,True,buen estado,1966,True,676000,0.0,mercado
+MD-1308,2026-03-10,Vicalvaro,80,3,2,3,True,buen estado,1983,True,305000,0.0,mercado
+MD-1309,2026-06-16,Villa de Vallecas,70,3,1,8,True,a reformar,2017,False,183000,0.0,mercado
+MD-1310,2026-05-16,Chamartin,78,3,2,3,True,reformado,1958,False,422000,0.0,mercado
+MD-1311,2026-06-19,Vicalvaro,71,3,1,2,True,buen estado,1993,True,243000,0.0,mercado
+MD-1312,2025-10-16,Chamberi,77,3,2,7,True,obra nueva,2024,True,750000,0.0,mercado
+MD-1313,2025-10-05,Fuencarral-El Pardo,175,6,3,1,True,reformado,1971,False,724000,-0.1686,infraprecio_inyectado
+MD-1314,2026-08-13,Hortaleza,95,3,2,8,True,a reformar,1975,True,383000,0.0,mercado
+MD-1315,2025-12-01,Latina,56,3,1,4,False,buen estado,1939,True,190000,0.0,mercado
+MD-1316,2025-09-10,Latina,44,1,1,4,True,buen estado,1959,True,162000,0.0,mercado
+MD-1317,2025-10-22,Puente de Vallecas,155,6,2,3,False,buen estado,1967,True,382000,0.0,mercado
+MD-1318,2026-04-22,Puente de Vallecas,61,2,1,0,True,obra nueva,2023,True,215000,0.0,mercado
+MD-1319,2025-11-26,Fuencarral-El Pardo,84,4,2,1,False,buen estado,1981,True,487000,0.0,mercado
+MD-1320,2026-05-20,Arganzuela,76,3,2,0,False,a reformar,1957,True,385000,0.0,mercado
+MD-1321,2026-06-07,Moncloa-Aravaca,34,1,1,6,False,buen estado,1950,True,203000,0.0,mercado
+MD-1322,2026-03-20,Latina,42,1,1,7,True,buen estado,1970,False,131000,0.0,mercado
+MD-1323,2026-03-17,Retiro,141,5,3,8,True,buen estado,1969,False,1090000,0.0,mercado
+MD-1324,2025-11-16,Ciudad Lineal,48,2,1,8,True,a reformar,1966,True,209000,0.0,mercado
+MD-1325,2026-05-23,Fuencarral-El Pardo,98,4,2,7,True,a reformar,1978,False,316000,0.0,mercado
+MD-1326,2026-08-29,Salamanca,61,2,1,3,True,obra nueva,2024,True,530000,0.0,mercado
+MD-1327,2025-11-06,Chamartin,55,1,1,3,True,obra nueva,2025,True,486000,0.0,mercado
+MD-1328,2026-07-11,Barajas,100,3,2,3,True,buen estado,1988,True,440000,0.0,mercado
+MD-1329,2026-02-14,Chamberi,76,3,2,3,True,buen estado,1994,True,604000,0.0,mercado
+MD-1330,2025-10-07,Fuencarral-El Pardo,100,4,2,6,True,a reformar,1973,True,483000,0.0,mercado
+MD-1331,2026-06-19,Carabanchel,134,5,2,4,True,reformado,1991,False,368000,0.0,mercado
+MD-1332,2025-10-08,Puente de Vallecas,72,2,1,1,True,buen estado,1986,True,208000,0.0,mercado
+MD-1333,2025-10-19,Chamberi,123,4,2,5,True,buen estado,1976,False,889000,0.0,mercado
+MD-1334,2026-08-03,San Blas-Canillejas,58,2,1,4,True,buen estado,1978,True,190000,0.0,mercado
+MD-1335,2026-04-16,Hortaleza,156,5,3,1,True,buen estado,1978,True,872000,0.0,mercado
+MD-1336,2025-09-05,Arganzuela,31,1,1,7,True,a reformar,2002,True,196000,0.0,mercado
+MD-1337,2026-06-02,Moncloa-Aravaca,79,2,2,4,False,buen estado,1923,True,405000,0.0,mercado
+MD-1338,2026-03-17,Vicalvaro,40,1,1,2,True,reformado,1948,True,165000,0.0,mercado
+MD-1339,2026-01-15,Fuencarral-El Pardo,48,1,1,5,True,reformado,1971,True,332000,0.0,mercado
+MD-1340,2026-01-23,Vicalvaro,88,5,2,3,True,buen estado,1947,True,355000,0.0,mercado
+MD-1341,2026-01-07,Moncloa-Aravaca,78,3,2,1,True,buen estado,2001,True,418000,0.0,mercado
+MD-1342,2026-07-16,Tetuan,179,6,3,8,True,reformado,2001,False,1020000,0.0,mercado
+MD-1343,2025-12-06,Salamanca,58,2,1,4,False,reformado,1953,True,536000,0.0,mercado
+MD-1344,2026-07-15,Chamberi,36,1,1,2,True,reformado,1988,True,324000,0.0,mercado
+MD-1345,2026-07-20,Ciudad Lineal,60,2,1,5,False,buen estado,1964,False,206000,0.0,mercado
+MD-1346,2025-11-07,Hortaleza,52,1,1,0,True,reformado,1992,True,319000,0.0,mercado
+MD-1347,2025-11-09,Chamartin,151,6,3,6,True,buen estado,1985,False,916000,0.0,mercado
+MD-1348,2025-11-04,Centro,116,4,2,6,True,buen estado,1985,True,997000,0.0,mercado
+MD-1349,2025-09-17,Carabanchel,99,3,2,1,False,a reformar,1933,True,293000,0.0,mercado
+MD-1350,2026-06-03,Retiro,167,6,3,8,False,buen estado,1965,False,776000,0.0,mercado
+MD-1351,2026-08-12,Salamanca,176,6,3,1,True,reformado,1970,True,1629000,0.0,mercado
+MD-1352,2026-04-12,Chamberi,164,6,3,3,False,a reformar,1961,False,991000,0.0,mercado
+MD-1353,2025-10-15,Latina,79,2,1,0,True,buen estado,1975,True,241000,0.0,mercado
+MD-1354,2025-12-22,Ciudad Lineal,45,2,1,5,True,buen estado,2004,True,300000,0.0,mercado
+MD-1355,2026-01-03,Ciudad Lineal,51,2,1,3,True,buen estado,1988,True,311000,0.0,mercado
+MD-1356,2026-05-08,Centro,157,6,3,4,True,buen estado,1973,True,1128000,0.0,mercado
+MD-1357,2026-04-25,Carabanchel,45,1,1,5,True,buen estado,1980,True,126000,0.0,mercado
+MD-1358,2026-04-19,Ciudad Lineal,98,4,2,0,True,reformado,1983,True,516000,0.0,mercado
+MD-1359,2026-02-21,Fuencarral-El Pardo,74,2,1,2,True,buen estado,1981,True,433000,0.0,mercado
+MD-1360,2025-10-13,San Blas-Canillejas,40,1,1,1,False,buen estado,2007,True,134000,0.0,mercado
+MD-1361,2026-03-27,San Blas-Canillejas,70,2,1,6,False,buen estado,1966,True,269000,0.0,mercado
+MD-1362,2026-05-23,Tetuan,71,2,1,1,True,buen estado,1972,True,327000,-0.2138,infraprecio_inyectado
+MD-1363,2026-08-09,Usera,87,2,2,5,True,buen estado,1957,True,246000,0.0,mercado
+MD-1364,2026-04-27,Retiro,92,3,2,3,True,buen estado,1985,True,642000,0.0,mercado
+MD-1365,2026-05-24,Vicalvaro,93,3,2,5,True,buen estado,2025,True,329000,0.0,mercado
+MD-1366,2026-05-05,Chamartin,139,5,3,7,False,reformado,1949,False,839000,0.0,mercado
+MD-1367,2025-12-15,Latina,83,3,2,7,False,reformado,1963,True,277000,0.0,mercado
+MD-1368,2026-08-23,Centro,82,2,1,1,True,reformado,1972,True,707000,0.0,mercado
+MD-1369,2025-12-13,Moncloa-Aravaca,69,3,1,7,True,buen estado,1976,True,427000,0.0,mercado
+MD-1370,2025-09-06,Latina,76,3,2,0,True,a reformar,2001,True,241000,0.0,mercado
+MD-1371,2025-09-02,Chamberi,66,3,1,6,True,obra nueva,2025,True,763000,0.0,mercado
+MD-1372,2026-01-12,Hortaleza,168,6,3,7,False,a reformar,1958,False,521000,0.0,mercado
+MD-1373,2025-10-06,Puente de Vallecas,51,2,1,4,True,reformado,1995,True,153000,0.0,mercado
+MD-1374,2025-11-08,Vicalvaro,115,3,2,4,True,reformado,1995,True,429000,0.0,mercado
+MD-1375,2026-02-20,Villa de Vallecas,100,3,2,8,True,reformado,1977,True,454000,0.1269,sobreprecio_inyectado
+MD-1376,2026-02-08,Moratalaz,58,2,1,2,True,buen estado,1975,False,177000,0.0,mercado
+MD-1377,2025-12-31,Carabanchel,43,2,1,6,True,reformado,1952,False,115000,0.0,mercado
+MD-1378,2026-04-29,Centro,100,3,2,0,False,buen estado,1926,True,789000,0.0,mercado
+MD-1379,2025-12-12,Centro,61,2,1,3,True,obra nueva,2024,False,302000,-0.2471,infraprecio_inyectado
+MD-1380,2026-01-06,Villaverde,84,4,1,5,False,reformado,1930,True,172000,0.0,mercado
+MD-1381,2025-12-03,Ciudad Lineal,60,3,1,6,False,reformado,1957,True,323000,0.0,mercado
+MD-1382,2025-11-21,Carabanchel,56,3,1,2,True,reformado,1973,True,164000,0.0,mercado
+MD-1383,2025-09-29,Ciudad Lineal,47,2,1,3,True,buen estado,1976,True,229000,0.0,mercado
+MD-1384,2025-10-02,Puente de Vallecas,52,2,1,6,True,obra nueva,2026,False,130000,0.0,mercado
+MD-1385,2026-01-11,Centro,43,2,1,2,True,a reformar,1954,False,226000,0.0,mercado
+MD-1386,2026-08-26,Fuencarral-El Pardo,91,4,2,7,True,a reformar,1976,True,501000,0.0,mercado
+MD-1387,2026-07-22,Centro,47,2,1,1,True,buen estado,1977,True,281000,0.0,mercado
+MD-1388,2025-12-16,Centro,75,3,2,3,True,a reformar,2001,False,448000,0.1462,sobreprecio_inyectado
+MD-1389,2026-02-16,Hortaleza,181,6,3,3,True,a reformar,1971,True,610000,-0.2029,infraprecio_inyectado
+MD-1390,2026-01-09,Centro,190,6,3,5,True,reformado,1972,True,1164000,-0.2424,infraprecio_inyectado
+MD-1391,2025-12-17,Chamartin,103,4,1,4,True,buen estado,1978,True,950000,0.1973,sobreprecio_inyectado
+MD-1392,2025-12-16,Salamanca,117,4,2,1,False,buen estado,1943,False,626000,-0.2422,infraprecio_inyectado
+MD-1393,2025-09-04,Arganzuela,178,6,3,1,True,a reformar,1968,True,837000,0.0,mercado
+MD-1394,2025-11-15,Tetuan,28,1,1,2,True,a reformar,1996,True,119000,0.0,mercado
+MD-1395,2025-09-19,Centro,33,2,1,6,True,obra nueva,2024,False,282000,0.0,mercado
+MD-1396,2026-05-03,Arganzuela,97,4,2,3,False,reformado,1958,True,547000,0.0,mercado
+MD-1397,2025-09-27,Puente de Vallecas,40,2,1,5,True,a reformar,1974,False,80000,0.0,mercado
+MD-1398,2026-04-05,Ciudad Lineal,47,1,1,3,True,a reformar,1998,True,150000,0.0,mercado
+MD-1399,2025-12-09,Fuencarral-El Pardo,117,4,2,4,True,obra nueva,2023,False,648000,0.0,mercado
+MD-1400,2025-09-18,Chamberi,63,1,1,6,True,reformado,1984,True,603000,0.0,mercado
+MD-1401,2026-02-23,Tetuan,95,4,1,2,True,buen estado,1989,False,434000,0.0,mercado
+MD-1402,2026-04-16,Ciudad Lineal,43,1,1,3,True,reformado,1979,True,297000,0.0,mercado
+MD-1403,2026-01-19,Fuencarral-El Pardo,158,5,3,7,True,buen estado,1988,True,721000,-0.2431,infraprecio_inyectado
+MD-1404,2026-04-15,Arganzuela,64,2,1,1,False,a reformar,1963,True,306000,0.0,mercado
+MD-1405,2025-09-07,Carabanchel,100,3,1,7,False,buen estado,1963,True,320000,0.0,mercado
+MD-1406,2026-08-27,Vicalvaro,64,2,1,4,True,buen estado,1990,True,202000,-0.2111,infraprecio_inyectado
+MD-1407,2026-07-01,Fuencarral-El Pardo,113,4,1,4,True,a reformar,2008,False,515000,0.0,mercado
+MD-1408,2026-02-18,Puente de Vallecas,51,2,1,5,True,buen estado,1939,False,146000,0.0,mercado
+MD-1409,2026-01-04,Tetuan,29,1,1,6,True,a reformar,1995,True,125000,0.0,mercado
+MD-1410,2026-02-11,Centro,37,1,1,7,False,obra nueva,2024,True,326000,0.0,mercado
+MD-1411,2025-10-19,Fuencarral-El Pardo,60,2,1,1,True,a reformar,1962,False,230000,0.0,mercado
+MD-1412,2025-09-08,Latina,56,2,1,5,True,buen estado,1958,True,182000,0.0,mercado
+MD-1413,2026-01-29,Puente de Vallecas,73,2,1,2,True,reformado,1985,False,176000,0.0,mercado
+MD-1414,2026-01-22,Centro,99,4,2,6,False,a reformar,1946,False,580000,0.0,mercado
+MD-1415,2026-03-07,Salamanca,30,1,1,0,False,a reformar,1954,True,202000,0.0,mercado
+MD-1416,2026-08-23,Vicalvaro,74,2,1,5,True,buen estado,1992,True,207000,0.0,mercado
+MD-1417,2025-10-30,Retiro,85,3,2,7,True,reformado,1973,False,701000,0.0,mercado
+MD-1418,2026-05-09,Fuencarral-El Pardo,151,5,3,7,True,reformado,1978,False,919000,0.0,mercado
+MD-1419,2025-10-28,Usera,97,4,2,8,False,a reformar,1948,True,239000,0.0,mercado
+MD-1420,2026-01-17,San Blas-Canillejas,54,2,1,1,True,a reformar,1954,False,146000,0.1853,sobreprecio_inyectado
+MD-1421,2025-09-13,Usera,80,4,2,0,True,reformado,1965,True,224000,0.0,mercado
+MD-1422,2026-04-19,Puente de Vallecas,36,2,1,7,True,buen estado,1980,True,94000,-0.125,infraprecio_inyectado
+MD-1423,2026-08-10,Carabanchel,60,2,1,1,True,reformado,1996,False,157000,0.0,mercado
+MD-1424,2026-02-11,Chamartin,100,4,2,8,True,a reformar,1996,False,579000,0.121,sobreprecio_inyectado
+MD-1425,2025-11-16,Tetuan,59,2,1,8,True,buen estado,1994,True,295000,0.0,mercado
+MD-1426,2025-10-29,Hortaleza,68,2,1,1,False,a reformar,1960,False,268000,0.0,mercado
+MD-1427,2025-09-25,Puente de Vallecas,60,1,1,7,True,buen estado,2006,False,231000,0.2579,sobreprecio_inyectado
+MD-1428,2025-11-04,Arganzuela,61,2,1,2,True,buen estado,2021,True,409000,0.0,mercado
+MD-1429,2026-01-19,Tetuan,80,3,2,8,False,buen estado,1963,True,366000,-0.1982,infraprecio_inyectado
+MD-1430,2026-07-05,Salamanca,64,2,1,2,True,obra nueva,2022,True,813000,0.0,mercado
+MD-1431,2026-04-25,Ciudad Lineal,85,2,2,7,True,buen estado,1988,False,351000,0.0,mercado
+MD-1432,2026-03-11,Salamanca,163,6,2,4,True,buen estado,1980,False,1448000,0.0,mercado
+MD-1433,2025-10-19,Chamartin,77,3,2,0,True,reformado,1983,True,681000,0.0,mercado
+MD-1434,2025-11-24,Arganzuela,76,4,2,7,False,reformado,1962,False,427000,0.0,mercado
+MD-1435,2026-05-07,Retiro,74,3,1,7,True,buen estado,1983,True,482000,0.0,mercado
+MD-1436,2026-05-05,Villaverde,74,3,1,6,False,a reformar,1956,True,133000,0.0,mercado
+MD-1437,2026-05-11,Tetuan,48,1,1,3,False,buen estado,1967,True,304000,0.0,mercado
+MD-1438,2025-10-22,Carabanchel,48,3,1,5,False,buen estado,1965,False,125000,0.0,mercado
+MD-1439,2026-02-10,Ciudad Lineal,59,2,1,8,True,buen estado,1966,True,335000,0.0,mercado
+MD-1440,2026-03-14,Salamanca,53,1,1,7,True,reformado,1956,True,566000,0.0,mercado
+MD-1441,2025-09-09,Fuencarral-El Pardo,48,2,1,4,True,buen estado,1941,False,354000,0.2556,sobreprecio_inyectado
+MD-1442,2025-09-14,Carabanchel,61,2,1,8,True,reformado,1976,False,189000,0.0,mercado
+MD-1443,2025-12-04,Latina,51,1,1,8,False,buen estado,1943,True,145000,0.0,mercado
+MD-1444,2026-07-14,San Blas-Canillejas,164,6,3,0,False,reformado,1969,True,684000,0.0,mercado
+MD-1445,2026-02-02,Centro,41,1,1,0,True,obra nueva,2026,True,342000,0.0,mercado
+MD-1446,2026-04-21,Latina,30,1,1,2,True,reformado,1970,True,119000,0.0,mercado
+MD-1447,2026-07-13,San Blas-Canillejas,144,5,3,6,False,reformado,1947,True,521000,0.0,mercado
+MD-1448,2025-10-10,Puente de Vallecas,39,2,1,0,True,a reformar,1947,True,71000,-0.1866,infraprecio_inyectado
+MD-1449,2026-05-05,Villa de Vallecas,56,2,1,4,True,buen estado,1953,False,246000,0.0,mercado
+MD-1450,2026-03-22,Vicalvaro,114,4,2,3,True,buen estado,1997,False,355000,0.0,mercado
+MD-1451,2025-12-12,Fuencarral-El Pardo,115,4,1,2,False,obra nueva,2026,False,902000,0.0,mercado
+MD-1452,2025-10-25,Latina,72,2,1,7,True,buen estado,1973,False,297000,0.0,mercado
+MD-1453,2026-03-10,Carabanchel,167,6,3,2,True,reformado,1976,True,583000,0.0,mercado
+MD-1454,2026-08-03,Fuencarral-El Pardo,181,6,3,6,True,buen estado,1977,True,932000,0.0,mercado
+MD-1455,2026-04-28,Centro,97,4,2,4,True,reformado,1943,True,610000,0.0,mercado
+MD-1456,2025-09-13,Salamanca,72,2,1,1,True,buen estado,1978,True,606000,0.0,mercado
+MD-1457,2026-01-23,Fuencarral-El Pardo,189,6,3,8,True,buen estado,1980,True,1199000,0.1597,sobreprecio_inyectado
+MD-1458,2026-01-19,Latina,70,3,1,7,True,reformado,1993,True,268000,0.0,mercado
+MD-1459,2025-11-04,Retiro,80,4,2,0,True,buen estado,2025,True,560000,0.0,mercado
+MD-1460,2026-05-24,Tetuan,66,2,1,4,True,reformado,1950,False,372000,0.0,mercado
+MD-1461,2026-04-24,Latina,54,2,1,7,True,buen estado,1934,True,196000,0.2264,sobreprecio_inyectado
+MD-1462,2025-10-07,Salamanca,187,6,2,2,True,buen estado,1989,True,1477000,0.0,mercado
+MD-1463,2026-03-19,Vicalvaro,100,3,1,1,True,reformado,1982,True,399000,0.0,mercado
+MD-1464,2026-01-04,Arganzuela,55,2,1,4,False,buen estado,1968,True,270000,0.0,mercado
+MD-1465,2025-12-11,Retiro,190,6,3,1,True,reformado,2025,True,1746000,0.0,mercado
+MD-1466,2026-05-11,Chamartin,60,2,1,0,True,buen estado,1978,True,518000,0.0,mercado
+MD-1467,2026-07-03,Vicalvaro,60,1,1,0,True,reformado,1962,False,210000,0.0,mercado
+MD-1468,2026-07-24,Vicalvaro,71,2,1,1,True,buen estado,1961,False,263000,0.0,mercado
+MD-1469,2025-09-24,Retiro,180,6,3,2,True,buen estado,1998,True,910000,-0.1986,infraprecio_inyectado
+MD-1470,2025-12-27,Moratalaz,67,3,1,0,False,a reformar,1900,True,216000,0.0,mercado
+MD-1471,2025-10-29,Carabanchel,182,6,3,8,True,obra nueva,2022,True,753000,0.0,mercado
+MD-1472,2025-11-03,Centro,29,1,1,5,True,buen estado,1958,False,250000,0.1998,sobreprecio_inyectado
+MD-1473,2026-03-17,Hortaleza,68,2,1,7,True,buen estado,1975,False,412000,0.0,mercado
+MD-1474,2026-02-19,Arganzuela,59,3,1,7,False,a reformar,1972,True,230000,0.0,mercado
+MD-1475,2025-11-03,Ciudad Lineal,74,3,1,4,True,obra nueva,2023,True,414000,0.0,mercado
+MD-1476,2026-02-05,Chamberi,49,1,1,2,False,a reformar,1968,True,417000,0.2331,sobreprecio_inyectado
+MD-1477,2026-08-26,Centro,78,2,2,4,True,buen estado,1976,True,784000,0.2472,sobreprecio_inyectado
+MD-1478,2025-12-03,Carabanchel,53,1,1,7,True,reformado,1940,True,181000,0.0,mercado
+MD-1479,2026-04-14,Moratalaz,66,2,1,2,True,buen estado,1972,False,219000,0.0,mercado
+MD-1480,2026-07-22,Arganzuela,43,2,1,0,True,buen estado,1978,True,213000,0.0,mercado
+MD-1481,2026-04-02,Retiro,52,2,1,4,True,reformado,1957,True,378000,0.0,mercado
+MD-1482,2025-09-04,Latina,67,3,1,7,True,obra nueva,2022,True,243000,0.0,mercado
+MD-1483,2026-06-09,Villa de Vallecas,74,3,1,6,False,a reformar,1946,False,159000,0.0,mercado
+MD-1484,2026-04-18,Centro,176,6,2,3,True,reformado,1973,False,1233000,0.0,mercado
+MD-1485,2025-11-05,Fuencarral-El Pardo,46,1,1,7,False,a reformar,1925,False,157000,0.0,mercado
+MD-1486,2026-06-05,Centro,78,2,2,4,True,a reformar,1971,False,403000,0.0,mercado
+MD-1487,2026-04-05,Arganzuela,76,3,2,7,True,obra nueva,2024,True,553000,0.0,mercado
+MD-1488,2026-08-19,Salamanca,104,4,2,0,True,buen estado,1990,True,898000,0.0,mercado
+MD-1489,2026-02-13,Usera,62,1,1,7,True,buen estado,1965,False,146000,0.0,mercado
+MD-1490,2026-08-04,Fuencarral-El Pardo,83,3,2,2,False,buen estado,1958,True,455000,0.0,mercado
+MD-1491,2025-09-16,Fuencarral-El Pardo,44,2,1,7,False,buen estado,1956,True,268000,0.1554,sobreprecio_inyectado
+MD-1492,2026-08-24,Chamberi,38,1,1,7,False,buen estado,1973,True,260000,0.0,mercado
+MD-1493,2026-04-01,Ciudad Lineal,45,2,1,8,False,buen estado,1959,True,153000,0.0,mercado
+MD-1494,2025-12-07,San Blas-Canillejas,72,3,1,3,True,buen estado,2007,True,283000,0.0,mercado
+MD-1495,2026-01-15,Chamartin,68,2,1,1,True,a reformar,1962,True,511000,0.0,mercado
+MD-1496,2026-06-05,Puente de Vallecas,68,3,1,3,False,buen estado,1961,True,150000,0.0,mercado
+MD-1497,2026-08-27,Puente de Vallecas,111,4,2,7,True,reformado,2004,False,316000,0.0,mercado
+MD-1498,2025-10-06,Puente de Vallecas,83,3,2,1,True,obra nueva,2025,True,227000,-0.1404,infraprecio_inyectado
+MD-1499,2026-01-12,Puente de Vallecas,28,1,1,3,True,buen estado,1983,True,101000,0.2663,sobreprecio_inyectado
+MD-1500,2026-02-22,Chamartin,83,2,2,1,True,obra nueva,2024,True,666000,0.0,mercado
+MD-1501,2025-12-07,San Blas-Canillejas,84,3,2,8,True,a reformar,1974,False,247000,0.0,mercado
+MD-1502,2025-10-08,Carabanchel,153,5,3,1,True,buen estado,1970,True,473000,0.0,mercado
+MD-1503,2026-03-28,Moratalaz,96,3,2,1,False,a reformar,1985,True,424000,0.0,mercado
+MD-1504,2025-09-29,Ciudad Lineal,189,6,3,2,False,reformado,1942,True,900000,0.0,mercado
+MD-1505,2026-02-04,Centro,39,2,1,3,False,buen estado,1937,True,223000,0.0,mercado
+MD-1506,2026-04-22,Barajas,174,6,3,6,True,a reformar,1936,True,623000,0.0,mercado
+MD-1507,2026-05-10,San Blas-Canillejas,47,1,1,7,True,buen estado,1960,True,148000,-0.242,infraprecio_inyectado
+MD-1508,2025-11-23,Latina,78,2,2,8,True,a reformar,2005,False,194000,0.0,mercado
+MD-1509,2025-09-04,Vicalvaro,100,3,2,2,False,buen estado,1981,True,300000,-0.2039,infraprecio_inyectado
+MD-1510,2025-11-17,Moncloa-Aravaca,81,4,2,7,True,buen estado,1967,True,578000,0.0,mercado
+MD-1511,2026-08-26,Centro,36,1,1,4,True,buen estado,1942,False,249000,0.0,mercado
+MD-1512,2026-08-22,Villa de Vallecas,142,5,3,0,True,buen estado,1982,True,540000,0.0,mercado
+MD-1513,2026-08-27,Latina,38,1,1,5,True,buen estado,1948,True,131000,0.0,mercado
+MD-1514,2026-01-19,Latina,49,1,1,2,True,buen estado,1990,True,140000,-0.2255,infraprecio_inyectado
+MD-1515,2026-03-06,Chamartin,124,4,2,7,True,buen estado,1945,True,1059000,0.0,mercado
+MD-1516,2026-06-25,Hortaleza,70,2,1,2,True,a reformar,1983,True,336000,0.0,mercado
+MD-1517,2026-02-14,Chamartin,57,2,1,7,True,buen estado,1991,True,471000,0.0,mercado
+MD-1518,2025-10-05,Centro,29,1,1,1,False,a reformar,1967,True,229000,0.0,mercado
+MD-1519,2025-12-24,Vicalvaro,83,2,2,4,True,buen estado,1972,True,346000,0.0,mercado
+MD-1520,2025-11-17,Chamberi,88,3,2,7,True,buen estado,2001,True,700000,0.0,mercado
+MD-1521,2026-01-24,Moncloa-Aravaca,51,2,1,5,True,buen estado,1959,True,328000,0.0,mercado
+MD-1522,2026-08-10,Carabanchel,72,3,1,8,True,a reformar,1991,True,200000,0.0,mercado
+MD-1523,2026-04-02,Fuencarral-El Pardo,49,2,1,5,True,a reformar,1983,True,241000,0.1397,sobreprecio_inyectado
+MD-1524,2025-09-21,San Blas-Canillejas,74,3,1,2,True,reformado,2002,False,339000,0.0,mercado
+MD-1525,2026-07-08,Ciudad Lineal,54,2,1,0,True,buen estado,1983,True,228000,0.0,mercado
+MD-1526,2026-06-07,Tetuan,41,2,1,5,True,buen estado,1978,True,163000,0.0,mercado
+MD-1527,2026-06-07,Puente de Vallecas,38,1,1,3,True,buen estado,1949,False,87000,0.0,mercado
+MD-1528,2025-10-27,Villa de Vallecas,115,4,2,0,False,obra nueva,2022,False,383000,0.0,mercado
+MD-1529,2025-10-20,Latina,75,2,2,8,True,buen estado,1969,True,244000,0.0,mercado
+MD-1530,2026-03-01,Chamartin,157,6,3,0,True,a reformar,1979,True,915000,0.0,mercado
+MD-1531,2025-10-20,Fuencarral-El Pardo,115,5,2,5,True,a reformar,1978,True,545000,0.0,mercado
+MD-1532,2026-06-16,Barajas,77,4,2,3,True,buen estado,1986,True,431000,0.0,mercado
+MD-1533,2026-06-16,Ciudad Lineal,85,4,2,4,True,reformado,1962,True,358000,-0.1409,infraprecio_inyectado
+MD-1534,2026-01-23,Arganzuela,80,2,2,3,True,reformado,1973,True,545000,0.0,mercado
+MD-1535,2026-01-07,Tetuan,183,6,3,6,True,buen estado,1977,True,1189000,0.2537,sobreprecio_inyectado
+MD-1536,2025-12-02,Salamanca,150,5,3,7,False,a reformar,1951,True,934000,0.0,mercado
+MD-1537,2026-04-16,Villa de Vallecas,145,5,3,4,True,buen estado,1994,True,423000,0.0,mercado
+MD-1538,2026-05-12,Puente de Vallecas,91,3,2,4,True,buen estado,1974,False,168000,-0.1224,infraprecio_inyectado
+MD-1539,2025-09-13,Ciudad Lineal,163,6,3,3,True,reformado,1917,True,821000,0.0,mercado
+MD-1540,2026-06-11,Retiro,96,4,2,5,True,reformado,1939,True,722000,0.0,mercado
+MD-1541,2025-12-02,Fuencarral-El Pardo,91,4,2,7,True,buen estado,1973,True,520000,0.0,mercado
+MD-1542,2025-12-11,Carabanchel,51,2,1,7,True,a reformar,2006,True,165000,0.0,mercado
+MD-1543,2025-09-21,Centro,62,2,1,8,True,obra nueva,2025,True,488000,0.0,mercado
+MD-1544,2025-09-23,Villa de Vallecas,80,3,2,5,True,buen estado,1972,True,283000,0.0,mercado
+MD-1545,2026-08-24,Ciudad Lineal,101,4,2,5,True,a reformar,2007,True,328000,0.0,mercado
+MD-1546,2025-11-18,Arganzuela,128,5,2,2,True,reformado,1976,True,887000,0.0,mercado
+MD-1547,2026-05-04,Fuencarral-El Pardo,93,3,2,3,True,obra nueva,2024,True,832000,0.0,mercado
+MD-1548,2025-09-04,Puente de Vallecas,84,3,2,5,True,buen estado,1937,True,265000,0.0,mercado
+MD-1549,2026-01-10,Ciudad Lineal,86,4,2,4,True,buen estado,1965,True,399000,0.0,mercado
+MD-1550,2026-01-19,Ciudad Lineal,99,4,2,6,False,buen estado,1950,False,323000,0.0,mercado
+MD-1551,2026-07-27,Tetuan,53,3,1,4,True,buen estado,1963,True,292000,0.0,mercado
+MD-1552,2026-01-19,Tetuan,68,3,1,7,True,reformado,1982,True,482000,0.0,mercado
+MD-1553,2025-11-19,Salamanca,100,4,2,8,True,a reformar,1992,True,911000,0.2033,sobreprecio_inyectado
+MD-1554,2026-03-07,San Blas-Canillejas,53,2,1,5,True,reformado,1971,True,192000,-0.2493,infraprecio_inyectado
+MD-1555,2026-05-03,Centro,64,2,1,0,True,a reformar,1987,True,425000,0.0,mercado
+MD-1556,2026-05-09,Chamberi,101,5,2,4,True,a reformar,1952,False,538000,0.0,mercado
+MD-1557,2025-09-12,Chamartin,184,6,3,2,True,reformado,2000,True,1771000,0.0,mercado
+MD-1558,2026-01-27,Tetuan,33,1,1,7,False,buen estado,1966,False,149000,0.0,mercado
+MD-1559,2026-08-15,Latina,76,2,2,5,True,a reformar,2006,True,256000,0.0,mercado
+MD-1560,2026-07-08,Hortaleza,77,2,2,7,False,a reformar,1953,True,223000,-0.2696,infraprecio_inyectado
+MD-1561,2025-11-10,Vicalvaro,80,3,2,2,True,buen estado,1979,True,260000,0.0,mercado
+MD-1562,2026-05-30,Vicalvaro,83,2,2,8,False,a reformar,1967,True,186000,0.0,mercado
+MD-1563,2026-04-05,Moratalaz,71,2,1,6,True,buen estado,2021,True,308000,0.0,mercado
+MD-1564,2025-11-24,Tetuan,41,1,1,4,True,buen estado,1933,True,249000,0.0,mercado
+MD-1565,2026-04-05,Arganzuela,81,3,1,3,True,buen estado,1964,True,493000,0.0,mercado
+MD-1566,2025-11-25,Puente de Vallecas,36,1,1,1,True,obra nueva,2022,True,117000,0.0,mercado
+MD-1567,2025-09-25,Chamberi,52,1,1,8,True,reformado,1978,False,533000,0.1344,sobreprecio_inyectado
+MD-1568,2025-10-22,Puente de Vallecas,80,3,2,4,True,reformado,1986,True,247000,0.0,mercado
+MD-1569,2026-07-09,Carabanchel,53,2,1,4,False,reformado,1930,True,190000,0.0,mercado
+MD-1570,2026-01-01,Hortaleza,178,6,3,3,True,a reformar,1958,True,967000,0.0,mercado
+MD-1571,2026-07-22,Villa de Vallecas,55,2,1,4,True,obra nueva,2023,True,276000,0.0,mercado
+MD-1572,2026-04-01,Chamberi,175,6,3,4,True,a reformar,1974,False,986000,0.0,mercado
+MD-1573,2026-06-02,Arganzuela,134,5,3,5,True,buen estado,2000,True,680000,0.0,mercado
+MD-1574,2026-08-24,Latina,180,6,3,2,True,reformado,1989,True,793000,0.2522,sobreprecio_inyectado
+MD-1575,2025-11-25,Barajas,53,2,1,3,True,buen estado,1984,True,212000,0.0,mercado
+MD-1576,2026-02-18,Villaverde,96,4,2,4,True,reformado,1990,True,214000,-0.2644,infraprecio_inyectado
+MD-1577,2025-11-27,Ciudad Lineal,78,2,2,0,False,buen estado,1968,True,396000,0.0,mercado
+MD-1578,2026-02-17,Fuencarral-El Pardo,60,2,1,1,False,reformado,1955,False,390000,0.0,mercado
+MD-1579,2026-08-24,Fuencarral-El Pardo,52,2,1,5,True,buen estado,2025,True,287000,0.0,mercado
+MD-1580,2025-09-09,Arganzuela,119,5,2,7,False,buen estado,1965,True,782000,0.0,mercado
+MD-1581,2026-08-06,Usera,76,3,2,3,True,reformado,1973,True,175000,-0.2542,infraprecio_inyectado
+MD-1582,2026-07-16,Fuencarral-El Pardo,99,4,2,6,True,buen estado,1978,True,580000,0.0,mercado
+MD-1583,2026-06-17,Vicalvaro,80,3,2,7,True,a reformar,2002,True,207000,0.0,mercado
+MD-1584,2026-07-17,Villa de Vallecas,78,3,2,7,True,reformado,1962,True,248000,0.0,mercado
+MD-1585,2026-06-15,Fuencarral-El Pardo,159,6,3,8,True,a reformar,1977,False,666000,0.0,mercado
+MD-1586,2026-06-14,Carabanchel,87,3,2,6,False,reformado,1941,True,232000,-0.171,infraprecio_inyectado
+MD-1587,2026-03-25,Fuencarral-El Pardo,100,4,2,5,True,reformado,1978,True,651000,0.0,mercado
+MD-1588,2025-10-09,Fuencarral-El Pardo,99,4,2,3,True,reformado,1989,False,670000,0.0,mercado
+MD-1589,2026-02-01,Carabanchel,174,6,3,5,True,a reformar,1971,True,465000,0.0,mercado
+MD-1590,2026-05-19,Villa de Vallecas,84,2,2,6,False,buen estado,1962,True,271000,0.0,mercado
+MD-1591,2025-11-03,Arganzuela,74,3,1,7,True,buen estado,1957,True,552000,0.0,mercado
+MD-1592,2026-07-24,Carabanchel,45,1,1,3,True,buen estado,1979,True,188000,0.2761,sobreprecio_inyectado
+MD-1593,2026-03-24,Moncloa-Aravaca,63,3,1,3,True,buen estado,1975,True,368000,0.0,mercado
+MD-1594,2026-01-02,Carabanchel,75,3,1,6,True,buen estado,1969,True,275000,0.0,mercado
+MD-1595,2026-01-30,Tetuan,86,3,2,7,True,buen estado,1989,False,493000,0.2489,sobreprecio_inyectado
+MD-1596,2025-12-06,Chamartin,47,1,1,6,True,a reformar,1978,False,232000,0.0,mercado
+MD-1597,2026-06-14,Fuencarral-El Pardo,42,2,1,0,True,buen estado,1994,True,259000,0.0,mercado
+MD-1598,2026-02-10,Salamanca,84,3,2,4,True,a reformar,1959,True,767000,0.0,mercado
+MD-1599,2026-08-22,Tetuan,32,2,1,2,True,reformado,1972,False,150000,0.0,mercado
+MD-1600,2026-05-30,Hortaleza,29,1,1,1,True,buen estado,1978,True,155000,0.0,mercado
+MD-1601,2026-03-29,Fuencarral-El Pardo,71,3,1,2,True,buen estado,1973,True,393000,0.0,mercado
+MD-1602,2026-05-28,Centro,79,3,1,0,True,reformado,2008,False,762000,0.0,mercado
+MD-1603,2026-06-29,Hortaleza,133,4,3,7,True,obra nueva,2026,True,706000,-0.1256,infraprecio_inyectado
+MD-1604,2026-02-28,Carabanchel,64,3,1,0,True,buen estado,1992,False,187000,0.0,mercado
+MD-1605,2026-03-25,Vicalvaro,130,5,3,5,True,reformado,1990,True,422000,-0.202,infraprecio_inyectado
+MD-1606,2025-12-23,Latina,70,3,1,8,True,buen estado,1983,True,290000,0.0,mercado
+MD-1607,2026-07-16,Fuencarral-El Pardo,66,3,1,6,True,a reformar,2008,True,342000,0.0,mercado
+MD-1608,2026-05-23,Puente de Vallecas,39,1,1,4,True,obra nueva,2024,True,128000,0.0,mercado
+MD-1609,2026-03-15,San Blas-Canillejas,181,6,3,2,True,buen estado,1978,False,588000,0.0,mercado
+MD-1610,2026-06-19,Villa de Vallecas,69,2,1,8,False,buen estado,1929,False,266000,0.1612,sobreprecio_inyectado
+MD-1611,2026-07-08,Centro,38,2,1,4,True,buen estado,1965,False,260000,0.0,mercado
+MD-1612,2025-11-24,Arganzuela,61,1,1,3,True,obra nueva,2024,True,382000,0.0,mercado
+MD-1613,2026-08-02,San Blas-Canillejas,166,6,3,2,False,buen estado,1968,False,607000,0.0,mercado
+MD-1614,2026-08-16,Villaverde,72,3,1,2,True,buen estado,1993,True,146000,0.0,mercado
+MD-1615,2025-12-31,Hortaleza,134,5,3,7,False,buen estado,1937,True,811000,0.0,mercado
+MD-1616,2025-11-12,Usera,67,3,1,1,False,reformado,2025,True,243000,0.0,mercado
+MD-1617,2026-05-11,Tetuan,178,6,3,1,True,a reformar,1991,False,764000,0.0,mercado
+MD-1618,2026-04-22,Vicalvaro,84,3,2,3,True,buen estado,1973,False,309000,0.0,mercado
+MD-1619,2026-01-29,Tetuan,69,2,1,8,True,a reformar,1996,True,311000,0.0,mercado
+MD-1620,2026-03-31,Latina,49,2,1,0,True,obra nueva,2024,True,137000,-0.2148,infraprecio_inyectado
+MD-1621,2026-04-10,Ciudad Lineal,51,2,1,8,True,buen estado,1976,True,257000,0.0,mercado
+MD-1622,2026-07-11,Hortaleza,67,3,1,5,False,reformado,1934,True,393000,0.0,mercado
+MD-1623,2025-11-04,Puente de Vallecas,55,2,1,3,False,a reformar,1966,False,101000,0.0,mercado
+MD-1624,2026-03-15,Latina,43,1,1,4,True,obra nueva,2024,False,140000,0.0,mercado
+MD-1625,2026-05-16,Tetuan,77,4,2,0,True,buen estado,2023,True,383000,0.0,mercado
+MD-1626,2025-09-15,Hortaleza,97,4,2,3,True,reformado,1982,True,492000,-0.1674,infraprecio_inyectado
+MD-1627,2025-12-05,Puente de Vallecas,50,2,1,8,True,buen estado,1983,False,90000,-0.2794,infraprecio_inyectado
+MD-1628,2026-01-22,Hortaleza,69,2,1,7,True,buen estado,1962,True,322000,-0.1403,infraprecio_inyectado
+MD-1629,2025-12-22,Hortaleza,59,2,1,5,True,buen estado,1980,True,399000,0.0,mercado
+MD-1630,2025-09-21,Arganzuela,84,3,1,0,True,buen estado,1970,False,533000,0.0,mercado
+MD-1631,2026-02-20,Latina,56,3,1,0,False,a reformar,1954,False,155000,0.0,mercado
+MD-1632,2026-07-21,Puente de Vallecas,41,1,1,4,True,a reformar,1985,False,82000,-0.1533,infraprecio_inyectado
+MD-1633,2026-04-22,Latina,61,3,1,0,True,buen estado,1926,False,209000,0.1896,sobreprecio_inyectado
+MD-1634,2026-01-03,Villa de Vallecas,92,3,1,3,False,reformado,1962,True,305000,0.0,mercado
+MD-1635,2026-05-02,Retiro,60,2,1,5,True,buen estado,1976,True,455000,0.0,mercado
+MD-1636,2026-08-06,Centro,175,6,2,2,True,reformado,1978,False,1331000,0.0,mercado
+MD-1637,2025-11-05,Puente de Vallecas,95,4,2,5,True,a reformar,1932,False,169000,0.0,mercado
+MD-1638,2026-02-26,Retiro,148,5,3,8,True,a reformar,1974,True,759000,0.0,mercado
+MD-1639,2026-08-28,Centro,64,3,1,4,False,buen estado,1965,False,422000,0.0,mercado
+MD-1640,2026-03-02,Fuencarral-El Pardo,96,3,2,2,True,buen estado,2001,False,370000,0.0,mercado
+MD-1641,2026-07-29,Salamanca,28,1,1,5,False,buen estado,1960,True,199000,0.0,mercado
+MD-1642,2025-09-30,Barajas,96,4,2,2,True,a reformar,1967,False,307000,0.0,mercado
+MD-1643,2026-01-18,Chamberi,131,5,3,2,True,a reformar,1968,True,931000,0.0,mercado
+MD-1644,2025-12-29,San Blas-Canillejas,51,2,1,7,True,reformado,1968,True,205000,0.0,mercado
+MD-1645,2026-01-28,Ciudad Lineal,42,1,1,0,True,a reformar,1939,True,170000,0.0,mercado
+MD-1646,2026-04-25,Chamartin,36,1,1,2,False,buen estado,1949,True,255000,0.0,mercado
+MD-1647,2026-01-01,Moratalaz,63,3,1,5,True,buen estado,1953,True,161000,-0.2672,infraprecio_inyectado
+MD-1648,2026-06-09,Tetuan,122,4,2,8,True,reformado,1980,True,727000,0.0,mercado
+MD-1649,2025-11-01,Salamanca,71,3,1,0,True,buen estado,1955,True,620000,0.0,mercado
+MD-1650,2025-11-24,Tetuan,189,6,3,2,False,a reformar,1967,True,993000,0.0,mercado
+MD-1651,2026-07-09,San Blas-Canillejas,32,1,1,1,False,buen estado,1958,False,106000,0.0,mercado
+MD-1652,2026-04-06,Salamanca,38,2,1,0,True,buen estado,1968,False,307000,0.0,mercado
+MD-1653,2025-12-15,Tetuan,80,3,1,3,False,buen estado,1965,True,306000,-0.1861,infraprecio_inyectado
+MD-1654,2025-09-14,Fuencarral-El Pardo,42,1,1,5,False,buen estado,1967,True,201000,0.0,mercado
+MD-1655,2026-06-19,Barajas,94,3,2,4,True,reformado,1960,True,578000,0.0,mercado
+MD-1656,2026-07-31,Vicalvaro,47,2,1,3,True,buen estado,1975,True,207000,0.1412,sobreprecio_inyectado
+MD-1657,2026-04-22,Fuencarral-El Pardo,109,4,2,4,True,reformado,1968,True,527000,-0.2434,infraprecio_inyectado
+MD-1658,2026-07-31,Arganzuela,39,2,1,5,True,buen estado,1992,False,320000,0.2311,sobreprecio_inyectado
+MD-1659,2026-01-21,Chamartin,108,4,2,5,False,reformado,1954,True,829000,-0.1706,infraprecio_inyectado
+MD-1660,2026-03-12,Carabanchel,54,2,1,0,True,buen estado,1967,False,192000,0.2035,sobreprecio_inyectado
+MD-1661,2026-06-18,Puente de Vallecas,97,3,2,3,False,buen estado,1937,True,269000,0.0,mercado
+MD-1662,2025-09-20,Vicalvaro,159,6,3,6,True,a reformar,1927,False,366000,0.0,mercado
+MD-1663,2026-07-10,Ciudad Lineal,54,2,1,7,False,buen estado,1967,False,206000,0.0,mercado
+MD-1664,2025-12-22,Carabanchel,63,2,1,5,True,buen estado,1993,True,170000,0.0,mercado
+MD-1665,2026-03-03,Hortaleza,134,4,3,7,True,a reformar,1984,True,656000,-0.1378,infraprecio_inyectado
+MD-1666,2026-02-28,Chamartin,91,3,1,6,True,buen estado,1984,True,737000,0.0,mercado
+MD-1667,2026-02-19,Moratalaz,96,3,2,2,True,a reformar,1983,True,235000,0.0,mercado
+MD-1668,2025-10-16,Carabanchel,53,3,1,3,True,reformado,2001,True,196000,0.0,mercado
+MD-1669,2026-02-19,Villaverde,62,2,1,1,True,a reformar,2006,False,130000,0.0,mercado
+MD-1670,2025-10-14,Villa de Vallecas,74,3,1,2,True,reformado,1991,True,284000,0.0,mercado
+MD-1671,2025-11-26,Centro,55,2,1,1,True,a reformar,1968,False,342000,0.0,mercado
+MD-1672,2026-08-23,Vicalvaro,75,2,2,7,False,buen estado,1948,True,296000,0.0,mercado
+MD-1673,2025-11-07,Salamanca,56,2,1,6,True,buen estado,1966,False,381000,0.0,mercado
+MD-1674,2026-08-26,Latina,42,1,1,4,True,buen estado,1995,False,133000,0.0,mercado
+MD-1675,2026-02-14,Usera,66,2,1,3,True,buen estado,1951,True,165000,0.0,mercado
+MD-1676,2026-04-10,San Blas-Canillejas,98,4,2,4,False,buen estado,1958,False,330000,0.0,mercado
+MD-1677,2026-01-09,Retiro,55,2,1,5,True,reformado,1935,True,335000,-0.2531,infraprecio_inyectado
+MD-1678,2026-08-27,Chamartin,59,1,1,1,True,a reformar,1998,True,237000,-0.1651,infraprecio_inyectado
+MD-1679,2025-09-01,Vicalvaro,50,1,1,1,True,reformado,1957,True,187000,0.0,mercado
+MD-1680,2025-12-19,Puente de Vallecas,51,2,1,8,False,buen estado,1948,True,133000,0.0,mercado
+MD-1681,2026-05-09,Carabanchel,88,3,2,4,True,buen estado,1978,True,359000,0.0,mercado
+MD-1682,2026-02-17,Latina,46,2,1,3,True,obra nueva,2025,True,209000,0.0,mercado
+MD-1683,2026-08-04,Moncloa-Aravaca,99,3,2,1,True,a reformar,1971,True,428000,0.0,mercado
+MD-1684,2025-10-17,Chamartin,115,4,2,2,False,reformado,1998,True,1129000,0.0,mercado
+MD-1685,2026-01-09,Carabanchel,28,1,1,8,True,a reformar,1990,True,65000,0.0,mercado
+MD-1686,2025-09-28,Chamartin,101,4,2,7,False,buen estado,1954,True,658000,0.0,mercado
+MD-1687,2026-06-17,Salamanca,41,2,1,6,True,a reformar,2002,True,238000,0.0,mercado
+MD-1688,2026-04-28,Centro,42,2,1,3,False,a reformar,1997,True,249000,0.0,mercado
+MD-1689,2026-07-28,Villa de Vallecas,90,3,2,0,True,buen estado,1977,False,324000,0.0,mercado
+MD-1690,2026-05-07,Hortaleza,168,6,3,4,True,buen estado,1974,True,755000,0.0,mercado
+MD-1691,2026-01-03,Ciudad Lineal,82,3,2,3,True,reformado,1960,False,296000,-0.1812,infraprecio_inyectado
+MD-1692,2026-07-03,Puente de Vallecas,30,1,1,2,True,buen estado,1977,True,87000,0.0,mercado
+MD-1693,2026-08-14,Chamberi,51,2,1,1,False,buen estado,1969,True,379000,0.0,mercado
+MD-1694,2026-04-08,Puente de Vallecas,55,2,1,0,True,buen estado,1996,True,184000,0.0,mercado
+MD-1695,2025-12-03,Moncloa-Aravaca,166,6,3,7,True,buen estado,1967,True,977000,0.0,mercado
+MD-1696,2026-02-19,Carabanchel,79,3,2,7,True,buen estado,1956,True,262000,0.0,mercado
+MD-1697,2026-04-05,San Blas-Canillejas,113,5,2,6,True,obra nueva,2023,True,498000,0.0,mercado
+MD-1698,2026-02-10,Latina,47,2,1,1,True,reformado,1986,True,198000,0.0,mercado
+MD-1699,2026-05-16,Chamartin,73,3,1,8,True,buen estado,1959,True,585000,0.0,mercado
+MD-1700,2026-08-06,Hortaleza,52,2,1,0,True,a reformar,1982,True,156000,0.0,mercado
+MD-1701,2025-12-13,Moratalaz,59,2,1,3,False,reformado,1956,True,209000,0.0,mercado
+MD-1702,2025-12-25,Chamberi,32,1,1,8,True,buen estado,1979,False,256000,0.0,mercado
+MD-1703,2025-10-19,Puente de Vallecas,74,3,1,2,False,buen estado,1943,True,194000,0.0,mercado
+MD-1704,2025-11-17,Ciudad Lineal,65,2,1,4,False,buen estado,1949,True,341000,0.0,mercado
+MD-1705,2026-01-09,Chamberi,57,3,1,5,False,buen estado,1987,False,441000,0.0,mercado
+MD-1706,2025-11-25,San Blas-Canillejas,117,4,2,4,True,buen estado,1983,True,346000,-0.2235,infraprecio_inyectado
+MD-1707,2025-11-12,Carabanchel,41,2,1,1,False,buen estado,1965,True,106000,-0.2304,infraprecio_inyectado
+MD-1708,2026-03-24,Arganzuela,54,2,1,0,True,buen estado,1973,True,278000,-0.197,infraprecio_inyectado
+MD-1709,2025-12-05,Hortaleza,144,5,3,7,True,a reformar,1939,True,640000,0.0,mercado
+MD-1710,2026-05-16,Vicalvaro,97,4,2,0,True,a reformar,1937,False,176000,0.0,mercado
+MD-1711,2026-05-29,Barajas,175,6,3,0,True,reformado,2005,False,1049000,0.0,mercado
+MD-1712,2026-06-25,Vicalvaro,80,4,2,3,True,buen estado,2008,True,295000,0.0,mercado
+MD-1713,2026-01-16,Barajas,80,3,2,7,True,a reformar,1976,False,251000,0.0,mercado
+MD-1714,2025-10-12,Tetuan,171,6,2,6,True,a reformar,1955,True,648000,0.0,mercado
+MD-1715,2026-05-10,Ciudad Lineal,56,2,1,8,False,buen estado,1975,True,253000,0.0,mercado
+MD-1716,2025-10-14,Puente de Vallecas,52,2,1,3,True,buen estado,1932,False,150000,0.0,mercado
+MD-1717,2026-01-14,Ciudad Lineal,70,3,1,0,False,reformado,1963,True,392000,0.0,mercado
+MD-1718,2026-05-15,Ciudad Lineal,62,3,1,7,True,buen estado,1981,True,291000,0.0,mercado
+MD-1719,2025-12-14,Ciudad Lineal,88,4,2,0,False,reformado,1940,True,431000,0.0,mercado
+MD-1720,2026-05-23,Salamanca,187,6,3,2,True,a reformar,1960,True,1684000,0.0,mercado
+MD-1721,2026-05-04,Salamanca,89,3,2,3,False,buen estado,1961,False,699000,0.0,mercado
+MD-1722,2026-06-27,Fuencarral-El Pardo,48,1,1,4,True,buen estado,2025,True,240000,0.0,mercado
+MD-1723,2025-10-16,Centro,121,5,2,6,True,a reformar,1962,True,715000,0.0,mercado
+MD-1724,2026-01-19,Vicalvaro,59,2,1,4,False,a reformar,1947,False,163000,0.0,mercado
+MD-1725,2026-02-01,Latina,62,3,1,5,True,a reformar,1970,True,207000,0.0,mercado
+MD-1726,2026-01-07,Retiro,53,1,1,7,True,a reformar,1929,True,318000,0.0,mercado
+MD-1727,2026-03-25,Puente de Vallecas,76,2,2,8,True,buen estado,1985,False,178000,0.0,mercado
+MD-1728,2026-07-14,Fuencarral-El Pardo,45,2,1,6,True,reformado,1935,True,317000,0.2232,sobreprecio_inyectado
+MD-1729,2026-07-04,Carabanchel,65,3,1,0,False,buen estado,1990,True,175000,0.0,mercado
+MD-1730,2026-05-24,Arganzuela,58,3,1,4,True,buen estado,1990,False,379000,0.0,mercado
+MD-1731,2026-07-10,Fuencarral-El Pardo,100,3,2,0,False,reformado,1969,True,571000,0.0,mercado
+MD-1732,2025-09-05,Fuencarral-El Pardo,96,3,2,6,False,a reformar,1973,False,335000,0.0,mercado
+MD-1733,2026-06-02,Puente de Vallecas,31,1,1,5,False,buen estado,1946,True,80000,0.0,mercado
+MD-1734,2026-04-17,Fuencarral-El Pardo,78,2,2,6,True,a reformar,1989,True,379000,0.0,mercado
+MD-1735,2026-02-19,Ciudad Lineal,97,4,2,3,False,buen estado,1965,True,436000,0.0,mercado
+MD-1736,2025-11-03,Latina,76,3,2,8,False,buen estado,1955,False,289000,0.0,mercado
+MD-1737,2025-10-25,Villa de Vallecas,42,1,1,4,True,obra nueva,2024,True,203000,0.0,mercado
+MD-1738,2025-11-22,Ciudad Lineal,64,2,1,1,True,buen estado,1944,True,408000,0.0,mercado
+MD-1739,2025-09-29,Tetuan,45,1,1,3,True,buen estado,2007,True,178000,-0.2335,infraprecio_inyectado
+MD-1740,2025-12-31,Centro,73,3,1,1,True,reformado,1974,True,640000,0.0,mercado
+MD-1741,2026-03-30,Hortaleza,44,2,1,7,False,buen estado,1967,True,186000,0.0,mercado
+MD-1742,2026-06-13,Centro,74,2,1,0,True,buen estado,1975,True,539000,0.0,mercado
+MD-1743,2025-10-02,Fuencarral-El Pardo,46,2,1,5,True,buen estado,2008,True,267000,0.0,mercado
+MD-1744,2025-11-11,Chamartin,172,6,3,3,False,buen estado,1959,True,1100000,0.0,mercado
+MD-1745,2025-10-20,Villa de Vallecas,78,2,2,7,True,reformado,1979,False,285000,0.0,mercado
+MD-1746,2026-04-04,Carabanchel,67,2,1,7,True,obra nueva,2023,False,234000,0.0,mercado
+MD-1747,2026-07-20,Vicalvaro,81,3,2,4,False,reformado,1965,False,193000,-0.2548,infraprecio_inyectado
+MD-1748,2025-12-02,Ciudad Lineal,186,6,3,3,True,buen estado,1946,False,605000,-0.2647,infraprecio_inyectado
+MD-1749,2025-09-13,Ciudad Lineal,44,2,1,1,True,obra nueva,2026,False,242000,0.0,mercado
+MD-1750,2025-09-27,Hortaleza,145,4,3,2,True,buen estado,1988,True,649000,-0.1453,infraprecio_inyectado
+MD-1751,2025-12-01,Ciudad Lineal,49,2,1,3,False,buen estado,1949,False,190000,0.0,mercado
+MD-1752,2026-01-07,Arganzuela,82,3,2,0,True,buen estado,1964,True,478000,0.0,mercado
+MD-1753,2026-05-28,Latina,40,1,1,0,True,buen estado,1989,True,124000,0.0,mercado
+MD-1754,2025-09-15,Salamanca,145,5,2,3,True,buen estado,2000,True,1597000,0.1863,sobreprecio_inyectado
+MD-1755,2026-01-17,Chamberi,172,5,3,3,True,reformado,1983,True,1776000,0.0,mercado
+MD-1756,2026-06-27,Retiro,48,2,1,1,False,buen estado,1964,True,313000,0.0,mercado
+MD-1757,2025-10-12,Centro,155,6,3,7,False,reformado,1969,True,1459000,0.0,mercado
+MD-1758,2025-11-03,Centro,29,2,1,6,False,buen estado,1967,True,241000,0.0,mercado
+MD-1759,2025-09-03,Salamanca,56,2,1,8,True,reformado,1942,True,516000,0.0,mercado
+MD-1760,2025-12-05,Ciudad Lineal,30,2,1,5,False,reformado,1953,True,108000,0.0,mercado
+MD-1761,2026-04-26,Centro,76,3,2,8,True,a reformar,1968,True,583000,0.0,mercado
+MD-1762,2026-06-07,Fuencarral-El Pardo,60,2,1,8,True,a reformar,2025,True,241000,0.0,mercado
+MD-1763,2026-06-27,Moncloa-Aravaca,42,1,1,5,False,buen estado,1918,True,240000,0.0,mercado
+MD-1764,2026-08-09,Fuencarral-El Pardo,66,3,1,7,True,reformado,1971,True,326000,-0.2057,infraprecio_inyectado
+MD-1765,2026-07-24,Chamartin,80,3,2,6,False,buen estado,1955,True,330000,-0.2715,infraprecio_inyectado
+MD-1766,2026-07-05,Retiro,55,2,1,1,True,buen estado,1990,False,372000,0.0,mercado
+MD-1767,2025-09-09,Puente de Vallecas,46,1,1,0,True,buen estado,1969,False,129000,0.0,mercado
+MD-1768,2025-10-17,Salamanca,159,6,3,6,True,reformado,1977,True,1675000,0.0,mercado
+MD-1769,2026-04-12,Villaverde,72,4,1,1,False,reformado,1992,True,230000,0.2051,sobreprecio_inyectado
+MD-1770,2026-02-10,Hortaleza,122,4,2,0,True,a reformar,2025,True,580000,0.0,mercado
+MD-1771,2026-02-08,Arganzuela,92,3,2,3,True,buen estado,1973,True,587000,0.0,mercado
+MD-1772,2025-10-09,San Blas-Canillejas,48,2,1,4,True,buen estado,2007,True,215000,0.0,mercado
+MD-1773,2025-09-18,Retiro,38,2,1,8,True,buen estado,1961,True,280000,0.0,mercado
+MD-1774,2026-05-08,Hortaleza,80,3,2,4,True,obra nueva,2022,True,516000,0.0,mercado
+MD-1775,2025-12-19,Fuencarral-El Pardo,115,4,2,7,True,reformado,1983,True,730000,0.0,mercado
+MD-1776,2025-11-25,Villa de Vallecas,66,2,1,1,True,buen estado,1969,True,252000,0.0,mercado
+MD-1777,2026-02-05,Latina,60,2,1,0,True,reformado,1973,False,200000,0.0,mercado
+MD-1778,2025-12-17,Hortaleza,188,6,3,1,True,obra nueva,2026,True,1156000,0.0,mercado
+MD-1779,2026-06-24,Barajas,96,4,2,4,True,buen estado,1990,False,447000,0.211,sobreprecio_inyectado
+MD-1780,2026-02-14,Carabanchel,78,2,2,3,True,buen estado,1986,True,226000,-0.2341,infraprecio_inyectado
+MD-1781,2026-06-26,Chamartin,95,2,2,6,True,buen estado,1997,True,748000,0.0,mercado
+MD-1782,2025-09-21,Moncloa-Aravaca,39,1,1,2,False,a reformar,1961,False,193000,0.0,mercado
+MD-1783,2025-10-11,Tetuan,40,1,1,4,True,buen estado,1951,True,265000,0.2751,sobreprecio_inyectado
+MD-1784,2026-04-28,Tetuan,56,1,1,5,True,a reformar,1966,True,240000,0.0,mercado
+MD-1785,2025-11-26,Fuencarral-El Pardo,80,3,2,5,True,buen estado,1977,False,321000,0.0,mercado
+MD-1786,2026-07-29,Carabanchel,47,1,1,4,True,buen estado,1967,True,149000,0.0,mercado
+MD-1787,2026-04-08,Chamberi,174,6,3,5,True,a reformar,1975,True,1228000,0.0,mercado
+MD-1788,2026-01-13,Carabanchel,88,3,2,0,True,buen estado,1972,False,211000,0.0,mercado
+MD-1789,2026-08-19,Latina,73,3,1,6,True,a reformar,1977,False,170000,0.0,mercado
+MD-1790,2026-08-19,Chamartin,81,3,2,5,True,a reformar,1989,False,400000,0.0,mercado
+MD-1791,2025-10-14,Chamberi,100,4,2,2,True,buen estado,1972,True,693000,0.0,mercado
+MD-1792,2026-05-31,Ciudad Lineal,99,3,2,1,True,reformado,1937,True,646000,0.0,mercado
+MD-1793,2026-05-04,Salamanca,51,1,1,5,True,buen estado,2008,False,461000,0.0,mercado
+MD-1794,2025-11-30,San Blas-Canillejas,48,2,1,0,True,reformado,2024,True,181000,0.0,mercado
+MD-1795,2025-09-29,Puente de Vallecas,66,2,1,4,True,buen estado,1990,True,186000,0.0,mercado
+MD-1796,2026-05-30,Chamartin,174,5,2,6,False,buen estado,1968,False,1117000,0.0,mercado
+MD-1797,2026-05-11,Chamberi,49,3,1,3,True,reformado,2006,True,464000,0.0,mercado
+MD-1798,2026-05-21,Hortaleza,78,3,2,0,True,buen estado,1991,True,514000,0.0,mercado
+MD-1799,2026-01-19,Puente de Vallecas,49,2,1,8,False,buen estado,1968,True,133000,0.0,mercado
+MD-1800,2026-03-29,Latina,94,3,2,1,True,buen estado,1968,True,375000,0.2461,sobreprecio_inyectado
+MD-1801,2025-11-07,Tetuan,50,2,1,0,True,a reformar,1971,True,217000,0.0,mercado
+MD-1802,2026-08-02,Puente de Vallecas,81,3,2,2,True,a reformar,1953,False,142000,0.0,mercado
+MD-1803,2025-11-03,Retiro,124,4,2,2,True,a reformar,1961,True,615000,-0.2724,infraprecio_inyectado
+MD-1804,2025-12-28,Puente de Vallecas,79,3,2,4,True,a reformar,1946,True,201000,0.0,mercado
+MD-1805,2025-11-06,Salamanca,39,2,1,1,False,a reformar,1934,True,306000,0.0,mercado
+MD-1806,2026-05-16,Arganzuela,74,3,1,6,True,obra nueva,2025,False,491000,0.0,mercado
+MD-1807,2026-01-16,Puente de Vallecas,82,3,1,1,True,buen estado,1948,True,239000,0.0,mercado
+MD-1808,2025-12-18,Puente de Vallecas,107,4,2,2,False,buen estado,1960,True,298000,0.0,mercado
+MD-1809,2025-11-08,Vicalvaro,60,3,1,6,True,buen estado,1953,True,181000,0.0,mercado
+MD-1810,2026-07-21,Retiro,149,6,2,0,True,buen estado,1946,True,995000,0.0,mercado
+MD-1811,2026-08-16,Puente de Vallecas,94,3,1,0,False,buen estado,1948,True,253000,0.0,mercado
+MD-1812,2026-06-17,Vicalvaro,126,4,2,6,True,a reformar,1962,True,471000,0.0,mercado
+MD-1813,2025-09-26,Centro,90,4,2,2,True,buen estado,1988,True,688000,0.0,mercado
+MD-1814,2026-04-03,Villaverde,92,3,2,1,False,reformado,1943,True,185000,-0.1997,infraprecio_inyectado
+MD-1815,2025-12-03,Chamberi,88,3,2,0,True,buen estado,1972,True,805000,0.0,mercado
+MD-1816,2025-09-18,Chamartin,88,3,1,2,True,reformado,1984,True,847000,0.0,mercado
+MD-1817,2025-12-21,Salamanca,65,2,1,8,True,reformado,1970,False,469000,0.0,mercado
+MD-1818,2025-10-08,Hortaleza,106,4,2,2,False,buen estado,1946,True,565000,0.0,mercado
+MD-1819,2026-06-24,Hortaleza,96,3,2,8,True,a reformar,1980,True,438000,0.0,mercado
+MD-1820,2026-06-09,Fuencarral-El Pardo,177,6,3,7,True,obra nueva,2022,True,1012000,0.0,mercado
+MD-1821,2026-06-12,Vicalvaro,55,2,1,1,True,buen estado,1921,False,168000,0.0,mercado
+MD-1822,2026-06-22,Chamberi,171,6,3,4,False,buen estado,1965,True,1246000,0.0,mercado
+MD-1823,2026-06-29,Ciudad Lineal,63,3,1,3,False,buen estado,1956,True,231000,0.0,mercado
+MD-1824,2025-09-02,Latina,49,2,1,6,True,obra nueva,2024,False,232000,0.2222,sobreprecio_inyectado
+MD-1825,2026-07-14,Moratalaz,96,3,2,0,True,reformado,1971,True,381000,0.0,mercado
+MD-1826,2025-11-09,Ciudad Lineal,76,3,2,0,True,buen estado,1984,False,275000,0.0,mercado
+MD-1827,2026-05-18,Hortaleza,91,3,2,7,True,reformado,1936,False,598000,0.1936,sobreprecio_inyectado
+MD-1828,2025-10-03,Vicalvaro,182,6,3,1,True,reformado,1964,True,777000,0.0,mercado
+MD-1829,2026-02-16,Latina,71,3,1,4,False,buen estado,1964,False,168000,0.0,mercado
+MD-1830,2026-01-20,Puente de Vallecas,49,1,1,7,False,buen estado,1976,True,139000,0.0,mercado
+MD-1831,2026-02-22,Villa de Vallecas,99,5,2,0,True,buen estado,1980,True,330000,0.0,mercado
+MD-1832,2026-02-12,Carabanchel,90,3,2,8,True,buen estado,1971,False,279000,0.0,mercado
+MD-1833,2025-09-09,Puente de Vallecas,99,4,2,7,True,a reformar,1981,True,258000,0.0,mercado
+MD-1834,2025-10-23,Fuencarral-El Pardo,73,4,1,3,False,buen estado,1934,True,384000,0.0,mercado
+MD-1835,2025-09-29,Chamberi,43,1,1,5,True,buen estado,1934,False,258000,0.0,mercado
+MD-1836,2026-08-03,Tetuan,99,4,2,0,True,buen estado,1970,False,401000,0.0,mercado
+MD-1837,2026-07-24,Ciudad Lineal,186,6,3,7,True,reformado,1957,False,695000,-0.146,infraprecio_inyectado
+MD-1838,2025-11-28,San Blas-Canillejas,150,4,3,7,False,a reformar,1963,True,470000,0.0,mercado
+MD-1839,2026-06-04,Chamartin,118,3,1,6,False,buen estado,1964,True,639000,0.0,mercado
+MD-1840,2026-05-13,Tetuan,60,2,1,2,True,buen estado,1981,True,381000,0.0,mercado
+MD-1841,2026-05-10,Ciudad Lineal,94,4,2,1,True,buen estado,2004,True,464000,0.0,mercado
+MD-1842,2026-03-08,Carabanchel,82,3,2,8,True,buen estado,1985,False,164000,-0.2382,infraprecio_inyectado
+MD-1843,2026-05-18,Puente de Vallecas,43,2,1,7,True,a reformar,1980,False,65000,0.0,mercado
+MD-1844,2026-08-24,Fuencarral-El Pardo,181,6,2,5,False,reformado,1959,True,1195000,0.0,mercado
+MD-1845,2026-02-01,Carabanchel,42,2,1,8,True,obra nueva,2023,False,170000,0.0,mercado
+MD-1846,2026-03-27,Hortaleza,121,4,2,6,True,obra nueva,2024,True,916000,0.0,mercado
+MD-1847,2025-12-25,San Blas-Canillejas,95,4,2,4,True,buen estado,1987,True,321000,0.0,mercado
+MD-1848,2025-10-25,Puente de Vallecas,62,3,1,5,True,obra nueva,2024,True,187000,0.0,mercado
+MD-1849,2026-03-15,Chamartin,82,3,2,3,True,reformado,2002,True,844000,0.0,mercado
+MD-1850,2026-02-01,San Blas-Canillejas,152,5,3,3,True,buen estado,1967,False,509000,0.0,mercado
+MD-1851,2026-02-04,Centro,72,4,1,1,False,reformado,1984,True,538000,0.0,mercado
+MD-1852,2026-07-07,Moratalaz,157,5,3,0,True,buen estado,1958,True,544000,0.0,mercado
+MD-1853,2026-08-06,Moncloa-Aravaca,89,3,2,3,False,a reformar,1953,True,382000,0.0,mercado
+MD-1854,2026-01-07,Villa de Vallecas,45,2,1,5,True,buen estado,1976,False,123000,-0.1487,infraprecio_inyectado
+MD-1855,2025-09-04,Puente de Vallecas,59,3,1,3,True,buen estado,1995,True,146000,0.0,mercado
+MD-1856,2026-03-10,Fuencarral-El Pardo,46,3,1,2,True,buen estado,1975,True,231000,0.0,mercado
+MD-1857,2025-09-02,Usera,66,3,1,2,True,a reformar,1972,True,143000,0.0,mercado
+MD-1858,2026-06-06,Moratalaz,69,2,1,7,True,a reformar,2004,False,176000,0.0,mercado
+MD-1859,2025-10-23,Fuencarral-El Pardo,187,6,3,1,True,buen estado,1977,True,1076000,0.0,mercado
+MD-1860,2026-04-26,Carabanchel,56,2,1,6,True,a reformar,1991,True,150000,0.0,mercado
+MD-1861,2026-01-25,Fuencarral-El Pardo,98,3,2,8,True,reformado,1987,False,511000,0.0,mercado
+MD-1862,2025-12-18,Tetuan,90,3,2,0,True,buen estado,1953,True,626000,0.0,mercado
+MD-1863,2026-08-27,Ciudad Lineal,64,1,1,0,True,buen estado,2002,False,286000,0.0,mercado
+MD-1864,2026-03-05,Ciudad Lineal,78,2,2,0,True,buen estado,2003,True,315000,0.0,mercado
+MD-1865,2026-04-09,Ciudad Lineal,62,3,1,3,True,buen estado,1963,True,314000,0.0,mercado
+MD-1866,2026-07-26,Centro,60,1,1,6,True,reformado,2002,True,537000,0.0,mercado
+MD-1867,2026-07-12,Centro,34,2,1,5,True,reformado,1997,True,312000,0.0,mercado
+MD-1868,2025-11-30,Vicalvaro,115,5,2,5,True,buen estado,1953,False,336000,0.0,mercado
+MD-1869,2026-02-05,San Blas-Canillejas,94,3,2,6,True,buen estado,2011,True,495000,0.278,sobreprecio_inyectado
+MD-1870,2026-05-07,Arganzuela,37,2,1,7,True,buen estado,1950,False,191000,0.0,mercado
+MD-1871,2026-01-27,Carabanchel,74,3,1,0,True,buen estado,1933,True,202000,0.0,mercado
+MD-1872,2026-02-13,Puente de Vallecas,39,1,1,1,False,reformado,1968,True,121000,0.0,mercado
+MD-1873,2025-09-18,Hortaleza,92,4,2,7,True,reformado,1973,True,584000,0.0,mercado
+MD-1874,2026-07-09,Moratalaz,42,2,1,3,True,buen estado,1938,True,180000,0.1842,sobreprecio_inyectado
+MD-1875,2025-11-01,Tetuan,51,1,1,3,True,reformado,1932,True,287000,0.0,mercado
+MD-1876,2025-10-23,Carabanchel,91,3,2,3,True,buen estado,1954,True,226000,-0.2039,infraprecio_inyectado
+MD-1877,2025-11-11,Fuencarral-El Pardo,34,1,1,2,True,reformado,1990,True,235000,0.0,mercado
+MD-1878,2025-09-18,Centro,96,3,2,5,False,a reformar,1956,True,499000,0.0,mercado
+MD-1879,2025-12-23,Hortaleza,73,3,1,8,True,reformado,1996,True,412000,0.0,mercado
+MD-1880,2026-03-15,Moncloa-Aravaca,120,4,1,7,True,reformado,1965,True,692000,0.0,mercado
+MD-1881,2025-09-30,Latina,77,3,2,8,True,buen estado,1991,True,326000,0.0,mercado
+MD-1882,2026-05-30,Hortaleza,153,6,3,1,False,a reformar,1961,True,671000,0.0,mercado
+MD-1883,2025-12-31,San Blas-Canillejas,44,2,1,2,True,reformado,1967,True,203000,0.0,mercado
+MD-1884,2025-10-05,Retiro,70,3,1,3,True,reformado,1974,True,731000,0.1541,sobreprecio_inyectado
+MD-1885,2025-09-01,Ciudad Lineal,58,1,1,5,True,buen estado,1964,True,269000,0.0,mercado
+MD-1886,2026-03-09,Ciudad Lineal,114,3,2,3,True,obra nueva,2022,True,572000,0.0,mercado
+MD-1887,2026-05-01,Salamanca,91,3,2,4,False,buen estado,1961,True,780000,0.0,mercado
+MD-1888,2026-07-06,Puente de Vallecas,87,3,2,2,True,reformado,1982,False,294000,0.1543,sobreprecio_inyectado
+MD-1889,2026-04-12,Chamberi,39,2,1,0,True,reformado,1963,True,362000,0.0,mercado
+MD-1890,2026-04-30,Vicalvaro,83,4,2,6,True,buen estado,2012,True,361000,0.0,mercado
+MD-1891,2026-05-16,Arganzuela,80,3,1,4,True,obra nueva,2024,True,595000,0.0,mercado
+MD-1892,2025-12-21,Fuencarral-El Pardo,111,5,2,1,False,buen estado,1922,True,689000,0.0,mercado
+MD-1893,2025-09-21,Barajas,80,3,1,5,True,buen estado,1982,True,369000,0.0,mercado
+MD-1894,2025-12-30,Chamberi,138,5,3,3,False,buen estado,1956,True,1031000,0.0,mercado
+MD-1895,2025-09-07,Chamartin,123,4,2,6,True,buen estado,2007,True,875000,0.0,mercado
+MD-1896,2025-12-09,San Blas-Canillejas,110,4,2,7,True,buen estado,1975,False,372000,0.0,mercado
+MD-1897,2026-02-28,Fuencarral-El Pardo,30,1,1,2,True,a reformar,1970,True,117000,0.0,mercado
+MD-1898,2026-07-28,Puente de Vallecas,39,2,1,7,False,buen estado,1981,True,134000,0.1865,sobreprecio_inyectado
+MD-1899,2025-11-11,Barajas,79,3,2,2,True,reformado,2013,True,406000,0.0,mercado
+MD-1900,2026-03-18,Chamartin,181,6,3,1,True,buen estado,1940,True,1222000,0.0,mercado
+MD-1901,2026-03-19,Usera,59,2,1,6,False,reformado,1958,True,218000,0.1237,sobreprecio_inyectado
+MD-1902,2026-01-17,Chamartin,33,1,1,0,True,reformado,1982,True,362000,0.1934,sobreprecio_inyectado
+MD-1903,2026-04-30,Vicalvaro,50,2,1,0,True,buen estado,1978,True,220000,0.0,mercado
+MD-1904,2025-12-20,Centro,32,1,1,7,True,buen estado,1971,True,304000,0.0,mercado
+MD-1905,2025-10-25,Fuencarral-El Pardo,126,4,2,2,False,buen estado,1952,True,702000,0.0,mercado
+MD-1906,2026-08-21,Tetuan,38,1,1,1,True,a reformar,1956,True,134000,-0.2755,infraprecio_inyectado
+MD-1907,2026-08-24,Puente de Vallecas,68,3,1,4,True,reformado,1984,True,235000,0.0,mercado
+MD-1908,2025-11-16,Hortaleza,176,6,2,2,True,buen estado,1957,True,1081000,0.0,mercado
+MD-1909,2025-11-01,Centro,91,5,2,7,False,reformado,1956,True,830000,0.2487,sobreprecio_inyectado
+MD-1910,2026-04-04,Chamartin,33,1,1,6,True,buen estado,2009,False,268000,0.0,mercado
+MD-1911,2026-01-29,Tetuan,145,6,3,7,False,buen estado,1967,True,743000,0.0,mercado
+MD-1912,2026-06-05,Moratalaz,95,3,1,3,True,buen estado,2019,True,369000,0.0,mercado
+MD-1913,2026-08-19,Retiro,67,2,1,4,True,buen estado,1993,True,504000,0.0,mercado
+MD-1914,2025-12-09,Latina,42,1,1,6,False,buen estado,1952,True,107000,0.0,mercado
+MD-1915,2026-07-17,San Blas-Canillejas,112,5,2,4,True,a reformar,1990,True,315000,0.0,mercado
+MD-1916,2026-03-13,Chamberi,31,1,1,4,True,reformado,2013,True,315000,0.0,mercado
+MD-1917,2026-06-21,Tetuan,61,2,1,3,True,buen estado,1948,False,215000,-0.2698,infraprecio_inyectado
+MD-1918,2026-05-21,Chamartin,172,6,3,0,True,a reformar,1973,True,1251000,0.0,mercado
+MD-1919,2026-06-23,Tetuan,80,4,2,3,False,a reformar,1976,False,238000,0.0,mercado
+MD-1920,2025-12-06,Moncloa-Aravaca,134,5,3,0,False,a reformar,1949,True,814000,0.0,mercado
+MD-1921,2026-02-06,Chamartin,91,3,1,7,True,buen estado,1994,True,724000,0.0,mercado
+MD-1922,2025-11-04,Hortaleza,63,1,1,6,True,obra nueva,2025,True,331000,0.0,mercado
+MD-1923,2026-03-17,Puente de Vallecas,37,2,1,7,True,buen estado,1975,True,103000,0.0,mercado
+MD-1924,2025-10-08,Salamanca,73,2,1,4,True,a reformar,1984,False,477000,0.0,mercado
+MD-1925,2026-01-14,Fuencarral-El Pardo,40,1,1,7,True,buen estado,1997,True,235000,0.0,mercado
+MD-1926,2026-07-03,Chamberi,178,6,3,3,True,reformado,1931,False,1590000,0.0,mercado
+MD-1927,2025-10-19,Puente de Vallecas,74,2,1,3,True,buen estado,1977,False,223000,0.1429,sobreprecio_inyectado
+MD-1928,2026-08-06,Tetuan,48,2,1,1,False,buen estado,1955,True,318000,0.0,mercado
+MD-1929,2026-03-14,Carabanchel,75,4,2,6,True,a reformar,1975,False,173000,0.0,mercado
+MD-1930,2026-06-16,Villaverde,98,4,2,3,True,buen estado,2006,True,236000,0.0,mercado
+MD-1931,2026-07-02,Chamartin,41,1,1,2,True,buen estado,1940,True,325000,0.0,mercado
+MD-1932,2026-03-26,Ciudad Lineal,76,2,2,6,True,a reformar,1956,True,355000,0.0,mercado
+MD-1933,2025-11-02,Fuencarral-El Pardo,164,6,3,4,True,reformado,2015,True,1078000,0.0,mercado
+MD-1934,2025-12-28,Moncloa-Aravaca,78,2,1,0,True,buen estado,1992,True,497000,0.0,mercado
+MD-1935,2026-03-31,Carabanchel,55,2,1,7,True,buen estado,2017,False,162000,0.0,mercado
+MD-1936,2026-06-29,Fuencarral-El Pardo,167,6,3,5,True,reformado,1971,False,814000,0.0,mercado
+MD-1937,2026-01-02,Retiro,79,3,2,4,True,buen estado,1972,True,556000,0.0,mercado
+MD-1938,2026-04-21,Villa de Vallecas,99,3,2,7,True,a reformar,1985,False,282000,0.0,mercado
+MD-1939,2026-03-25,Retiro,40,1,1,5,False,obra nueva,2022,True,330000,0.0,mercado
+MD-1940,2026-07-11,Ciudad Lineal,43,1,1,5,False,buen estado,1950,True,189000,0.0,mercado
+MD-1941,2026-02-28,Centro,55,2,1,1,True,reformado,1972,True,496000,0.0,mercado
+MD-1942,2026-06-06,San Blas-Canillejas,124,4,2,5,True,reformado,1992,True,406000,0.0,mercado
+MD-1943,2025-12-20,San Blas-Canillejas,60,2,1,6,False,a reformar,1950,True,158000,0.0,mercado
+MD-1944,2026-06-19,Villaverde,42,2,1,6,True,reformado,1982,False,89000,0.0,mercado
+MD-1945,2026-01-24,Moratalaz,86,3,1,7,False,buen estado,1945,False,285000,0.0,mercado
+MD-1946,2025-11-08,Puente de Vallecas,57,2,1,7,True,a reformar,1971,False,153000,0.0,mercado
+MD-1947,2026-08-13,Puente de Vallecas,57,1,1,0,True,buen estado,2016,False,150000,0.0,mercado
+MD-1948,2026-07-22,Latina,93,3,1,8,True,obra nueva,2026,False,302000,0.0,mercado
+MD-1949,2026-02-26,Arganzuela,56,2,1,2,True,buen estado,1992,True,338000,0.0,mercado
+MD-1950,2026-05-01,Puente de Vallecas,84,4,2,3,True,buen estado,1983,False,203000,0.0,mercado
+MD-1951,2026-08-13,Vicalvaro,118,5,2,6,True,buen estado,1982,True,459000,0.0,mercado
+MD-1952,2026-01-21,Carabanchel,54,2,1,7,True,a reformar,1986,True,172000,0.0,mercado
+MD-1953,2026-01-26,San Blas-Canillejas,131,4,3,4,True,reformado,2004,True,514000,0.0,mercado
+MD-1954,2025-11-15,Villaverde,42,1,1,2,False,reformado,1965,True,112000,0.0,mercado
+MD-1955,2026-03-29,Latina,98,3,2,0,False,reformado,1964,True,395000,0.0,mercado
+MD-1956,2025-10-06,Chamberi,90,3,2,4,True,buen estado,1972,True,824000,0.0,mercado
+MD-1957,2026-05-23,Salamanca,158,6,3,4,True,reformado,1974,True,1407000,0.0,mercado
+MD-1958,2025-10-25,Centro,29,1,1,8,True,buen estado,2003,True,154000,-0.2731,infraprecio_inyectado
+MD-1959,2025-12-21,Tetuan,58,3,1,4,True,buen estado,1988,True,499000,0.253,sobreprecio_inyectado
+MD-1960,2025-10-05,Fuencarral-El Pardo,69,2,1,4,True,buen estado,1979,True,326000,-0.1716,infraprecio_inyectado
+MD-1961,2026-08-22,Hortaleza,52,1,1,5,True,reformado,1965,True,273000,0.0,mercado
+MD-1962,2025-12-09,Chamberi,162,6,3,4,True,buen estado,2010,True,1312000,0.0,mercado
+MD-1963,2026-02-01,Hortaleza,154,6,3,7,True,buen estado,1983,True,664000,0.0,mercado
+MD-1964,2025-11-26,Carabanchel,48,2,1,7,True,buen estado,1989,True,155000,0.0,mercado
+MD-1965,2026-03-09,Salamanca,68,3,1,5,True,buen estado,1987,True,573000,0.0,mercado
+MD-1966,2026-08-19,Ciudad Lineal,98,4,2,5,False,buen estado,1946,False,405000,0.0,mercado
+MD-1967,2025-09-13,Arganzuela,61,2,1,4,False,buen estado,1943,True,421000,0.0,mercado
+MD-1968,2026-06-04,Hortaleza,51,1,1,8,True,reformado,1975,False,324000,0.0,mercado
+MD-1969,2026-07-29,Latina,84,4,2,4,True,reformado,1988,False,296000,0.0,mercado
+MD-1970,2026-01-02,Villa de Vallecas,91,3,2,5,True,obra nueva,2023,True,371000,-0.2204,infraprecio_inyectado
+MD-1971,2026-01-27,Villa de Vallecas,66,2,1,0,False,buen estado,1964,True,166000,-0.2415,infraprecio_inyectado
+MD-1972,2026-06-04,Centro,132,4,3,5,True,reformado,1960,True,907000,0.0,mercado
+MD-1973,2026-05-21,San Blas-Canillejas,83,2,2,7,True,reformado,1986,True,349000,0.0,mercado
+MD-1974,2026-03-21,Centro,30,2,1,2,False,reformado,1966,True,232000,0.0,mercado
+MD-1975,2025-10-02,Carabanchel,41,2,1,8,True,buen estado,1980,True,115000,0.0,mercado
+MD-1976,2026-01-23,Chamartin,101,3,2,2,False,buen estado,1909,True,1009000,0.2107,sobreprecio_inyectado
+MD-1977,2025-10-22,Centro,144,5,2,8,True,reformado,2000,True,1300000,0.0,mercado
+MD-1978,2025-11-13,Tetuan,109,5,2,4,True,buen estado,1991,True,592000,0.0,mercado
+MD-1979,2026-04-17,Moratalaz,60,1,1,4,True,buen estado,2013,False,221000,0.0,mercado
+MD-1980,2026-07-20,Salamanca,176,6,3,6,True,buen estado,1992,True,1463000,0.0,mercado
+MD-1981,2025-10-10,Chamberi,62,2,1,7,True,buen estado,1922,True,519000,0.0,mercado
+MD-1982,2026-05-21,Carabanchel,76,3,2,7,True,obra nueva,2022,True,317000,0.0,mercado
+MD-1983,2025-11-17,Chamartin,34,1,1,7,False,buen estado,1954,False,193000,0.0,mercado
+MD-1984,2026-05-30,Tetuan,77,3,2,6,False,buen estado,1931,False,358000,0.159,sobreprecio_inyectado
+MD-1985,2025-11-11,Tetuan,29,1,1,3,False,reformado,1993,True,219000,0.0,mercado
+MD-1986,2025-11-16,Hortaleza,110,4,2,2,True,buen estado,1946,True,650000,0.0,mercado
+MD-1987,2026-05-29,Tetuan,75,3,2,3,True,buen estado,1963,True,402000,0.0,mercado
+MD-1988,2026-01-09,San Blas-Canillejas,144,5,3,2,True,obra nueva,2025,True,622000,0.0,mercado
+MD-1989,2026-07-17,Vicalvaro,90,4,2,7,False,buen estado,1994,False,221000,0.0,mercado
+MD-1990,2025-12-07,Arganzuela,64,2,1,2,True,a reformar,1959,False,277000,0.0,mercado
+MD-1991,2026-08-28,Latina,59,3,1,7,False,buen estado,1949,False,182000,0.0,mercado
+MD-1992,2025-10-10,Chamartin,145,6,2,3,True,buen estado,1998,False,1147000,0.0,mercado
+MD-1993,2025-10-06,Fuencarral-El Pardo,62,3,1,3,True,a reformar,1968,False,215000,-0.278,infraprecio_inyectado
+MD-1994,2025-09-19,Latina,87,3,2,0,False,buen estado,1946,False,250000,0.0,mercado
+MD-1995,2026-07-01,Usera,40,1,1,1,True,buen estado,1971,True,107000,0.0,mercado
+MD-1996,2025-10-17,San Blas-Canillejas,76,3,2,2,True,a reformar,1966,True,255000,0.0,mercado
+MD-1997,2025-09-30,Ciudad Lineal,64,2,1,5,True,buen estado,2000,True,377000,0.2423,sobreprecio_inyectado
+MD-1998,2026-05-24,Villa de Vallecas,85,3,2,2,True,a reformar,1993,True,237000,0.0,mercado
+MD-1999,2026-05-31,Puente de Vallecas,43,2,1,6,True,buen estado,1952,False,122000,0.0,mercado
+MD-2000,2026-03-19,Villaverde,87,3,2,2,True,obra nueva,2022,True,277000,0.0,mercado

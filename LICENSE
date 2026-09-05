@@ -1,0 +1,45 @@
+MIT License
+
+Copyright (c) 2026 Félix Pérez Acevedo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+
+DATOS DE TERCEROS — LICENCIA DISTINTA
+
+Esta licencia MIT cubre el CÓDIGO de este repositorio. No cubre los datos.
+
+El conjunto `idealista18` que usa el circuito de datos reales se distribuye bajo
+Open Database License (ODbL) v1.0, que **obliga a atribuir la fuente** y a
+mantener la misma licencia en las bases de datos derivadas:
+
+  Rey-Blanco, D., Arbués, P., López, F. y Páez, A. (2024), "A geo-referenced
+  micro-data set of real estate listings for Spain's three largest cities",
+  Environment and Planning B: Urban Analytics and City Science.
+  doi:10.1177/23998083241242844 · https://github.com/paezha/idealista18
+
+Los ficheros de `data/real/` derivados de ese conjunto quedan sujetos a la ODbL,
+no a la MIT. La atribución figura en el README, en el dashboard y en el Excel.
+
+Las cifras de precio por distrito proceden del Anuario Estadístico del
+Ayuntamiento de Madrid (Colegio de Registradores), citadas en `src/config.py`.
+
+No se ha realizado extracción automatizada de ningún portal inmobiliario, y en
+ninguna fase del proceso intervienen datos personales.

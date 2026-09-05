@@ -1,0 +1,8 @@
+motivo,filas,pct
+sin barrio asignado,94,0.00099
+"PRICE fuera de [30000, 6000000]",30,0.00032
+"UNITPRICE fuera de [500, 15000]",0,0.0
+"CONSTRUCTEDAREA fuera de [20, 500]",214,0.00226
+"ROOMNUMBER fuera de [0, 10]",40,0.00042
+"BATHNUMBER fuera de [0, 6]",49,0.00052
+anuncio repetido en el mismo trimestre,18912,0.19946
