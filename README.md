@@ -143,6 +143,34 @@ demanda. Si un test falla o salta el control de fugas, la ejecución se marca en
 rojo y el Excel no se publica: prefiere no entregar nada antes que entregar un
 número que no se sostiene.
 
+## Cómo regenerar los entregables
+
+El orden importa, y hay una forma de hacerlo mal que no da ningún error:
+
+```bash
+python src/r01_valorar_real.py              # validación contra datos reales
+python src/r04_diagnostico_coeficientes.py  # diagnóstico de coeficientes
+python src/r02_caso.py                      # el caso trazado paso a paso
+python src/r03_dashboard_real.py            # -> outputs/dashboard_real.html
+python run_pipeline.py --motor llm          # -> Excel y outputs/dashboard.html
+```
+
+`src/r03` **no** forma parte de `run_pipeline.py`: va suelto y necesita que
+`r01`, `r02` y `r04` hayan corrido antes, porque lee los tres JSON que dejan en
+`data/real/`. Si falta el de `r04`, se detiene indicando qué ejecutar.
+
+**`--motor llm` no es opcional.** Sin esa opción, o sin `ANTHROPIC_API_KEY` en el
+entorno, el pipeline cae al motor de reglas y **degrada el entregable en
+silencio**: el Excel pierde la comparación entre los dos motores de extracción y
+la hoja Resumen vuelve a decir sólo «reglas». El proceso termina en 0 y no avisa.
+
+Los tres ficheros terminados se copian a `entregables/`, que es una foto fija y
+no se actualiza sola. Ver `entregables/LEEME.md`.
+
+Para saber si algo quedó desfasado: los dos HTML son deterministas, así que si
+regeneras y cambian, estaban viejos. El Excel no sirve para eso, porque
+`openpyxl` le escribe la hora de creación en cada escritura y cambia siempre.
+
 ## Power BI
 
 La hoja `Valoraciones` es una tabla plana sin celdas combinadas ni encabezados a

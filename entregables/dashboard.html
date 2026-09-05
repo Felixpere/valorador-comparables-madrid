@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valoración por comparables — Madrid</title>
+<style>
+  :root {
+    --tinta: #16202B; --registro: #1F3A5F; --papel: #EEF0F1;
+    --oliva: #4A6741; --granate: #8C3A3A; --gris: #61707C; --linea: #C9D0D6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--papel); color: var(--tinta);
+    font-family: "Segoe UI", Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px; line-height: 1.55; font-variant-numeric: tabular-nums;
+  }
+  .hoja { max-width: 940px; margin: 0 auto; padding: 40px 26px 72px; }
+  header { border-bottom: 3px solid var(--registro); padding-bottom: 18px; }
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 31px; line-height: 1.16; font-weight: 600; margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  header p { margin: 0; color: var(--gris); font-size: 14px; max-width: 66ch; }
+  .sello { font-size: 12.5px; color: var(--gris); margin-top: 14px; }
+  section { margin-top: 44px; }
+  h2 {
+    font-family: Georgia, "Iowan Old Style", serif; font-size: 20px;
+    font-weight: 600; margin: 0 0 6px;
+  }
+  .pie { color: var(--gris); font-size: 13px; margin: 6px 0 18px; max-width: 72ch; }
+  .panel { background: #FFFFFF; border: 1px solid var(--linea); padding: 22px 24px; }
+  .cifras { display: flex; flex-wrap: wrap; gap: 0; border-top: 1px solid var(--linea); }
+  .cifra {
+    flex: 1 1 150px; padding: 16px 20px 14px;
+    border-bottom: 1px solid var(--linea); border-right: 1px solid var(--linea);
+    background: #FFFFFF;
+  }
+  .cifra:last-child { border-right: 0; }
+  .cifra b { display: block; font-size: 25px; font-weight: 600; letter-spacing: -0.01em; }
+  .cifra span { font-size: 12.5px; color: var(--gris); }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; background: #FFFFFF; }
+  th {
+    text-align: left; font-weight: 600; font-size: 12.5px; color: #FFFFFF;
+    background: var(--registro); padding: 8px 10px;
+  }
+  td { padding: 7px 10px; border-bottom: 1px solid var(--linea); }
+  td.n, th.n { text-align: right; }
+  td:first-child { white-space: nowrap; }
+  td.neg { color: var(--oliva); font-weight: 600; }
+  ol.flujo { list-style: none; counter-reset: p; margin: 0; padding: 0; }
+  ol.flujo li {
+    counter-increment: p; position: relative; padding: 0 0 18px 46px;
+    border-left: 1px solid var(--linea); margin-left: 13px;
+  }
+  ol.flujo li:last-child { border-left: 1px solid transparent; padding-bottom: 0; }
+  ol.flujo li::before {
+    content: counter(p); position: absolute; left: -13px; top: 0;
+    width: 26px; height: 26px; border-radius: 50%; background: var(--registro);
+    color: #FFFFFF; font-size: 13px; text-align: center; line-height: 26px;
+  }
+  ol.flujo h3 { margin: 2px 0 3px; font-size: 15.5px; font-weight: 600; }
+  ol.flujo p { margin: 0; color: var(--gris); font-size: 13.5px; max-width: 68ch; }
+  .limites { border-left: 4px solid var(--granate); padding: 4px 0 4px 20px; }
+  .limites li { margin-bottom: 9px; max-width: 74ch; }
+  .dos { display: grid; grid-template-columns: 1.35fr 1fr; gap: 26px; align-items: start; }
+  @media (max-width: 720px) { .dos { grid-template-columns: 1fr; } }
+  footer { margin-top: 52px; padding-top: 16px; border-top: 1px solid var(--linea);
+            color: var(--gris); font-size: 12.5px; }
+  a { color: var(--registro); }
+</style></head>
+<body><div class="hoja">
+
+<header>
+  <h1>Valoración por comparables<br>del mercado residencial de Madrid</h1>
+  <p>De anuncios en texto libre a una lista priorizada de inmuebles cuyo precio
+     se aparta de lo que piden los pisos equivalentes de su distrito.</p>
+  <p class="sello">Ejecutado el 05/09/2026 23:46 sobre 2000 anuncios.
+     Extracción: 25 anuncios por llm:claude-haiku-4-5 + 1975 anuncios por reglas. Semilla 20260904.</p>
+</header>
+
+<section>
+  <h2>Precio pedido por metro cuadrado, por distrito</h2>
+  <p class="pie">Mediana del €/m² pedido en los anuncios procesados. La marca roja
+     de cada barra es el precio medio realmente declarado en escritura en 2022
+     (Colegio de Registradores). No son la misma magnitud: una es oferta y la otra
+     cierre, y median cuatro años.</p>
+  <div class="panel"><svg viewBox="0 0 700 491" width="100%" role="img" aria-label="Precio mediano por metro cuadrado y distrito"><line x1="168.0" y1="22" x2="168.0" y2="475" stroke="#C9D0D6" stroke-width="1"/><text x="168.0" y="16" font-size="10" fill="#61707C" text-anchor="middle">0k</text><line x1="270.7" y1="22" x2="270.7" y2="475" stroke="#C9D0D6" stroke-width="1"/><text x="270.7" y="16" font-size="10" fill="#61707C" text-anchor="middle">2k</text><line x1="373.4" y1="22" x2="373.4" y2="475" stroke="#C9D0D6" stroke-width="1"/><text x="373.4" y="16" font-size="10" fill="#61707C" text-anchor="middle">4k</text><line x1="476.1" y1="22" x2="476.1" y2="475" stroke="#C9D0D6" stroke-width="1"/><text x="476.1" y="16" font-size="10" fill="#61707C" text-anchor="middle">6k</text><line x1="578.8" y1="22" x2="578.8" y2="475" stroke="#C9D0D6" stroke-width="1"/><text x="578.8" y="16" font-size="10" fill="#61707C" text-anchor="middle">8k</text><text x="158" y="45" font-size="11.5" fill="#16202B" text-anchor="end">Salamanca</text><rect x="168" y="36" width="443.4" height="13" fill="#1F3A5F" opacity="0.86"/><text x="618.3962264150944" y="47" font-size="10.5" fill="#61707C">8.635</text><line x1="501.6" y1="34" x2="501.6" y2="51" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="66" font-size="11.5" fill="#16202B" text-anchor="end">Chamberi</text><rect x="168" y="57" width="408.3" height="13" fill="#1F3A5F" opacity="0.86"/><text x="583.2896132519274" y="68" font-size="10.5" fill="#61707C">7.951</text><line x1="485.8" y1="55" x2="485.8" y2="72" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="87" font-size="11.5" fill="#16202B" text-anchor="end">Chamartin</text><rect x="168" y="78" width="380.1" height="13" fill="#1F3A5F" opacity="0.86"/><text x="555.1153828185204" y="89" font-size="10.5" fill="#61707C">7.402</text><line x1="456.4" y1="76" x2="456.4" y2="93" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="108" font-size="11.5" fill="#16202B" text-anchor="end">Centro</text><rect x="168" y="99" width="374.0" height="13" fill="#1F3A5F" opacity="0.86"/><text x="549.0292642916232" y="110" font-size="10.5" fill="#61707C">7.284</text><line x1="448.7" y1="97" x2="448.7" y2="114" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="129" font-size="11.5" fill="#16202B" text-anchor="end">Retiro</text><rect x="168" y="120" width="358.9" height="13" fill="#1F3A5F" opacity="0.86"/><text x="533.8986970966329" y="131" font-size="10.5" fill="#61707C">6.989</text><line x1="439.4" y1="118" x2="439.4" y2="135" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="150" font-size="11.5" fill="#16202B" text-anchor="end">Arganzuela</text><rect x="168" y="141" width="300.1" height="13" fill="#1F3A5F" opacity="0.86"/><text x="475.1398210791897" y="152" font-size="10.5" fill="#61707C">5.845</text><line x1="398.6" y1="139" x2="398.6" y2="156" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="171" font-size="11.5" fill="#16202B" text-anchor="end">Moncloa-Aravaca</text><rect x="168" y="162" width="277.8" height="13" fill="#1F3A5F" opacity="0.86"/><text x="452.821913522934" y="173" font-size="10.5" fill="#61707C">5.410</text><line x1="399.7" y1="160" x2="399.7" y2="177" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="192" font-size="11.5" fill="#16202B" text-anchor="end">Fuencarral-El Pardo</text><rect x="168" y="183" width="271.2" height="13" fill="#1F3A5F" opacity="0.86"/><text x="446.2384607239055" y="194" font-size="10.5" fill="#61707C">5.282</text><line x1="376.2" y1="181" x2="376.2" y2="198" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="213" font-size="11.5" fill="#16202B" text-anchor="end">Hortaleza</text><rect x="168" y="204" width="268.3" height="13" fill="#1F3A5F" opacity="0.86"/><text x="443.3088871332923" y="215" font-size="10.5" fill="#61707C">5.225</text><line x1="369.3" y1="202" x2="369.3" y2="219" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="234" font-size="11.5" fill="#16202B" text-anchor="end">Tetuan</text><rect x="168" y="225" width="256.8" height="13" fill="#1F3A5F" opacity="0.86"/><text x="431.7549159170261" y="236" font-size="10.5" fill="#61707C">5.000</text><line x1="371.1" y1="223" x2="371.1" y2="240" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="255" font-size="11.5" fill="#16202B" text-anchor="end">Barajas</text><rect x="168" y="246" width="251.3" height="13" fill="#1F3A5F" opacity="0.86"/><text x="426.34971142714085" y="257" font-size="10.5" fill="#61707C">4.895</text><line x1="344.9" y1="244" x2="344.9" y2="261" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="276" font-size="11.5" fill="#16202B" text-anchor="end">Ciudad Lineal</text><rect x="168" y="267" width="230.8" height="13" fill="#1F3A5F" opacity="0.86"/><text x="405.81496676192893" y="278" font-size="10.5" fill="#61707C">4.495</text><line x1="348.3" y1="265" x2="348.3" y2="282" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="297" font-size="11.5" fill="#16202B" text-anchor="end">Moratalaz</text><rect x="168" y="288" width="190.0" height="13" fill="#1F3A5F" opacity="0.86"/><text x="364.9986377785993" y="299" font-size="10.5" fill="#61707C">3.700</text><line x1="310.1" y1="286" x2="310.1" y2="303" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="318" font-size="11.5" fill="#16202B" text-anchor="end">Vicalvaro</text><rect x="168" y="309" width="186.2" height="13" fill="#1F3A5F" opacity="0.86"/><text x="361.21766488680515" y="320" font-size="10.5" fill="#61707C">3.626</text><line x1="301.7" y1="307" x2="301.7" y2="324" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="339" font-size="11.5" fill="#16202B" text-anchor="end">San Blas-Canillejas</text><rect x="168" y="330" width="182.9" height="13" fill="#1F3A5F" opacity="0.86"/><text x="357.9314587179831" y="341" font-size="10.5" fill="#61707C">3.562</text><line x1="308.7" y1="328" x2="308.7" y2="345" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="360" font-size="11.5" fill="#16202B" text-anchor="end">Villa de Vallecas</text><rect x="168" y="351" width="178.7" height="13" fill="#1F3A5F" opacity="0.86"/><text x="353.70142147825015" y="362" font-size="10.5" fill="#61707C">3.480</text><line x1="303.0" y1="349" x2="303.0" y2="366" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="381" font-size="11.5" fill="#16202B" text-anchor="end">Latina</text><rect x="168" y="372" width="171.0" height="13" fill="#1F3A5F" opacity="0.86"/><text x="346.03600346354733" y="383" font-size="10.5" fill="#61707C">3.331</text><line x1="296.8" y1="370" x2="296.8" y2="387" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="402" font-size="11.5" fill="#16202B" text-anchor="end">Carabanchel</text><rect x="168" y="393" width="163.5" height="13" fill="#1F3A5F" opacity="0.86"/><text x="338.4761117192864" y="404" font-size="10.5" fill="#61707C">3.184</text><line x1="294.0" y1="391" x2="294.0" y2="408" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="423" font-size="11.5" fill="#16202B" text-anchor="end">Usera</text><rect x="168" y="414" width="141.2" height="13" fill="#1F3A5F" opacity="0.86"/><text x="316.2152037543643" y="425" font-size="10.5" fill="#61707C">2.750</text><line x1="280.1" y1="412" x2="280.1" y2="429" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="444" font-size="11.5" fill="#16202B" text-anchor="end">Puente de Vallecas</text><rect x="168" y="435" width="140.4" height="13" fill="#1F3A5F" opacity="0.86"/><text x="315.4418579476222" y="446" font-size="10.5" fill="#61707C">2.735</text><line x1="276.4" y1="433" x2="276.4" y2="450" stroke="#8C3A3A" stroke-width="1.8"/><text x="158" y="465" font-size="11.5" fill="#16202B" text-anchor="end">Villaverde</text><rect x="168" y="456" width="120.0" height="13" fill="#1F3A5F" opacity="0.86"/><text x="294.9718155212214" y="467" font-size="10.5" fill="#61707C">2.336</text><line x1="262.0" y1="454" x2="262.0" y2="471" stroke="#8C3A3A" stroke-width="1.8"/></svg></div>
+</section>
+
+<div class="cifras">
+  <div class="cifra"><b>1996</b><span>inmuebles procesados</span></div>
+  <div class="cifra"><b>76 %</b><span>con valoración emitida</span></div>
+  <div class="cifra"><b>390</b>
+    <span>por debajo de sus comparables</span></div>
+  <div class="cifra"><b>100,0 %</b>
+    <span>campos bien extraídos, mejor motor de 2</span></div>
+  <div class="cifra"><b>0</b>
+    <span>fugas de información detectadas</span></div>
+</div>
+
+<section>
+  <h2>Cómo funciona</h2>
+  <p class="pie">Cinco pasos encadenados. Cada uno deja su rastro en disco, así que
+     cualquier cifra de esta página se puede reconstruir desde el anuncio original.</p>
+  <ol class="flujo"><li><h3>Anuncios en texto libre</h3><p>2000 notas de captación, mensajes internos, correos y fichas en cinco formatos distintos.</p></li><li><h3>Extracción</h3><p>Un modelo de lenguaje devuelve JSON con esquema fijo. Reparto de esta ejecución, con la exactitud de cada motor por separado: llm:claude-haiku-4-5 sobre 25 anuncios, 100,0 %; reglas sobre 1975 anuncios, 98,0 %.</p></li><li><h3>Limpieza y validación</h3><p>Tipado, unificación de nombres de distrito, rangos plausibles y descarte trazable. 8 incidencias registradas, ninguna silenciosa.</p></li><li><h3>Valoración por comparables</h3><p>Mismo distrito, superficie ±20%, publicados antes. Mínimo 5 comparables o no se emite valor.</p></li><li><h3>Excel y dashboard</h3><p>Tabla plana lista para Power BI, más este panel. Un comando reconstruye todo de principio a fin.</p></li></ol>
+</section>
+
+<section class="dos">
+  <div>
+    <h2>Dónde cae cada inmueble</h2>
+    <p class="pie">Distancia entre el precio pedido y la mediana de sus comparables.
+       En verde, los que quedan más de un 10 % por debajo.</p>
+    <div class="panel"><svg viewBox="0 0 566 202" width="100%" role="img" aria-label="Distribucion de la desviacion sobre comparables"><rect x="35.0" y="158.0" width="26.9" height="4.0" fill="#4A6741" opacity="0.9"/><rect x="63.9" y="154.0" width="26.9" height="8.0" fill="#4A6741" opacity="0.9"/><rect x="92.8" y="148.4" width="26.9" height="13.6" fill="#4A6741" opacity="0.9"/><rect x="121.7" y="130.9" width="26.9" height="31.1" fill="#4A6741" opacity="0.9"/><rect x="150.6" y="107.7" width="26.9" height="54.3" fill="#4A6741" opacity="0.9"/><rect x="179.4" y="83.8" width="26.9" height="78.2" fill="#4A6741" opacity="0.9"/><rect x="208.3" y="50.3" width="26.9" height="111.7" fill="#4A6741" opacity="0.9"/><rect x="237.2" y="23.2" width="26.9" height="138.8" fill="#1F3A5F" opacity="0.55"/><rect x="266.1" y="12.0" width="26.9" height="150.0" fill="#1F3A5F" opacity="0.55"/><rect x="295.0" y="35.1" width="26.9" height="126.9" fill="#1F3A5F" opacity="0.55"/><rect x="323.9" y="35.9" width="26.9" height="126.1" fill="#1F3A5F" opacity="0.55"/><rect x="352.8" y="74.2" width="26.9" height="87.8" fill="#8C3A3A" opacity="0.55"/><rect x="381.7" y="71.0" width="26.9" height="91.0" fill="#8C3A3A" opacity="0.55"/><rect x="410.6" y="101.4" width="26.9" height="60.6" fill="#8C3A3A" opacity="0.55"/><rect x="439.4" y="126.1" width="26.9" height="35.9" fill="#8C3A3A" opacity="0.55"/><rect x="468.3" y="132.5" width="26.9" height="29.5" fill="#8C3A3A" opacity="0.55"/><rect x="497.2" y="143.6" width="26.9" height="18.4" fill="#8C3A3A" opacity="0.55"/><rect x="526.1" y="150.0" width="26.9" height="12.0" fill="#8C3A3A" opacity="0.55"/><line x1="34" y1="162" x2="554" y2="162" stroke="#C9D0D6"/><text x="62.9" y="178" font-size="10" fill="#61707C" text-anchor="middle">-40 %</text><text x="178.4" y="178" font-size="10" fill="#61707C" text-anchor="middle">-20 %</text><text x="294.0" y="178" font-size="10" fill="#61707C" text-anchor="middle">0 %</text><text x="409.6" y="178" font-size="10" fill="#61707C" text-anchor="middle">20 %</text><text x="525.1" y="178" font-size="10" fill="#61707C" text-anchor="middle">40 %</text><line x1="236.2" y1="14" x2="236.2" y2="162" stroke="#4A6741" stroke-width="1.4" stroke-dasharray="3 3"/><text x="229.2" y="200" font-size="10.5" fill="#4A6741" text-anchor="end">aviso a partir de -10 %</text></svg></div>
+  </div>
+  <div>
+    <h2>Dónde poner el aviso</h2>
+    <p class="pie">No hay umbral correcto. Cuanto más exigente, más limpia la lista
+       y más oportunidades se escapan.</p>
+    <table><thead><tr><th class="n">Umbral</th><th class="n">Marcados</th>
+      <th class="n">Aciertos</th><th class="n">Cobertura</th></tr></thead>
+      <tbody><tr><td class='n'>-5 %</td><td class='n'>564</td><td class='n'>17,9 %</td><td class='n'>88,6 %</td></tr><tr><td class='n'>-10 %</td><td class='n'>391</td><td class='n'>23,8 %</td><td class='n'>81,6 %</td></tr><tr><td class='n'>-15 %</td><td class='n'>250</td><td class='n'>29,6 %</td><td class='n'>64,9 %</td></tr><tr><td class='n'>-20 %</td><td class='n'>152</td><td class='n'>36,8 %</td><td class='n'>49,1 %</td></tr><tr><td class='n'>-25 %</td><td class='n'>84</td><td class='n'>48,8 %</td><td class='n'>36,0 %</td></tr></tbody></table>
+  </div>
+</section>
+
+<section>
+  <h2>Los doce con mayor desviación a la baja</h2>
+  <p class="pie">Sólo inmuebles con fiabilidad alta o media. Un precio por debajo de
+     los comparables no significa que sea una ganga: significa que merece una
+     llamada para averiguar por qué.</p>
+  <table><thead><tr>
+    <th>Ref.</th><th>Distrito</th><th class="n">m²</th><th>Estado</th>
+    <th class="n">Precio pedido</th><th class="n">Valor estimado</th>
+    <th class="n">Desviación</th><th class="n">Comp.</th><th>Fiabilidad</th>
+  </tr></thead><tbody><tr><td>MD-1384</td><td>Puente de Vallecas</td><td class='n'>52</td><td>obra nueva</td><td class='n'>130.000 €</td><td class='n'>189.620 €</td><td class='n neg'>-31,4 %</td><td class='n'>9</td><td>media</td></tr><tr><td>MD-0501</td><td>Latina</td><td class='n'>65</td><td>buen estado</td><td class='n'>154.000 €</td><td class='n'>209.488 €</td><td class='n neg'>-26,5 %</td><td class='n'>9</td><td>media</td></tr><tr><td>MD-1498</td><td>Puente de Vallecas</td><td class='n'>83</td><td>obra nueva</td><td class='n'>227.000 €</td><td class='n'>324.790 €</td><td class='n neg'>-30,1 %</td><td class='n'>8</td><td>media</td></tr><tr><td>MD-1228</td><td>Puente de Vallecas</td><td class='n'>72</td><td>buen estado</td><td class='n'>175.000 €</td><td class='n'>227.143 €</td><td class='n neg'>-23,0 %</td><td class='n'>13</td><td>media</td></tr><tr><td>MD-1637</td><td>Puente de Vallecas</td><td class='n'>95</td><td>a reformar</td><td class='n'>169.000 €</td><td class='n'>218.878 €</td><td class='n neg'>-22,8 %</td><td class='n'>11</td><td>media</td></tr><tr><td>MD-0353</td><td>Puente de Vallecas</td><td class='n'>78</td><td>buen estado</td><td class='n'>144.000 €</td><td class='n'>205.630 €</td><td class='n neg'>-30,0 %</td><td class='n'>18</td><td>alta</td></tr><tr><td>MD-1382</td><td>Carabanchel</td><td class='n'>56</td><td>reformado</td><td class='n'>164.000 €</td><td class='n'>214.476 €</td><td class='n neg'>-23,5 %</td><td class='n'>12</td><td>media</td></tr><tr><td>MD-1785</td><td>Fuencarral-El Pardo</td><td class='n'>80</td><td>buen estado</td><td class='n'>321.000 €</td><td class='n'>412.822 €</td><td class='n neg'>-22,2 %</td><td class='n'>9</td><td>media</td></tr><tr><td>MD-0289</td><td>Fuencarral-El Pardo</td><td class='n'>89</td><td>reformado</td><td class='n'>378.000 €</td><td class='n'>510.940 €</td><td class='n neg'>-26,0 %</td><td class='n'>12</td><td>media</td></tr><tr><td>MD-1000</td><td>Latina</td><td class='n'>74</td><td>reformado</td><td class='n'>213.000 €</td><td class='n'>269.208 €</td><td class='n neg'>-20,9 %</td><td class='n'>22</td><td>media</td></tr><tr><td>MD-0532</td><td>Centro</td><td class='n'>56</td><td>buen estado</td><td class='n'>319.000 €</td><td class='n'>404.757 €</td><td class='n neg'>-21,2 %</td><td class='n'>8</td><td>media</td></tr><tr><td>MD-1627</td><td>Puente de Vallecas</td><td class='n'>50</td><td>buen estado</td><td class='n'>90.000 €</td><td class='n'>123.748 €</td><td class='n neg'>-27,3 %</td><td class='n'>21</td><td>alta</td></tr></tbody></table>
+</section>
+
+<section class="dos">
+  <div>
+    <h2>Dónde falla la extracción</h2>
+    <p class="pie">Porcentaje de campos correctos según el formato del texto de origen.</p>
+    <table><thead><tr><th>Formato del texto</th><th class="n">Campos correctos</th>
+      </tr></thead><tbody><tr><td>ficha</td><td class='n'>90,0 %</td></tr><tr><td>telegrama</td><td class='n'>99,4 %</td></tr><tr><td>email</td><td class='n'>100,0 %</td></tr><tr><td>portal</td><td class='n'>100,0 %</td></tr><tr><td>whatsapp</td><td class='n'>100,0 %</td></tr></tbody></table>
+  </div>
+  <div>
+    <h2>Por qué 489 inmuebles no se valoran</h2>
+    <p class="pie">El sistema prefiere callarse antes que dar un número que no
+       sostiene.</p>
+    <table><thead><tr><th>Motivo</th><th class="n">Inmuebles</th></tr></thead>
+      <tbody><tr><td>ventana inicial sin histórico</td><td class='n'>278</td></tr><tr><td>segmento con pocas operaciones comparables</td><td class='n'>211</td></tr></tbody></table>
+  </div>
+</section>
+
+<section>
+  <h2>Lo que esta demo no demuestra</h2>
+  <ul class="limites">
+    <li>Los anuncios son sintéticos. Los términos de uso de los portales prohíben
+        el scraping, así que el corpus se genera y se calibra con estadística
+        pública real de precio y superficie por distrito.</li>
+    <li>Las desviaciones que el motor recupera se inyectaron al generar los datos.
+        Es circular por construcción: prueba que la mecánica funciona, no que el
+        modelo encuentre oportunidades reales.</li>
+    <li>La referencia es el precio pedido, no el de cierre. Mide distancia a la
+        oferta comparable, no descuento sobre valor de mercado real.</li>
+    <li>La etiqueta de fiabilidad no discrimina en este corpus: el error mediano de
+        valoración es 10,0 % en los tres niveles,
+        porque la dispersión del generador es homogénea. Con datos reales debería
+        discriminar. Aquí no lo hace y se dice.</li>
+  </ul>
+</section>
+
+<footer>
+  Fuentes: Ayuntamiento de Madrid, Anuario Estadístico 2023, capítulo 8, a partir de
+  la Estadística Registral Inmobiliaria del Colegio de Registradores (datos de 2022);
+  Ministerio de Vivienda y Agenda Urbana, estadística de valor tasado de la vivienda.
+  Ambas consultadas el 04/09/2026. Ningún dato personal de vendedores o terceros
+  interviene en el proceso.
+</footer>
+
+</div></body></html>

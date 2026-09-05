@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Validación con datos reales — Madrid 2018</title>
+<style>
+ * { box-sizing: border-box; }
+ body { margin:0; background:#EEF0F1; color:#16202B;
+   font-family:"Segoe UI",Roboto,-apple-system,"Helvetica Neue",Arial,sans-serif;
+   font-size:15px; line-height:1.55; font-variant-numeric:tabular-nums; }
+ .hoja { max-width:940px; margin:0 auto; padding:40px 26px 72px; }
+ header { border-bottom:3px solid #1F3A5F; padding-bottom:18px; }
+ h1 { font-family:Georgia,"Iowan Old Style","Times New Roman",serif; font-size:31px;
+   line-height:1.16; font-weight:600; margin:0 0 8px; letter-spacing:-.01em; }
+ header p { margin:0; color:#61707C; font-size:14px; max-width:66ch; }
+ .sello { font-size:12.5px; color:#61707C; margin-top:14px; }
+ section { margin-top:44px; }
+ h2 { font-family:Georgia,"Iowan Old Style",serif; font-size:20px; font-weight:600;
+   margin:0 0 6px; }
+ h3 { font-size:15px; margin:22px 0 6px; }
+ .pie { color:#61707C; font-size:13px; margin:6px 0 18px; max-width:72ch; }
+ .panel { background:#FFFFFF; border:1px solid #C9D0D6; padding:22px 24px; }
+ .cifras { display:flex; flex-wrap:wrap; border-top:1px solid #C9D0D6; }
+ .cifra { flex:1 1 150px; padding:16px 20px 14px; background:#FFFFFF;
+   border-bottom:1px solid #C9D0D6; border-right:1px solid #C9D0D6; }
+ .cifra:last-child { border-right:0; }
+ .cifra b { display:block; font-size:25px; font-weight:600; letter-spacing:-.01em; }
+ .cifra span { font-size:12.5px; color:#61707C; }
+ table { width:100%; border-collapse:collapse; font-size:13.5px; background:#FFFFFF; }
+ th { text-align:left; font-weight:600; font-size:12.5px; color:#FFFFFF;
+   background:#1F3A5F; padding:8px 10px; }
+ td { padding:7px 10px; border-bottom:1px solid #C9D0D6; }
+ td.n, th.n { text-align:right; white-space:nowrap; }
+ td.rasgos { color:#61707C; font-size:12.5px; }
+ tr.destacada td { background:#E8EDF3; font-weight:600; }
+ .ficha { background:#FFFFFF; border:1px solid #C9D0D6; border-left:4px solid #1F3A5F;
+   padding:18px 22px; }
+ .ficha dl { display:grid; grid-template-columns:auto 1fr; gap:2px 18px; margin:0;
+   font-size:13.5px; }
+ .ficha dt { color:#61707C; }
+ .ficha dd { margin:0; }
+ .veredicto { background:#FFFFFF; border:1px solid #C9D0D6; padding:18px 22px;
+   margin-top:18px; font-size:15px; }
+ .veredicto b { font-size:20px; color:#4A6741; }
+ .dos { display:grid; grid-template-columns:1fr 1fr; gap:26px; align-items:start; }
+ @media (max-width:720px) { .dos { grid-template-columns:1fr; } }
+ .limites { border-left:4px solid #8C3A3A; padding:4px 0 4px 20px; }
+ .limites li { margin-bottom:9px; max-width:74ch; }
+ .scroll { max-height:420px; overflow:auto; border:1px solid #C9D0D6; }
+ footer { margin-top:52px; padding-top:16px; border-top:1px solid #C9D0D6;
+   color:#61707C; font-size:12.5px; }
+</style></head><body><div class="hoja">
+
+<header>
+  <h1>¿Cómo sabemos que funciona?</h1>
+  <p>Dos respuestas. Una agregada, sobre 22.643 anuncios reales
+     que el motor no había visto. Y una individual: una valoración abierta en
+     canal, con sus comparables uno a uno.</p>
+  <p class="sello">Datos: <b>idealista18</b>, 94.815 anuncios
+     de venta en Madrid, cuatro trimestres de 2018, licencia ODbL-1.0. Los niveles de precio son de
+     2018 y no representan el mercado actual.</p>
+</header>
+
+<div class="cifras">
+  <div class="cifra"><b>12,0 %</b><span>error mediano fuera de muestra</span></div>
+  <div class="cifra"><b>43,0 %</b><span>estimaciones dentro de ±10 %</span></div>
+  <div class="cifra"><b>96,1 %</b><span>cobertura</span></div>
+  <div class="cifra"><b>-0,1 %</b><span>sesgo</span></div>
+</div>
+
+<section>
+  <h2>Contra qué se compara</h2>
+  <p class="pie">Un error del 12,0 % no significa nada
+     por sí solo. Sólo tiene
+     sentido frente a alternativas más tontas y más baratas. La partición es por
+     anuncio: el 70 % forma el conjunto de comparables y estima los coeficientes,
+     el 30 % restante nunca participa en su propia valoración.</p>
+  <table><thead><tr><th>Método</th><th class="n">Error mediano</th>
+    <th class="n">Dentro de ±10 %</th><th class="n">Dentro de ±20 %</th>
+    <th class="n">Sesgo</th></tr></thead><tbody><tr class=destacada><td>Comparables por barrio</td><td class='n'>12,0 %</td><td class='n'>43,0 %</td><td class='n'>71,7 %</td><td class='n'>-0,1 %</td></tr><tr><td>Mediana del barrio y trimestre</td><td class='n'>15,2 %</td><td class='n'>34,7 %</td><td class='n'>62,2 %</td><td class='n'>-0,0 %</td></tr><tr><td>Mediana de la ciudad</td><td class='n'>34,3 %</td><td class='n'>13,3 %</td><td class='n'>28,0 %</td><td class='n'>-1,5 %</td></tr></tbody></table>
+  <div class="panel" style="margin-top:18px"><svg viewBox="0 0 548 140" width="100%" role="img" aria-label="Error mediano por método"><text x="168" y="27" font-size="12.5" fill="#16202B" text-anchor="end">Comparables por barrio</text><rect x="178" y="12" width="91.2" height="22" fill="#1F3A5F"/><text x="277.2397196913056" y="28" font-size="13" font-weight="600" fill="#16202B">12,0 %</text><text x="168" y="67" font-size="12.5" fill="#16202B" text-anchor="end">Mediana del barrio</text><rect x="178" y="52" width="115.4" height="22" fill="#61707C"/><text x="301.4182454095016" y="68" font-size="13" font-weight="600" fill="#16202B">15,2 %</text><text x="168" y="107" font-size="12.5" fill="#16202B" text-anchor="end">Mediana de la ciudad</text><rect x="178" y="92" width="260.9" height="22" fill="#61707C"/><text x="446.8695652173913" y="108" font-size="13" font-weight="600" fill="#16202B">34,3 %</text></svg></div>
+  <p class="pie">La lectura honesta: el motor mejora la línea base del barrio en
+     3,2 puntos,
+     un 21 %
+     menos de error. Mejora, pero la mediana simple del barrio ya te lleva al
+     15,2 %: la mayor parte del trabajo la hace saber
+     en qué barrio está el piso. Frente a no distinguir zona
+     (34,3 %) sí hay una diferencia de método.</p>
+</section>
+
+<section class="dos">
+  <div>
+    <h2>Dónde cae el error</h2>
+    <p class="pie">Diferencia entre valor estimado y precio pedido.</p>
+    <div class="panel"><svg viewBox="0 0 544 194" width="100%" role="img" aria-label="Distribución del error de estimación"><rect x="33.0" y="148.6" width="18.8" height="1.4" fill="#61707C" opacity="0.8"/><rect x="53.8" y="149.3" width="18.8" height="0.7" fill="#61707C" opacity="0.8"/><rect x="74.7" y="147.0" width="18.8" height="3.0" fill="#61707C" opacity="0.8"/><rect x="95.5" y="143.0" width="18.8" height="7.0" fill="#61707C" opacity="0.8"/><rect x="116.3" y="137.4" width="18.8" height="12.6" fill="#61707C" opacity="0.8"/><rect x="137.2" y="126.4" width="18.8" height="23.6" fill="#61707C" opacity="0.8"/><rect x="158.0" y="110.4" width="18.8" height="39.6" fill="#61707C" opacity="0.8"/><rect x="178.8" y="91.9" width="18.8" height="58.1" fill="#61707C" opacity="0.8"/><rect x="199.7" y="66.5" width="18.8" height="83.5" fill="#61707C" opacity="0.8"/><rect x="220.5" y="41.7" width="18.8" height="108.3" fill="#61707C" opacity="0.8"/><rect x="241.3" y="21.9" width="18.8" height="128.1" fill="#1F3A5F" opacity="0.8"/><rect x="262.2" y="10.0" width="18.8" height="140.0" fill="#1F3A5F" opacity="0.8"/><rect x="283.0" y="18.8" width="18.8" height="131.2" fill="#1F3A5F" opacity="0.8"/><rect x="303.8" y="30.3" width="18.8" height="119.7" fill="#1F3A5F" opacity="0.8"/><rect x="324.7" y="61.5" width="18.8" height="88.5" fill="#61707C" opacity="0.8"/><rect x="345.5" y="84.2" width="18.8" height="65.8" fill="#61707C" opacity="0.8"/><rect x="366.3" y="101.5" width="18.8" height="48.5" fill="#61707C" opacity="0.8"/><rect x="387.2" y="114.0" width="18.8" height="36.0" fill="#61707C" opacity="0.8"/><rect x="408.0" y="122.3" width="18.8" height="27.7" fill="#61707C" opacity="0.8"/><rect x="428.8" y="132.1" width="18.8" height="17.9" fill="#61707C" opacity="0.8"/><rect x="449.7" y="136.5" width="18.8" height="13.5" fill="#61707C" opacity="0.8"/><rect x="470.5" y="139.8" width="18.8" height="10.2" fill="#61707C" opacity="0.8"/><rect x="491.3" y="142.3" width="18.8" height="7.7" fill="#61707C" opacity="0.8"/><rect x="512.2" y="115.2" width="18.8" height="34.8" fill="#61707C" opacity="0.8"/><line x1="32" y1="150" x2="532" y2="150" stroke="#C9D0D6"/><text x="73.7" y="166" font-size="10" fill="#61707C" text-anchor="middle">-50 %</text><text x="177.8" y="166" font-size="10" fill="#61707C" text-anchor="middle">-25 %</text><text x="282.0" y="166" font-size="10" fill="#61707C" text-anchor="middle">0 %</text><text x="386.2" y="166" font-size="10" fill="#61707C" text-anchor="middle">25 %</text><text x="490.3" y="166" font-size="10" fill="#61707C" text-anchor="middle">50 %</text><text x="282.0" y="186" font-size="10.5" fill="#61707C" text-anchor="middle">azul: estimación dentro de ±10 % del precio pedido</text></svg></div>
+  </div>
+  <div>
+    <h2>La fiabilidad sí discrimina</h2>
+    <p class="pie">Con el corpus sintético esta etiqueta daba el mismo error en
+       los tres niveles y lo dejamos escrito como fallo abierto. Con datos reales
+       va de 10,4 % en el nivel alto a 15,9 % en el bajo.</p>
+    <table><thead><tr><th>Fiabilidad</th><th class="n">Error mediano</th></tr></thead>
+      <tbody><tr><td>Alta</td><td class='n'>10,4 %</td></tr><tr><td>Media</td><td class='n'>12,7 %</td></tr><tr><td>Baja</td><td class='n'>15,9 %</td></tr></tbody></table>
+    <p class="pie">Lo que discrimina es la dispersión de los comparables, no
+       cuántos hay: pasar de 5-9 comparables a 50 o más
+       sólo baja el error del 12,7 % al
+       11,9 %.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Una valoración, abierta en canal</h2>
+  <p class="pie">Cualquier cifra del sistema se puede abrir así. Este es un
+     anuncio del conjunto de evaluación: el motor nunca lo vio.</p>
+
+  <div class="ficha">
+    <dl>
+      <dt>Barrio</dt><dd>Arapiles · 2018T1</dd>
+      <dt>Superficie</dt><dd>73 m² construidos</dd>
+      <dt>Distribución</dt><dd>2 habitaciones, 1 baño ·
+        planta 1 · finca de 1940</dd>
+      <dt>Características</dt><dd>segunda mano en buen estado, ascensor, exterior</dd>
+      <dt>Precio pedido</dt><dd><b>313.000 €</b>
+        (4.288 €/m²)</dd>
+    </dl>
+  </div>
+
+  <h3>Paso 1 — De 52.833 anuncios a 24</h3>
+  <table><thead><tr><th>Filtro</th><th class="n">Quedan</th></tr></thead>
+    <tbody><tr><td>Anuncios en el conjunto de comparables</td><td class='n'>52.833</td></tr><tr><td>Mismo barrio (Arapiles)</td><td class='n'>640</td></tr><tr><td>Mismo trimestre (2018T1)</td><td class='n'>115</td></tr><tr><td>Superficie entre 58 y 88 m²</td><td class='n'>24</td></tr></tbody></table>
+
+  <h3>Paso 2 — Cada comparable se lleva a las condiciones del piso evaluado</h3>
+  <p class="pie">La columna ajustada corrige por estado, ascensor, orientación y
+     demás atributos, con coeficientes estimados sólo sobre el conjunto de
+     comparables. Ordenados de menor a mayor €/m² ajustado.</p>
+  <div class="scroll">
+  <table><thead><tr><th class="n">m²</th><th class="n">Precio</th>
+    <th class="n">€/m²</th><th class="n">€/m² ajustado</th>
+    <th>Características</th></tr></thead><tbody><tr><td class='n'>67</td><td class='n'>231.000 €</td><td class='n'>3.448</td><td class='n'><b>3.335</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, aire acondicionado, interior, portero</td></tr><tr><td class='n'>67</td><td class='n'>230.000 €</td><td class='n'>3.433</td><td class='n'><b>3.687</b></td><td class='rasgos'>segunda mano en buen estado, exterior</td></tr><tr><td class='n'>85</td><td class='n'>328.000 €</td><td class='n'>3.859</td><td class='n'><b>4.384</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, interior</td></tr><tr><td class='n'>60</td><td class='n'>280.000 €</td><td class='n'>4.667</td><td class='n'><b>4.490</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, exterior</td></tr><tr><td class='n'>73</td><td class='n'>376.000 €</td><td class='n'>5.151</td><td class='n'><b>4.738</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, aire acondicionado, dúplex, exterior</td></tr><tr><td class='n'>87</td><td class='n'>455.000 €</td><td class='n'>5.230</td><td class='n'><b>4.783</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, aire acondicionado, trastero, exterior</td></tr><tr><td class='n'>87</td><td class='n'>453.000 €</td><td class='n'>5.207</td><td class='n'><b>4.886</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, aire acondicionado, exterior</td></tr><tr><td class='n'>72</td><td class='n'>271.000 €</td><td class='n'>3.764</td><td class='n'><b>4.920</b></td><td class='rasgos'>a reformar, interior</td></tr><tr><td class='n'>73</td><td class='n'>361.000 €</td><td class='n'>4.945</td><td class='n'><b>4.961</b></td><td class='rasgos'>a reformar, ascensor, aire acondicionado, interior, garaje, portero</td></tr><tr><td class='n'>68</td><td class='n'>310.000 €</td><td class='n'>4.559</td><td class='n'><b>5.003</b></td><td class='rasgos'>a reformar, ascensor, exterior</td></tr><tr><td class='n'>77</td><td class='n'>346.000 €</td><td class='n'>4.494</td><td class='n'><b>5.009</b></td><td class='rasgos'>segunda mano en buen estado, exterior</td></tr><tr><td class='n'>84</td><td class='n'>452.000 €</td><td class='n'>5.381</td><td class='n'><b>5.147</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, aire acondicionado, exterior</td></tr><tr><td class='n'>82</td><td class='n'>401.000 €</td><td class='n'>4.890</td><td class='n'><b>5.176</b></td><td class='rasgos'>segunda mano en buen estado, aire acondicionado, exterior</td></tr><tr><td class='n'>60</td><td class='n'>370.000 €</td><td class='n'>6.167</td><td class='n'><b>5.265</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, aire acondicionado, exterior</td></tr><tr><td class='n'>59</td><td class='n'>372.000 €</td><td class='n'>6.305</td><td class='n'><b>5.292</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, aire acondicionado, última planta, exterior</td></tr><tr><td class='n'>70</td><td class='n'>430.000 €</td><td class='n'>6.143</td><td class='n'><b>5.368</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, terraza, aire acondicionado, exterior</td></tr><tr><td class='n'>75</td><td class='n'>463.000 €</td><td class='n'>6.173</td><td class='n'><b>5.416</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, aire acondicionado, portero, exterior</td></tr><tr><td class='n'>80</td><td class='n'>456.000 €</td><td class='n'>5.700</td><td class='n'><b>5.476</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, portero, exterior</td></tr><tr><td class='n'>82</td><td class='n'>462.000 €</td><td class='n'>5.634</td><td class='n'><b>5.503</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, aire acondicionado, exterior</td></tr><tr><td class='n'>70</td><td class='n'>311.000 €</td><td class='n'>4.443</td><td class='n'><b>5.688</b></td><td class='rasgos'>a reformar, interior</td></tr><tr><td class='n'>74</td><td class='n'>418.000 €</td><td class='n'>5.649</td><td class='n'><b>6.037</b></td><td class='rasgos'>a reformar, ascensor, exterior</td></tr><tr><td class='n'>75</td><td class='n'>450.000 €</td><td class='n'>6.000</td><td class='n'><b>6.295</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, exterior</td></tr><tr><td class='n'>80</td><td class='n'>617.000 €</td><td class='n'>7.712</td><td class='n'><b>7.128</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, aire acondicionado, portero, exterior</td></tr><tr><td class='n'>80</td><td class='n'>646.000 €</td><td class='n'>8.075</td><td class='n'><b>7.748</b></td><td class='rasgos'>segunda mano en buen estado, ascensor, portero, exterior</td></tr></tbody></table>
+  </div>
+
+  <h3>Paso 3 — La mediana, y la comparación</h3>
+  <div class="veredicto">
+    Mediana de los 24 comparables ajustados:
+    <b>5.162 €/m²</b><br>
+    Rango intercuartílico: 4.860 a
+    5.483 €/m² · dispersión 12,1 %<br><br>
+    Valor estimado: <b>5.161,88 × 73 m²
+    = 376.817 €</b><br>
+    Precio pedido: 313.000 €<br><br>
+    Desviación: <b>-16,9 %</b> por debajo de sus comparables.
+  </div>
+  <p class="pie">Eso no significa que sea una ganga. Significa que merece una
+     llamada para averiguar por qué: puede tener una derrama pendiente, una
+     ocupación, una servidumbre, o estar bien valorado y ser el resto los que
+     están caros. El sistema produce una lista de llamadas priorizada, no un
+     dictamen.</p>
+</section>
+
+<section>
+  <h2>Lo que estos datos no permiten</h2>
+  <ul class="limites">
+    <li><b>El objetivo es el precio pedido, no el de cierre.</b> El motor
+        reproduce lo que pide un anuncio, no lo que vale el piso ni por cuánto se
+        vendió. No hay precios de escritura por inmueble en ningún conjunto
+        abierto.</li>
+    <li><b>El identificador no enlaza entre trimestres.</b> Quería seguir cada
+        piso durante 2018 para ver si los marcados baratos desaparecían antes.
+        No se puede: los 75.804 identificadores
+        aparecen cada uno en un solo trimestre. Se detectó porque la tabla de transiciones daba 0,0 % tres
+        veces seguidas, y un cero perfecto repetido no es un dato, es un aviso.</li>
+    <li><b>Los datos son de 2018.</b> El orden de los barrios sigue siendo
+        informativo; los niveles de precio no.</li>
+    <li><b>Los autores añadieron ruido aleatorio</b> a coordenadas y precios por
+        protección de datos. Eso pone un suelo al error alcanzable que no he
+        cuantificado.</li>
+    <li><b>Los dos coeficientes que salían con el signo contrario ya están
+        verificados</b>, y la sospecha que tenía era falsa. No era colinealidad:
+        el VIF más alto de todo el modelo es 2,30 y la
+        correlación más fuerte entre regresores es 0,665. Y como la
+        sospecha era
+        «colinealidad con el barrio», lo comprobé por la vía directa: quitando el
+        centrado por barrio-trimestre. Sin centrar, el jardín se va a
+        -8,5 % en vez de
+        -1,4 %, o sea que el centrado ya está quitando el
+        efecto de zona y la sospecha apuntaba al revés de lo que pasa. La
+        <b>calidad catastral</b> no era una anomalía, era la variable leída al
+        revés: el código catastral empeora según crece, así que el signo negativo
+        era el correcto sobre el código original. Ya está invertida, sale en
+        1,4 % y ninguna valoración se mueve, y
+        que no se mueva es demostrable algebraicamente, no sólo medido.
+        El <b>jardín</b> sí se queda en -1,4 %, y ahí hay
+        que separar dos cosas: lo probado es que no viene del barrio, ni de la
+        superficie, ni de colinealidad; que «jardín y nada más» marque promoción
+        periférica es una <b>interpretación del patrón, no una medición</b>,
+        porque no hay ninguna variable que separe el jardín privado de la zona
+        común. Encaja con que el 64,2 % de los
+        anuncios con jardín lleven piscina, pero no está demostrado.
+        Reproducible con <code>src/r04_diagnostico_coeficientes.py</code>.</li>
+    <li><b>Los códigos catastrales 8 y
+        9 siguen sin resolver.</b> Repuntan en
+        precio en vez de seguir bajando, y al invertir la escala les asigno la
+        peor calidad justo a los que se pagan más caros que el código
+        7. Si no son «peor calidad» sino otra cosa,
+        están colocados al revés. Son 1.201 anuncios
+        de 52.833 y no lo he resuelto.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>La estructura del mercado</h2>
+  <p class="pie">Del barrio más caro al más barato hay un factor
+     6,4. Niveles de
+     2018: lo que sobrevive al paso del tiempo es el orden, no la cifra.</p>
+  <div class="panel"><svg viewBox="0 0 560 444" width="100%" role="img" aria-label="Precio por metro cuadrado y barrio"><text x="148" y="25" font-size="11.5" fill="#16202B" text-anchor="end">Recoletos</text><rect x="158" y="16" width="314.8" height="13" fill="#1F3A5F" opacity="0.86"/><text x="479.8148148148148" y="27" font-size="10.5" fill="#61707C">7.440</text><text x="148" y="45" font-size="11.5" fill="#16202B" text-anchor="end">Castellana</text><rect x="158" y="36" width="276.0" height="13" fill="#1F3A5F" opacity="0.86"/><text x="440.99714760231234" y="47" font-size="10.5" fill="#61707C">6.523</text><text x="148" y="65" font-size="11.5" fill="#16202B" text-anchor="end">Almagro</text><rect x="158" y="56" width="255.3" height="13" fill="#1F3A5F" opacity="0.86"/><text x="420.275120340438" y="67" font-size="10.5" fill="#61707C">6.033</text><text x="148" y="85" font-size="11.5" fill="#16202B" text-anchor="end">Chueca-Justicia</text><rect x="158" y="76" width="243.1" height="13" fill="#1F3A5F" opacity="0.86"/><text x="408.0541671176287" y="87" font-size="10.5" fill="#61707C">5.744</text><text x="148" y="105" font-size="11.5" fill="#16202B" text-anchor="end">Jerónimos</text><rect x="158" y="96" width="239.1" height="13" fill="#1F3A5F" opacity="0.86"/><text x="404.13591600531083" y="107" font-size="10.5" fill="#61707C">5.651</text><text x="148" y="125" font-size="11.5" fill="#16202B" text-anchor="end">Goya</text><rect x="158" y="116" width="239.0" height="13" fill="#1F3A5F" opacity="0.86"/><text x="403.96628220312766" y="127" font-size="10.5" fill="#61707C">5.647</text><text x="148" y="145" font-size="11.5" fill="#16202B" text-anchor="end">Lista</text><rect x="158" y="136" width="235.0" height="13" fill="#1F3A5F" opacity="0.86"/><text x="399.99729755330225" y="147" font-size="10.5" fill="#61707C">5.554</text><text x="148" y="165" font-size="11.5" fill="#16202B" text-anchor="end">El Viso</text><rect x="158" y="156" width="232.9" height="13" fill="#1F3A5F" opacity="0.86"/><text x="397.8945385279446" y="167" font-size="10.5" fill="#61707C">5.504</text><text x="148" y="185" font-size="11.5" fill="#16202B" text-anchor="end">Trafalgar</text><rect x="158" y="176" width="225.1" height="13" fill="#1F3A5F" opacity="0.86"/><text x="390.11380992630154" y="187" font-size="10.5" fill="#61707C">5.320</text><text x="148" y="205" font-size="11.5" fill="#16202B" text-anchor="end">Huertas-Cortes</text><rect x="158" y="196" width="222.2" height="13" fill="#1F3A5F" opacity="0.86"/><text x="387.1517861114818" y="207" font-size="10.5" fill="#61707C">5.250</text><text x="148" y="224" font-size="11" fill="#61707C" text-anchor="end">… 115 barrios más …</text><text x="148" y="245" font-size="11.5" fill="#16202B" text-anchor="end">San Cristóbal</text><rect x="158" y="236" width="49.5" height="13" fill="#1F3A5F" opacity="0.86"/><text x="214.4755626211652" y="247" font-size="10.5" fill="#61707C">1.169</text><text x="148" y="265" font-size="11.5" fill="#16202B" text-anchor="end">Entrevías</text><rect x="158" y="256" width="57.9" height="13" fill="#1F3A5F" opacity="0.86"/><text x="222.9384878063645" y="267" font-size="10.5" fill="#61707C">1.369</text><text x="148" y="285" font-size="11.5" fill="#16202B" text-anchor="end">San Andrés</text><rect x="158" y="276" width="63.5" height="13" fill="#1F3A5F" opacity="0.86"/><text x="228.4719388889948" y="287" font-size="10.5" fill="#61707C">1.500</text><text x="148" y="305" font-size="11.5" fill="#16202B" text-anchor="end">12 de Octubre-Orcasur</text><rect x="158" y="296" width="64.1" height="13" fill="#1F3A5F" opacity="0.86"/><text x="229.10976964743813" y="307" font-size="10.5" fill="#61707C">1.515</text><text x="148" y="325" font-size="11.5" fill="#16202B" text-anchor="end">Orcasitas</text><rect x="158" y="316" width="66.8" height="13" fill="#1F3A5F" opacity="0.86"/><text x="231.77698503181367" y="327" font-size="10.5" fill="#61707C">1.578</text><text x="148" y="345" font-size="11.5" fill="#16202B" text-anchor="end">Los Ángeles</text><rect x="158" y="336" width="69.4" height="13" fill="#1F3A5F" opacity="0.86"/><text x="234.40549542333684" y="347" font-size="10.5" fill="#61707C">1.640</text><text x="148" y="365" font-size="11.5" fill="#16202B" text-anchor="end">Los Rosales</text><rect x="158" y="356" width="69.8" height="13" fill="#1F3A5F" opacity="0.86"/><text x="234.81913277789425" y="367" font-size="10.5" fill="#61707C">1.650</text><text x="148" y="385" font-size="11.5" fill="#16202B" text-anchor="end">Amposta</text><rect x="158" y="376" width="72.5" height="13" fill="#1F3A5F" opacity="0.86"/><text x="237.53935873027956" y="387" font-size="10.5" fill="#61707C">1.714</text><text x="148" y="405" font-size="11.5" fill="#16202B" text-anchor="end">Portazgo</text><rect x="158" y="396" width="74.2" height="13" fill="#1F3A5F" opacity="0.86"/><text x="239.15134447984144" y="407" font-size="10.5" fill="#61707C">1.752</text><text x="148" y="425" font-size="11.5" fill="#16202B" text-anchor="end">San Diego</text><rect x="158" y="416" width="74.3" height="13" fill="#1F3A5F" opacity="0.86"/><text x="239.28567662563853" y="427" font-size="10.5" fill="#61707C">1.756</text></svg></div>
+</section>
+
+<footer>
+  Fuente de los datos: Rey-Blanco, D., Arbués, P., López, F. y Páez, A. (2024),
+  <i>A geo-referenced micro-data set of real estate listings for Spain's three
+  largest cities</i>, Environment and Planning B: Urban Analytics and City
+  Science, doi:10.1177/23998083241242844. Conjunto <b>idealista18</b>, licencia
+  ODbL-1.0. Publicado por idealista junto a la Universidad Politécnica de
+  Cartagena y McMaster University. No se ha realizado extracción automatizada de
+  ningún portal. Ningún dato personal interviene en el proceso.
+</footer>
+
+</div></body></html>

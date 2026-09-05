@@ -119,6 +119,13 @@ def construir() -> None:
     con_val = val[val["desviacion"].notna()]
     e, mo, fugas = met["extraccion"], met["motor_valoracion"], met["control_de_fugas"]
 
+    # Reparto real de la extraccion. `e["motor"]` es la MODA, asi que con 1.975
+    # anuncios por reglas y 25 por LLM decia "reglas" y escondia la pasada del
+    # modelo. Se nombran los dos con cuantos anuncios llevo cada uno.
+    reparto_sello = " + ".join(
+        f"{n} por {motor}" for motor, d in sorted(e["reparto_por_motor"].items())
+        for n in [f"{d['n_anuncios']} anuncios"])
+
     top = (con_val[con_val["fiabilidad"].isin(["alta", "media"])]
            .nlargest(12, "score_oportunidad"))
 
@@ -249,7 +256,7 @@ def construir() -> None:
   <p>De anuncios en texto libre a una lista priorizada de inmuebles cuyo precio
      se aparta de lo que piden los pisos equivalentes de su distrito.</p>
   <p class="sello">Ejecutado el {ahora} sobre {e['n_anuncios']} anuncios.
-     Motor de extracción: {e['motor']}. Semilla {cfg.SEMILLA}.</p>
+     Extracción: {reparto_sello}. Semilla {cfg.SEMILLA}.</p>
 </header>
 
 <section>
