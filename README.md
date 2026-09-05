@@ -195,5 +195,5 @@ data/processed/    dato limpio, valoraciones, informe de calidad, métricas
 outputs/           Excel y dashboard
 src/               los seis pasos del circuito sintético (p00–p06) y el real (r00–r04)
 tests/             54 tests
-docs/              validación con datos reales, investigación de fuentes, estado, guion
+docs/              recorrido para negocio, validación con datos reales, fuentes, estado, guion
 ```
