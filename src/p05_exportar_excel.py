@@ -317,10 +317,16 @@ def construir() -> None:
             value="Calidad del proceso (medido sobre corpus sintético)").font = \
         Font(name=FUENTE, size=11, bold=True, color=AZUL)
     e, mo = metricas["extraccion"], metricas["motor_valoracion"]
-    med = [
-        ("Motor de extracción usado", e["motor"], "@"),
-        ("Campos extraídos correctamente", e["exactitud_global_por_campo"], PCT),
-        ("Anuncios sin ningún error de extracción", e["anuncios_perfectos"], PCT),
+    # La exactitud de extraccion va SIEMPRE desglosada por motor. La cifra global
+    # mezcla dos motores medidos sobre anuncios distintos, asi que no significa
+    # nada y no se publica: seria justo el numero comodo que este libro evita.
+    med = [(f"Campos extraídos correctamente — {motor}",
+            d["exactitud"], PCT)
+           for motor, d in sorted(e["reparto_por_motor"].items())]
+    med += [(f"Anuncios sin ningún error — {motor}",
+             d["anuncios_perfectos"], PCT)
+            for motor, d in sorted(e["reparto_por_motor"].items())]
+    med += [
         ("Error mediano de valoración", mo["error_mediano_valoracion"], PCT),
         ("Correlación desviación estimada / real",
          mo["correlacion_desviacion_estimada_vs_real"], "0.00"),
@@ -335,7 +341,35 @@ def construir() -> None:
         c = rs.cell(row=i, column=2, value=v)
         c.font = Font(name=FUENTE, size=10, bold=True)
         c.number_format = fmt
-    _anchos(rs, [46, 22, 14, 14, 14, 14])
+
+    # Los dos motores sobre los MISMOS anuncios. Solo aparece si hubo pasada de
+    # LLM. Es la unica comparacion que compara: las cifras de arriba salen de
+    # conjuntos distintos y no se pueden enfrentar entre si.
+    comp = metricas.get("comparacion_de_motores")
+    if comp:
+        f2 = fila + len(med) + 2
+        rs.cell(row=f2, column=1,
+                value=f"Los dos motores sobre los mismos {comp['n_anuncios']} anuncios"
+                ).font = Font(name=FUENTE, size=11, bold=True, color=AZUL)
+        _cabecera(rs, f2 + 1, ["Motor de extracción", "Campos correctos",
+                               "Anuncios sin errores", "Campos fallados"])
+        for j, (motor, d) in enumerate(sorted(comp["motores"].items()), start=f2 + 2):
+            rs.cell(row=j, column=1, value=motor).font = Font(name=FUENTE, size=10)
+            for col, (val, fmt) in enumerate(
+                    [(d["exactitud"], PCT), (d["anuncios_perfectos"], PCT),
+                     (d["campos_fallados"], "0")], start=2):
+                c = rs.cell(row=j, column=col, value=val)
+                c.font = Font(name=FUENTE, size=10, bold=True)
+                c.number_format = fmt
+        aviso = rs.cell(row=f2 + 2 + len(comp["motores"]) + 1, column=1,
+                        value=comp["aviso"])
+        aviso.font = Font(name=FUENTE, size=9, italic=True, color="9C2A2A")
+        aviso.alignment = Alignment(wrap_text=True, vertical="top")
+        rs.merge_cells(start_row=aviso.row, start_column=1,
+                       end_row=aviso.row, end_column=4)
+        rs.row_dimensions[aviso.row].height = 58
+
+    _anchos(rs, [46, 22, 20, 16, 14, 14])
 
     # -------------------------------------------------------- Hoja Por distrito
     pd_ws = wb.create_sheet("Por distrito")

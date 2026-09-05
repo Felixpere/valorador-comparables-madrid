@@ -14,3 +14,6 @@ data/real/valoraciones_2018.csv
 
 # Los ficheros pequenos de data/real/ SI se versionan a proposito: son las
 # cifras que citan docs/ y los tests, y ocupan unos pocos KB.
+
+# Ajustes locales de Claude Code, propios de cada maquina.
+.claude/

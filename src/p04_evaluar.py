@@ -31,11 +31,27 @@ CAMPOS_MEDIBLES = ["distrito", "superficie_m2", "habitaciones", "banos",
 
 
 def _iguales(a: pd.Series, b: pd.Series) -> pd.Series:
-    """Comparacion tolerante al tipo: 3 == 3.0 == '3'."""
+    """Comparacion tolerante al tipo (3 == 3.0 == '3') y a las tildes.
+
+    Las tildes importan, y por eso se ignoran aqui. El pipeline canoniza los
+    distritos en p02 quitando los diacriticos, asi que "Tetuan" y "Tetuan" con
+    tilde son el MISMO dato para todo lo que viene despues. Compararlos como
+    distintos no mide un error de extraccion: mide una diferencia ortografica
+    que el propio sistema ya resuelve.
+
+    No es un detalle menor. El motor de reglas escribe siempre la forma canonica
+    sin tilde, porque la saca de una lista; un modelo de lenguaje escribe espanol
+    correcto y pone "Tetuan" con tilde. Con la comparacion anterior, el LLM
+    perdia dos campos de 250 por escribir bien, y la cifra publicada favorecia a
+    las reglas por un motivo que no tiene nada que ver con extraer.
+    """
     def norm(s):
         n = pd.to_numeric(s, errors="coerce")
-        return np.where(n.notna(), n.astype("Float64"),
-                        s.astype(str).str.strip().str.lower())
+        texto = (s.astype(str)
+                 .str.normalize("NFD")
+                 .str.encode("ascii", "ignore").str.decode("ascii")
+                 .str.strip().str.lower())
+        return np.where(n.notna(), n.astype("Float64"), texto)
     return pd.Series(norm(a) == norm(b), index=a.index)
 
 
@@ -152,6 +168,59 @@ def verificar_ausencia_de_fugas(valorado: pd.DataFrame,
     }
 
 
+def comparar_motores(verdad: pd.DataFrame, extraido: pd.DataFrame) -> dict | None:
+    """Los dos motores sobre EXACTAMENTE los mismos anuncios.
+
+    `reparto_por_motor` mide cada motor sobre los anuncios que le tocaron, que no
+    son los mismos: el LLM procesa los primeros y las reglas el resto. Comparar
+    esas dos cifras entre si no dice cual extrae mejor, dice que a cada uno le
+    tocaron documentos distintos.
+
+    Aqui se vuelven a extraer con reglas los mismos anuncios que paso el LLM y se
+    miden los dos sobre ese conjunto. Las reglas son deterministas y gratis, asi
+    que la pasada extra no cuesta nada.
+
+    Devuelve None si no hubo pasada de LLM.
+    """
+    import p01_extraer  # local: evita ciclo de importacion al cargar el modulo
+
+    del_llm = extraido[extraido["motor_extraccion"].str.startswith("llm")]
+    if del_llm.empty:
+        return None
+
+    refs = sorted(del_llm["ref"])
+    corpus = {json.loads(l)["ref"]: json.loads(l)
+              for l in cfg.F_CORPUS.read_text(encoding="utf-8").splitlines()}
+    reglas = pd.DataFrame([
+        {**p01_extraer.extraer_reglas(corpus[r]["texto"]), "ref": r,
+         "motor_extraccion": "reglas"} for r in refs])
+
+    v = verdad[verdad["ref"].isin(refs)]
+    salida = {"n_anuncios": len(refs), "campos_comparados": len(CAMPOS_MEDIBLES),
+              "motores": {}}
+    for nombre, ext in [(str(del_llm["motor_extraccion"].iat[0]), del_llm),
+                        ("reglas", reglas)]:
+        m = v.merge(ext, on="ref", suffixes=("_real", "_ext"))
+        ok = pd.concat([_iguales(m[f"{c}_real"], m[f"{c}_ext"])
+                        for c in CAMPOS_MEDIBLES], axis=1)
+        salida["motores"][nombre] = {
+            "exactitud": round(float(ok.to_numpy().mean()), 4),
+            "anuncios_perfectos": round(float(ok.all(axis=1).mean()), 4),
+            "campos_fallados": int((~ok).to_numpy().sum()),
+            "por_campo": {c: round(float(ok.iloc[:, i].mean()), 4)
+                          for i, c in enumerate(CAMPOS_MEDIBLES)},
+        }
+    salida["aviso"] = (
+        "Las reglas juegan en casa: sus expresiones regulares se escribieron "
+        "mirando estas mismas cinco plantillas de texto. Su exactitud es "
+        "sobreajuste de manual y no es extrapolable a formatos nuevos, que es "
+        "justo donde un modelo de lenguaje no necesita que nadie toque el codigo. "
+        f"Con {len(refs)} anuncios y {len(CAMPOS_MEDIBLES)} campos son "
+        f"{len(refs) * len(CAMPOS_MEDIBLES)} observaciones por motor: una "
+        "diferencia de uno o dos campos no distingue a nadie.")
+    return salida
+
+
 def ejecutar() -> dict:
     verdad = pd.read_csv(cfg.F_VERDAD)
     extraido = pd.read_csv(cfg.F_EXTRAIDO)
@@ -160,6 +229,7 @@ def ejecutar() -> dict:
 
     metricas = {
         "extraccion": evaluar_extraccion(verdad, extraido),
+        "comparacion_de_motores": comparar_motores(verdad, extraido),
         "motor_valoracion": evaluar_motor(verdad, valorado),
         "control_de_fugas": verificar_ausencia_de_fugas(valorado, normalizado),
         "parametros": {

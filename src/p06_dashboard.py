@@ -153,8 +153,10 @@ def construir() -> None:
          f"{e['n_anuncios']} notas de captación, mensajes internos, correos y fichas "
          f"en cinco formatos distintos."),
         ("Extracción",
-         f"Un modelo de lenguaje devuelve JSON con esquema fijo. Motor de esta "
-         f"ejecución: {e['motor']}. Campos correctos: {_pct(e['exactitud_global_por_campo'])}."),
+         f"Un modelo de lenguaje devuelve JSON con esquema fijo. Reparto de esta "
+         f"ejecución, con la exactitud de cada motor por separado: "
+         + "; ".join(f"{k} sobre {v['n_anuncios']} anuncios, {_pct(v['exactitud'])}"
+                     for k, v in sorted(e["reparto_por_motor"].items())) + "."),
         ("Limpieza y validación",
          f"Tipado, unificación de nombres de distrito, rangos plausibles y "
          f"descarte trazable. {len(calidad)} incidencias registradas, ninguna silenciosa."),
@@ -264,8 +266,8 @@ def construir() -> None:
   <div class="cifra"><b>{_pct(mo['cobertura'], 0)}</b><span>con valoración emitida</span></div>
   <div class="cifra"><b>{(val['clasificacion'] == 'por debajo de comparables').sum()}</b>
     <span>por debajo de sus comparables</span></div>
-  <div class="cifra"><b>{_pct(e['exactitud_global_por_campo'])}</b>
-    <span>campos bien extraídos</span></div>
+  <div class="cifra"><b>{_pct(max(v['exactitud'] for v in e['reparto_por_motor'].values()))}</b>
+    <span>campos bien extraídos, mejor motor de {len(e['reparto_por_motor'])}</span></div>
   <div class="cifra"><b>{fugas['inmuebles_en_sus_propios_comparables']}</b>
     <span>fugas de información detectadas</span></div>
 </div>
