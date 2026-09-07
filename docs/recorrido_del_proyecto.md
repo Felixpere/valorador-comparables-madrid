@@ -1,22 +1,46 @@
 # El proyecto de principio a fin
 
-Cinco minutos de lectura. Sin tecnicismos. Todas las cifras salen de los ficheros
-de resultados del repositorio; ninguna está puesta a mano.
+Siete minutos de lectura. Sin tecnicismos. Todas las cifras salen de los ficheros
+de resultados del repositorio; ninguna está puesta a mano ni derivada a ojo.
 
 ---
 
 ## El problema
 
-Una inmobiliaria recibe cientos de anuncios a la semana. Alguien tiene que
-decidir a cuáles llamar hoy, y esa decisión la toma una persona con oficio, de
-una en una. Funciona bien y no escala.
+En cualquier equipo que trabaje con inmuebles hay información que llega como
+**documento suelto**: un correo, un mensaje, una ficha, un PDF trimestral. Y hay
+alguien que la pasa a mano a una hoja de cálculo, semana tras semana, sin que
+quede rastro de cómo se llegó a cada número.
 
-La pregunta de fondo es siempre la misma: **¿lo que piden por este piso está en
-línea con lo que piden pisos parecidos?** Es fácil de enunciar y difícil de
-contestar bien. ¿Parecidos en qué? ¿En la misma zona? ¿Y si el nuestro tiene
-ascensor y los otros no?
+**Esto es un circuito que hace ese recorrido entero por su cuenta.** Entra texto
+libre y salen un Excel y un panel listos para abrir en una reunión: saca los
+datos del texto, los limpia, calcula, mide su propio acierto y publica. Se lanza
+con una orden, y también solo, **cada lunes y cada vez que alguien toca el
+código**.
 
-## Qué hace el sistema
+Lo que lo separa de una macro es qué hace cuando algo va mal: **si detecta que un
+número no se sostiene, se detiene y no publica nada.**
+
+## Por qué el ejemplo es vivienda
+
+Un circuito así no se demuestra en abstracto: hacen falta datos reales contra los
+que medir si acierta.
+
+Por eso el ejemplo es la **valoración de pisos por comparables**. En vivienda
+existe el único conjunto de datos abierto, con licencia libre y detalle inmueble
+a inmueble, que cubre un mercado entero: 94.815 anuncios de Madrid publicados por
+idealista junto a dos universidades. En oficinas o logística ese dato no existe
+en abierto —lo publican las consultoras en PDF, cada una con su definición—, así
+que allí no hay forma de comprobar si un resultado es bueno.
+
+Vivienda es, sencillamente, **el sector donde se puede demostrar que el circuito
+acierta**. Lo que queda demostrado es el método, no el mercado.
+
+La pregunta que responde el ejemplo: **¿lo que piden por este piso está en línea
+con lo que piden pisos parecidos?** Fácil de enunciar y difícil de contestar
+bien. ¿Parecidos en qué? ¿Y si el nuestro tiene ascensor y los otros no?
+
+## Qué hace el sistema con cada piso
 
 Para cada piso busca sus **comparables**: pisos del mismo barrio, del mismo
 trimestre, con una superficie parecida (hasta un 20 % arriba o abajo) y con al
@@ -59,9 +83,8 @@ Es la diferencia entre estudiar para un examen y corregirte tú mismo con las
 respuestas delante.
 
 **Resultado: se equivoca un 12,0 %.** En la mitad de los casos falla menos de eso
-y en la otra mitad más. Sobre un piso de 300.000 €, una estimación típica cae
-entre 264.000 y 336.000 €. Cuatro de cada diez estimaciones se quedan a menos de
-un 10 % del precio real.
+y en la otra mitad más. Cuatro de cada diez estimaciones se quedan a menos de un
+10 % del precio real, y siete de cada diez a menos de un 20 %.
 
 **Y aquí viene la parte incómoda, que contamos igual.** Comparamos el sistema con
 el método más tonto que se nos ocurrió: coger el precio por metro cuadrado
@@ -103,7 +126,16 @@ El sistema lo hace de dos maneras y **mide las dos por separado**: con reglas
 fijas escritas a mano, y con inteligencia artificial. Sobre los mismos 25
 anuncios, la IA acertó los 250 campos y las reglas fallaron uno.
 
-**No concluimos de ahí que la IA sea mejor.** Un fallo de diferencia sobre 250 no
+**Ese resultado sólo apareció al descubrir que lo medíamos mal.** La IA salía
+peor por dos fallos que eran de acentuación: escribió «Tetuán» y «Chamartín»
+donde la respuesta estaba guardada sin tilde, y el propio sistema quita las
+tildes en el paso siguiente, así que son el mismo dato. El medidor comparaba con
+un criterio más estricto que el del sistema, y eso castigaba al motor que escribe
+español natural y premiaba al que copia de una lista. Al corregirlo, **el
+resultado cambió a favor de la IA**: lo contamos precisamente porque el arreglo
+beneficia a una de las partes.
+
+**Aun así no concluimos que la IA sea mejor.** Un fallo de diferencia sobre 250 no
 distingue a nadie, y además las reglas juegan en casa: están escritas mirando
 exactamente esos formatos de texto, así que aciertan mucho aquí y se romperían
 con un formato nuevo. Ahí es donde la IA no necesita que nadie toque nada.
@@ -112,7 +144,7 @@ con un formato nuevo. Ahí es donde la IA no necesita que nadie toque nada.
 
 Esta sección es tan importante como las anteriores.
 
-**El precio de referencia es el que se PIDE, no por el que se vende.** El sistema
+**El precio de referencia es el que se PIDE, no el precio al que se vende.** El sistema
 reproduce lo que pide un anuncio, no lo que vale el piso ni por cuánto se cerró
 la operación. Los precios de escritura por inmueble no están en ningún dato
 público. Para cerrar el círculo haría falta el histórico de una inmobiliaria.
@@ -165,6 +197,14 @@ Se dice en voz alta porque un pendiente declarado suma y uno escondido resta:
 
 ---
 
-**En una frase:** convierte «me parece que este piso está barato» en un número
-medido, que sabe cuánto se equivoca, que avisa cuando no puede responder y cuya
-cuenta entera se puede poner encima de la mesa.
+**En una frase:** un circuito que lleva un documento suelto hasta un Excel y un
+panel terminados, que se actualiza solo, que sabe cuánto se equivoca, que avisa
+cuando no puede responder y que prefiere no publicar antes que publicar un número
+que no se sostiene.
+
+La valoración de vivienda es **la prueba de que funciona**, no el destino: era el
+sector donde había datos abiertos con los que medir el acierto de verdad. El
+recorrido —sacar datos de un texto, limpiarlos declarando lo que se aparta,
+calcular, medirse contra alternativas más simples y publicar con los límites
+delante— no cambia el día que la entrada sea otro tipo de documento. Cambia el
+contenido; el método es el mismo, y es lo que aquí queda demostrado.
