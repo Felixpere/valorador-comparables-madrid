@@ -1,10 +1,14 @@
-# Valoración por comparables — mercado residencial de Madrid
+# Un circuito reproducible: de documento suelto a Excel y panel
 
-De anuncios en texto libre a una lista priorizada de inmuebles cuyo precio se
-aparta de lo que piden los pisos equivalentes de su distrito.
+En cualquier equipo que trabaje con inmuebles hay información que llega como
+**documento suelto** —un correo, un mensaje, una ficha, un PDF— y alguien que la
+pasa a mano a una hoja de cálculo, semana tras semana, sin que quede rastro de
+cómo se llegó a cada número.
+
+Esto recorre ese camino entero por su cuenta:
 
 ```
-anuncios en texto libre  →  extracción con IA  →  limpieza en Python
+documento en texto libre  →  extracción con IA  →  limpieza en Python
                                                        ↓
                                     dashboard  ←  Excel / Power BI
 ```
@@ -16,25 +20,53 @@ pip install -r requirements.txt
 python run_pipeline.py
 ```
 
-Salida en `outputs/`: `valoraciones_madrid.xlsx` y `dashboard.html`.
-Diez segundos de principio a fin.
+Salida en `outputs/`: `valoraciones_madrid.xlsx` y `dashboard.html`. Diez
+segundos de principio a fin. Y también se ejecuta **solo**: cada lunes y en cada
+cambio del código, mediante GitHub Actions.
+
+Lo que lo separa de una macro es qué hace cuando algo va mal: **si detecta que un
+número no se sostiene, se detiene y no publica nada.**
+
+**Los dos paneles, sin descargar nada:**
+[validación con datos reales](https://felixpere.github.io/valorador-comparables-madrid/entregables/dashboard_real.html)
+· [circuito de extracción](https://felixpere.github.io/valorador-comparables-madrid/entregables/dashboard.html)
 
 ---
 
+## Por qué el ejemplo es vivienda
+
+Un circuito así no se demuestra en abstracto: hacen falta datos reales contra los
+que medir si acierta.
+
+Por eso el ejemplo es la **valoración de pisos por comparables**. En vivienda
+existe el único conjunto de datos abierto, con licencia libre y detalle inmueble
+a inmueble, que cubre un mercado entero: 94.815 anuncios de Madrid publicados por
+idealista junto a dos universidades. En oficinas o logística ese dato no existe
+en abierto —lo publican las consultoras en informes en PDF, cada una con su
+definición—, así que allí no habría contra qué medir el acierto. Ese mapa está en
+[docs/investigacion_terciario.md](docs/investigacion_terciario.md).
+
+Vivienda es el sector donde **se puede demostrar que el circuito acierta**. Lo que
+queda demostrado es el método, no el mercado.
+
 ## Qué es esto
 
-Una demostración técnica del circuito completo, montada sobre datos del mercado
+Una demostración técnica del circuito completo, montada sobre el mercado
 residencial de Madrid. El motor de valoración es el mismo enfoque que
 [car-flip-opportunity-detector](https://github.com/Felixpere/car-flip-opportunity-detector),
 trasladado de coches a inmuebles: donde allí había modelo, año y kilómetros,
-aquí hay distrito, superficie, año y estado.
+aquí hay barrio, superficie, año y estado.
 
-**Qué no es**: un producto, ni una herramienta de tasación. Los anuncios son
-sintéticos y las conclusiones sobre el mercado de Madrid no se sostienen sobre
-ellos. Lo que sí se sostiene es la mecánica: la extracción, la limpieza, el
-control de fugas de información y la trazabilidad. Los límites están todos
-recogidos en [SUPUESTOS.md](SUPUESTOS.md), y también en el propio Excel y en el
-dashboard, no escondidos en un anexo.
+**Qué no es**: un producto, ni una herramienta de tasación. El corpus con el que
+se demuestra la extracción es sintético, y sobre él no se sostiene ninguna
+conclusión de mercado. Lo que sí se sostiene, porque está medido contra 22.643
+anuncios reales que el motor no había visto, es la mecánica: la extracción, la
+limpieza, el control de fugas de información y la trazabilidad. Los límites están
+todos recogidos en [SUPUESTOS.md](SUPUESTOS.md), y también en el propio Excel y
+en el dashboard, no escondidos en un anexo.
+
+Si prefiere el recorrido completo sin tecnicismos, está en
+[docs/recorrido_del_proyecto.md](docs/recorrido_del_proyecto.md).
 
 ## Dos vías de datos
 
