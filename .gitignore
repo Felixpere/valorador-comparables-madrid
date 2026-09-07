@@ -17,3 +17,9 @@ data/real/valoraciones_2018.csv
 
 # Ajustes locales de Claude Code, propios de cada maquina.
 .claude/
+
+# Material de sala y preparacion personal (Cowork). No se publica.
+entregables/*.pdf
+entregables/*.pptx
+entregables/capturas_*/
+entregables/LEEME_entregables.txt
