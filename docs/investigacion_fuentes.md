@@ -53,8 +53,8 @@ registradores. La consulta es **gratuita y pública**, a diferencia del valor
 catastral, que sólo puede consultar el titular.
 
 Esto es, de hecho, un modelo de valoración automática estatal, y es el
-competidor conceptual directo de cualquier motor de valoración privado. Conviene
-saberlo antes de que lo pregunten.
+competidor conceptual directo de cualquier motor de valoración privado.
+Conviene tenerlo presente al interpretar cualquier estimación de valor.
 
 Dato de contexto relevante: el Tribunal Constitucional avaló el sistema en la
 **STC 13/2026, de 12 de febrero de 2026**, desestimando la cuestión planteada por
@@ -169,7 +169,7 @@ ayuntamientos.
 
 ## 3. Contexto del mercado, con fechas
 
-Para poder sostener una conversación de sector sin repetir titulares.
+Para poder interpretar el mercado sin quedarse en los titulares.
 
 **Precios.** Máximos históricos, por encima de la burbuja de 2007. España cerró
 2025 en 2.230 €/m² de valor tasado y llegó a 2.315 €/m² en el primer trimestre de
