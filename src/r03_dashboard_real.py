@@ -263,9 +263,9 @@ def construir() -> None:
   <h2>Contra qué se compara</h2>
   <p class="pie">Un error del {_p(mo['error_absoluto_mediano'])} no significa nada
      por sí solo. Sólo tiene
-     sentido frente a alternativas más tontas y más baratas. La partición es por
-     anuncio: el 70 % forma el conjunto de comparables y estima los coeficientes,
-     el 30 % restante nunca participa en su propia valoración.</p>
+     sentido frente a alternativas más simples y más baratas de montar. La
+     partición es por anuncio: el 70 % sirve de referencia para comparar, y el
+     30 % restante nunca interviene en su propia valoración.</p>
   <table><thead><tr><th>Método</th><th class="n">Error mediano</th>
     <th class="n">Dentro de ±10 %</th><th class="n">Dentro de ±20 %</th>
     <th class="n">Sesgo</th></tr></thead><tbody>{filas_metodo}</tbody></table>
