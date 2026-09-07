@@ -66,6 +66,12 @@ España —qué da cada una, con qué granularidad, cada cuánto se actualiza y 
 puede y no se puede hacer con ella— está en
 [docs/investigacion_fuentes.md](docs/investigacion_fuentes.md).
 
+Para **oficinas y logistica** el terreno es distinto: no hay capa publica de
+rentas ni de disponibilidad, el dato lo publican las consultoras en PDF y las
+cifras no coinciden entre fuentes. Ese mapa esta en
+[docs/investigacion_terciario.md](docs/investigacion_terciario.md), con cada
+cifra marcada segun sea de fuente primaria o de segunda mano.
+
 Ningún dato personal de vendedores ni de terceros interviene en ninguna fase.
 
 ## Los seis pasos
@@ -195,5 +201,6 @@ data/processed/    dato limpio, valoraciones, informe de calidad, métricas
 outputs/           Excel y dashboard
 src/               los seis pasos del circuito sintético (p00–p06) y el real (r00–r04)
 tests/             54 tests
-docs/              recorrido para negocio, validación con datos reales, fuentes, estado, guion
+docs/              recorrido para negocio, validación con datos reales, fuentes
+                   (residencial y terciario), estado, guion
 ```

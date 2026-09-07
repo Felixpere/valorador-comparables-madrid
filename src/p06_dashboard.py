@@ -126,6 +126,21 @@ def construir() -> None:
         f"{n} por {motor}" for motor, d in sorted(e["reparto_por_motor"].items())
         for n in [f"{d['n_anuncios']} anuncios"])
 
+    # Titular de la banda de cifras. Con un solo motor se pone su exactitud. Con
+    # dos NO se pone ninguna: la conclusion del propio proyecto es que un fallo
+    # sobre 250 observaciones no distingue a ningun motor, asi que destacar la
+    # cifra del que sale mejor seria justo lo contrario de lo que dice el
+    # analisis. Se remite al desglose, que esta unas lineas mas abajo.
+    motores = e["reparto_por_motor"]
+    if len(motores) == 1:
+        unico, datos = next(iter(motores.items()))
+        titular_extraccion = _pct(datos["exactitud"])
+        titular_extraccion_pie = f"campos bien extraídos ({unico})"
+    else:
+        titular_extraccion = str(len(motores))
+        titular_extraccion_pie = ("motores de extracción · la exactitud va "
+                                  "desglosada abajo, no se promedia")
+
     top = (con_val[con_val["fiabilidad"].isin(["alta", "media"])]
            .nlargest(12, "score_oportunidad"))
 
@@ -273,8 +288,8 @@ def construir() -> None:
   <div class="cifra"><b>{_pct(mo['cobertura'], 0)}</b><span>con valoración emitida</span></div>
   <div class="cifra"><b>{(val['clasificacion'] == 'por debajo de comparables').sum()}</b>
     <span>por debajo de sus comparables</span></div>
-  <div class="cifra"><b>{_pct(max(v['exactitud'] for v in e['reparto_por_motor'].values()))}</b>
-    <span>campos bien extraídos, mejor motor de {len(e['reparto_por_motor'])}</span></div>
+  <div class="cifra"><b>{titular_extraccion}</b>
+    <span>{titular_extraccion_pie}</span></div>
   <div class="cifra"><b>{fugas['inmuebles_en_sus_propios_comparables']}</b>
     <span>fugas de información detectadas</span></div>
 </div>
