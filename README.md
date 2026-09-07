@@ -234,5 +234,5 @@ outputs/           Excel y dashboard
 src/               los seis pasos del circuito sintético (p00–p06) y el real (r00–r04)
 tests/             54 tests
 docs/              recorrido para negocio, validación con datos reales, fuentes
-                   (residencial y terciario), estado, guion
+                   (residencial y terciario), estado del proyecto
 ```
