@@ -47,7 +47,7 @@ Cobertura: **96,1 %**.
 | Mediana del barrio y trimestre | 15,2 % | 34,7 % | 62,2 % | 0,0 % |
 | Mediana de la ciudad | 34,3 % | 13,3 % | 28,0 % | −1,5 % |
 
-Leído con honestidad: **el motor mejora la línea base ingenua en 3,2 puntos**, una
+Leído con honestidad: **el motor mejora la línea base simple en 3,2 puntos**, una
 reducción del error del 21 %. No es espectacular. Y la lectura incómoda es la
 otra: la simple mediana del €/m² del barrio ya te lleva a un 15,2 %, así que la
 mayor parte del trabajo la hace saber en qué barrio está el piso, no el motor.

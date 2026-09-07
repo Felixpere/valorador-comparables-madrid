@@ -18,8 +18,8 @@ datos del texto, los limpia, calcula, mide su propio acierto y publica. Se lanza
 con una orden, y también solo, **cada lunes y cada vez que alguien toca el
 código**.
 
-Lo que lo separa de una macro es qué hace cuando algo va mal: **si detecta que un
-número no se sostiene, se detiene y no publica nada.**
+Lo que lo distingue de un proceso montado a mano es qué hace cuando algo va mal:
+**si detecta que un número no se sostiene, se detiene y no publica nada.**
 
 ## Por qué el ejemplo es vivienda
 
@@ -87,7 +87,7 @@ y en la otra mitad más. Cuatro de cada diez estimaciones se quedan a menos de u
 10 % del precio real, y siete de cada diez a menos de un 20 %.
 
 **Y aquí viene la parte incómoda, que contamos igual.** Comparamos el sistema con
-el método más tonto que se nos ocurrió: coger el precio por metro cuadrado
+el método más simple que se nos ocurrió: coger el precio por metro cuadrado
 típico del barrio y multiplicarlo por los metros. Sin ajustar nada.
 
 | Método | Se equivoca un |

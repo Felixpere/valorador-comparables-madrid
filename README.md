@@ -24,8 +24,8 @@ Salida en `outputs/`: `valoraciones_madrid.xlsx` y `dashboard.html`. Diez
 segundos de principio a fin. Y también se ejecuta **solo**: cada lunes y en cada
 cambio del código, mediante GitHub Actions.
 
-Lo que lo separa de una macro es qué hace cuando algo va mal: **si detecta que un
-número no se sostiene, se detiene y no publica nada.**
+Lo que lo distingue de un proceso montado a mano es qué hace cuando algo va mal:
+**si detecta que un número no se sostiene, se detiene y no publica nada.**
 
 **Los dos paneles, sin descargar nada:**
 [validación con datos reales](https://felixpere.github.io/valorador-comparables-madrid/entregables/dashboard_real.html)
@@ -72,7 +72,7 @@ Si prefiere el recorrido completo sin tecnicismos, está en
 
 | Vía | Datos | Para qué |
 |---|---|---|
-| **Real** (`src/r00`–`src/r04`) | 94.815 anuncios de Madrid de 2018, `idealista18`, licencia ODbL | Motor por barrio y **validación fuera de muestra**. Error mediano del 12,0 % frente al 15,2 % de la línea base ingenua. Ver [docs/validacion_2018.md](docs/validacion_2018.md), la hoja `Validación 2018` del Excel y `outputs/dashboard_real.html` |
+| **Real** (`src/r00`–`src/r04`) | 94.815 anuncios de Madrid de 2018, `idealista18`, licencia ODbL | Motor por barrio y **validación fuera de muestra**. Error mediano del 12,0 % frente al 15,2 % de la línea base simple. Ver [docs/validacion_2018.md](docs/validacion_2018.md), la hoja `Validación 2018` del Excel y `outputs/dashboard_real.html` |
 | **Sintética** (`src/p00`–`p06`) | Corpus generado, calibrado con estadística registral | Demostrar el paso de **extracción con IA**, que no se puede enseñar con datos que ya vienen en tabla |
 
 Los datos reales son de 2018: sirven para estructura de mercado y para validar el

@@ -4,7 +4,7 @@ Un unico HTML sin dependencias externas. Responde a una pregunta concreta:
 como sabemos que esto funciona.
 
 La respuesta tiene dos mitades. La agregada: el error del motor sobre los
-anuncios que no habia visto, comparado con dos alternativas mas tontas. Y la
+anuncios que no habia visto, comparado con dos alternativas mas simples. Y la
 individual: una valoracion abierta en canal, con sus comparables uno a uno.
 
 Ninguna cifra de este fichero va escrita a mano. Todas salen de

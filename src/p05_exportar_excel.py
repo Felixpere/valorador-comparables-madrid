@@ -159,7 +159,7 @@ def hoja_validacion_2018(wb, m: dict, diagnostico: dict | None = None) -> None:
         ws.cell(row=i, column=2).number_format = "#,##0"
     ws.cell(row=fin, column=2).number_format = PCT
 
-    f = _subtitulo(ws, fin + 2, "El motor contra dos líneas base más tontas")
+    f = _subtitulo(ws, fin + 2, "El motor contra dos líneas base más simples")
     metodos = pd.DataFrame([
         {"Método": nombre,
          "Error mediano": m[clave]["error_absoluto_mediano"],

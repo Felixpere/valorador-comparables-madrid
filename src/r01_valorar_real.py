@@ -22,7 +22,7 @@ ningun conjunto abierto a nivel de inmueble.
 Lineas base
 -----------
 Un error del X % no significa nada por si solo. Se compara siempre contra dos
-alternativas mas tontas y mas baratas:
+alternativas mas simples y mas baratas de montar:
 
   1. Mediana de EUR/m2 de toda la ciudad multiplicada por la superficie.
   2. Mediana de EUR/m2 del barrio y trimestre multiplicada por la superficie.
