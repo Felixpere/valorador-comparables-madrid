@@ -158,8 +158,8 @@ ayuntamientos.
 - **Scraping de Idealista, Fotocasa y equivalentes**: prohibido por sus términos
   de uso. Existe un dataset público en Zenodo con anuncios de los distritos de
   Salamanca y Villaverde extraídos en abril de 2022, declarado por sus autores
-  como de uso exclusivamente académico. No es base para una pieza de portfolio
-  pública.
+  como de uso exclusivamente académico. No sirve como base para un trabajo
+  público.
 - Ojo con una trampa: la tabla de **precio de vivienda de segunda mano por
   distrito** que publica el propio Ayuntamiento de Madrid procede de Idealista,
   no del Registro. Es precio de **oferta**, no de cierre. Está en la misma

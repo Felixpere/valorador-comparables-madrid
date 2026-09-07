@@ -18,7 +18,8 @@ data/real/valoraciones_2018.csv
 # Ajustes locales de Claude Code, propios de cada maquina.
 .claude/
 
-# Material de sala y preparacion personal (Cowork). No se publica.
+# Material de presentacion y preparacion personal. No se publica: se queda
+# fuera de la carpeta del repositorio.
 entregables/*.pdf
 entregables/*.pptx
 entregables/capturas_*/
