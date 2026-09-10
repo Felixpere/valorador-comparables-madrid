@@ -64,9 +64,9 @@ sí es la diferencia entre tener un método y no tenerlo.
 | Baja | 15,9 % |
 
 Con el corpus sintético, esta etiqueta daba el mismo error en los tres niveles y
-lo dejamos escrito como un fallo abierto. Con datos reales **sí discrimina**: hay
-5,5 puntos entre el nivel alto y el bajo. La explicación de por qué fallaba era
-correcta: la dispersión del generador era homogénea por construcción, y el
+lo dejamos escrito como un fallo abierto. Con datos reales **sí discrimina**: va
+de 10,4 % en el nivel alto a 15,9 % en el bajo. La explicación de por qué fallaba
+era correcta: la dispersión del generador era homogénea por construcción, y el
 mercado real no lo es.
 
 Un matiz: lo que discrimina es la **dispersión** de los comparables, no cuántos

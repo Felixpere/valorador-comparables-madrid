@@ -24,3 +24,34 @@ entregables/*.pdf
 entregables/*.pptx
 entregables/capturas_*/
 entregables/LEEME_entregables.txt
+
+# ---------------------------------------------------------------------------
+# Material de entrevista y de traspaso - NO SE SUBE NUNCA
+#
+# Vive fuera de esta carpeta, en C:/Users/user/entrevista, pero estas reglas
+# quedan como red por si algo vuelve a caer aqui. Contiene nombres de personas
+# y expectativas salariales. Un `git add .` sin esto lo publica, y no se
+# deshace: aunque se borre despues, queda en el historial.
+#
+# Para subir alguno a proposito: `git add -f`, despues de leerlo entero.
+# ---------------------------------------------------------------------------
+Guia_Entrevista_*
+guia_*.js
+guion_*
+chuleta_*
+one_pager_*
+valoracion_comparables_*
+entregables_*
+traspaso_*
+paquete*/
+capturas*/
+*.zip
+*.pptx
+*.docx
+deck*.js
+onepager*.html
+bilingue.html
+codigo_correo.html
+topdf*.js
+capturar_*.js
+LEEME.txt
