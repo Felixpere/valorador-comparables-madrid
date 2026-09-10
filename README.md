@@ -171,7 +171,7 @@ paso 04 vuelve a comprobarlo sobre la salida real: si detecta una sola fuga, el
 proceso termina en error y no publica nada.
 
 ```bash
-python -m pytest tests -q      # 25 tests
+python -m pytest tests -q      # 54 tests
 ```
 
 ## Automatización
