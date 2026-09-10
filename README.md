@@ -211,6 +211,14 @@ regeneras y cambian, estaban viejos. El Excel no sirve para eso, porque
 
 ## Power BI
 
+**El modelo está montado y viaja en el repositorio**: `valorador_madrid.pbix`.
+Una página con filtros por distrito, estado, fiabilidad y fecha; los cuatro
+indicadores de cabecera; €/m² por distrito; la distribución de la desviación; la
+tabla de mayor desviación a la baja **con su número de comparables a la vista**, y
+el desglose de por qué un inmueble no se valora. Lleva además el panel de límites,
+igual que el Excel y el dashboard: precio pedido y no de cierre, niveles de 2018,
+y el 12,0 % frente al 15,2 % de la línea base simple.
+
 La hoja `Valoraciones` es una tabla plana sin celdas combinadas ni encabezados a
 dos alturas, pensada para cargarse sin transformaciones. La hoja
 `Validación 2018` lleva la validación contra `idealista18` en seis tablas con
@@ -230,6 +238,7 @@ data/referencia/   tabla oficial por distrito, con su fuente en la cabecera
 data/raw/          corpus de anuncios y verdad de terreno
 data/interim/      salida cruda de la extracción
 data/processed/    dato limpio, valoraciones, informe de calidad, métricas
+valorador_madrid.pbix  modelo de Power BI sobre la hoja Valoraciones
 outputs/           Excel y dashboard
 src/               los seis pasos del circuito sintético (p00–p06) y el real (r00–r04)
 tests/             54 tests

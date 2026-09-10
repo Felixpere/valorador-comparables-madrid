@@ -24,7 +24,3 @@ entregables/*.pdf
 entregables/*.pptx
 entregables/capturas_*/
 entregables/LEEME_entregables.txt
-
-# Modelo de Power BI: binario que se queda viejo en cuanto se regenera el
-# Excel, y que ademas se versiona por su cuenta. Decidir a mano si se publica.
-*.pbix

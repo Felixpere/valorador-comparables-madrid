@@ -47,7 +47,7 @@ unos diez segundos y produce el Excel y el dashboard. 54 tests en verde.
 | Pasada real con Haiku sobre los 25 anuncios | terminado (5 sept). Sobre los **mismos** 25 anuncios: LLM 100,0 %, reglas 99,6 %. **Un fallo de 250 no distingue a ningún motor**, y las reglas juegan en casa |
 | Granularidad de barrio en el motor sintético | pendiente, ya no prioritario |
 | Línea base del valor de referencia del Catastro | **pendiente** |
-| Modelo de Power BI (.pbix) | **pendiente**, siguiendo `docs/power_bi.md` |
+| Modelo de Power BI (.pbix) | terminado (9 sept), `valorador_madrid.pbix` en la raíz |
 
 ## Cifras con DATOS REALES (idealista18, Madrid 2018)
 
@@ -319,8 +319,9 @@ estado y no en esta lista.
    observaciones por motor la diferencia es de un campo, así que **no distingue**,
    y las reglas juegan en casa. Publicado por separado, nunca mezclado.
 
-4. **Modelo de Power BI (.pbix)** siguiendo `docs/power_bi.md`. El dashboard
-   HTML existe precisamente como respaldo, así que esto no bloquea nada.
+4. ~~Modelo de Power BI (.pbix).~~ **Hecho el 9 de septiembre**:
+   `valorador_madrid.pbix`, montado sobre la hoja `Valoraciones` del Excel
+   siguiendo `docs/power_bi.md`. El dashboard HTML se queda como respaldo.
 
 ### (c) Si sobra tiempo
 

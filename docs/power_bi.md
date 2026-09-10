@@ -1,5 +1,10 @@
 # Conectar el Excel a Power BI
 
+**El modelo ya está montado**: `valorador_madrid.pbix`, en la raíz del
+repositorio. Este documento explica cómo se construye desde cero, y sirve tanto
+para rehacerlo como para entender de dónde sale cada indicador.
+
+
 La hoja `Valoraciones` está diseñada para cargarse sin transformaciones: una fila
 por inmueble, una cabecera en la fila 1, sin celdas combinadas y sin totales
 intercalados.
