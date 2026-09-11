@@ -55,3 +55,7 @@ codigo_correo.html
 topdf*.js
 capturar_*.js
 LEEME.txt
+
+# Excepcion deliberada, revisada a mano el 11/09/2026: material presentable.
+# Solo esta ruta exacta. La regla general sigue bloqueando todo lo demas.
+!entregables/one_pager_valoracion_comparables_v2.pdf

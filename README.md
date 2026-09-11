@@ -31,6 +31,9 @@ Lo que lo distingue de un proceso montado a mano es qué hace cuando algo va mal
 [validación con datos reales](https://felixpere.github.io/valorador-comparables-madrid/entregables/dashboard_real.html)
 · [circuito de extracción](https://felixpere.github.io/valorador-comparables-madrid/entregables/dashboard.html)
 
+**Y el resumen de una página:**
+[one-pager en PDF](https://felixpere.github.io/valorador-comparables-madrid/entregables/one_pager_valoracion_comparables_v2.pdf)
+
 ---
 
 ## Por qué el ejemplo es vivienda
