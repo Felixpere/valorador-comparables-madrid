@@ -222,6 +222,12 @@ el desglose de por qué un inmueble no se valora. Lleva además el panel de lím
 igual que el Excel y el dashboard: precio pedido y no de cierre, niveles de 2018,
 y el 12,0 % frente al 15,2 % de la línea base simple.
 
+**Corre sobre el corpus sintético, no sobre `idealista18`**: carga la hoja
+`Valoraciones` del Excel, los 1.996 anuncios aptos de los 2.000 que se generan.
+Por eso sus cifras (75,5 % con valoración) no son las del panel de datos reales
+(22.643 anuncios, 96,1 %). El 12,0 % de su panel de límites es de la vía real,
+citado como contexto.
+
 La hoja `Valoraciones` es una tabla plana sin celdas combinadas ni encabezados a
 dos alturas, pensada para cargarse sin transformaciones. La hoja
 `Validación 2018` lleva la validación contra `idealista18` en seis tablas con
