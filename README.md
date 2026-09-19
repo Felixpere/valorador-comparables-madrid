@@ -174,7 +174,7 @@ paso 04 vuelve a comprobarlo sobre la salida real: si detecta una sola fuga, el
 proceso termina en error y no publica nada.
 
 ```bash
-python -m pytest tests -q      # 54 tests
+python -m pytest tests -q      # 62 tests
 ```
 
 ## Automatización
@@ -200,10 +200,14 @@ python run_pipeline.py --motor llm          # -> Excel y outputs/dashboard.html
 `r01`, `r02` y `r04` hayan corrido antes, porque lee los tres JSON que dejan en
 `data/real/`. Si falta el de `r04`, se detiene indicando qué ejecutar.
 
-**`--motor llm` no es opcional.** Sin esa opción, o sin `ANTHROPIC_API_KEY` en el
-entorno, el pipeline cae al motor de reglas y **degrada el entregable en
-silencio**: el Excel pierde la comparación entre los dos motores de extracción y
-la hoja Resumen vuelve a decir sólo «reglas». El proceso termina en 0 y no avisa.
+**El entregable completo necesita `--motor llm`.** Sin esa opción, o sin
+`ANTHROPIC_API_KEY` en el entorno, la extracción va sólo por reglas. Es un modo
+válido, pero el Excel sale sin la comparación entre los dos motores, y el
+pipeline no lo esconde: avisa por consola al arrancar y al terminar (en GitHub
+Actions, además, como *warning*), y lo deja escrito en `metricas.json`
+(`entregable.estado`: `completo`, `parcial` o `solo_reglas`) y en la primera
+línea de la hoja Resumen. Termina en 0 porque el resultado por reglas es
+correcto; lo que ya no puede es pasar por completo.
 
 Los tres ficheros terminados se copian a `entregables/`, que es una foto fija y
 no se actualiza sola. Ver `entregables/LEEME.md`.
@@ -250,7 +254,7 @@ data/processed/    dato limpio, valoraciones, informe de calidad, métricas
 valorador_madrid.pbix  modelo de Power BI sobre la hoja Valoraciones
 outputs/           Excel y dashboard
 src/               los seis pasos del circuito sintético (p00–p06) y el real (r00–r04)
-tests/             54 tests
+tests/             62 tests
 docs/              recorrido para negocio, validación con datos reales, fuentes
                    (residencial y terciario), estado del proyecto
 ```

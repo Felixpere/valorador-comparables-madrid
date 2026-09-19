@@ -20,7 +20,7 @@ sesión.**
 ## Dónde estamos
 
 El circuito completo funciona de punta a punta. `python run_pipeline.py` tarda
-unos diez segundos y produce el Excel y el dashboard. 54 tests en verde.
+unos diez segundos y produce el Excel y el dashboard. 62 tests en verde.
 
 | Pieza | Estado |
 |---|---|
@@ -216,11 +216,13 @@ python run_pipeline.py --motor llm          # Excel + dashboard.html
 `r01`, `r02` y `r04` se hayan ejecutado antes, porque lee los tres JSON que
 dejan. Si falta el de `r04`, se para con un mensaje que dice qué ejecutar.
 
-**La trampa: `--motor llm` no es opcional.** Si se lanza `run_pipeline.py` a
-secas, o con la clave fuera del entorno, el pipeline cae al motor de reglas **sin
-avisar de que eso degrada el entregable**: el Excel pierde la tabla de
-comparación entre motores y la hoja Resumen vuelve a decir sólo «reglas». El
-proceso termina en 0 y todo parece correcto. Requiere `ANTHROPIC_API_KEY`.
+**El entregable completo necesita `--motor llm`** y `ANTHROPIC_API_KEY`. Si se
+lanza `run_pipeline.py` a secas, o sin la clave, la extracción va sólo por
+reglas y el Excel sale sin la comparación entre motores. Hasta el 19 de
+septiembre eso pasaba sin avisar; ahora el pipeline lo avisa por consola al
+arrancar y al terminar (y como *warning* en GitHub Actions), y lo deja escrito
+en `metricas.json` (`entregable.estado`) y en la fila 3 de la hoja Resumen.
+Sigue terminando en 0: caer a reglas es legítimo, pasar por completo no.
 
 Después hay que copiar los tres ficheros a `entregables/`, que es una foto y no
 se actualiza sola. Ver `entregables/LEEME.md`.
@@ -346,7 +348,7 @@ SUPUESTOS.md                 límites de lo que se puede afirmar
 run_pipeline.py              orquestador, una sola orden
 src/config.py                todos los parámetros y supuestos numéricos
 src/p00..p06                 los seis pasos del circuito sintético
-tests/                       54 tests, el bloque de fugas es el importante
+tests/                       62 tests, el bloque de fugas es el importante
 data/real/                   idealista18 procesado (no versionado)
 src/r00..r04                 carga, validación, caso trazado, dashboard y
                              diagnóstico de coeficientes con datos reales

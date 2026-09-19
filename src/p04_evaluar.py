@@ -221,6 +221,33 @@ def comparar_motores(verdad: pd.DataFrame, extraido: pd.DataFrame) -> dict | Non
     return salida
 
 
+def estado_del_entregable(extraido: pd.DataFrame) -> dict:
+    """Deja escrito con que motores se genero el entregable y si esta completo.
+
+    Sin pasada de LLM el pipeline es valido (las reglas son un motor legitimo),
+    pero el entregable pierde la comparacion entre motores. Eso tiene que constar
+    en el propio entregable, no solo en la consola de quien lo genero.
+    """
+    reparto = {str(k): int(v) for k, v in
+               sorted(extraido["motor_extraccion"].value_counts().items())}
+    n_llm = sum(n for m, n in reparto.items() if m.startswith("llm"))
+    n_respaldo = reparto.get("reglas (respaldo)", 0)
+    if n_llm == 0:
+        estado = "solo_reglas"
+        aviso = ("Extracción solo por reglas: este entregable NO lleva la "
+                 "comparación entre los dos motores de extracción. Para el "
+                 "completo: python run_pipeline.py --motor llm, con "
+                 "ANTHROPIC_API_KEY en el entorno.")
+    elif n_respaldo:
+        estado = "parcial"
+        aviso = (f"{n_respaldo} de los {n_llm + n_respaldo} anuncios de la muestra "
+                 "del modelo de lenguaje cayeron a reglas por un fallo de la "
+                 f"llamada: la comparación entre motores se hace sobre {n_llm}.")
+    else:
+        estado, aviso = "completo", None
+    return {"estado": estado, "motores": reparto, "aviso": aviso}
+
+
 def ejecutar() -> dict:
     verdad = pd.read_csv(cfg.F_VERDAD)
     extraido = pd.read_csv(cfg.F_EXTRAIDO)
@@ -228,6 +255,7 @@ def ejecutar() -> dict:
     valorado = pd.read_csv(cfg.F_VALORADO).fillna({"refs_comparables": ""})
 
     metricas = {
+        "entregable": estado_del_entregable(extraido),
         "extraccion": evaluar_extraccion(verdad, extraido),
         "comparacion_de_motores": comparar_motores(verdad, extraido),
         "motor_valoracion": evaluar_motor(verdad, valorado),

@@ -10,6 +10,7 @@ puede parar, inspeccionar cualquier fichero intermedio y retomar.
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 import time
 from pathlib import Path
@@ -30,6 +31,15 @@ def paso(n, titulo):
     print(f"\n[{n}/6] {titulo}")
 
 
+def avisar(texto: str) -> None:
+    """Aviso que no se puede pasar por alto, en consola y en GitHub Actions."""
+    sys.stdout.flush()
+    raya = "!" * 78
+    print(f"\n{raya}\nAVISO: {texto}\n{raya}", file=sys.stderr, flush=True)
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        print(f"::warning title=Entregable incompleto::{texto}", flush=True)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--motor", choices=["auto", "llm", "reglas"], default="auto")
@@ -39,6 +49,12 @@ def main() -> int:
     args = ap.parse_args()
 
     t0 = time.time()
+
+    motivo = p01_extraer.motivo_sin_llm(args.motor)
+    if motivo is not None:
+        avisar(f"la extracción irá solo por reglas: {motivo}. El entregable saldrá "
+               "SIN la comparación entre los dos motores. Para el completo: "
+               "python run_pipeline.py --motor llm, con ANTHROPIC_API_KEY.")
 
     paso(1, "Corpus de anuncios en texto libre")
     if args.sin_corpus and cfg.F_CORPUS.exists():
@@ -78,6 +94,13 @@ def main() -> int:
     print(f"    {cfg.F_DASHBOARD}")
 
     print(f"\nCompletado en {time.time() - t0:.1f} s.")
+    ent = m["entregable"]
+    if ent["estado"] == "completo":
+        print("Entregable completo. Extracción: " + ", ".join(
+            f"{k} {v}" for k, v in ent["motores"].items()) + ".")
+    else:
+        avisar(f"ENTREGABLE INCOMPLETO ({ent['estado']}). {ent['aviso']} "
+               "Consta también en metricas.json y en la hoja Resumen del Excel.")
     return 0
 
 

@@ -236,6 +236,19 @@ def hoja_validacion_2018(wb, m: dict, diagnostico: dict | None = None) -> None:
     _anchos(ws, [40, 30, 18, 16, 16])
 
 
+def linea_entregable(metricas: dict) -> tuple[str, bool]:
+    """(texto, incompleto) para la hoja Resumen, a partir de metricas.json."""
+    ent = metricas.get("entregable")
+    if ent is None:
+        return ("ENTREGABLE SIN ESTADO: metricas.json no dice con qué motores se "
+                "generó. Regenerar con run_pipeline.py.", True)
+    motores = " + ".join(f"{m} ({n:,} anuncios)".replace(",", ".")
+                         for m, n in ent["motores"].items())
+    if ent["estado"] == "completo":
+        return f"Extracción: {motores}. Entregable completo.", False
+    return f"ENTREGABLE INCOMPLETO. Extracción: {motores}. {ent['aviso']}", True
+
+
 def construir() -> None:
     val = pd.read_csv(cfg.F_VALORADO, parse_dates=["fecha"])
     calidad = pd.read_csv(cfg.DIR_PROCESSED / "informe_calidad.csv")
@@ -282,6 +295,16 @@ def construir() -> None:
                 "por distrito son reales. Ver la hoja «Supuestos y fuentes».")
     rs["A2"].font = Font(name=FUENTE, size=9, italic=True, color="7F7F7F")
     rs.merge_cells("A2:F2")
+
+    # Con que motores se genero este libro. Si falta la pasada de LLM, el libro
+    # lo dice en su primera hoja: no depende de que alguien leyera la consola.
+    texto, incompleto = linea_entregable(metricas)
+    rs["A3"] = texto
+    rs["A3"].font = Font(name=FUENTE, size=10, bold=incompleto,
+                         color="9C2A2A" if incompleto else "7F7F7F")
+    rs["A3"].alignment = Alignment(wrap_text=True, vertical="top")
+    rs.merge_cells("A3:F3")
+    rs.row_dimensions[3].height = 42 if incompleto else 16
 
     V = f"Valoraciones!"
     kpis = [

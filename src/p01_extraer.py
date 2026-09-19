@@ -17,6 +17,7 @@ se puede saber quien la extrajo.
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 from concurrent.futures import ThreadPoolExecutor
 import os
@@ -163,11 +164,27 @@ def _cliente_anthropic():
     return anthropic.Anthropic()
 
 
+def motivo_sin_llm(motor: str) -> str | None:
+    """Por que la extraccion NO va a pasar por el modelo; None si va a pasar.
+
+    Se consulta antes de arrancar para avisar desde el principio: sin LLM el
+    entregable sale sin la comparacion entre los dos motores.
+    """
+    if motor == "reglas":
+        return "motor forzado a reglas (--motor reglas)"
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        return "no hay ANTHROPIC_API_KEY en el entorno"
+    if importlib.util.find_spec("anthropic") is None:
+        return "falta el paquete 'anthropic' (pip install anthropic)"
+    return None
+
+
 def ejecutar(motor: str = "auto", limite: int | None = None,
              hilos: int = 8, muestra_llm: int | None = None) -> pd.DataFrame:
     cliente = _cliente_anthropic() if motor in ("auto", "llm") else None
     if motor == "llm" and cliente is None:
-        raise SystemExit("Motor 'llm' pedido pero no hay ANTHROPIC_API_KEY o falta el SDK.")
+        raise SystemExit("Motor 'llm' pedido pero no se puede usar: "
+                         f"{motivo_sin_llm('llm') or 'error al crear el cliente'}.")
     usar_llm = cliente is not None and motor in ("auto", "llm")
     etiqueta = "llm:" + cfg.MODELO_LLM if usar_llm else "reglas"
     # Modo hibrido: solo los N primeros anuncios pasan por el modelo, el resto
@@ -177,7 +194,7 @@ def ejecutar(motor: str = "auto", limite: int | None = None,
     if usar_llm:
         print(f"[extraccion] {n_llm} anuncios por {etiqueta}, el resto por reglas")
     else:
-        print("[extraccion] motor = reglas (sin ANTHROPIC_API_KEY o motor forzado)")
+        print(f"[extraccion] motor = reglas ({motivo_sin_llm(motor)})")
 
     with open(cfg.F_CORPUS, encoding="utf-8") as f:
         anuncios = [json.loads(l) for l in f]
