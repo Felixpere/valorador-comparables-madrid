@@ -40,7 +40,7 @@ de un dato citado, con su referencia y su fecha.
 ## Comprobaciones que no se saltan
 
 ```bash
-python -m pytest tests -q      # 62 tests, todos deben pasar
+python -m pytest tests -q      # 69 tests, todos deben pasar
 python run_pipeline.py         # termina en error si detecta una fuga
 ```
 

@@ -22,10 +22,11 @@ sesión.**
 El circuito completo funciona de punta a punta. `python run_pipeline.py` tarda
 unos diez segundos y produce el Excel y el dashboard.
 
-**Tests: 62 escritos, 58 corren en la integración continua y 4 se saltan allí**
-(3 necesitan `data/real/valoraciones_2018.csv`, que no se versiona, y 1 la salida de
-`run_pipeline.py`, que en Actions se ejecuta después de los tests). En local,
-con los datos presentes, pasan los 62.
+**Tests: 69 escritos, 63 corren en la integración continua y 6 se saltan allí**
+(3 necesitan `data/real/valoraciones_2018.csv`, que no se versiona; 1 la salida de
+`run_pipeline.py`, que en Actions se ejecuta después de los tests, y 2 comparan
+`entregables/` con `outputs/`, que allí aún no existe). En local, con los datos
+presentes, pasan los 69.
 
 | Pieza | Estado |
 |---|---|
@@ -358,7 +359,7 @@ SUPUESTOS.md                 límites de lo que se puede afirmar
 run_pipeline.py              orquestador, una sola orden
 src/config.py                todos los parámetros y supuestos numéricos
 src/p00..p06                 los seis pasos del circuito sintético
-tests/                       62 tests, el bloque de fugas es el importante
+tests/                       69 tests, el bloque de fugas es el importante
 data/real/                   idealista18 procesado (no versionado)
 src/r00..r04                 carga, validación, caso trazado, dashboard y
                              diagnóstico de coeficientes con datos reales

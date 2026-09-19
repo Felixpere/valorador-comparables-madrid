@@ -177,7 +177,7 @@ paso 04 vuelve a comprobarlo sobre la salida real: si detecta una sola fuga, el
 proceso termina en error y no publica nada.
 
 ```bash
-python -m pytest tests -q      # 62 tests
+python -m pytest tests -q      # 69 tests
 ```
 
 ## Automatización
@@ -263,7 +263,7 @@ data/processed/    dato limpio, valoraciones, informe de calidad, métricas
 valorador_madrid.pbix  modelo de Power BI sobre la hoja Valoraciones
 outputs/           Excel y dashboard
 src/               los seis pasos del circuito sintético (p00–p06) y el real (r00–r04)
-tests/             62 tests
+tests/             69 tests
 docs/              recorrido para negocio, validación con datos reales, fuentes
                    (residencial y terciario), estado del proyecto
 ```

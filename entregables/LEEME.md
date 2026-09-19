@@ -25,7 +25,9 @@ dentro.
 ## Esto es una copia, y no se actualiza sola
 
 Los originales vivos de los dos HTML están en `outputs/`, que no se versiona. Si
-cambian los datos o el código, las copias de aquí se quedan viejas.
+cambian los datos o el código, las copias de aquí se quedan viejas. Lo vigila
+`tests/test_entregables.py`, en local: falla si no coinciden con `outputs/` y
+dice qué fichero hay que volver a copiar.
 
 Para refrescarlos hay que regenerar y volver a copiar. El orden importa y está
 detallado en el README, sección «Cómo regenerar los entregables»:
