@@ -35,7 +35,7 @@ con los datos presentes, pasan los 62.
 | Motor de comparables con control de fugas | terminado |
 | Métricas y barrido de umbrales | terminado |
 | Excel de siete hojas con fórmulas | terminado |
-| Copia de los entregables en `entregables/` | terminado (5 sept), con su `LEEME.md` |
+| Copia de los entregables en `entregables/` | terminado (5 sept), con su `LEEME.md`. El 19 sept se retira el Excel: se queda en `outputs/` |
 | Dashboard HTML autocontenido | terminado |
 | Tests y workflow de GitHub Actions | terminado |
 | Investigación de fuentes públicas (residencial) | terminado (`docs/investigacion_fuentes.md`) |
@@ -229,8 +229,10 @@ arrancar y al terminar (y como *warning* en GitHub Actions), y lo deja escrito
 en `metricas.json` (`entregable.estado`) y en la fila 3 de la hoja Resumen.
 Sigue terminando en 0: caer a reglas es legítimo, pasar por completo no.
 
-Después hay que copiar los tres ficheros a `entregables/`, que es una foto y no
-se actualiza sola. Ver `entregables/LEEME.md`.
+Después hay que copiar los dos HTML a `entregables/`, que es una foto y no se
+actualiza sola. El Excel ya no se copia (retirado el 19 sept): no hacía falta
+regenerarlo con una pasada de LLM que podía mover la comparación entre motores,
+y el `.pbix` ya lleva sus datos. Ver `entregables/LEEME.md`.
 
 **Cómo saber si algo está desfasado**: `dashboard_real.html` es determinista, así
 que si lo regeneras y cambia, es que estaba viejo. `dashboard.html` **no** lo es:

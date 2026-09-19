@@ -212,8 +212,9 @@ Actions, además, como *warning*), y lo deja escrito en `metricas.json`
 línea de la hoja Resumen. Termina en 0 porque el resultado por reglas es
 correcto; lo que ya no puede es pasar por completo.
 
-Los tres ficheros terminados se copian a `entregables/`, que es una foto fija y
-no se actualiza sola. Ver `entregables/LEEME.md`.
+Los dos HTML terminados se copian a `entregables/`, que es una foto fija y no se
+actualiza sola. El Excel no: se queda en `outputs/`, y el `.pbix` ya lleva sus
+datos dentro. Ver `entregables/LEEME.md`.
 
 Para saber si algo quedó desfasado: `dashboard_real.html` es determinista, así
 que si lo regeneras y cambia, estaba viejo. Los otros dos no sirven para eso:
