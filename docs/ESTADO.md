@@ -1,9 +1,18 @@
 # Estado del proyecto
 
-Última actualización: **7 de septiembre de 2026** (investigación de terciario incorporada; titular del dashboard corregido).
+Última actualización: **19 de septiembre de 2026** (el pipeline avisa cuando el
+entregable sale incompleto; README revisado cifra a cifra contra su fuente; el
+Excel sale de `entregables/`; test que compara `entregables/` con `outputs/`).
 
-El trabajo de código y los cuatro commits son del **5 de septiembre**, verificado
-contra el historial de git. La investigación de terciario se hizo el **6 y 7**.
+Por fechas, verificado contra el historial de git:
+
+- **5 sept**: el circuito completo, la pasada real con Haiku y la comparación de
+  motores sin mezclar.
+- **6 y 7 sept**: investigación de terciario; el circuito pasa a ser el
+  protagonista del README y del recorrido; saneamiento del repositorio público.
+- **10 y 11 sept**: modelo de Power BI publicado, integración continua en verde
+  otra vez, one-pager publicado.
+- **19 sept**: lo de la primera línea. Detalle en «Cola de trabajo», apartado (d).
 
 **El proyecto vive ahora en `C:\Users\user\proyectos\valorador-comparables-madrid`.**
 Antes estaba en Descargas, con una carpeta anidada dentro de otra del mismo
@@ -344,6 +353,29 @@ estado y no en esta lista.
    retraso.
 7. Validación retrospectiva: entrenar hasta una fecha y comprobar contra lo
    posterior.
+
+### (d) 19 de septiembre
+
+Hecho:
+
+- El pipeline ya no degrada el entregable en silencio: avisa, y lo deja escrito
+  en `metricas.json` y en la hoja Resumen (ver «Cómo regenerar los entregables»).
+- README revisado cifra a cifra. Se corrigieron la descripción del panel de
+  límites del `.pbix`, el supuesto determinismo de `dashboard.html`, la opción
+  `--muestra-llm` que `run_pipeline.py` no aceptaba, unos costes en dólares que
+  nunca se midieron, y qué partes del Excel son fórmula.
+- Arriba del README: el problema, la cifra validada y los paneles en vivo.
+- El Excel sale de `entregables/` y se queda en `outputs/`.
+- `tests/test_entregables.py`: falla si `entregables/` y `outputs/` difieren.
+
+Abierto:
+
+- **`ANTHROPIC_API_KEY` en los secretos del repositorio** (la mete Félix). Hasta
+  entonces cada ejecución de Actions sale con dos avisos «Entregable
+  incompleto», que son ciertos. Después: comprobar con `gh secret list` y una
+  ejecución manual del workflow, que gasta 25 llamadas, **sólo con su sí**.
+- `ubuntu-latest` pasa a Ubuntu 26 el 19 de octubre de 2026. Decidido no
+  adelantarse: si algo se rompe con el cambio, se verá entonces.
 
 **Regla de corte**: lo que no esté listo se documenta aquí como siguiente
 iteración y se dice en voz alta. Un pendiente declarado suma; uno oculto resta.
