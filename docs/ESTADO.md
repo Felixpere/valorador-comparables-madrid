@@ -268,6 +268,13 @@ aunque los datos sean idénticos.
   **por separado para cada motor**, nunca mezclada.
 - **Dashboard en HTML además del Power BI**: respaldo por si el .pbix da
   problemas, y permite sacar capturas.
+- **Actions corre con reglas; el modelo de lenguaje, bajo demanda en local**
+  (decidido el 19 de septiembre). `ANTHROPIC_API_KEY` no se guarda en los
+  secretos del repositorio, para no tener un gasto recurrente. La pasada con
+  modelo se lanza en local con `python run_pipeline.py --motor llm`. Las
+  ejecuciones de Actions salen por tanto marcadas como «entregable incompleto»,
+  y los avisos se quedan porque son ciertos. Está declarado en el README,
+  sección «Automatización».
 
 ## Cosas que hay que contar tal cual, no esconder
 
@@ -367,13 +374,12 @@ Hecho:
 - Arriba del README: el problema, la cifra validada y los paneles en vivo.
 - El Excel sale de `entregables/` y se queda en `outputs/`.
 - `tests/test_entregables.py`: falla si `entregables/` y `outputs/` difieren.
+- Acciones del workflow a v7 (Node.js 24); desaparece el aviso de Node.js 20.
+- Decidido: la clave de la API no va a los secretos del repositorio (ver
+  «Decisiones tomadas y por qué»).
 
 Abierto:
 
-- **`ANTHROPIC_API_KEY` en los secretos del repositorio** (la mete Félix). Hasta
-  entonces cada ejecución de Actions sale con dos avisos «Entregable
-  incompleto», que son ciertos. Después: comprobar con `gh secret list` y una
-  ejecución manual del workflow, que gasta 25 llamadas, **sólo con su sí**.
 - `ubuntu-latest` pasa a Ubuntu 26 el 19 de octubre de 2026. Decidido no
   adelantarse: si algo se rompe con el cambio, se verá entonces.
 

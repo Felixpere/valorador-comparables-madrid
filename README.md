@@ -187,6 +187,16 @@ demanda. Si un test falla o salta el control de fugas, la ejecución se marca en
 rojo y el Excel no se publica: prefiere no entregar nada antes que entregar un
 número que no se sostiene.
 
+Las ejecuciones de Actions, la programada de cada lunes y las de cada push, usan
+el extractor de reglas. La extracción con modelo de lenguaje necesita
+`ANTHROPIC_API_KEY` y se ejecuta bajo demanda, en local, con
+`python run_pipeline.py --motor llm`: la clave no está en los secretos del
+repositorio, para no tener un gasto recurrente. Por eso cada ejecución de
+Actions sale marcada como «entregable incompleto», y el aviso es correcto: ese
+entregable no lleva el resultado del modelo. El panel publicado en
+`entregables/` sí se generó con `--motor llm` (25 anuncios por el modelo y
+1.975 por reglas).
+
 ## Cómo regenerar los entregables
 
 El orden importa, y hay una forma de hacerlo mal que no da error, sólo un aviso:
