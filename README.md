@@ -1,11 +1,21 @@
-# Un circuito reproducible: de documento suelto a Excel y panel
+# Valorador por comparables · Madrid
 
-En cualquier equipo que trabaje con inmuebles hay información que llega como
-**documento suelto** —un correo, un mensaje, una ficha, un PDF— y alguien que la
-pasa a mano a una hoja de cálculo, semana tras semana, sin que quede rastro de
-cómo se llegó a cada número.
+Los datos de inmuebles llegan como documento suelto y alguien los pasa a mano a
+una hoja de cálculo, sin rastro de cómo se llegó a cada número. Este circuito lo
+hace solo: extracción con IA, limpieza, valoración por comparables, Excel y panel.
 
-Esto recorre ese camino entero por su cuenta:
+**Validado fuera de muestra con 22.643 anuncios reales de Madrid que el motor no
+había visto: error mediano del 12,0 %, frente al 15,2 % de la mediana del barrio.**
+Sobre precio de anuncio, no de cierre (idealista18, 2018).
+
+**Sin instalar nada:**
+[validación con datos reales](https://felixpere.github.io/valorador-comparables-madrid/entregables/dashboard_real.html)
+· [circuito de extracción](https://felixpere.github.io/valorador-comparables-madrid/entregables/dashboard.html)
+· [resumen en una página (PDF)](https://felixpere.github.io/valorador-comparables-madrid/entregables/one_pager_valoracion_comparables_v2.pdf)
+
+---
+
+El recorrido:
 
 ```
 documento en texto libre  →  extracción con IA  →  limpieza en Python
@@ -27,13 +37,6 @@ cambio del código, mediante GitHub Actions.
 Lo que lo distingue de un proceso montado a mano es qué hace cuando algo va mal:
 **si el control de fugas detecta un solo comparable que el motor no debería haber
 visto, se detiene y no publica nada.**
-
-**Los dos paneles, sin descargar nada:**
-[validación con datos reales](https://felixpere.github.io/valorador-comparables-madrid/entregables/dashboard_real.html)
-· [circuito de extracción](https://felixpere.github.io/valorador-comparables-madrid/entregables/dashboard.html)
-
-**Y el resumen de una página:**
-[one-pager en PDF](https://felixpere.github.io/valorador-comparables-madrid/entregables/one_pager_valoracion_comparables_v2.pdf)
 
 ---
 
