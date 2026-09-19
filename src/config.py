@@ -77,9 +77,9 @@ UMBRAL_OPORTUNIDAD = -0.10   # desviacion <= -10% se marca como oportunidad
 MODELO_LLM = "claude-haiku-4-5"
 
 # Cuantos anuncios pasan por el LLM. El resto se extraen con reglas.
-# 25 documentos bastan para demostrar el paso y cuestan del orden de 0,15 $.
-# Pasar el corpus entero saldria por unos 9 $ (4,50 $ con la API de lotes),
-# y no aporta nada a la demostracion.
+# 25 documentos bastan para demostrar el paso; el corpus entero serian ochenta
+# veces mas llamadas y no aporta nada a la demostracion. El coste no se ha
+# medido: la pasada no guarda los tokens consumidos.
 MUESTRA_LLM = 25
 CAMPOS = [
     "distrito", "superficie_m2", "habitaciones", "banos", "planta",

@@ -20,7 +20,12 @@ sesión.**
 ## Dónde estamos
 
 El circuito completo funciona de punta a punta. `python run_pipeline.py` tarda
-unos diez segundos y produce el Excel y el dashboard. 62 tests en verde.
+unos diez segundos y produce el Excel y el dashboard.
+
+**Tests: 62 escritos, 58 corren en la integración continua y 4 se saltan allí**
+(3 necesitan `data/real/valoraciones_2018.csv`, que no se versiona, y 1 la salida de
+`run_pipeline.py`, que en Actions se ejecuta después de los tests). En local,
+con los datos presentes, pasan los 62.
 
 | Pieza | Estado |
 |---|---|
@@ -227,8 +232,10 @@ Sigue terminando en 0: caer a reglas es legítimo, pasar por completo no.
 Después hay que copiar los tres ficheros a `entregables/`, que es una foto y no
 se actualiza sola. Ver `entregables/LEEME.md`.
 
-**Cómo saber si algo está desfasado**: los dos HTML son deterministas, así que si
-regeneras y cambian, es que estaban viejos. El Excel **no** sirve para eso:
+**Cómo saber si algo está desfasado**: `dashboard_real.html` es determinista, así
+que si lo regeneras y cambia, es que estaba viejo. `dashboard.html` **no** lo es:
+`p06_dashboard.py` le imprime la fecha y hora de ejecución (corregido el 19 sept;
+antes aquí se decía que los dos HTML eran deterministas). El Excel tampoco sirve:
 `openpyxl` le estampa la hora de creación en cada escritura y cambia siempre,
 aunque los datos sean idénticos.
 
@@ -243,8 +250,9 @@ aunque los datos sean idénticos.
 - **Coeficientes de ajuste estimados de los datos**, no fijados a mano, y
   reestimados cada mes sólo con meses anteriores.
 - **Extracción híbrida**: 25 anuncios por Claude Haiku 4.5 y el resto por reglas.
-  25 documentos bastan para demostrar el paso y cuestan del orden de 0,15 $. El
-  corpus entero saldría por unos 9 $ y no añadiría nada. La exactitud se reporta
+  25 documentos bastan para demostrar el paso; el corpus entero serían ochenta
+  veces más llamadas y no añadiría nada. El coste no se ha medido: la pasada no
+  guarda los tokens consumidos. La exactitud se reporta
   **por separado para cada motor**, nunca mezclada.
 - **Dashboard en HTML además del Power BI**: respaldo por si el .pbix da
   problemas, y permite sacar capturas.

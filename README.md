@@ -25,7 +25,8 @@ segundos de principio a fin. Y también se ejecuta **solo**: cada lunes y en cad
 cambio del código, mediante GitHub Actions.
 
 Lo que lo distingue de un proceso montado a mano es qué hace cuando algo va mal:
-**si detecta que un número no se sostiene, se detiene y no publica nada.**
+**si el control de fugas detecta un solo comparable que el motor no debería haber
+visto, se detiene y no publica nada.**
 
 **Los dos paneles, sin descargar nada:**
 [validación con datos reales](https://felixpere.github.io/valorador-comparables-madrid/entregables/dashboard_real.html)
@@ -101,11 +102,11 @@ España —qué da cada una, con qué granularidad, cada cuánto se actualiza y 
 puede y no se puede hacer con ella— está en
 [docs/investigacion_fuentes.md](docs/investigacion_fuentes.md).
 
-Para **oficinas y logistica** el terreno es distinto: no hay capa publica de
+Para **oficinas y logística** el terreno es distinto: no hay capa pública de
 rentas ni de disponibilidad, el dato lo publican las consultoras en PDF y las
-cifras no coinciden entre fuentes. Ese mapa esta en
+cifras no coinciden entre fuentes. Ese mapa está en
 [docs/investigacion_terciario.md](docs/investigacion_terciario.md), con cada
-cifra marcada segun sea de fuente primaria o de segunda mano.
+cifra marcada según sea de fuente primaria o de segunda mano.
 
 Ningún dato personal de vendedores ni de terceros interviene en ninguna fase.
 
@@ -141,9 +142,8 @@ python run_pipeline.py                         # auto: LLM si hay clave, reglas 
 
 Por defecto el modo con LLM procesa **25 anuncios con el modelo y los 1.975
 restantes con reglas**. Es deliberado: veinticinco documentos bastan para
-demostrar el paso y cuestan del orden de 0,15 $ con Haiku 4.5. Pasar el corpus
-entero saldría por unos 9 $ (4,50 $ con la API de lotes) y no añadiría nada a la
-demostración.
+demostrar el paso, y pasar el corpus entero serían ochenta veces más llamadas sin
+añadir nada a la demostración.
 
 Esa mezcla no se esconde. Cada fila lleva su columna `motor_extraccion` hasta el
 Excel, y `data/processed/metricas.json` reporta la exactitud **por separado para
@@ -186,7 +186,7 @@ número que no se sostiene.
 
 ## Cómo regenerar los entregables
 
-El orden importa, y hay una forma de hacerlo mal que no da ningún error:
+El orden importa, y hay una forma de hacerlo mal que no da error, sólo un aviso:
 
 ```bash
 python src/r01_valorar_real.py              # validación contra datos reales
@@ -212,9 +212,10 @@ correcto; lo que ya no puede es pasar por completo.
 Los tres ficheros terminados se copian a `entregables/`, que es una foto fija y
 no se actualiza sola. Ver `entregables/LEEME.md`.
 
-Para saber si algo quedó desfasado: los dos HTML son deterministas, así que si
-regeneras y cambian, estaban viejos. El Excel no sirve para eso, porque
-`openpyxl` le escribe la hora de creación en cada escritura y cambia siempre.
+Para saber si algo quedó desfasado: `dashboard_real.html` es determinista, así
+que si lo regeneras y cambia, estaba viejo. Los otros dos no sirven para eso:
+`dashboard.html` lleva impresa la fecha y hora de ejecución, y el Excel también,
+porque `openpyxl` le escribe la hora de creación en cada escritura.
 
 ## Power BI
 
@@ -222,9 +223,11 @@ regeneras y cambian, estaban viejos. El Excel no sirve para eso, porque
 Una página con filtros por distrito, estado, fiabilidad y fecha; los cuatro
 indicadores de cabecera; €/m² por distrito; la distribución de la desviación; la
 tabla de mayor desviación a la baja **con su número de comparables a la vista**, y
-el desglose de por qué un inmueble no se valora. Lleva además el panel de límites,
-igual que el Excel y el dashboard: precio pedido y no de cierre, niveles de 2018,
-y el 12,0 % frente al 15,2 % de la línea base simple.
+el desglose de por qué un inmueble no se valora. Lleva además un panel de límites:
+corpus sintético calibrado con estadística registral de 2022, precio pedido y no
+de cierre, que el panel demuestra el circuito y no mide precisión, que la
+precisión se valida aparte con `idealista18` (12,0 % de error mediano) y que la
+fiabilidad no discrimina en este corpus.
 
 **Corre sobre el corpus sintético, no sobre `idealista18`**: carga la hoja
 `Valoraciones` del Excel, los 1.996 anuncios aptos de los 2.000 que se generan.
@@ -235,9 +238,11 @@ citado como contexto.
 La hoja `Valoraciones` es una tabla plana sin celdas combinadas ni encabezados a
 dos alturas, pensada para cargarse sin transformaciones. La hoja
 `Validación 2018` lleva la validación contra `idealista18` en seis tablas con
-nombre, cargables sueltas. Ver [docs/power_bi.md](docs/power_bi.md). Las hojas de
-resumen usan fórmulas de Excel, no valores pegados desde Python: si alguien filtra
-o corrige un dato, los totales se mueven solos.
+nombre, cargables sueltas. Ver [docs/power_bi.md](docs/power_bi.md). Los
+indicadores de la hoja Resumen y los totales de la hoja Por distrito son fórmulas
+de Excel sobre la hoja Valoraciones: si alguien corrige un dato, se mueven solos.
+Las métricas de calidad del proceso y la comparación entre motores, en cambio,
+son valores calculados en Python y escritos tal cual.
 
 ## Para retomar el trabajo
 

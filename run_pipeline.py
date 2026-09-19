@@ -46,6 +46,8 @@ def main() -> int:
     ap.add_argument("--sin-corpus", action="store_true",
                     help="no regenera el corpus, usa el que ya hay en data/raw")
     ap.add_argument("--limite", type=int, default=None)
+    ap.add_argument("--muestra-llm", type=int, default=None, dest="muestra_llm",
+                    help="cuantos anuncios pasan por el LLM (el resto, por reglas)")
     args = ap.parse_args()
 
     t0 = time.time()
@@ -64,7 +66,7 @@ def main() -> int:
         print(f"    {len(v)} anuncios generados")
 
     paso(2, "Extraccion de campos")
-    ext = p01_extraer.ejecutar(args.motor, args.limite)
+    ext = p01_extraer.ejecutar(args.motor, args.limite, muestra_llm=args.muestra_llm)
     print(f"    {len(ext)} registros extraidos")
 
     paso(3, "Limpieza y validacion")
