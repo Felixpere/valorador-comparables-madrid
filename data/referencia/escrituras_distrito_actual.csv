@@ -1,0 +1,30 @@
+# FUENTE: Ayuntamiento de Madrid, Banco de Datos, Compra-venta de viviendas, Estadistica Registral
+#         Inmobiliaria, tabla 6 'Precio medio declarado de la vivienda (euros/m2) por Distrito y Barrio
+#         segun Tipo'. Elaborada por el Colegio de Registradores de Espana.
+# URL:    https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Edificaci%C3%B3n%20y%20Vivienda/Mercado%20de%20la%20Vivienda/Compra-Venta%20de%20vivienda/registral/E3210626.xlsx
+# PAGINA: https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Estadistica/Areas-de-informacion-estadistica/Edificacion-y-vivienda/Mercado-de-la-vivienda/Compra-venta-de-viviendas/
+# EJERCICIO DE LOS DATOS: 2025
+# CONSULTADO: 19/10/2026. Generado por src/r05_referencia_precios.py; no editar a mano.
+# UNIDADES: euros/m2 construido, precio medio DECLARADO en escritura (no precio de oferta).
+distrito_id,distrito,eur_m2_total,eur_m2_nueva,eur_m2_usada,anio
+1,Centro,7147.7,6814.13,7171.36,2025
+2,Arganzuela,6086.21,6776.24,5648.69,2025
+3,Retiro,7469.32,6097.59,7476.18,2025
+4,Salamanca,9405.91,10506.99,9391.19,2025
+5,Chamartin,7427.12,7251.07,7433.69,2025
+6,Tetuan,5447.04,5298.2,5519.8,2025
+7,Chamberi,8238.24,8344.02,8230.09,2025
+8,Fuencarral-El Pardo,5417.12,5878.37,5230.86,2025
+9,Moncloa-Aravaca,5869.93,6730.03,5693.62,2025
+10,Latina,3534.13,3774.75,3487.92,2025
+11,Carabanchel,3345.97,3550.51,3321.28,2025
+12,Usera,3387.93,4378.89,3173.82,2025
+13,Puente de Vallecas,2928.82,2914.71,2932.49,2025
+14,Moratalaz,3997.38,3829.68,4010.06,2025
+15,Ciudad Lineal,4677.43,6266.42,4601.3,2025
+16,Hortaleza,5079.71,5108.17,5073.77,2025
+17,Villaverde,2649.6,2515.56,2675.35,2025
+18,Villa de Vallecas,3278.0,3815.65,3152.92,2025
+19,Vicalvaro,3841.16,4583.73,3442.91,2025
+20,San Blas-Canillejas,3474.52,3072.06,3572.95,2025
+21,Barajas,4611.65,5557.96,4413.92,2025

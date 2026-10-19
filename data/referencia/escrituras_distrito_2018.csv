@@ -1,0 +1,39 @@
+# FUENTE: Ayuntamiento de Madrid, Anuario Estadistico 2019, Capitulo 8 "Planeamiento urbano y Vivienda",
+#         tabla 3.2 "Transacciones de vivienda por Superficie y Precio medio declarado de la vivienda (euros/m2)
+#         por Tipo y Distrito". Estadistica Registral Inmobiliaria del Colegio de Registradores de la Propiedad,
+#         Bienes Muebles y Mercantiles de Espana, explotacion especifica a solicitud del Ayuntamiento.
+# URL:    https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Publicaciones/anuesta/nuevos/
+#         Anuario%20Estad%C3%ADstico%20Municipal/Anuario%20estad%C3%ADstico%202019/Cap%C3%ADtulos/
+#         Cap%C3%ADtulo%208%20Planeamiento%20Urbano%20y%20Vivienda.%202019.pdf
+# EJERCICIO DE LOS DATOS: 2018 (el mismo ano que los anuncios de idealista18).
+# CONSULTADO: 19/10/2026. Transcrito a mano del PDF (texto extraido con pdftotext -raw) y revisado fila a fila.
+# NOTA DE LA FUENTE: recoge el 97,1 % de las transmisiones (compraventas con transmision del 100 % del dominio).
+# UNIDADES: euros/m2 construido, precio medio DECLARADO en escritura (no precio de oferta).
+# OJO: en el mismo capitulo, la tabla 2.4 "Precio medio de viviendas de segunda mano por distrito" procede de
+#      idealista.com: es precio de OFERTA. No confundirlas. Esta es la 3.2, la registral.
+# Las columnas sup_* son el numero de transacciones de 2018 en cada tramo de superficie construida (m2).
+# DESCUADRE DE LA FUENTE (comprobado contra el PDF el 19/10/2026, no es error de transcripcion): en Chamberi
+#         los tramos suman 1.618 y el total publicado es 1.931. En Latina, Usera, Villa de Vallecas y
+#         Vicalvaro la diferencia es de 1 a 3 operaciones. Los tramos solo se usan como proporciones.
+distrito_id,distrito,eur_m2_total_2018,eur_m2_nueva_2018,eur_m2_usada_2018,transacciones_2018,superficie_media_2018,sup_menos40,sup_40_60,sup_60_80,sup_80_100,sup_mas100
+1,Centro,4809.31,4521.91,4817.37,2649,71.48,802,602,443,287,515
+2,Arganzuela,3693.97,3670.25,3698.09,1252,73.97,190,291,288,251,232
+3,Retiro,4444.42,3989.25,4457.96,1298,96.27,99,192,257,250,500
+4,Salamanca,5400.24,5674.82,5398.93,2115,99.53,272,396,362,268,817
+5,Chamartin,4708.52,4270.04,4776.80,1531,101.44,112,257,369,245,548
+6,Tetuan,3325.98,3173.14,3339.84,2475,71.72,450,748,588,294,395
+7,Chamberi,5202.37,5912.31,5170.16,1931,96.17,217,327,277,220,577
+8,Fuencarral-El Pardo,3311.77,3313.84,3310.43,2270,104.35,50,359,472,440,949
+9,Moncloa-Aravaca,3754.98,3916.07,3686.56,1606,110.84,62,281,433,195,635
+10,Latina,2103.49,2174.81,2083.55,2498,71.43,101,679,1065,442,209
+11,Carabanchel,1979.46,2150.63,1944.43,2276,67.70,110,900,753,333,180
+12,Usera,1722.97,1661.17,1789.41,1332,77.94,70,326,349,313,273
+13,Puente de Vallecas,1637.04,1617.61,1644.77,2693,67.53,322,949,677,463,282
+14,Moratalaz,2321.59,2293.25,2322.99,728,74.52,6,240,227,174,81
+15,Ciudad Lineal,2853.33,2950.59,2848.20,2426,74.91,101,831,828,322,344
+16,Hortaleza,3307.99,3016.09,3539.82,2752,106.10,94,442,565,348,1303
+17,Villaverde,1501.67,1546.41,1424.43,1785,71.34,80,627,545,308,225
+18,Villa de Vallecas,2141.00,2153.66,2133.84,1539,76.97,66,446,377,404,245
+19,Vicalvaro,1876.50,1517.02,2032.67,772,84.52,18,175,175,149,252
+20,San Blas-Canillejas,2264.89,3022.19,2238.81,1743,78.88,139,510,336,399,359
+21,Barajas,3276.03,3517.48,3160.19,595,98.65,21,66,177,106,225

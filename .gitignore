@@ -59,3 +59,9 @@ LEEME.txt
 # Excepcion deliberada, revisada a mano el 11/09/2026: material presentable.
 # Solo esta ruta exacta. La regla general sigue bloqueando todo lo demas.
 !entregables/one_pager_valoracion_comparables_v2.pdf
+
+# Cierres reales de una agencia: no son publicos. Solo se versionan la
+# plantilla (con una fila inventada) y su LEEME.
+data/agencia/*
+!data/agencia/plantilla_cierres.csv
+!data/agencia/LEEME.md

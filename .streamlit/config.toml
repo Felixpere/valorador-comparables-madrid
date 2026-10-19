@@ -1,0 +1,13 @@
+# Configuracion de la demo (demo/app.py). Streamlit la lee de la carpeta desde
+# la que se lanza, asi que la demo se arranca desde la raiz del repositorio.
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#1f5f8b"
+font = "sans serif"
+
+[client]
+# Sin el boton "Deploy" ni menus de desarrollo: se comparte pantalla
+toolbarMode = "viewer"

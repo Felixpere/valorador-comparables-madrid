@@ -133,6 +133,58 @@ Ningún dato personal de vendedores ni de terceros interviene en ninguna fase.
 | R02 | `src/r02_caso.py` | Reconstruye una valoración concreta paso a paso. |
 | R03 | `src/r03_dashboard_real.py` | Dashboard de los resultados reales. |
 | R04 | `src/r04_diagnostico_coeficientes.py` | Errores estándar, VIF, correlaciones, efecto del centrado y regresión secuencial de los coeficientes que estaban en cuarentena. |
+| R05 | `src/r05_referencia_precios.py` | Descarga el precio escriturado por distrito (Ayuntamiento/Registradores) y el IPV del INE. Necesita red; se ejecuta a mano. |
+| R06 | `src/r06_actualizacion_cierre.py` | Factor de actualización 2018 → hoy y brecha anuncio–escritura por distrito. |
+| R07 | `src/r07_cierres_agencia.py` | Recalibra el descuento con cierres reales de una agencia, si se cargan. |
+
+## Demo: precio de hoy y precio de firma
+
+```powershell
+pip install -r requirements.txt
+python -m streamlit run demo/app.py
+```
+
+Formulario con distrito, barrio, superficie, habitaciones, baños, planta,
+ascensor, terraza y estado. Da tres cifras: **precio de anuncio estimado hoy**,
+**precio de firma estimado (rango)** y el **margen de error** del modelo, con los
+pisos comparables que se usaron. Tres ejemplos precargados. Guion de diez
+minutos en [DEMO.md](DEMO.md). Necesita los datos reales (`r00`) y `r06`.
+
+**Fecha de los datos.** Los comparables son anuncios de finales de 2018
+(`idealista18`). Se llevan a precios del **2.º trimestre de 2026** así:
+
+| Paso | Fuente | Ejercicio | Consultado |
+|---|---|---|---|
+| €/m² escriturado de vivienda usada por distrito, 2018 | Colegio de Registradores vía Ayuntamiento de Madrid, Anuario Estadístico 2019, tabla 3.2 | 2018 | 19/10/2026 |
+| Lo mismo, último año | Banco de Datos del Ayuntamiento, Estadística Registral, tabla 6 | 2025 | 19/10/2026 |
+| De la media anual al último trimestre | INE, Índice de Precios de Vivienda, Comunidad de Madrid, segunda mano, tabla 80270 | hasta 2T2026 | 19/10/2026 |
+
+El factor va de ×1,54 (Barajas) a ×2,06 (Villaverde). Sólo con el IPV del INE
+sería ×1,59 para toda la Comunidad.
+
+**Precio de firma.** Precio de anuncio × (1 − brecha). La brecha compara, en
+2018 y por distrito, el €/m² escriturado con el anunciado, medido de cuatro
+formas (media o mediana, con o sin reponderar por la mezcla de superficies
+escrituradas). Va de −7 % a +16 % según el distrito y la forma de medir, y por
+eso la demo da un rango y no una cifra. **No es el descuento de negociación**:
+lo contiene, pero mezcla pisos que nunca se vendieron, pisos distintos y el
+desfase de inscripción. Con cierres reales de una agencia
+(`data/agencia/`, ver su LEEME) la demo usa esos en su lugar en cada distrito
+con 10 operaciones o más.
+
+**Cómo se actualiza** cuando el Ayuntamiento o el INE publican dato nuevo:
+
+```bash
+python src/r05_referencia_precios.py     # baja las cifras nuevas
+python src/r06_actualizacion_cierre.py   # recalcula factores y brecha
+```
+
+**Por qué Registradores y no el Notariado.** El Portal Estadístico del
+Notariado da el precio escriturado por código postal, pero sólo en un mapa
+interactivo, sin descarga ni API documentada. La estadística registral mide lo
+mismo (precio declarado en escritura), se descarga en xlsx y tiene la serie de
+2018. Ojo: la tabla de «precio de segunda mano por distrito» del mismo Anuario
+es de idealista, precio de oferta; no se usa.
 
 ## Extracción: dos motores, y quién extrajo qué
 
@@ -177,7 +229,7 @@ paso 04 vuelve a comprobarlo sobre la salida real: si detecta una sola fuga, el
 proceso termina en error y no publica nada.
 
 ```bash
-python -m pytest tests -q      # 69 tests
+python -m pytest tests -q      # 97 tests
 ```
 
 ## Automatización
@@ -272,8 +324,10 @@ data/interim/      salida cruda de la extracción
 data/processed/    dato limpio, valoraciones, informe de calidad, métricas
 valorador_madrid.pbix  modelo de Power BI sobre la hoja Valoraciones
 outputs/           Excel y dashboard
-src/               los seis pasos del circuito sintético (p00–p06) y el real (r00–r04)
-tests/             69 tests
+src/               los seis pasos del circuito sintético (p00–p06) y el real (r00–r07)
+demo/              demo para compartir pantalla (Streamlit); guion en DEMO.md
+data/agencia/      plantilla para cargar cierres reales de una agencia
+tests/             97 tests
 docs/              recorrido para negocio, validación con datos reales, fuentes
                    (residencial y terciario), estado del proyecto
 ```

@@ -1,0 +1,19 @@
+{
+  "anio_escrituras": 2025,
+  "trimestre_actual": "2026T2",
+  "ipv_ajuste_a_ultimo_trimestre": 1.1265,
+  "ipv_ajuste_media2018_a_T4": 0.9758,
+  "fuentes": {
+    "escrituras_2018": "Ayuntamiento de Madrid, Anuario Estadistico 2019, Capitulo 8 \"Planeamiento urbano y Vivienda\",",
+    "escrituras_actual": "Ayuntamiento de Madrid, Banco de Datos, Compra-venta de viviendas, Estadistica Registral",
+    "escrituras_actual_consultado": "19/10/2026",
+    "ipv": "INE, Indice de Precios de Vivienda (IPV), base 2025, tabla 80270",
+    "ipv_consultado": "19/10/2026"
+  },
+  "brecha_central_mediana_distritos": 0.0572,
+  "brecha_min_distritos": -0.0727,
+  "brecha_max_distritos": 0.1642,
+  "factor_actualizacion_min": 1.5354,
+  "factor_actualizacion_max": 2.0646,
+  "factor_solo_ine": 1.5909
+}

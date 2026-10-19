@@ -1,8 +1,7 @@
 # Estado del proyecto
 
-Última actualización: **19 de septiembre de 2026** (el pipeline avisa cuando el
-entregable sale incompleto; README revisado cifra a cifra contra su fuente; el
-Excel sale de `entregables/`; test que compara `entregables/` con `outputs/`).
+Última actualización: **19 de octubre de 2026** (demo para compartir pantalla con
+precio de hoy y precio de firma estimado; ver «Cola de trabajo», apartado (e)).
 
 Por fechas, verificado contra el historial de git:
 
@@ -12,7 +11,10 @@ Por fechas, verificado contra el historial de git:
   protagonista del README y del recorrido; saneamiento del repositorio público.
 - **10 y 11 sept**: modelo de Power BI publicado, integración continua en verde
   otra vez, one-pager publicado.
-- **19 sept**: lo de la primera línea. Detalle en «Cola de trabajo», apartado (d).
+- **19 sept**: el pipeline avisa del entregable incompleto, README revisado, Excel
+  fuera de `entregables/`. Detalle en «Cola de trabajo», apartado (d).
+- **19 oct**: demo en Streamlit, actualización a 2T2026 y brecha anuncio–escritura.
+  Detalle en el apartado (e).
 
 **El proyecto vive ahora en `C:\Users\user\proyectos\valorador-comparables-madrid`.**
 Antes estaba en Descargas, con una carpeta anidada dentro de otra del mismo
@@ -31,11 +33,11 @@ sesión.**
 El circuito completo funciona de punta a punta. `python run_pipeline.py` tarda
 unos diez segundos y produce el Excel y el dashboard.
 
-**Tests: 69 escritos, 63 corren en la integración continua y 6 se saltan allí**
+**Tests: 97 escritos, 85 corren en la integración continua y 12 se saltan allí**
 (3 necesitan `data/real/valoraciones_2018.csv`, que no se versiona; 1 la salida de
-`run_pipeline.py`, que en Actions se ejecuta después de los tests, y 2 comparan
-`entregables/` con `outputs/`, que allí aún no existe). En local, con los datos
-presentes, pasan los 69.
+`run_pipeline.py`, que en Actions se ejecuta después de los tests; 2 comparan
+`entregables/` con `outputs/`, que allí aún no existe, y 6 de la demo necesitan
+`data/real/madrid_2018.csv`). En local, con los datos presentes, pasan los 97.
 
 | Pieza | Estado |
 |---|---|
@@ -383,6 +385,50 @@ Abierto:
 - `ubuntu-latest` pasa a Ubuntu 26 el 19 de octubre de 2026. Decidido no
   adelantarse: si algo se rompe con el cambio, se verá entonces.
 
+### (e) 19 de octubre — demo para una agente inmobiliaria
+
+Hecho:
+
+- `demo/app.py` (Streamlit) + `demo/motor.py`. Arranque:
+  `.venv\Scripts\python -m streamlit run demo\app.py`. El motor **no reimplementa
+  nada**: llama a `r01.valorar` con el mismo pool, semilla y coeficientes que se
+  validaron (lo vigila un test que compara los coeficientes con
+  `metricas_2018.json`). Comparables: barrio + 2018T4 + ±20 % de superficie.
+- `src/r05`: baja el precio escriturado por distrito (Ayuntamiento, tabla 6 de
+  la Estadística Registral, ejercicio 2025) y el IPV del INE (tabla 80270, base
+  2025, Comunidad de Madrid, hasta 2T2026). Consultados el 19/10/2026.
+- `data/referencia/escrituras_distrito_2018.csv`: transcrito del Anuario 2019,
+  tabla 3.2. **La fuente descuadra en Chamberí** (tramos 1.618, total 1.931);
+  comprobado contra el PDF, declarado en la cabecera y fijado en un test.
+- `src/r06`: factor 2018T4 → 2T2026 por distrito, de ×1,54 a ×2,06 (×1,59 sólo con
+  el INE), y brecha anuncio–escritura 2018 de −7 % a +16 %, en rango de cuatro
+  medidas. **La media sale casi siempre en el extremo alto** (16 de 21 distritos), por
+  eso la demo no da cifra central.
+- `src/r07` y `data/agencia/`: punto de entrada para cierres reales. Rechaza
+  columnas con datos personales; sólo se usan distritos con 10 cierres o más.
+- `DEMO.md`: guion. Sin el nombre de la persona ni la fecha de la llamada, porque
+  el repositorio es público.
+- Tres ejemplos: Chamberí–Trafalgar, Carabanchel–Vista Alegre, Tetuán–Bellas
+  Vistas. Hortaleza se descartó como ejemplo porque su brecha es negativa: se deja
+  en el guion como tema de conversación, no se esconde.
+
+Trampas que aparecieron:
+
+- Una búsqueda web atribuía a Registradores la serie 2014–2021 por distrito del
+  Anuario 2022 (2018 = 3.466 €/m²). **Es la tabla de idealista**, precio de oferta.
+  Mismo error que la trampa ya documentada en CLAUDE.md. Se usó la 3.2.
+- Portal Estadístico del Notariado: sin descarga ni API documentada. No se usó.
+
+Abierto:
+
+- La brecha es de 2018. No hay forma pública de medirla hoy por distrito sin
+  precios de oferta actuales, y esos no se pueden obtener por scraping (regla 5).
+  Lo cierra una agencia con sus cierres.
+- El margen del 12 % se midió sobre precio pedido de 2018; el error sobre el
+  precio de hoy y el de firma **no está medido**.
+- La rama de este trabajo es `demo-agencia`: ni ramas, ni commits, ni archivos
+  llevan nombres de personas.
+
 **Regla de corte**: lo que no esté listo se documenta aquí como siguiente
 iteración y se dice en voz alta. Un pendiente declarado suma; uno oculto resta.
 
@@ -397,10 +443,15 @@ SUPUESTOS.md                 límites de lo que se puede afirmar
 run_pipeline.py              orquestador, una sola orden
 src/config.py                todos los parámetros y supuestos numéricos
 src/p00..p06                 los seis pasos del circuito sintético
-tests/                       69 tests, el bloque de fugas es el importante
+tests/                       97 tests, el bloque de fugas es el importante
 data/real/                   idealista18 procesado (no versionado)
 src/r00..r04                 carga, validación, caso trazado, dashboard y
                              diagnóstico de coeficientes con datos reales
+src/r05..r07                 referencias de precio, actualización y brecha,
+                             cierres de agencia
+demo/                        app de Streamlit (app.py) y su motor (motor.py)
+DEMO.md                      guion de diez minutos para enseñarla
+data/agencia/                plantilla de cierres; lo demás no se versiona
 tests/test_dashboard_real.py vigila que el HTML no tenga cifras a mano
 docs/validacion_2018.md      resultados con datos reales
 docs/investigacion_terciario.md  fuentes y estado de oficinas y logistica

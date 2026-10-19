@@ -206,6 +206,40 @@ en ese orden, en todos los documentos del proyecto.
    medición**: no hay variable que separe jardín privado de zona común. Detalle en
    `docs/validacion_2018.md`.
 
+## 11 bis. Precio de hoy y precio de firma en la demo · *vía real*
+
+- **Actualización.** Se lleva el precio *pedido* de 2018 a hoy con la evolución
+  del precio *escriturado* de vivienda usada en cada distrito (Registradores,
+  2018 → 2025) y del IPV del INE de la Comunidad (2025 → 2T2026). Supuesto: que la
+  distancia entre lo que se pide y lo que se firma no ha cambiado desde 2018. Si
+  un barrio se ha movido distinto que su distrito, no se recoge.
+- **El IPV no existe por distrito.** El tramo 2025 → 2026 es igual para todos.
+- **La brecha anuncio–escritura no es el descuento de negociación.** Mezcla
+  negociación, anuncios que nunca se venden, diferencias entre lo anunciado y lo
+  vendido, desfase entre acuerdo e inscripción y lo que no se declare en
+  escritura. Se mide en 2018 y se aplica hoy. Va de −7 % a +16 %. En Hortaleza sale negativa
+  con las cuatro medidas, y en Barajas negativa o casi nula: allí se escrituró de
+  media igual o más caro de lo que se anunció.
+  Por eso se da como rango.
+- **El rango de firma sólo recoge la duda sobre el descuento.** El error del
+  modelo (12 % mediano en 2018) va además, y no se ha combinado en una sola cifra.
+- **Con cierres de agencia, el rango cambia de significado.** Pasa a ser la mitad
+  central de sus descuentos sobre el último precio anunciado. La estimación de
+  anuncio de la demo, en cambio, se parece más a una foto de anuncios vivos, que
+  incluye pisos recién publicados y pisos ya rebajados. Mezclar las dos cosas es
+  un supuesto, declarado aquí.
+- **La fuente de 2018 descuadra en un distrito.** En Chamberí, los tramos de
+  superficie suman 1.618 operaciones y el total publicado es 1.931. Se ha
+  comprobado contra el PDF y no es un error al transcribir. Sólo se usan las
+  proporciones.
+- **Habitaciones y baños no mueven el precio.** El modelo validado no los usa
+  (su efecto llega por la superficie). En la demo sirven para elegir qué
+  comparables se enseñan. Los atributos que el formulario no pide toman el valor
+  típico del barrio.
+- **El margen del 12 %** es el error mediano medido sobre el precio *pedido* de
+  2018. No mide el error sobre el precio de hoy ni sobre el de firma. Eso no se
+  ha medido y con datos públicos no se puede medir.
+
 ---
 
 ## 12. Lo que haría falta para convertir esto en algo real
