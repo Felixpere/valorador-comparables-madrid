@@ -229,7 +229,7 @@ paso 04 vuelve a comprobarlo sobre la salida real: si detecta una sola fuga, el
 proceso termina en error y no publica nada.
 
 ```bash
-python -m pytest tests -q      # 97 tests
+python -m pytest tests -q      # 101 tests
 ```
 
 ## Automatización
@@ -327,7 +327,7 @@ outputs/           Excel y dashboard
 src/               los seis pasos del circuito sintético (p00–p06) y el real (r00–r07)
 demo/              demo para compartir pantalla (Streamlit); guion en DEMO.md
 data/agencia/      plantilla para cargar cierres reales de una agencia
-tests/             97 tests
+tests/             101 tests
 docs/              recorrido para negocio, validación con datos reales, fuentes
                    (residencial y terciario), estado del proyecto
 ```

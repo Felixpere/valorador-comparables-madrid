@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import streamlit as st
 
+from graficos import barra_pedido_firma
 from motor import ESTADOS, EJEMPLOS, Motor
 from motor import _redondear as redondear
 from r01_valorar_real import MIN_COMPARABLES
@@ -160,6 +161,18 @@ with c3, st.container(border=True):
         f"Para este piso la muestra es de fiabilidad **{r.fiabilidad}** (en ese "
         f"grupo, {pct(r.error_fiabilidad, 1)}). Sobre precios de hoy o de firma, "
         "el error no se ha podido medir.")
+
+st.markdown("#### Lo publicado no es lo cerrado")
+st.altair_chart(barra_pedido_firma(
+    oferta=r.oferta_hoy,
+    margen_min=redondear(r.oferta_hoy * (1 - err)),
+    margen_max=redondear(r.oferta_hoy * (1 + err)),
+    firma_min=r.cierre_min, firma_max=r.cierre_max), width="stretch")
+st.caption(
+    "La raya azul es el precio de anuncio estimado, y la franja azul clara su margen: "
+    "en la prueba de 2018, la mitad de los precios pedidos quedó dentro. La franja "
+    "verde es el precio de firma estimado; solo recoge la duda sobre el descuento "
+    "entre anuncio y escritura, y el error del modelo va además.")
 
 st.markdown(f"#### Los {len(r.comparables)} pisos más parecidos")
 st.caption(
