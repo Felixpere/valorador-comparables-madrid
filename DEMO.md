@@ -4,6 +4,18 @@ Para enseñar la herramienta a una agente inmobiliaria de Madrid, compartiendo
 pantalla. Objetivo: que vea qué hace, que vea dónde falla, y proponerle probarla
 con precios de cierre de su agencia.
 
+## Lo primero: la cobertura
+
+**La herramienta cubre Madrid capital: sus 21 distritos y 135 barrios. No cubre
+Alcorcón ni el resto de municipios de la Comunidad.** Lo digo yo, al empezar la
+llamada, antes de enseñar nada. Así no hay sorpresas si piensa probarla con un
+piso suyo de fuera de Madrid capital.
+
+> «Antes de empezar, para que no haya sorpresas: esto cubre Madrid capital, sus
+> 21 distritos. No cubre Alcorcón ni el resto de la Comunidad. Para llegar ahí
+> hacen falta datos piso a piso que hoy no son públicos, y eso enlaza con lo que
+> te quiero proponer al final.»
+
 ## Antes de la llamada (15 minutos antes)
 
 ```powershell
@@ -11,6 +23,9 @@ cd C:\Users\user\proyectos\valorador-comparables-madrid
 .venv\Scripts\python -m streamlit run demo\app.py
 ```
 
+- **Si ya había una demo abierta de otro día, ciérrala antes** (Ctrl+C en su
+  terminal) y arráncala de nuevo: Streamlit guarda en memoria el código que
+  cargó al arrancar y no enseñaría lo añadido después.
 - Se abre en el navegador (`http://localhost:8501`). Tarda unos 3 segundos en
   cargar los anuncios. La primera vez que se usa Streamlit en un equipo puede
   pedir un correo en la terminal: Enter y sigue.
@@ -18,7 +33,11 @@ cd C:\Users\user\proyectos\valorador-comparables-madrid
 - Comparte **sólo la ventana del navegador**, no la pantalla entera.
 - Ten a mano `data/agencia/plantilla_cierres.csv` por si pide ver el formato.
 
-## 0:00 – 1:30 · El problema
+## 0:00 – 0:30 · La cobertura
+
+La frase de arriba, «Lo primero: la cobertura». Es lo primero que digo.
+
+## 0:30 – 1:30 · El problema
 
 > «Hoy, para saber cuánto vale un piso, se miran anuncios parecidos a ojo, en
 > una hoja de cálculo, y no queda rastro de por qué se llegó a la cifra. Y lo que
