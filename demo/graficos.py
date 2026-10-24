@@ -101,3 +101,43 @@ def barra_pedido_firma(oferta: float, margen_min: float, margen_max: float,
             .properties(height=260, padding={"left": 5, "right": 20, "top": 10, "bottom": 5})
             .configure_view(stroke=None)
             .configure_axisY(labelLimit=220))
+
+
+# ------------------------------------------------------------------ mapa
+TOOLTIP_MAPA = {
+    "html": "<b>{m2} m²</b><br/>{eur_m2_2018_txt} €/m² pedido en 2018"
+            "<br/><b>{eur_m2_hoy_txt} €/m²</b> equivalente a su piso, hoy",
+    "style": {"backgroundColor": "#1d2730", "color": "white", "fontSize": "13px"},
+}
+
+
+def _miles(n) -> str:
+    return f"{int(n):,}".replace(",", ".")
+
+
+def mapa_comparables(puntos: pd.DataFrame):
+    """Un punto por comparable; los de la tabla, en azul y mas grandes.
+
+    `puntos` es `Resultado.mapa`: lat, lon, m2, eur_m2_2018, eur_m2_hoy, destacado.
+    El fondo es de Carto (sin clave), asi que hace falta internet para verlo.
+    """
+    import pydeck as pdk
+
+    d = puntos.copy()
+    d["eur_m2_2018_txt"] = d["eur_m2_2018"].map(_miles)
+    d["eur_m2_hoy_txt"] = d["eur_m2_hoy"].map(_miles)
+    resto, destacados = d[~d["destacado"]], d[d["destacado"]]
+
+    capa_resto = pdk.Layer(
+        "ScatterplotLayer", data=resto, get_position="[lon, lat]",
+        get_fill_color=[95, 107, 118, 140], get_radius=28, radius_min_pixels=5,
+        pickable=True, stroked=True, get_line_color=[255, 255, 255, 200], line_width_min_pixels=1)
+    capa_destacados = pdk.Layer(
+        "ScatterplotLayer", data=destacados, get_position="[lon, lat]",
+        get_fill_color=[31, 95, 139, 235], get_radius=42, radius_min_pixels=8,
+        pickable=True, stroked=True, get_line_color=[255, 255, 255, 255], line_width_min_pixels=2)
+
+    vista = pdk.ViewState(latitude=float(d["lat"].mean()), longitude=float(d["lon"].mean()),
+                          zoom=14.6, pitch=0)
+    return pdk.Deck(layers=[capa_resto, capa_destacados], initial_view_state=vista,
+                    tooltip=TOOLTIP_MAPA, map_provider="carto", map_style="light")

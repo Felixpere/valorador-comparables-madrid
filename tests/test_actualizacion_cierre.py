@@ -244,6 +244,18 @@ def test_ejemplos_de_la_demo_se_valoran(motor):
 
 
 @necesita_datos
+def test_el_mapa_lleva_todos_los_comparables_y_destaca_los_de_la_tabla(motor):
+    from motor import EJEMPLOS
+    r = motor.valorar(next(iter(EJEMPLOS.values())))
+    assert len(r.mapa) == r.n_comparables
+    assert r.mapa["destacado"].sum() == len(r.comparables)
+    # Las mismas cifras que la ultima columna de la tabla, en el mismo orden
+    assert (r.mapa.loc[r.mapa["destacado"], "eur_m2_hoy"].tolist()
+            == r.comparables["€/m² equivalente a su piso, hoy"].tolist())
+    assert r.mapa["lat"].between(40.3, 40.6).all() and r.mapa["lon"].between(-3.9, -3.5).all()
+
+
+@necesita_datos
 def test_demo_usa_la_misma_valoracion_que_se_valido(motor):
     """El valor de 2018 tiene que ser exactamente el de r01.valorar."""
     import r01_valorar_real as r01

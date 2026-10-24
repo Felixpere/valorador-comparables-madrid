@@ -69,6 +69,7 @@ class Resultado:
     error_mediano: float = float("nan")
     error_fiabilidad: float = float("nan")
     comparables: pd.DataFrame = field(default_factory=pd.DataFrame)
+    mapa: pd.DataFrame = field(default_factory=pd.DataFrame)
 
 
 def _redondear(x: float, a: int = 1000) -> float:
@@ -136,7 +137,9 @@ class Motor:
                 "datos públicos de 2018 (Registradores frente a anuncios; el rango "
                 "va de la menor a la mayor de cuatro formas de medirlo)")
 
-    def _comparables(self, ficha: dict, factor_piso: float, factor_hoy: float) -> pd.DataFrame:
+    def _banda(self, ficha: dict) -> pd.DataFrame:
+        """Los anuncios del barrio y el trimestre con superficie parecida (±20 %),
+        ordenados de mas a menos parecido en superficie, habitaciones y banos."""
         m2 = ficha["superficie_m2"]
         g = self.pool[(self.pool["barrio"] == ficha["barrio"])
                       & (self.pool["trimestre"] == TRIMESTRE_COMPARABLES)
@@ -145,8 +148,26 @@ class Motor:
         parecido = (np.abs(np.log(g["CONSTRUCTEDAREA"] / m2)) / r01.BANDA_SUPERFICIE
                     + 0.5 * (g["ROOMNUMBER"] - ficha["habitaciones"]).abs()
                     + 0.5 * (g["BATHNUMBER"] - ficha["banos"]).abs())
-        g = g.assign(parecido=parecido).sort_values(["parecido", "ASSETID"])
-        g = g.head(COMPARABLES_A_MOSTRAR)
+        return g.assign(parecido=parecido).sort_values(["parecido", "ASSETID"])
+
+    def _mapa(self, ficha: dict, factor_piso: float, factor_hoy: float) -> pd.DataFrame:
+        """Todos los comparables de la banda con su posicion, para el mapa.
+
+        `destacado` marca los que salen en la tabla (los mas parecidos). El
+        €/m² equivalente es el mismo calculo que la ultima columna de la tabla.
+        """
+        g = self._banda(ficha)
+        return pd.DataFrame({
+            "lat": g["LATITUDE"].astype(float),
+            "lon": g["LONGITUDE"].astype(float),
+            "m2": g["CONSTRUCTEDAREA"].astype(int),
+            "eur_m2_2018": g["eur_m2"].round(0).astype(int),
+            "eur_m2_hoy": (g["m2_neutro"] * factor_piso * factor_hoy).round(0).astype(int),
+            "destacado": np.arange(len(g)) < COMPARABLES_A_MOSTRAR,
+        }).reset_index(drop=True)
+
+    def _comparables(self, ficha: dict, factor_piso: float, factor_hoy: float) -> pd.DataFrame:
+        g = self._banda(ficha).head(COMPARABLES_A_MOSTRAR)
         return pd.DataFrame({
             "m²": g["CONSTRUCTEDAREA"].astype(int),
             "Habitaciones": g["ROOMNUMBER"].astype(int),
@@ -191,4 +212,5 @@ class Motor:
             error_fiabilidad=float(m["error_por_fiabilidad"][r["fiabilidad"]]),
             comparables=self._comparables(ficha, factor_piso,
                                           float(f["factor_actualizacion"])),
+            mapa=self._mapa(ficha, factor_piso, float(f["factor_actualizacion"])),
         )

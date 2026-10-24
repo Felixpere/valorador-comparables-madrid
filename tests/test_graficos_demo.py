@@ -12,7 +12,10 @@ RAIZ = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ / "demo"))
 
 pytest.importorskip("altair")
-from graficos import FIRMA, PIDE, barra_pedido_firma, datos_barra  # noqa: E402
+import pandas as pd  # noqa: E402
+
+from graficos import (FIRMA, PIDE, TOOLTIP_MAPA, barra_pedido_firma,  # noqa: E402
+                      datos_barra, mapa_comparables)
 
 CIFRAS = dict(oferta=244_000, margen_min=215_000, margen_max=273_000,
               firma_min=217_000, firma_max=239_000)
@@ -40,6 +43,37 @@ def test_firma_por_encima_del_anuncio_tambien_se_dibuja():
                             firma_min=295_000, firma_max=315_000)
     firma = piezas.set_index("pieza").loc["firma"]
     assert firma["hasta"] > 300_000
+
+
+def _puntos(n=12, destacados=8):
+    return pd.DataFrame({
+        "lat": [40.43 + i * 0.001 for i in range(n)],
+        "lon": [-3.70 + i * 0.001 for i in range(n)],
+        "m2": [60 + i for i in range(n)],
+        "eur_m2_2018": [5000 + 10 * i for i in range(n)],
+        "eur_m2_hoy": [9000 + 10 * i for i in range(n)],
+        "destacado": [i < destacados for i in range(n)],
+    })
+
+
+def test_el_mapa_separa_los_de_la_tabla_del_resto():
+    pytest.importorskip("pydeck")
+    deck = mapa_comparables(_puntos())
+    # pydeck guarda los datos de cada capa como lista de registros
+    resto, destacados = (pd.DataFrame(c.data) for c in deck.layers)
+    assert len(resto) == 4 and len(destacados) == 8
+    assert destacados["destacado"].all() and not resto["destacado"].any()
+
+
+def test_el_mapa_se_centra_en_los_comparables_y_rotula_en_euros():
+    pytest.importorskip("pydeck")
+    p = _puntos()
+    deck = mapa_comparables(p)
+    assert deck.initial_view_state.latitude == pytest.approx(p["lat"].mean())
+    assert deck.initial_view_state.longitude == pytest.approx(p["lon"].mean())
+    destacados = pd.DataFrame(deck.layers[1].data)
+    assert destacados["eur_m2_hoy_txt"].iloc[0] == "9.000"
+    assert "€/m²" in TOOLTIP_MAPA["html"]
 
 
 def test_la_escala_deja_ver_todo():

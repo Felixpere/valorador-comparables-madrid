@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import streamlit as st
 
-from graficos import barra_pedido_firma
+from graficos import barra_pedido_firma, mapa_comparables
 from motor import ESTADOS, EJEMPLOS, Motor
 from motor import _redondear as redondear
 from r01_valorar_real import MIN_COMPARABLES
@@ -184,6 +184,14 @@ tabla = r.comparables.copy()
 for col in ["€/m² pedido (2018)", "€/m² equivalente a su piso, hoy"]:
     tabla[col] = tabla[col].map(eur)
 st.dataframe(tabla, hide_index=True, width="stretch")
+
+st.markdown("#### Dónde están")
+st.pydeck_chart(mapa_comparables(r.mapa), width="stretch", height=420)
+st.caption(
+    f"Los {r.n_comparables} pisos de {barrio} con superficie parecida de los que sale el "
+    "precio. En azul, los de la tabla. Al pasar el ratón: sus metros, lo que se pedía "
+    "en 2018 y lo que valdría cada uno si fuera como su piso, hoy. "
+    "Posición tal como la publicaba cada anuncio.")
 
 # --- Transparencia ----------------------------------------------------------
 with st.expander("Cómo se llega a la cifra, paso a paso"):
