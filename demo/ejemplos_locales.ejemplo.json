@@ -1,0 +1,14 @@
+{
+  "_formato": "Copia este fichero como ejemplos_locales.json (git lo ignora) y pon tus pisos. Cada clave es el texto del boton. Campos obligatorios: barrio (uno de los 135 de data/real/barrios_madrid.csv), superficie_m2, habitaciones, banos, planta (0 = bajo), ascensor, terraza, estado (Buen estado / A reformar / Obra nueva). 'nota' es opcional y se ensena en pantalla al cargar el ejemplo. Las entradas mal formadas se ignoran sin romper la app.",
+  "Ejemplo · Trafalgar": {
+    "barrio": "Trafalgar",
+    "superficie_m2": 95,
+    "habitaciones": 3,
+    "banos": 2,
+    "planta": 4,
+    "ascensor": true,
+    "terraza": false,
+    "estado": "Buen estado",
+    "nota": "Texto opcional que sale en pantalla al pulsar el boton."
+  }
+}

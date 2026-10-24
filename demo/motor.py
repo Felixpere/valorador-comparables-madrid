@@ -48,6 +48,48 @@ EJEMPLOS = {
 }
 
 
+# Ejemplos propios de quien usa la demo (pisos reales de una oficina, por
+# ejemplo). Viven en un fichero local que git ignora: el repositorio es publico
+# y ahi no entra ningun anuncio concreto. Mismo formato que EJEMPLOS, mas una
+# "nota" opcional que la app ensena en pantalla al cargar el ejemplo. Ver
+# ejemplos_locales.ejemplo.json.
+RUTA_EJEMPLOS_LOCALES = Path(__file__).resolve().parent / "ejemplos_locales.json"
+CAMPOS_EJEMPLO = {
+    "barrio": str, "superficie_m2": int, "habitaciones": int, "banos": int,
+    "planta": int, "ascensor": bool, "terraza": bool, "estado": str,
+}
+
+
+def cargar_ejemplos_locales(ruta: Path | None = None) -> dict[str, dict]:
+    """Los ejemplos del fichero local, o {} si no existe o no se puede leer.
+
+    Nunca lanza: una entrada mal formada se descarta y las demas se cargan. Las
+    claves que empiezan por "_" son documentacion y se ignoran.
+    """
+    ruta = ruta or RUTA_EJEMPLOS_LOCALES
+    try:
+        crudo = json.loads(Path(ruta).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    if not isinstance(crudo, dict):
+        return {}
+    ejemplos: dict[str, dict] = {}
+    for nombre, e in crudo.items():
+        if nombre.startswith("_") or not isinstance(e, dict):
+            continue
+        if any(c not in e for c in CAMPOS_EJEMPLO):
+            continue
+        if any(not isinstance(e[c], t) or (t is int and isinstance(e[c], bool))
+               for c, t in CAMPOS_EJEMPLO.items()):
+            continue
+        if e["estado"] not in ESTADOS:
+            continue
+        ficha = {c: e[c] for c in CAMPOS_EJEMPLO}
+        ficha["nota"] = e["nota"] if isinstance(e.get("nota"), str) else None
+        ejemplos[str(nombre)] = ficha
+    return ejemplos
+
+
 @dataclass
 class Resultado:
     valorable: bool

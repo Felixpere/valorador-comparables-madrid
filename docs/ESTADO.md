@@ -33,11 +33,11 @@ sesión.**
 El circuito completo funciona de punta a punta. `python run_pipeline.py` tarda
 unos diez segundos y produce el Excel y el dashboard.
 
-**Tests: 104 escritos, 91 corren en la integración continua y 13 se saltan allí**
+**Tests: 111 escritos, 97 corren en la integración continua y 14 se saltan allí**
 (3 necesitan `data/real/valoraciones_2018.csv`, que no se versiona; 1 la salida de
 `run_pipeline.py`, que en Actions se ejecuta después de los tests; 2 comparan
 `entregables/` con `outputs/`, que allí aún no existe, y 6 de la demo necesitan
-`data/real/madrid_2018.csv`). En local, con los datos presentes, pasan los 104.
+`data/real/madrid_2018.csv`). En local, con los datos presentes, pasan los 111.
 
 | Pieza | Estado |
 |---|---|
@@ -429,6 +429,25 @@ Abierto:
 - La rama de este trabajo es `demo-agencia`: ni ramas, ni commits, ni archivos
   llevan nombres de personas.
 
+### (f) 24 de octubre — la demo, más visual y con pisos propios
+
+Hecho, en `demo-agencia`:
+
+- **Barra «lo publicado no es lo cerrado»** (`demo/graficos.py`): en la misma
+  escala de euros, el anuncio estimado con su margen y, debajo, el rango de
+  firma. Solo dibuja las cifras de las tres tarjetas; no calcula nada.
+- **Mapa de los comparables**: todos los pisos del barrio de los que sale el
+  precio, en azul los de la tabla, con tooltip (m², €/m² 2018, €/m² equivalente
+  hoy). Fondo de Carto: necesita internet y tarda unos segundos.
+- **Ejemplos propios desde un fichero local** (`demo/ejemplos_locales.json`,
+  ignorado por git; plantilla en `ejemplos_locales.ejemplo.json`). Salen en su
+  propia fila y en color, con una nota opcional en pantalla. Si el fichero no
+  existe o está roto, la demo arranca igual con los tres ejemplos inventados.
+  Lo que haya en ese fichero (pisos concretos de una oficina) **no entra nunca
+  en el repositorio**.
+- `DEMO.md` empieza por la cobertura: Madrid capital, no el resto de la
+  Comunidad.
+
 **Regla de corte**: lo que no esté listo se documenta aquí como siguiente
 iteración y se dice en voz alta. Un pendiente declarado suma; uno oculto resta.
 
@@ -443,7 +462,7 @@ SUPUESTOS.md                 límites de lo que se puede afirmar
 run_pipeline.py              orquestador, una sola orden
 src/config.py                todos los parámetros y supuestos numéricos
 src/p00..p06                 los seis pasos del circuito sintético
-tests/                       104 tests, el bloque de fugas es el importante
+tests/                       111 tests, el bloque de fugas es el importante
 data/real/                   idealista18 procesado (no versionado)
 src/r00..r04                 carga, validación, caso trazado, dashboard y
                              diagnóstico de coeficientes con datos reales

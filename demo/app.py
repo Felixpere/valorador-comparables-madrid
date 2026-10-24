@@ -12,7 +12,7 @@ from __future__ import annotations
 import streamlit as st
 
 from graficos import barra_pedido_firma, mapa_comparables
-from motor import ESTADOS, EJEMPLOS, Motor
+from motor import ESTADOS, EJEMPLOS, Motor, cargar_ejemplos_locales
 from motor import _redondear as redondear
 from r01_valorar_real import MIN_COMPARABLES
 
@@ -64,13 +64,21 @@ trimestre = m.resumen["trimestre_actual"]
 trimestre_txt = f"{trimestre[-1]}.º trimestre de {trimestre[:4]}"
 
 
+# Pisos propios de quien hace la demo, de un fichero local que git ignora. Solo
+# entran los de barrios que la herramienta conoce; si el fichero no existe o
+# esta roto, la demo arranca igual con los ejemplos inventados.
+LOCALES = {n: e for n, e in cargar_ejemplos_locales().items()
+           if e["barrio"] in set(barrios["barrio"])}
+TODOS = {**EJEMPLOS, **LOCALES}
+
+
 def cargar_ejemplo(nombre: str) -> None:
-    e = EJEMPLOS[nombre]
+    e = TODOS[nombre]
     st.session_state.update(
         distrito=barrios.set_index("barrio").loc[e["barrio"], "distrito"],
         barrio=e["barrio"], m2=e["superficie_m2"], hab=e["habitaciones"],
         banos=e["banos"], planta=e["planta"], ascensor=e["ascensor"],
-        terraza=e["terraza"], estado=e["estado"])
+        terraza=e["terraza"], estado=e["estado"], nota_ejemplo=e.get("nota"))
 
 
 if "distrito" not in st.session_state:
@@ -87,6 +95,13 @@ cols = st.columns(len(EJEMPLOS) + 1)
 cols[0].markdown("**Ejemplos:**")
 for c, nombre in zip(cols[1:], EJEMPLOS):
     c.button(nombre, on_click=cargar_ejemplo, args=(nombre,), width="stretch")
+if LOCALES:
+    # En otra fila y en color, para no confundirlos con los inventados
+    cols = st.columns(len(LOCALES) + 1)
+    cols[0].markdown("**Pisos de la oficina:**")
+    for c, nombre in zip(cols[1:], LOCALES):
+        c.button(nombre, on_click=cargar_ejemplo, args=(nombre,), width="stretch",
+                 type="primary")
 
 # --- Formulario -------------------------------------------------------------
 with st.container(border=True):
@@ -110,6 +125,11 @@ with st.container(border=True):
         estado = st.radio("Estado", ESTADOS, key="estado", horizontal=True)
         ascensor = st.toggle("Ascensor", key="ascensor")
         terraza = st.toggle("Terraza", key="terraza")
+
+# La nota del ejemplo va antes del resultado, para que se vea tambien cuando
+# la herramienta se niega a valorar
+if st.session_state.get("nota_ejemplo"):
+    st.info(st.session_state["nota_ejemplo"], icon="ℹ️")
 
 r = m.valorar(dict(barrio=barrio, superficie_m2=m2, habitaciones=hab, banos=banos,
                    planta=planta, ascensor=ascensor, terraza=terraza, estado=estado))

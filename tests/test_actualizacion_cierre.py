@@ -293,11 +293,49 @@ def test_descuento_de_agencia_sustituye_al_publico(motor, monkeypatch):
 
 
 @necesita_datos
-def test_la_app_arranca_y_carga_los_ejemplos():
+def test_la_app_arranca_y_carga_los_ejemplos(tmp_path, monkeypatch):
+    """Como la ve quien clona el repo: sin fichero local, solo los inventados."""
+    import motor as mod
+    monkeypatch.setattr(mod, "RUTA_EJEMPLOS_LOCALES", tmp_path / "no_existe.json")
     st = pytest.importorskip("streamlit.testing.v1")
     at = st.AppTest.from_file(str(RAIZ / "demo" / "app.py"), default_timeout=90).run()
     assert not at.exception
+    assert len(at.button) == len(mod.EJEMPLOS)
     for i in range(len(at.button)):
         at.button[i].click().run()
         assert not at.exception
         assert any(m.value.startswith("## ") and "€" in m.value for m in at.markdown)
+
+
+@necesita_datos
+def test_los_ejemplos_locales_salen_como_botones_con_su_nota(tmp_path, monkeypatch):
+    """Con fichero local: botones aparte, la nota en pantalla, y si un piso no se
+    puede valorar la app lo dice en vez de romperse."""
+    import motor as mod
+    f = tmp_path / "ejemplos_locales.json"
+    f.write_text(json.dumps({
+        "Prueba valorable": dict(barrio="Trafalgar", superficie_m2=95, habitaciones=3,
+                                 banos=2, planta=4, ascensor=True, terraza=False,
+                                 estado="Buen estado", nota="NOTA DE PRUEBA"),
+        "Prueba sin comparables": dict(barrio="Ventas", superficie_m2=32, habitaciones=1,
+                                       banos=1, planta=2, ascensor=True, terraza=False,
+                                       estado="Buen estado", nota="OTRA NOTA"),
+    }), encoding="utf-8")
+    monkeypatch.setattr(mod, "RUTA_EJEMPLOS_LOCALES", f)
+    st = pytest.importorskip("streamlit.testing.v1")
+    at = st.AppTest.from_file(str(RAIZ / "demo" / "app.py"), default_timeout=90).run()
+    assert not at.exception
+    etiquetas = [b.label for b in at.button]
+    assert len(at.button) == len(mod.EJEMPLOS) + 2
+    assert "Prueba valorable" in etiquetas and "Prueba sin comparables" in etiquetas
+
+    at.button[etiquetas.index("Prueba valorable")].click().run()
+    assert not at.exception
+    assert any("NOTA DE PRUEBA" in i.value for i in at.info)
+    assert any(m.value.startswith("## ") and "€" in m.value for m in at.markdown)
+
+    at.button[etiquetas.index("Prueba sin comparables")].click().run()
+    assert not at.exception
+    assert any("OTRA NOTA" in i.value for i in at.info)
+    assert any("No hay pisos suficientemente parecidos" in w.value for w in at.warning)
+    assert not any(m.value.startswith("## ") and "€" in m.value for m in at.markdown)

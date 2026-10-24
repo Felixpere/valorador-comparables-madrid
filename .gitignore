@@ -65,3 +65,6 @@ LEEME.txt
 data/agencia/*
 !data/agencia/plantilla_cierres.csv
 !data/agencia/LEEME.md
+
+# Ejemplos propios de la demo (pisos concretos): nunca al repositorio publico
+demo/ejemplos_locales.json
