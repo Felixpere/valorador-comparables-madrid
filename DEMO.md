@@ -4,25 +4,47 @@ Para enseñar la herramienta a una agente inmobiliaria de Madrid, compartiendo
 pantalla. Objetivo: que vea qué hace con pisos suyos, que vea dónde falla, y
 proponerle probarla con los precios de cierre de su oficina.
 
-## Los tiempos
+## Los tiempos: 30 minutos, 10 de demo y 20 de conversación
 
-| Tramo | Minuto | Recorte |
-|---|---|---|
-| 1. La cobertura | 0:00 – 0:30 | **Nunca** |
-| 2. El problema | 0:30 – 1:15 | poco |
-| 3. Cómo funciona, en una frase | 1:15 – 1:45 | se funde con el 2 |
-| 4. Goya, en vivo | 1:45 – 3:30 | poco: es la prueba de que funciona |
-| 5. La barra: lo publicado no es lo cerrado | 3:30 – 4:30 | poco |
-| 6. El mapa | 4:30 – 5:15 | sí: señalarlo y seguir |
-| 7. Trafalgar | 5:15 – 6:00 | sí: un botón en vez de dos |
-| 8. Arapiles | 6:00 – 7:00 | **Nunca** |
-| 9. La Elipa: se niega a inventar | 7:00 – 7:30 | sí |
-| 10. La propuesta | 7:30 – 8:45 | la petición, **nunca**; el resto, sí |
-| 11. Preguntas y cierre | 8:45 – 10:00 | sí: las preguntas van por WhatsApp después |
+Lo que yo digo suma unos 10 minutos. El resto es ella hablando, y eso es lo que
+quiero: cada pregunta abierta está puesta para que hable. La tabla da, por
+tramo, lo que dura el guion, cuánto es esperable que se alargue, y **por qué
+minuto debería ir** si la conversación va por el medio de lo esperable.
 
-**Si voy pasado, recorto en este orden:** las preguntas (11) → La Elipa (9) → el
-mapa (6: diez segundos y sigo) → Trafalgar (7: sólo el botón de buen estado) →
-cómo funciona (3: lo digo dentro del problema).
+| Tramo | Guion | Conversación esperable | Debería acabar hacia | Se alarga |
+|---|---|---|---|---|
+| 1. La cobertura | 0:30 | 0 – 1 min (si pregunta por Alcorcón) | 1:00 | poco |
+| 2. El problema | 0:45 | **2 – 4 min**: la invito a hablar | 4:30 | **sí** |
+| 3. Cómo funciona, en una frase | 0:30 | 0 – 1 min | 5:30 | poco |
+| 4. Goya, en vivo | 1:45 | **2 – 3 min**: «¿alta, baja o razonable?» | 10:00 | **sí** |
+| 5. La barra | 1:00 | **2 – 4 min**: «¿cuánto se negocia hoy?» | 14:00 | **sí** |
+| 6. El mapa | 0:45 | 0 – 1 min | 15:00 | poco |
+| 7. Trafalgar | 0:45 | 1 – 2 min: los garajes y el estado | 17:30 | algo |
+| 8. Arapiles | 1:00 | **2 – 4 min**: que explique su precio | 21:30 | **sí** |
+| 9. La Elipa | 0:30 | 0 | 22:00 | no |
+| 10. La propuesta | 1:15 | **2 – 3 min**: formato, datos, fechas | 25:30 | **sí** |
+| 11. Preguntas y cierre | 1:30 | 2 – 3 min | 30:00 | sí |
+
+Con la conversación en su mínimo, la llamada dura unos 22 minutos y sobran 8.
+Con todo en su máximo, dura 37 y faltan 7. **El margen son esos 7 minutos, y
+se gastan en los tramos 2, 4 y 5**: si ella se extiende ahí, lo que se come es
+el final, que es lo que no puede faltar.
+
+**Tres relojes de control:**
+
+- **A las 14:00 debería haber terminado la barra.** Si aún estoy en Goya: el
+  mapa se queda en diez segundos y Trafalgar en un solo botón.
+- **A las 19:00 debería haber terminado Trafalgar.** Si no: fuera La Elipa y
+  fuera las preguntas del final (van por WhatsApp).
+- **A las 24:00 tengo que estar empezando Arapiles.** Es el límite: Arapiles con
+  su conversación, la propuesta con su petición y el cierre necesitan 6
+  minutos. Si a las 24:00 no he llegado, salto a Arapiles desde donde esté,
+  con lo que haya en pantalla.
+
+**Plan de emergencia, si va todo pasado** (es un plan de emergencia, no la
+previsión): recorto en este orden las preguntas (11) → La Elipa (9) → el mapa
+(6: diez segundos y sigo) → Trafalgar (7: sólo el botón de buen estado) → cómo
+funciona (3: lo digo dentro del problema).
 
 **Lo que no se recorta nunca:** la cobertura (1), Arapiles (8) y la petición
 del final (10): la llamada tiene que acabar con «¿me pasas tus cierres?» aunque
@@ -51,8 +73,11 @@ barra en ese momento y la enseño; si no, «ahora te la enseño» y sigo el orde
    .venv\Scripts\python -m streamlit run demo\app.py
    ```
 
-   Se abre en `http://localhost:8501`. La primera vez en un equipo puede pedir
-   un correo en la terminal: Enter y sigue.
+   **Mira en la terminal la línea `Local URL: http://localhost:XXXX` y abre
+   ese puerto.** Si el cierre del paso 1 falló, Streamlit salta al 8502 (o al
+   8503) sin avisar, y el 8501 seguiría enseñando la demo vieja. El puerto bueno
+   es el que diga la terminal de la instancia que acabas de arrancar. La
+   primera vez en un equipo puede pedir un correo en la terminal: Enter y sigue.
 3. **Comprueba que sale la fila azul «Pisos de la oficina»** con cinco botones:
    Goya, Trafalgar · buen estado, Trafalgar · a reformar, Arapiles y La Elipa.
    Si no sale, falta o está roto `demo/ejemplos_locales.json` (es local, git lo
@@ -119,12 +144,18 @@ Baja a la barra. El título ya lo dice: «Lo publicado no es lo cerrado».
 - **La franja verde** es la firma estimada. Sale de datos públicos:
 
 > «El Registro publica cuánto se escrituró de media en cada distrito, pero no
-> piso a piso. Comparando eso con los anuncios de 2018, la diferencia va de un
-> 16 % menos a un 7 % más, según el distrito y según cómo se mida. Por eso la
+> piso a piso. Comparando eso con los anuncios de 2018, lo escriturado queda
+> desde un 16 % por debajo de lo anunciado, en Villaverde, hasta un 7 % por
+> encima, en Hortaleza, según el distrito y según cómo se mida. Por eso la
 > firma es un rango, y no por prudencia: con datos públicos no se puede hacer
 > mejor. Y esa diferencia no es sólo negociación: mezcla pisos que nunca se
 > vendieron, pisos distintos y el tiempo que tarda una escritura en
 > inscribirse.»
+
+El dato: `data/real/factores_distrito.csv`, columnas `brecha_min` y
+`brecha_max`, que calcula `src/r06_actualizacion_cierre.py` como (anuncio −
+escritura) / anuncio. Extremos: −7,3 % en Hortaleza y +16,4 % en Villaverde.
+Signo positivo = se escrituró por debajo del anuncio.
 
 Y que el rango verde **sólo** recoge esa duda: el error del modelo va además.
 
