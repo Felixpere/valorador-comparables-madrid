@@ -63,9 +63,12 @@ barra en ese momento y la enseño; si no, «ahora te la enseño» y sigo el orde
 
 ## Antes de la llamada (15 minutos antes)
 
-1. **Cierra la demo vieja.** Desde el 19 de octubre hay una instancia abierta
-   en `localhost:8501` con código antiguo (Ctrl+C en su terminal). Si no se
-   cierra, no salen ni la barra, ni el mapa, ni los pisos de la oficina.
+1. **Si hay una demo abierta de otro día, ciérrala** (Ctrl+C en su terminal).
+   Streamlit guarda en memoria el código que cargó al arrancar: una instancia
+   vieja no enseñaría ni la barra, ni el mapa, ni los pisos de la oficina. Para
+   saber si hay alguna: en PowerShell,
+   `Get-NetTCPConnection -LocalPort 8501,8502 -State Listen`; si no devuelve
+   nada, no hay ninguna.
 2. Arranca la nueva, desde la raíz del repositorio:
 
    ```powershell
